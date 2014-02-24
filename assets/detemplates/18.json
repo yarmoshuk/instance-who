@@ -1,0 +1,29 @@
+{
+	"css":"formattedreports.css",
+	"defaultimelevel":5,
+	"domid":"siv-r",
+	"optionalSectionIDs":[
+		"gen_config_setting",
+		"gen_config_ph",
+		"gen_config_nut",
+		"gen_config_fs",
+		"gen_config_rh",
+		"gen_config_hiv"
+	],
+	"template":true,
+	"dataset":[
+		{
+			"enable_emerg_standards":false,
+			"options":5,
+		   	"requestID":"main",
+			"setuuid":"9a0ce00b-c288-4c75-9ed0-6bbe0c003a89",
+			"trendCharts":false
+		},{
+			"enable_emerg_standards":false,
+			"options":5,
+		   	"requestID":"locationdetails",
+			"setuuid":"453f2845-61f4-4d26-8202-1dd95773400d",
+			"trendCharts":false	
+		}
+	]
+}

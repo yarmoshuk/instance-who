@@ -1,0 +1,38 @@
+{
+	"title": "Explore Tour",
+	"id": "Explore",
+	"items":
+	[
+		{
+			"title":"1. Welcome to the Explore area",
+			"content":"<p>Start here to explore, analyse and share data.</p>",
+			"position": "center",
+			"target":"MainArea"
+		},{
+			"title": "2. Preferences",
+			"content": "<p>Set your home location to filter content according to your interest.</p>",
+			"position": "right",
+			"target": "explore-section-header"
+		},{
+			"title": "3. Map",
+			"content": "<p>View locations where we are collecting data.</p>",
+			"position": "right",
+			"target": "tab-button-Map"
+		},{
+			"title": "4. Reports",
+			"content": "<p>Browse reports that have been published from the work area.</p>",
+			"position": "right",
+			"target": "tab-button-Reports"
+		},{
+			"title": "5. Documents",
+			"content": "<p>Search for other key documents and reference materials.</p>",
+			"position": "right",
+			"target": "tab-button-Documents"
+		},{
+		    "title": "6. Data",
+		    "content": "<p>Browse data that has been published from various sources.</p>",
+		    "position": "right",
+		    "target": "tab-button-Indicators"
+		}
+	]
+}

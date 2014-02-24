@@ -1,0 +1,838 @@
+<div class="siv-r-focus siv-r-wky-up">
+  <div class="siv-r-page-break">
+    <div class="siv-r-page-header">
+      <div class="siv-r-title-ctn"> <img class="siv-r-report-type" src={{{local_asset "icons/de_templates/round/18.svg"}}} />
+        <h2 class="siv-r-title-txt">Focus Results Framework</h2>
+        <p class="siv-r-year-txt" data-fieldname="year">{{{dateinfo "year"}}}</p>
+      </div>
+      <div class="siv-r-loc-can"></div>
+      <div class="siv-r-loc-ctn">
+        <div class="siv-r-flag-ctn">{{{helperFlagSVG "iso" "locationdetails" "icons/flags/round/flags-svg/" "siv-r-flag-img"}}}</div>
+        <h2 class="siv-r-loc-txt" data-fieldname="name">{{{embedded_value "locationdetails" "name"}}}</h2>
+        <p class="siv-r-loc-cty" data-fieldname="countryname">{{{embedded_value "locationdetails" "countryname"}}}</p>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div class="siv-r-section">
+      <div class="siv-r-sect-head-ctn">
+        <h2 class="siv-r-table-txt">Health status of the population improved</h2>
+      </div>
+      <div class="siv-r-table-can"></div>
+      <div class="clear gen_config_ph">
+        <div class="siv-r-table-head">
+          <div class="siv-r-table-col-name">
+            <h3 class="siv-r-table-name-txt">Impact indicators</h3>
+          </div>
+        </div>
+        <div class="siv-r-table-head-space">&nbsp;</div>
+        <div class="siv-r-table-head">
+          <div class="siv-r-table-col-name">
+            <h3 class="siv-r-table-name-txt">&nbsp;</h3>
+          </div>
+          <div class="siv-r-table-ind">
+            <h4 class="siv-r-std-txt">Indicator</h4>
+            <div class="siv-r-std-can"></div>
+          </div>
+          <div class="siv-r-table-ind">
+            <h4 class="siv-r-ind-txt">Source</h4>
+            <div class="siv-r-ind-can"></div>
+          </div>
+        </div>
+        <table class="siv-r-table clear">
+          <tbody>
+            <tr class="siv-r-table-hl">
+              <td class="siv-r-table-order">1</td>
+              <td class="siv-r-table-item">Crude mortality rate ( / 1000 / month)</td>
+              <td class="siv-r-table-space">&nbsp;</td>
+              <td class="siv-r-table-order"></td>
+              <td class="siv-r-table-item"></td>
+              <td data-fieldname="ph_mort_cmr" class="siv-r-std-val">{{{helperDisplayIndicator "ph_mort_cmr" "val" 0.ph_mort_cmr}}}</td>
+              <td data-fieldname="ph_mort_cmr" class="siv-r-ind-val">HIS</td>
+            </tr>
+            <tr>
+              <td class="siv-r-table-order">2</td>
+              <td class="siv-r-table-item">Extent PoCs have access to primary health care</td>
+              <td class="siv-r-table-space">&nbsp;</td>
+              <td class="siv-r-table-order"></td>
+              <td class="siv-r-table-item"></td>
+              <td data-fieldname="ph_extentacc_prim" class="siv-r-std-val">{{{helperDisplayIndicator "ph_extentacc_prim" "val" 0.ph_extentacc_prim}}}</td>
+              <td data-fieldname="ph_extentacc_prim" class="siv-r-ind-val">annual reports</td>
+            </tr>
+            <tr class="siv-r-table-hl">
+              <td class="siv-r-table-order">3</td>
+              <td class="siv-r-table-item">Extent PoCs have access to secondary and tertiary health care</td>
+              <td class="siv-r-table-space">&nbsp;</td>
+              <td class="siv-r-table-order"></td>
+              <td class="siv-r-table-item"></td>
+              <td data-fieldname="ph_extentacc_sec" class="siv-r-std-val">{{{helperDisplayIndicator "ph_extentacc_sec" "val" 0.ph_extentacc_sec}}}</td>
+              <td data-fieldname="ph_exteNTACC_SEC" class="siv-r-ind-val">Annual Reports</td>
+            </tr>
+            <tr>
+              <td class="siv-r-table-order">4</td>
+              <td class="siv-r-table-item">Measles vaccination coverage</td>
+              <td class="siv-r-table-space">&nbsp;</td>
+              <td class="siv-r-table-order"></td>
+              <td class="siv-r-table-item"></td>
+              <td data-fieldname="ph_vacc_meascov" class="siv-r-std-val">{{{helperDisplayIndicator "ph_vacc_meascov" "val" 0.ph_vacc_meascov}}}</td>
+              <td data-fieldname="ph_vacc_meascov" class="siv-r-ind-val">HIS</td>
+            </tr>
+            <tr class="siv-r-table-hl">
+              <td class="siv-r-table-order">5</td>
+              <td class="siv-r-table-item">Under-five mortality rate ( / 1000 / month)</td>
+              <td class="siv-r-table-space">&nbsp;</td>
+              <td class="siv-r-table-order"></td>
+              <td class="siv-r-table-item"></td>
+              <td data-fieldname="ph_mort_u5mr" class="siv-r-std-val">{{{helperDisplayIndicator "ph_mort_u5mr" "val" 0.ph_mort_u5mr}}}</td>
+              <td data-fieldname="ph_mort_u5mr" class="siv-r-ind-val">HIS</td>
+            </tr>
+            <tr>
+              <td colspan="2"><h3 class="siv-r-table-name-txt">Outputs</h3></td>
+              <td class="siv-r-table-space">&nbsp;</td>
+              <td colspan="3"><h3 class="siv-r-table-name-txt">Performance indicators</h3></td>
+            </tr>
+            <tr class="siv-r-table-hl">
+              <td rowspan="2" class="siv-r-table-order">1</td>
+              <td rowspan="2" class="siv-r-table-item">Access to communicable disease programmes provided</td>
+              <td rowspan="2" class="siv-r-table-space">&nbsp;</td>
+              <td class="siv-r-table-order">1.1</td>
+              <td class="siv-r-table-item">Number of MDR/X-TB cases diagnosed among PoCs</td>
+              <td data-fieldname="ph_tb_mdr" class="siv-r-std-val">{{{helperDisplayIndicator "ph_tb_mdr" "val" 0.ph_tb_mdr}}}</td>
+              <td data-fieldname="ph_tb_mdr" class="siv-r-ind-val">HIS</td>
+            </tr>
+            <tr class="siv-r-table-hl">
+              <td class="siv-r-table-order">1.2</td>
+              <td class="siv-r-table-item">Is ACT used as first line malaria treatment?</td>
+              <td data-fieldname="ph_mal_act" class="siv-r-std-val">{{{helperDisplayIndicator "ph_mal_act" "val" 0.ph_mal_act}}}</td>
+              <td data-fieldname="ph_mal_act" class="siv-r-ind-val">Annual Reports</td>
+            </tr>
+            <tr>
+              <td class="siv-r-table-order">2</td>
+              <td class="siv-r-table-item">Access to essential drugs provided</td>
+              <td class="siv-r-table-space">&nbsp;</td>
+              <td class="siv-r-table-order">2.1</td>
+              <td class="siv-r-table-item">Are all essential medicines internationally procured?</td>
+              <td data-fieldname="intldrugs" class="siv-r-std-val">{{! helperDisplayIndicator "intldrugs" "val" 0.intldrugs}}</td>
+              <td data-fieldname="intldrugs" class="siv-r-ind-val">Annual Reports</td>
+            </tr>
+            <tr class="siv-r-table-hl">
+              <td class="siv-r-table-order">3</td>
+              <td class="siv-r-table-item">Access to non communicable disease programmes provided</td>
+              <td class="siv-r-table-space">&nbsp;</td>
+              <td class="siv-r-table-order">3.1</td>
+              <td class="siv-r-table-item">Number of full time psychiatric staff for mental health</td>
+              <td data-fieldname="gen_staff_mental" class="siv-r-std-val">{{{helperDisplayIndicator "gen_staff_mental" "val" 0.gen_staff_mental}}}</td>
+              <td data-fieldname="gen_staff_mental" class="siv-r-ind-val">HIS</td>
+            </tr>
+            <tr>
+              <td rowspan="5" class="siv-r-table-order">4</td>
+              <td rowspan="5" class="siv-r-table-item">Access to primary health care services provided or supported</td>
+              <td rowspan="5" class="siv-r-table-space">&nbsp;</td>
+              <td class="siv-r-table-order">4.1</td>
+              <td class="siv-r-table-item">Number of health facilities equipped / constructed / rehabilitated</td>
+              <td data-fieldname="gen_infr_genhfeqconre" class="siv-r-std-val">{{{helperDisplayIndicator "gen_infr_genhfeqconre" "val" 0.gen_infr_genhfeqconre}}}</td>
+              <td data-fieldname="gen_infr_genhfeqconre" class="siv-r-ind-val">HIS</td>
+            </tr>
+            <tr>
+              <td class="siv-r-table-order">4.2</td>
+              <td class="siv-r-table-item">Total number of health care facilities</td>
+              <td data-fieldname="gen_infr_gen_numhf" class="siv-r-std-val">{{{helperDisplayIndicator "gen_infr_gen_numhf" "val" 0.gen_infr_gen_numhf}}}</td>
+              <td data-fieldname="gen_infr_gen_numhf" class="siv-r-ind-val">HIS</td>
+            </tr>
+            <tr>
+              <td class="siv-r-table-order">4.3</td>
+              <td class="siv-r-table-item">Do refugees have access to national/government primary health care facilities?</td>
+              <td data-fieldname="ph_access_primary" class="siv-r-std-val">{{{helperDisplayIndicator "ph_access_primary" "val" 0.ph_access_primary}}}</td>
+              <td data-fieldname="ph_access_primary" class="siv-r-ind-val">Annual Reports</td>
+            </tr>
+            <tr>
+              <td class="siv-r-table-order">4.4</td>
+              <td class="siv-r-table-item">Access of PoC to NGO or faith-based primary health care facilities ensured?</td>
+              <td data-fieldname="ph_access_ngoprimary" class="siv-r-std-val">{{{helperDisplayIndicator "ph_access_ngoprimary" "val" 0.ph_access_ngoprimary}}}</td>
+              <td data-fieldname="ph_access_ngoprimary" class="siv-r-ind-val">Annual Reports</td>
+            </tr>
+            <tr>
+              <td class="siv-r-table-order">4.5</td>
+              <td class="siv-r-table-item">Do regular, formal coordination meetings take place between UNHCR, MoH and partners?</td>
+              <td data-fieldname="ph_coord_mtg" class="siv-r-std-val">{{{helperDisplayIndicator "ph_coord_mtg" "val" 0.ph_coord_mtg}}}</td>
+              <td data-fieldname="ph_coord_mtg" class="siv-r-ind-val">Annual Reports</td>
+            </tr>
+            <tr class="siv-r-table-hl">
+              <td class="siv-r-table-order">5</td>
+              <td class="siv-r-table-item">Capacity development supported</td>
+              <td class="siv-r-table-space">&nbsp;</td>
+              <td class="siv-r-table-order">5.1</td>
+              <td class="siv-r-table-item">Number of health workers trained in collaboration with MoH or other external partners</td>
+              <td data-fieldname="ph_coord_train" class="siv-r-std-val">{{{helperDisplayIndicator "ph_coord_train" "val" 0.ph_coord_train}}}</td>
+              <td data-fieldname="ph_coord_train" class="siv-r-ind-val">Annual Reports</td>
+            </tr>
+            <tr>
+              <td class="siv-r-table-order">6</td>
+              <td class="siv-r-table-item">Contingency plan for disease outbreaks maintained</td>
+              <td class="siv-r-table-space">&nbsp;</td>
+              <td class="siv-r-table-order">6.1</td>
+              <td class="siv-r-table-item">Stockpile in place for disease outbreaks established or maintained?</td>
+              <td data-fieldname="ph_outbrk_stockpile" class="siv-r-std-val">{{{helperDisplayIndicator "ph_outbrk_stockpile" "val" 0.ph_outbrk_stockpile}}}</td>
+              <td data-fieldname="ph_outbrk_stockpile" class="siv-r-ind-val">Annual Reports</td>
+            </tr>
+            <tr class="siv-r-table-hl">
+              <td class="siv-r-table-order">7</td>
+              <td class="siv-r-table-item">Health Information System established</td>
+              <td class="siv-r-table-space">&nbsp;</td>
+              <td class="siv-r-table-order">7.1</td>
+              <td class="siv-r-table-item">Number of monthly reports received from partners on the delivery of health services to PoCs</td>
+              <td data-fieldname="ph_his_report" class="siv-r-std-val">{{{helperDisplayIndicator "ph_his_report" "val" 0.ph_his_report}}}</td>
+              <td data-fieldname="ph_his_report" class="siv-r-ind-val">HIS</td>
+            </tr>
+            <tr>
+              <td class="siv-r-table-order">8</td>
+              <td class="siv-r-table-item">Health services to children under 5 delivered</td>
+              <td class="siv-r-table-space">&nbsp;</td>
+              <td class="siv-r-table-order">8.1</td>
+              <td class="siv-r-table-item">Is integrated management of childhood illness (IMCI) implemented?</td>
+              <td data-fieldname="ph_imci" class="siv-r-std-val">{{{helperDisplayIndicator "ph_imci" "val" 0.ph_imci}}}</td>
+              <td data-fieldname="ph_imci" class="siv-r-ind-val">Annual Reports</td>
+            </tr>
+            <tr class="siv-r-table-hl">
+              <td class="siv-r-table-order">9</td>
+              <td class="siv-r-table-item">Laboratory services provided according to country-specific SOPs</td>
+              <td class="siv-r-table-space">&nbsp;</td>
+              <td class="siv-r-table-order">9.1</td>
+              <td class="siv-r-table-item">Number of qualified laboratory staff</td>
+              <td data-fieldname="gen_staff_lab" class="siv-r-std-val">{{{helperDisplayIndicator "gen_staff_lab" "val" 0.gen_staff_lab}}}</td>
+              <td data-fieldname="gen_staff_lab" class="siv-r-ind-val">HIS</td>
+            </tr>
+            <tr>
+              <td rowspan="2" class="siv-r-table-order">10</td>
+              <td rowspan="2" class="siv-r-table-item">Preventative and community-based health care services provided</td>
+              <td rowspan="2" class="siv-r-table-space">&nbsp;</td>
+              <td class="siv-r-table-order">10.1</td>
+              <td class="siv-r-table-item">Number of CHWs</td>
+              <td data-fieldname="gen_staff_chw" class="siv-r-std-val">{{{helperDisplayIndicator "gen_staff_chw" "val" 0.gen_staff_chw}}}</td>
+              <td data-fieldname="gen_staff_chw" class="siv-r-ind-val">Annual Reports</td>
+            </tr>
+            <tr>
+              <td class="siv-r-table-order">10.2</td>
+              <td class="siv-r-table-item">Routine immunization programme established or maintained?</td>
+              <td data-fieldname="ph_vacc_routine" class="siv-r-std-val">{{{helperDisplayIndicator "ph_vacc_routine" "val" 0.ph_vacc_routine}}}</td>
+              <td data-fieldname="ph_vacc_routine" class="siv-r-ind-val">Annual Reports</td>
+            </tr>
+            <tr class="siv-r-table-hl">
+              <td rowspan="2" class="siv-r-table-order">11</td>
+              <td rowspan="2" class="siv-r-table-item">Referral mechanisms established</td>
+              <td rowspan="2" class="siv-r-table-space">&nbsp;</td>
+              <td class="siv-r-table-order">11.1</td>
+              <td class="siv-r-table-item">Number of PoCs referred to secondary and tertiary medical care</td>
+              <td data-fieldname="ph_refer_secter" class="siv-r-std-val">{{{helperDisplayIndicator "ph_refer_secter" "val" 0.ph_refer_secter}}}</td>
+              <td data-fieldname="ph_refer_secter" class="siv-r-ind-val">HIS</td>
+            </tr>
+            <tr class="siv-r-table-hl">
+              <td class="siv-r-table-order">11.2</td>
+              <td class="siv-r-table-item">Health insurance scheme established to improve refugee access to health services?</td>
+              <td data-fieldname="ph_insurance" class="siv-r-std-val">{{{helperDisplayIndicator "ph_insurance" "val" 0.ph_insurance}}}</td>
+              <td data-fieldname="ph_insurance" class="siv-r-ind-val">Annual Reports</td>
+            </tr>
+            <tr>
+              <td class="siv-r-table-order">12</td>
+              <td class="siv-r-table-item">Sufficient mosquito nets distributed</td>
+              <td class="siv-r-table-space">&nbsp;</td>
+              <td class="siv-r-table-order">12.1</td>
+              <td class="siv-r-table-item">Number of long-lasting insecticide treated bednets distributed</td>
+              <td data-fieldname="ph_mal_nets" class="siv-r-std-val">{{{helperDisplayIndicator "ph_mal_nets" "val" 0.ph_mal_nets}}}</td>
+              <td data-fieldname="ph_mal_nets" class="siv-r-ind-val">Annual Reports</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <!-- end of Health status of the population improved -->
+    <div class="siv-r-section">
+      <div class="siv-r-sect-head-ctn">
+        <h2 class="siv-r-table-txt">Population has optimal access to reproductive health and HIV service</h2>
+      </div>
+      <div class="siv-r-table-can"></div>
+      <div class="clear gen_config_hiv">
+        <div class="siv-r-table-head">
+          <div class="siv-r-table-col-name">
+            <h3 class="siv-r-table-name-txt">Impact indicators</h3>
+          </div>
+        </div>
+        <div class="siv-r-table-head-space">&nbsp;</div>
+        <div class="siv-r-table-head">
+          <div class="siv-r-table-col-name">
+            <h3 class="siv-r-table-name-txt">&nbsp;</h3>
+          </div>
+          <div class="siv-r-table-ind">
+            <h4 class="siv-r-std-txt">Indicator</h4>
+            <div class="siv-r-std-can"></div>
+          </div>
+          <div class="siv-r-table-ind">
+            <h4 class="siv-r-ind-txt">Source</h4>
+            <div class="siv-r-ind-can"></div>
+          </div>
+        </div>
+        <table class="siv-r-table clear">
+          <tbody>
+            <tr class="siv-r-table-hl">
+              <td class="siv-r-table-order">1</td>
+              <td class="siv-r-table-item">Number of maternal deaths</td>
+              <td class="siv-r-table-space">&nbsp;</td>
+              <td class="siv-r-table-order"></td>
+              <td class="siv-r-table-item"></td>
+              <td data-fieldname="ph_mort_matdeath" class="siv-r-std-val">{{{helperDisplayIndicator "ph_mort_matdeath" "val" 0.ph_mort_matdeath}}}</td>
+              <td data-fieldname="ph_mort_matdeath" class="siv-r-ind-val">HIS</td>
+            </tr>
+            <tr>
+              <td class="siv-r-table-order">2</td>
+              <td class="siv-r-table-item">Proportion of births attended by skilled personnel</td>
+              <td class="siv-r-table-space">&nbsp;</td>
+              <td class="siv-r-table-order"></td>
+              <td class="siv-r-table-item"></td>
+              <td data-fieldname="rh_anc_skillatt" class="siv-r-std-val">{{{helperDisplayIndicator "rh_anc_skillatt" "val" 0.rh_anc_skillatt}}}</td>
+              <td data-fieldname="rh_anc_skillatt" class="siv-r-ind-val">HIS</td>
+            </tr>
+            <tr class="siv-r-table-hl">
+              <td class="siv-r-table-order">3</td>
+              <td class="siv-r-table-item">Proportion of newborn infants with low birth weight (&lt;2500 gs) (weighed within 72 hrs)</td>
+              <td class="siv-r-table-space">&nbsp;</td>
+              <td class="siv-r-table-order"></td>
+              <td class="siv-r-table-item"></td>
+              <td data-fieldname="rh_del_lbwdel" class="siv-r-std-val">{{{helperDisplayIndicator "rh_del_lbwdel" "val" 0.rh_del_lbwdel}}}</td>
+              <td data-fieldname="rh_del_lbwdel" class="siv-r-ind-val">HIS</td>
+            </tr>
+            <tr>
+              <td class="siv-r-table-order">4</td>
+              <td class="siv-r-table-item">Proportion of eligible rape survivors provided with PEP within 72 hours</td>
+              <td class="siv-r-table-space">&nbsp;</td>
+              <td class="siv-r-table-order"></td>
+              <td class="siv-r-table-item"></td>
+              <td data-fieldname="rh_sgbv_pep" class="siv-r-std-val">{{{helperDisplayIndicator "rh_sgbv_pep" "val" 0.rh_sgbv_pep}}}</td>
+              <td data-fieldname="rh_sgbv_pep" class="siv-r-ind-val">HIS</td>
+            </tr>
+            <tr class="siv-r-table-hl">
+              <td class="siv-r-table-order">5</td>
+              <td class="siv-r-table-item">Extent PoCs have access to comprehensive reproductive health services</td>
+              <td class="siv-r-table-space">&nbsp;</td>
+              <td class="siv-r-table-order"></td>
+              <td class="siv-r-table-item"></td>
+              <td data-fieldname="rh_extentacc_comprhs" class="siv-r-std-val">{{{helperDisplayIndicator "rh_extentacc_comprhs" "val" 0.rh_extentacc_comprhs}}}</td>
+              <td data-fieldname="rh_extentacc_comprhs" class="siv-r-ind-val">Annual Reports</td>
+            </tr>
+            <tr>
+              <td class="siv-r-table-order">6</td>
+              <td class="siv-r-table-item">Extent PoCs have access to HIV services</td>
+              <td class="siv-r-table-space">&nbsp;</td>
+              <td class="siv-r-table-order"></td>
+              <td class="siv-r-table-item"></td>
+              <td data-fieldname="hiv_extentacc_services" class="siv-r-std-val">{{{helperDisplayIndicator "hiv_extentacc_services" "val" 0.hiv_extentacc_services}}}</td>
+              <td data-fieldname="hiv_extentacc_services" class="siv-r-ind-val">Annual Reports</td>
+            </tr>
+            <tr>
+              <td colspan="2"><h3 class="siv-r-table-name-txt">Outputs</h3></td>
+              <td class="siv-r-table-space">&nbsp;</td>
+              <td colspan="3"><h3 class="siv-r-table-name-txt">Performance indicators</h3></td>
+            </tr>
+            <tr class="siv-r-table-hl">
+              <td class="siv-r-table-order">1</td>
+              <td class="siv-r-table-item">Advocacy conducted</td>
+              <td class="siv-r-table-space">&nbsp;</td>
+              <td class="siv-r-table-order">1.1</td>
+              <td class="siv-r-table-item">Advocacy for legislation protecting the rights of HIV positive PoCs?</td>
+              <td data-fieldname="advocleghiv" class="siv-r-std-val">{{! helperDisplayIndicator "advocleghiv" "val" 0.advocleghiv }}</td>
+              <td data-fieldname="advocleghiv" class="siv-r-ind-val">Annual Reports</td>
+            </tr>
+            <tr>
+              <td class="siv-r-table-order">2</td>
+              <td class="siv-r-table-item">Capacity development supported</td>
+              <td class="siv-r-table-space">&nbsp;</td>
+              <td class="siv-r-table-order">2.1</td>
+              <td class="siv-r-table-item">Number of RH and HIV trainings conducted in collaboration with MoH, or other external partners</td>
+              <td data-fieldname="hiv_trainings" class="siv-r-std-val">{{{helperDisplayIndicator "hiv_trainings" "val" 0.hiv_trainings}}}</td>
+              <td data-fieldname="hiv_trainings" class="siv-r-ind-val">Annual Reports</td>
+            </tr>
+            <tr class="siv-r-table-hl">
+              <td rowspan="2" class="siv-r-table-order">3</td>
+              <td rowspan="2" class="siv-r-table-item">Care and treatment of persons of concern living with HIV and AIDS provided </td>
+              <td rowspan="2" class="siv-r-table-space">&nbsp;</td>
+              <td class="siv-r-table-order">3.1</td>
+              <td class="siv-r-table-item">Number of PoCs receving ART</td>
+              <td data-fieldname="hiv_art_hiv_numbart" class="siv-r-std-val">{{{helperDisplayIndicator "hiv_art_hiv_numbart" "val" 0.hiv_art_hiv_numbart}}}</td>
+              <td data-fieldname="hiv_art_hiv_numbart" class="siv-r-ind-val">HIS</td>
+            </tr>
+            <tr class="siv-r-table-hl">
+              <td class="siv-r-table-order">3.2</td>
+              <td class="siv-r-table-item">Equal access to ART services as host nationals ensured?</td>
+              <td data-fieldname="hiv_access_arteqaccess" class="siv-r-std-val">{{{helperDisplayIndicator "hiv_access_arteqaccess" "val" 0.hiv_access_arteqaccess}}}</td>
+              <td data-fieldname="hiv_access_arteqaccess" class="siv-r-ind-val">Annual Reports</td>
+            </tr>
+            <tr>
+              <td class="siv-r-table-order">4</td>
+              <td class="siv-r-table-item">Clinical management of rape provided</td>
+              <td class="siv-r-table-space">&nbsp;</td>
+              <td class="siv-r-table-order">4.1</td>
+              <td class="siv-r-table-item">Number of eligible rape survivors provided with PEP within 72 hours</td>
+              <td data-fieldname="rh_sgbv_pepnum" class="siv-r-std-val">{{{helperDisplayIndicator "rh_sgbv_pepnum" "val" 0.rh_sgbv_pepnum}}}</td>
+              <td data-fieldname="rh_sgbv_pepnum" class="siv-r-ind-val">HIS</td>
+            </tr>
+            <tr class="siv-r-table-hl">
+              <td rowspan="2" class="siv-r-table-order">5</td>
+              <td rowspan="2" class="siv-r-table-item">Comprehensive safe motherhood services provided</td>
+              <td rowspan="2" class="siv-r-table-space">&nbsp;</td>
+              <td class="siv-r-table-order">5.1</td>
+              <td class="siv-r-table-item">Number of MCH staff/midwives</td>
+              <td data-fieldname="gen_staff_mch" class="siv-r-std-val">{{{helperDisplayIndicator "gen_staff_mch" "val" 0.gen_staff_mch}}}</td>
+              <td data-fieldname="gen_staff_mch" class="siv-r-ind-val">HIS</td>
+            </tr>
+            <tr class="siv-r-table-hl">
+              <td class="siv-r-table-order">5.2</td>
+              <td class="siv-r-table-item">Equal access to maternal and newborn services as host nationals ensured?</td>
+              <td data-fieldname="rh_access_equal" class="siv-r-std-val">{{{helperDisplayIndicator "rh_access_equal" "val" 0.rh_access_equal}}}</td>
+              <td data-fieldname="rh_access_equal" class="siv-r-ind-val">Annual Reports</td>
+            </tr>
+            <tr>
+              <td rowspan="2" class="siv-r-table-order">6</td>
+              <td rowspan="2" class="siv-r-table-item">Prevention of HIV mother to child transmission services provided</td>
+              <td rowspan="2" class="siv-r-table-space">&nbsp;</td>
+              <td class="siv-r-table-order">6.1</td>
+              <td class="siv-r-table-item">Number of women receiving post-test counseling and testing in PMTCT</td>
+              <td data-fieldname="hiv_pmtct_numbwom" class="siv-r-std-val">{{{helperDisplayIndicator "hiv_pmtct_numbwom" "val" 0.hiv_pmtct_numbwom}}}</td>
+              <td data-fieldname="hiv_pmtct_numbwom" class="siv-r-ind-val">HIS</td>
+            </tr>
+            <tr>
+              <td class="siv-r-table-order">6.2</td>
+              <td class="siv-r-table-item">Equal access to PMTCT services as host nationals ensured?</td>
+              <td data-fieldname="hiv_access_pmtctfees" class="siv-r-std-val">{{{helperDisplayIndicator "hiv_access_pmtctfees" "val" 0.hiv_access_pmtctfees}}}</td>
+              <td data-fieldname="hiv_access_pmtctfees" class="siv-r-ind-val">Annual Reports</td>
+            </tr>
+            <tr class="siv-r-table-hl">
+              <td rowspan="3" class="siv-r-table-order">7</td>
+              <td rowspan="3" class="siv-r-table-item">Preventive reproductive health and HIV services provided</td>
+              <td rowspan="3" class="siv-r-table-space">&nbsp;</td>
+              <td class="siv-r-table-order">7.1.1</td>
+              <td class="siv-r-table-item">Access of PoCs to male condoms?</td>
+              <td data-fieldname="hiv_condom_male" class="siv-r-std-val">{{{helperDisplayIndicator "hiv_condom_male" "val" 0.hiv_condom_male}}}</td>
+              <td data-fieldname="hiv_condom_male" class="siv-r-ind-val">HIS</td>
+            </tr>
+            <tr class="siv-r-table-hl">
+              <td class="siv-r-table-order">7.1.2</td>
+              <td class="siv-r-table-item">Access of PoCs to female condoms?</td>
+              <td data-fieldname="hiv_condom_female" class="siv-r-std-val">{{{helperDisplayIndicator "hiv_condom_female" "val" 0.hiv_condom_female}}}</td>
+              <td data-fieldname="hiv_condom_female" class="siv-r-ind-val">HIS</td>
+            </tr>
+            <tr class="siv-r-table-hl">
+              <td class="siv-r-table-order">7.2</td>
+              <td class="siv-r-table-item">RH and HIV prevention programmes for sex workers supported?</td>
+              <td data-fieldname="hiv_access_sex" class="siv-r-std-val">{{{helperDisplayIndicator "hiv_access_sex" "val" 0.hiv_access_sex}}}</td>
+              <td data-fieldname="hiv_access_sex" class="siv-r-ind-val">Annual Reports</td>
+            </tr>
+            <tr>
+              <td class="siv-r-table-order">8</td>
+              <td class="siv-r-table-item">Referral mechanisms established</td>
+              <td class="siv-r-table-space">&nbsp;</td>
+              <td class="siv-r-table-order">8.1</td>
+              <td class="siv-r-table-item">Number of obstetric emergencies referred to secondary or tertiary care</td>
+              <td data-fieldname="rh_obsemerg" class="siv-r-std-val">{{{helperDisplayIndicator "rh_obsemerg" "val" 0.rh_obsemerg}}}</td>
+              <td data-fieldname="rh_obsemerg" class="siv-r-ind-val">HIS</td>
+            </tr>
+            <tr class="siv-r-table-hl">
+              <td class="siv-r-table-order">9</td>
+              <td class="siv-r-table-item">Safe and rational blood transfusion and standard precautions practiced</td>
+              <td class="siv-r-table-space">&nbsp;</td>
+              <td class="siv-r-table-order">9.1</td>
+              <td class="siv-r-table-item">No stock out of standard precautions material maintained throughout the year?</td>
+              <td data-fieldname="hiv_spstockout" class="siv-r-std-val">{{{helperDisplayIndicator "hiv_spstockout" "val" 0.hiv_spstockout}}}</td>
+              <td data-fieldname="hiv_spstockout" class="siv-r-ind-val">Annual Reports</td>
+            </tr>
+            <tr>
+              <td class="siv-r-table-order">10</td>
+              <td class="siv-r-table-item">Preventative and community-based health care services provided</td>
+              <td class="siv-r-table-space">&nbsp;</td>
+              <td class="siv-r-table-order">10.1</td>
+              <td class="siv-r-table-item">Equal access to VCT services as host nationals ensured?</td>
+              <td data-fieldname="hiv_access_vct" class="siv-r-std-val">{{{helperDisplayIndicator "hiv_access_vct" "val" 0.hiv_access_vct}}}</td>
+              <td data-fieldname="hiv_access_vct" class="siv-r-ind-val">HIS</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <!-- end of  Population has optimal access to reproductive health and HIV service -->
+    <div class="siv-r-section">
+      <div class="siv-r-sect-head-ctn">
+        <h2 class="siv-r-table-txt">Nutritional well-being improved</h2>
+      </div>
+      <div class="siv-r-table-can"></div>
+      <div class="clear gen_config_nut">
+        <div class="siv-r-table-head">
+          <div class="siv-r-table-col-name">
+            <h3 class="siv-r-table-name-txt">Impact indicators</h3>
+          </div>
+        </div>
+        <div class="siv-r-table-head-space">&nbsp;</div>
+        <div class="siv-r-table-head">
+          <div class="siv-r-table-col-name">
+            <h3 class="siv-r-table-name-txt">&nbsp;</h3>
+          </div>
+          <div class="siv-r-table-ind">
+            <h4 class="siv-r-std-txt">Indicator</h4>
+            <div class="siv-r-std-can"></div>
+          </div>
+          <div class="siv-r-table-ind">
+            <h4 class="siv-r-ind-txt">Source</h4>
+            <div class="siv-r-ind-can"></div>
+          </div>
+        </div>
+        <table class="siv-r-table clear">
+          <tbody>
+            <tr class="siv-r-table-hl">
+              <td class="siv-r-table-order">1</td>
+              <td class="siv-r-table-item">Prevalence of anaemia in children (6-59 months)</td>
+              <td class="siv-r-table-space">&nbsp;</td>
+              <td class="siv-r-table-order"></td>
+              <td class="siv-r-table-item"></td>
+              <td data-fieldname="nut_surv_anae_u5" class="siv-r-std-val">{{{helperDisplayIndicator "nut_surv_anae_u5" "val" 0.nut_surv_anae_u5}}}</td>
+              <td data-fieldname="nut_surv_anae_u5" class="siv-r-ind-val">HIS</td>
+            </tr>
+            <tr>
+              <td class="siv-r-table-order">2</td>
+              <td class="siv-r-table-item">Prevalence of anaemia in women of reproductive age (15-49 yrs)</td>
+              <td class="siv-r-table-space">&nbsp;</td>
+              <td class="siv-r-table-order"></td>
+              <td class="siv-r-table-item"></td>
+              <td data-fieldname="nut_surv_anae_wra" class="siv-r-std-val">{{{helperDisplayIndicator "nut_surv_anae_wra" "val" 0.nut_surv_anae_wra}}}</td>
+              <td data-fieldname="nut_surv_anae_wra" class="siv-r-ind-val">HIS</td>
+            </tr>
+            <tr class="siv-r-table-hl">
+              <td class="siv-r-table-order">3</td>
+              <td class="siv-r-table-item">Prevalence of chronic malnutrition (stunting) (6-59 months)</td>
+              <td class="siv-r-table-space">&nbsp;</td>
+              <td class="siv-r-table-order"></td>
+              <td class="siv-r-table-item"></td>
+              <td data-fieldname="nut_surv_stunt" class="siv-r-std-val">{{{helperDisplayIndicator "nut_surv_stunt" "val" 0.nut_surv_stunt}}}</td>
+              <td data-fieldname="nut_surv_stunt" class="siv-r-ind-val">HIS</td>
+            </tr>
+            <tr>
+              <td class="siv-r-table-order">4</td>
+              <td class="siv-r-table-item">Prevalence of global acute malnutrition (6-59 months)</td>
+              <td class="siv-r-table-space">&nbsp;</td>
+              <td class="siv-r-table-order"></td>
+              <td class="siv-r-table-item"></td>
+              <td data-fieldname="nut_surv_gam" class="siv-r-std-val">{{{helperDisplayIndicator "nut_surv_gam" "val" 0.nut_surv_gam}}}</td>
+              <td data-fieldname="nut_surv_gam" class="siv-r-ind-val">HIS</td>
+            </tr>
+            <tr class="siv-r-table-hl">
+              <td class="siv-r-table-order">5</td>
+              <td class="siv-r-table-item">Prevalence of severe acute malnutrition (6-59 months)</td>
+              <td class="siv-r-table-space">&nbsp;</td>
+              <td class="siv-r-table-order"></td>
+              <td class="siv-r-table-item"></td>
+              <td data-fieldname="nut_surv_sam" class="siv-r-std-val">{{{helperDisplayIndicator "nut_surv_sam" "val" 0.nut_surv_sam}}}</td>
+              <td data-fieldname="nut_surv_sam" class="siv-r-ind-val">HIS</td>
+            </tr>
+            <tr>
+              <td class="siv-r-table-order">6</td>
+              <td class="siv-r-table-item">Percentage coverage of special nutrition product for prevention of undernutrition in young children (LNS/MNP/FBF)</td>
+              <td class="siv-r-table-space">&nbsp;</td>
+              <td class="siv-r-table-order"></td>
+              <td class="siv-r-table-item"></td>
+              <td data-fieldname="nut_mnp" class="siv-r-std-val">{{{helperDisplayIndicator "nut_mnp" "val" 0.nut_mnp}}}</td>
+              <td data-fieldname="nut_mnp" class="siv-r-ind-val">Annual Reports</td>
+            </tr>
+            <tr>
+              <td colspan="2"><h3 class="siv-r-table-name-txt">Outputs</h3></td>
+              <td class="siv-r-table-space">&nbsp;</td>
+              <td colspan="3"><h3 class="siv-r-table-name-txt">Performance indicators</h3></td>
+            </tr>
+            <tr class="siv-r-table-hl">
+              <td rowspan="2" class="siv-r-table-order">1</td>
+              <td rowspan="2" class="siv-r-table-item">Appropriate infant and young child feeding practices promoted</td>
+              <td rowspan="2" class="siv-r-table-space">&nbsp;</td>
+              <td class="siv-r-table-order">1.1</td>
+              <td class="siv-r-table-item">IYCF programmes targeting children 0-24 months established or maintained?</td>
+              <td data-fieldname="nut_iycf_024" class="siv-r-std-val">{{{helperDisplayIndicator "nut_iycf_024" "val" 0.nut_iycf_024}}}</td>
+              <td data-fieldname="nut_iycf_024" class="siv-r-ind-val">Annual Reports</td>
+            </tr>
+            <tr class="siv-r-table-hl">
+              <td class="siv-r-table-order">1.2</td>
+              <td class="siv-r-table-item">IYCF programmes targeting pregnant and lactating women established or maintained?</td>
+              <td data-fieldname="nut_iycf_preg" class="siv-r-std-val">{{{helperDisplayIndicator "nut_iycf_preg" "val" 0.nut_iycf_preg}}}</td>
+              <td data-fieldname="nut_iycf_preg" class="siv-r-ind-val">Annual Reports</td>
+            </tr>
+            <tr>
+              <td class="siv-r-table-order">2</td>
+              <td class="siv-r-table-item">Assessment and analysis undertaken</td>
+              <td class="siv-r-table-space">&nbsp;</td>
+              <td class="siv-r-table-order">2.1</td>
+              <td class="siv-r-table-item"># of nutrition surveys conducted according to recommended guidelines (yes/no)</td>
+              <td data-fieldname="" class="siv-r-std-val"></td>
+              <td data-fieldname="" class="siv-r-ind-val">HIS</td>
+            </tr>
+            <tr class="siv-r-table-hl">
+              <td class="siv-r-table-order">3</td>
+              <td class="siv-r-table-item">Capacity development supported</td>
+              <td class="siv-r-table-space">&nbsp;</td>
+              <td class="siv-r-table-order">3.1</td>
+              <td class="siv-r-table-item">Number of persons trained on nutrition in collaboration with MoH or other external partners</td>
+              <td data-fieldname="nut_trainings" class="siv-r-std-val">{{{helperDisplayIndicator "nut_trainings" "val" 0.nut_trainings}}}</td>
+              <td data-fieldname="nut_trainings" class="siv-r-ind-val">Annual Reports</td>
+            </tr>
+            <tr>
+              <td class="siv-r-table-order">4</td>
+              <td class="siv-r-table-item">Community management of acute malnutrition programmes implemented and monitored</td>
+              <td class="siv-r-table-space">&nbsp;</td>
+              <td class="siv-r-table-order">4.1</td>
+              <td class="siv-r-table-item"># of new admissions to community management of acute malnutrition programmes</td>
+              <td data-fieldname="" class="siv-r-std-val"></td>
+              <td data-fieldname="" class="siv-r-ind-val">HIS</td>
+            </tr>
+            <tr class="siv-r-table-hl">
+              <td class="siv-r-table-order">5</td>
+              <td class="siv-r-table-item">Complementary food supplements provided and monitored</td>
+              <td class="siv-r-table-space">&nbsp;</td>
+              <td class="siv-r-table-order">5.1</td>
+              <td class="siv-r-table-item">Number of persons receiving complementary food supplements (MNP/LNS)</td>
+              <td data-fieldname="nut_percompfood" class="siv-r-std-val">{{{helperDisplayIndicator "nut_percompfood" "val" 0.nut_percompfood}}}</td>
+              <td data-fieldname="nut_percompfood" class="siv-r-ind-val">Annual Reports</td>
+            </tr>
+            <tr>
+              <td class="siv-r-table-order">6</td>
+              <td class="siv-r-table-item">Measures to control anaemia and other micronutrient deficiencies undertaken</td>
+              <td class="siv-r-table-space">&nbsp;</td>
+              <td class="siv-r-table-order">6.1</td>
+              <td class="siv-r-table-item">Written strategy to address anaemia and other micronutrient deficiencies established or maintained?</td>
+              <td data-fieldname="stratanaemicro" class="siv-r-std-val">{{! helperDisplayIndicator "stratanaemicro" "val" 0.stratanaemicro}}</td>
+              <td data-fieldname="stratanaemicro" class="siv-r-ind-val">Annual Reports</td>
+            </tr>
+            <tr class="siv-r-table-hl">
+              <td class="siv-r-table-order">7</td>
+              <td class="siv-r-table-item">Nutrition surveillance system implemented</td>
+              <td class="siv-r-table-space">&nbsp;</td>
+              <td class="siv-r-table-order">7.1</td>
+              <td class="siv-r-table-item">Functional nutritional surveillance system established or maintained?</td>
+              <td data-fieldname="nut_funcsurv" class="siv-r-std-val">{{{helperDisplayIndicator "nut_funcsurv" "val" 0.nut_funcsurv}}}</td>
+              <td data-fieldname="nut_funcsurv" class="siv-r-ind-val">Annual Reports</td>
+            </tr>
+            <tr>
+              <td rowspan="3" class="siv-r-table-order">8</td>
+              <td rowspan="3" class="siv-r-table-item">Supplementary feeding programme implemented and monitored</td>
+              <td rowspan="3" class="siv-r-table-space">&nbsp;</td>
+              <td class="siv-r-table-order">8.1</td>
+              <td class="siv-r-table-item"># of new admissions to supplementary feeding programmes</td>
+              <td data-fieldname="" class="siv-r-std-val"></td>
+              <td data-fieldname="" class="siv-r-ind-val">HIS</td>
+            </tr>
+            <tr>
+              <td class="siv-r-table-order">8.2</td>
+              <td class="siv-r-table-item">Persons with chronic illness targeted for supplementary feeding?</td>
+              <td data-fieldname="nut_sf_chronic" class="siv-r-std-val">{{{helperDisplayIndicator "nut_sf_chronic" "val" 0.nut_sf_chronic}}}</td>
+              <td data-fieldname="nut_sf_chronic" class="siv-r-ind-val">Annual Reports</td>
+            </tr>
+            <tr>
+              <td class="siv-r-table-order">8.3</td>
+              <td class="siv-r-table-item">Pregnant and lactating women targeted for supplementary feeding?</td>
+              <td data-fieldname="nut_sf_preg" class="siv-r-std-val">{{{helperDisplayIndicator "nut_sf_preg" "val" 0.nut_sf_preg}}}</td>
+              <td data-fieldname="nut_sf_preg" class="siv-r-ind-val">Annual Reports</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <!-- end of Nutritional well-being improved -->
+    <div class="siv-r-section">
+      <div class="siv-r-sect-head-ctn">
+        <h2 class="siv-r-table-txt">Food Security Improved</h2>
+      </div>
+      <div class="siv-r-table-can"></div>
+      <div class="clear gen_config_fs">
+        <div class="siv-r-table-head">
+          <div class="siv-r-table-col-name">
+            <h3 class="siv-r-table-name-txt">Impact indicators</h3>
+          </div>
+        </div>
+        <div class="siv-r-table-head-space">&nbsp;</div>
+        <div class="siv-r-table-head">
+          <div class="siv-r-table-col-name">
+            <h3 class="siv-r-table-name-txt">&nbsp;</h3>
+          </div>
+          <div class="siv-r-table-ind">
+            <h4 class="siv-r-std-txt">Indicator</h4>
+            <div class="siv-r-std-can"></div>
+          </div>
+          <div class="siv-r-table-ind">
+            <h4 class="siv-r-ind-txt">Source</h4>
+            <div class="siv-r-ind-can"></div>
+          </div>
+        </div>
+        <table class="siv-r-table clear">
+          <tbody>
+            <tr class="siv-r-table-hl">
+              <td class="siv-r-table-order">1</td>
+              <td class="siv-r-table-item">Proportion of female members in food distribution committees</td>
+              <td class="siv-r-table-space">&nbsp;</td>
+              <td class="siv-r-table-order"></td>
+              <td class="siv-r-table-item"></td>
+              <td data-fieldname="fs_femaledist" class="siv-r-std-val">{{{helperDisplayIndicator "fs_femaledist" "val" 0.fs_femaledist}}}</td>
+              <td data-fieldname="fs_femaledist" class="siv-r-ind-val">Annual Reports</td>
+            </tr>
+            <tr>
+              <td class="siv-r-table-order">2</td>
+              <td class="siv-r-table-item">Proportion of food assistance distributions in which the composition of the food basket meets the recommendations of the latest needs assessment including a JAM</td>
+              <td class="siv-r-table-space">&nbsp;</td>
+              <td class="siv-r-table-order"></td>
+              <td class="siv-r-table-item"></td>
+              <td data-fieldname="fs_fbcompmin" class="siv-r-std-val">{{{helperDisplayIndicator "fs_fbcompmin" "val" 0.fs_fbcompmin}}}</td>
+              <td data-fieldname="fs_fbcompmin" class="siv-r-ind-val">annual reports</td>
+            </tr>
+            <tr class="siv-r-table-hl">
+              <td class="siv-r-table-order">3</td>
+              <td class="siv-r-table-item">Proportion of households not consuming any vegetables, fruit, meat, eggs, fish/seafood and milk/milk products</td>
+              <td class="siv-r-table-space">&nbsp;</td>
+              <td class="siv-r-table-order"></td>
+              <td class="siv-r-table-item"></td>
+              <td data-fieldname="fs_vegfrmem" class="siv-r-std-val">{{{helperDisplayIndicator "fs_vegfrmem" "val" 0.fs_vegfrmem}}}</td>
+              <td data-fieldname="fs_vegfrmem" class="siv-r-ind-val">Annual Reports</td>
+            </tr>
+            <tr>
+              <td class="siv-r-table-order">4</td>
+              <td class="siv-r-table-item">Proportion of households using no harmful coping strategies</td>
+              <td class="siv-r-table-space">&nbsp;</td>
+              <td class="siv-r-table-order"></td>
+              <td class="siv-r-table-item"></td>
+              <td data-fieldname="fs_copstrats" class="siv-r-std-val">{{{helperDisplayIndicator "fs_copstrats" "val" 0.fs_copstrats}}}</td>
+              <td data-fieldname="fs_copstrats" class="siv-r-ind-val">Annual Reports</td>
+            </tr>
+            <tr>
+              <td colspan="2"><h3 class="siv-r-table-name-txt">Outputs</h3></td>
+              <td class="siv-r-table-space">&nbsp;</td>
+              <td colspan="3"><h3 class="siv-r-table-name-txt">Performance indicators</h3></td>
+            </tr>
+            <tr class="siv-r-table-hl">
+              <td rowspan="2" class="siv-r-table-order">1</td>
+              <td rowspan="2" class="siv-r-table-item">Adequacy of food assistance monitored</td>
+              <td rowspan="2" class="siv-r-table-space">&nbsp;</td>
+              <td class="siv-r-table-order">1.1</td>
+              <td class="siv-r-table-item">Food Basket Monitoring (FBM) conducted during the last year and written report done?</td>
+              <td data-fieldname="fs_fbm" class="siv-r-std-val">{{{helperDisplayIndicator "fs_fbm" "val" 0.fs_fbm}}}</td>
+              <td data-fieldname="fs_fbm" class="siv-r-ind-val">Food Aid Report</td>
+            </tr>
+            <tr class="siv-r-table-hl">
+              <td class="siv-r-table-order">1.2</td>
+              <td class="siv-r-table-item">Post Distribution Monitoring (PDM) conducted during the last year and written report done?</td>
+              <td data-fieldname="fs_pdm" class="siv-r-std-val">{{{helperDisplayIndicator "fs_pdm" "val" 0.fs_pdm}}}</td>
+              <td data-fieldname="fs_pdm" class="siv-r-ind-val">Food Aid Report</td>
+            </tr>
+            <tr>
+              <td rowspan="6" class="siv-r-table-order">2</td>
+              <td rowspan="6" class="siv-r-table-item">Adequate quantity and quality of food aid provided</td>
+              <td rowspan="6" class="siv-r-table-space">&nbsp;</td>
+              <td class="siv-r-table-order">2.1</td>
+              <td class="siv-r-table-item">Number of people receiving food aid (inkind)</td>
+              <td data-fieldname="fs_numfa" class="siv-r-std-val">{{{helperDisplayIndicator "fs_numfa" "val" 0.fs_numfa}}}</td>
+              <td data-fieldname="fs_numfa" class="siv-r-ind-val">Food Aid Report</td>
+            </tr>
+            <tr>
+              <td class="siv-r-table-order">2.2</td>
+              <td class="siv-r-table-item">Number of safe and inclusive food distributions</td>
+              <td data-fieldname="fs_numsafedist" class="siv-r-std-val">{{{helperDisplayIndicator "fs_numsafedist" "val" 0.fs_numsafedist}}}</td>
+              <td data-fieldname="fs_numsafedist" class="siv-r-ind-val">Annual Reports</td>
+            </tr>
+            <tr>
+              <td class="siv-r-table-order">2.3</td>
+              <td class="siv-r-table-item">Average number of kilocalories distributed per person per day</td>
+              <td data-fieldname="fs_minkcal" class="siv-r-std-val">{{{helperDisplayIndicator "fs_minkcal" "val" 0.fs_minkcal}}}</td>
+              <td data-fieldname="fs_minkcal" class="siv-r-ind-val">Food Aid Report</td>
+            </tr>
+            <tr>
+              <td class="siv-r-table-order">2.4</td>
+              <td class="siv-r-table-item">Is complementary food provided in addition to the GFR?</td>
+              <td data-fieldname="fs_complfood" class="siv-r-std-val">{{{helperDisplayIndicator "fs_complfood" "val" 0.fs_complfood}}}</td>
+              <td data-fieldname="fs_complfood" class="siv-r-ind-val">Food Aid Report</td>
+            </tr>
+            <tr>
+              <td class="siv-r-table-order">2.5</td>
+              <td class="siv-r-table-item">Does the composition of the theoretical food aid ration meet the recommendation from the most recent needs assessment, including JAM?</td>
+              <td data-fieldname="fs_gfr_rec" class="siv-r-std-val">{{{helperDisplayIndicator "fs_gfr_rec" "val" 0.fs_gfr_rec}}}</td>
+              <td data-fieldname="fs_gfr_rec" class="siv-r-ind-val">Food Aid Report</td>
+            </tr>
+            <tr>
+              <td class="siv-r-table-order">2.6</td>
+              <td class="siv-r-table-item">Pipeline breaks have taken place during the last year?</td>
+              <td data-fieldname="fs_pipelinebrk" class="siv-r-std-val">{{{helperDisplayIndicator "fs_pipelinebrk" "val" 0.fs_pipelinebrk}}}</td>
+              <td data-fieldname="fs_pipelinebrk" class="siv-r-ind-val">Food Aid Report</td>
+            </tr>
+            <tr class="siv-r-table-hl">
+              <td rowspan="3" class="siv-r-table-order">3</td>
+              <td rowspan="3" class="siv-r-table-item">Joint assessments, plans and strategies agreed with WFP to address malnutrition</td>
+              <td rowspan="3" class="siv-r-table-space">&nbsp;</td>
+              <td class="siv-r-table-order">3.1</td>
+              <td class="siv-r-table-item">JAM conducted according to recommended schedule?</td>
+              <td data-fieldname="nut_jamsched" class="siv-r-std-val">{{{helperDisplayIndicator "nut_jamsched" "val" 0.nut_jamsched}}}</td>
+              <td data-fieldname="nut_jamsched" class="siv-r-ind-val">Food Aid Report</td>
+            </tr>
+            <tr class="siv-r-table-hl">
+              <td class="siv-r-table-order">3.2</td>
+              <td class="siv-r-table-item">Regular food assistance coordination meetings held with WFP?</td>
+              <td data-fieldname="nut_regfawfp" class="siv-r-std-val">{{{helperDisplayIndicator "nut_regfawfp" "val" 0.nut_regfawfp}}}</td>
+              <td data-fieldname="nut_regfawfp" class="siv-r-ind-val">Annual Reports</td>
+            </tr>
+            <tr class="siv-r-table-hl">
+              <td class="siv-r-table-order">3.3</td>
+              <td class="siv-r-table-item">Tripartite agreement is signed between UNHCR, WFP and the distribution partner?</td>
+              <td data-fieldname="triagree" class="siv-r-std-val">{{! helperDisplayIndicator "triagree" "val" 0.triagree }}</td>
+              <td data-fieldname="triagree" class="siv-r-ind-val">Annual Reports</td>
+            </tr>
+            <tr>
+              <td rowspan="3" class="siv-r-table-order">4</td>
+              <td rowspan="3" class="siv-r-table-item">Sectoral cash grants or vouchers provided</td>
+              <td rowspan="3" class="siv-r-table-space">&nbsp;</td>
+              <td class="siv-r-table-order">4.1</td>
+              <td class="siv-r-table-item">Number of persons receiving cash grants</td>
+              <td data-fieldname="fs_numcash" class="siv-r-std-val">{{{helperDisplayIndicator "fs_numcash" "val" 0.fs_numcash}}}</td>
+              <td data-fieldname="fs_numcash" class="siv-r-ind-val">Annual Reports</td>
+            </tr>
+            <tr>
+              <td class="siv-r-table-order">4.2</td>
+              <td class="siv-r-table-item">Number of persons receiving vouchers</td>
+              <td data-fieldname="fs_numvouch" class="siv-r-std-val">{{{helperDisplayIndicator "fs_numvouch" "val" 0.fs_numvouch}}}</td>
+              <td data-fieldname="fs_numvouch" class="siv-r-ind-val">Annual Reports</td>
+            </tr>
+            <tr>
+              <td class="siv-r-table-order">4.3</td>
+              <td class="siv-r-table-item">Needs assessment done to set the size of the entitlement and written report available?</td>
+              <td data-fieldname="fs_needsassess" class="siv-r-std-val">{{{helperDisplayIndicator "fs_needsassess" "val" 0.fs_needsassess}}}</td>
+              <td data-fieldname="fs_needsassess" class="siv-r-ind-val">Annual Reports</td>
+            </tr>
+            <tr class="siv-r-table-hl">
+              <td class="siv-r-table-order">5</td>
+              <td class="siv-r-table-item">Strategy developed and implemented</td>
+              <td class="siv-r-table-space">&nbsp;</td>
+              <td class="siv-r-table-order">5.1</td>
+              <td class="siv-r-table-item">Written food security strategy developed?</td>
+              <td data-fieldname="fs_stratdev" class="siv-r-std-val">{{{helperDisplayIndicator "fs_stratdev" "val" 0.fs_stratdev}}}</td>
+              <td data-fieldname="fs_stratdev" class="siv-r-ind-val">Annual Reports</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <!-- end of Nutritional well-being improved -->
+    <div class="siv-r-legend-wrap">
+      <div class="siv-r-legend-ctn">
+        <table class="siv-r-interactive-ctn">
+          <tbody>
+            <tr>
+              <td rowspan="2" class="siv-r-interactive-32"><img class="siv-r-interactive-32" src={{{local_asset "images/logos/siv-logo-black.png"}}}/></td>
+              <td class="siv-r-interactive-title siv-r-interactive-space">View interactive maps and statistics online</td>
+            </tr>
+            <tr>
+              <td class="siv-r-table-item siv-r-interactive-row"><a href="http://twine.unhcr.org" class="siv-r-interactive-link">http://twine.unhcr.org</a></td>
+            </tr>
+          </tbody>
+        </table>        
+        <img class="siv-r-contact-logo" src={{{local_asset "images/reports/phhiv/unhcr-logo.png"}}}>
+        <div class="clear"></div>
+      </div>
+      <div class="siv-r-qrcode" id="qrcode"> </div>
+      <div class="clear"> </div>
+    </div>
+  </div>
+</div>

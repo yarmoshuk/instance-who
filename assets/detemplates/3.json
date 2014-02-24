@@ -1,0 +1,50 @@
+{
+	"css":"formattedreports.css",
+	"defaulttimelevel":"all",
+	"mapLayers":{
+		"globalPolitical":true,
+		"globalMajorCities":true,
+		"gl3":true,
+		"gl5":true
+	},
+	"overwriteSvgMaps":false,
+	"partners":true,
+	"popindexid":"de_cp.gen_pop_total",
+	"dataset":[
+		{
+			"options":5,
+		    "requestID":"main",
+			"setuuid":"efe0e2f1-38a4-4d67-b8a4-244322027b90",
+			"trendCharts":false
+			
+		},{
+			"options":3,
+			"requestID":"locationdetails",
+			"setuuid":"453f2845-61f4-4d26-8202-1dd95773400d",
+			"trendCharts":false
+			
+		},{
+			"options":4,
+			"requestID":"mortdata",
+			"requestType":"top-n",
+			"topn1":10,
+			"topn2":5,
+			"setuuid":"c5a8a337-5db1-4c04-b7f7-06b16cdcd8bd",
+			"useRawNumbers":true
+		},{
+			"options":4,
+			"requestID":"morbdata",
+			"requestType":"top-n",
+			"topn1":10,
+			"topn2":5,
+			"setuuid":"74635c09-3235-4a95-8111-468f698ed073",
+			"useRawNumbers":true
+		},{
+			"calculateOtherCategory":true,
+			"dataSubSet":["gen_pop_total", "gen_pop_u5", "gen_pop_wra", "gen_pop_o60"],
+			"options":3,
+			"requestID":"popdata",
+			"superSetID":"main"
+		}
+	]
+}

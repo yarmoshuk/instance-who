@@ -1,0 +1,206 @@
+<div class="siv-r-non-cty">
+  <div class="siv-r-page-break siv-r-foot-page">
+   <div class="siv-r-page-header">
+    <div class="siv-r-title-ctn"> <img class="siv-r-report-type" src={{{local_asset "icons/documents/round/reports-svg/10.svg"}}} />
+      <p class="siv-r-title-txt">PHHIV Country Fact Sheet </p>
+      <p class="siv-r-year-txt" data-fieldname="year">{{{dateinfo "year"}}}</p>
+    </div>
+    <div class="siv-r-loc-can"></div>
+    <div class="siv-r-loc-ctn">
+      <div class="siv-r-flag-ctn">{{{helperFlagSVG "iso" "locationdetails" "icons/flags/round/flags-svg/" "siv-r-flag-img"}}}</div>
+      <p class="siv-r-loc-txt" data-fieldname="location_name">{{{embedded_value "locationdetails" "location_name"}}}</p>
+      <p class="siv-r-loc-cty"></p>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <div class="siv-r-container siv-r-gen clear">
+    <div class="siv-r-gen-head-ctn">
+      <h2 class="siv-r-gen-head-txt">General Information</h2>
+    </div>
+    <div class="siv-r-gen-graph-ctn">
+      <div class="siv-r-gen-graph-img">{{{poppie "popdata" "siv-r-gen-graph-img" }}}</div>
+    </div>
+    <div class="siv-r-gen-pop-ctn">
+      <p class="siv-r-gen-txt">Total population of concern:</p>
+      <p class="siv-r-gen-txt siv-r-gen-pop">{{{display_raw_value AR_GEN_POP_TOTAL}}}</p>
+    </div>
+  </div>
+  <div class="siv-r-gen-head-can"></div>
+  <div class="siv-r-country-map-ctn "> {{{image  "map" "locationdetails" "siv-r-country-map-img"}}} </div>
+  <div class="siv-r-container siv-r-key-ctn">
+    <h2 class="siv-r-key-title">Sources of data</h2>
+    <p  class="siv-r-key-desc">This <span>{{{embedded_value "locationdetails" "location_name"}}}</span> Annual report is based on data collected using a local country-based HIS and from standardised Nutrition surveys. It does not reflect the situation from areas outside refugee camps where no health services are offered or where UNHCR does not support health services.</p>
+  </div>
+  <br />
+  <div class="clear"></div>
+  <div class="siv-r-container siv-r-summary-ctn clear">
+    <div class="siv-r-para-img-ctn"><img class="siv-r-ico-summary" src={{{local_asset "images/reports/phhiv/ico-report.png"}}} /></div>
+    <h2 class="siv-r-para-title"><span>{{{embedded_value "locationdetails" "location_name"}}}</span> Objectives</h2>
+    <p class="siv-r-obj-txt clear">{{{display_raw_value AR_TEXT_OBJ}}}</p>
+  </div>
+  <div class="siv-r-chart-wrap">
+    <div class="siv-r-container siv-r-chart-ctn">
+      <div class="siv-r-para-img-ctn"><img class="siv-r-ico-conclusion" src={{{local_asset "images/reports/phhiv/ico-report.png"}}} /></div>
+      <h2 class="siv-r-obs-title">Achievements</h2>
+      <p class="siv-r-obj-txt clear">{{{display_raw_value AR_TEXT_PROG}}}</p>
+    </div>
+    <div class="siv-r-container siv-r-chart-ctn">
+      <div class="siv-r-para-img-ctn"><img class="siv-r-ico-recommend" src={{{local_asset "images/reports/phhiv/ico-report.png"}}} /></div>
+      <h2 class="siv-r-obs-title">Recommendations</h2>
+      <p class="siv-r-obj-txt clear">{{{display_raw_value AR_TEXT_GAP}}}</p>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <div>
+    <div class="siv-r-table-wrap clear">
+      <div class="siv-r-container">
+        <div class="siv-r-single-head-ctn">
+          <h2 class="siv-r-table-txt">National Advocacy</h2>
+        </div>
+        <div class="siv-r-single-table-can"></div>
+        <div class="siv-r-single-table-can-border"></div>
+        <div class="siv-r-sect-head-ctn-mod">
+          <h2 class="siv-r-table-txt-mod">Coordination</h2>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="siv-r-table-head">
+        <div class="siv-r-table-col-name">
+          <h3 class="siv-r-table-name-txt">&nbsp;</h3>
+        </div>
+        <div class="siv-r-table-ind">
+          <h4 class="siv-r-ind-txt">Indicator</h4>
+          <div class="siv-r-ind-can"></div>
+        </div>
+        <div class="siv-r-table-ind">
+          <h4 class="siv-r-std-txt">Standard</h4>
+          <div class="siv-r-std-can"></div>
+        </div>
+      </div>
+      <div class="siv-r-table-head-space">&nbsp;</div>
+      <div class="siv-r-table-head">
+        <div class="siv-r-table-col-name">
+          <h3 class="siv-r-table-name-txt">&nbsp;</h3>
+        </div>
+        <div class="siv-r-table-ind">
+          <h4 class="siv-r-ind-txt">Indicator</h4>
+          <div class="siv-r-ind-can"></div>
+        </div>
+        <div class="siv-r-table-ind">
+          <h4 class="siv-r-std-txt">Standard</h4>
+          <div class="siv-r-std-can"></div>
+        </div>
+      </div>
+      <table class="siv-r-table clear">
+        <tr>
+          <td class="siv-r-table-item siv-r-table-hl">Are PoCs* included in the national malaria strategic plan?</td>
+          <td class="siv-r-ind-val siv-r-table-hl">{{{display_raw_value AR_PH_ACCESS_MALSTRATPLAN}}}</td>
+          <td class="siv-r-std-val siv-r-table-hl">{{{standard AR_PH_ACCESS_MALSTRATPLAN}}}</td>
+          <td class="siv-r-table-score siv-r-table-hl">{{{standard_result AR_PH_ACCESS_MALSTRATPLAN}}}</td>
+          <td class="siv-r-table-space">&nbsp;</td>
+          <td class="siv-r-table-item siv-r-table-hl">Was a Joint Plan of Action (JPA) operational with WFP?</td>
+          <td class="siv-r-ind-val siv-r-table-hl">{{{display_raw_value AR_NUT_GEN_WFPJPA}}}</td>
+          <td class="siv-r-std-val siv-r-table-hl">{{{standard AR_NUT_GEN_WFPJPA}}}</td>
+          <td class="siv-r-table-score siv-r-table-hl">{{{standard_result AR_NUT_GEN_WFPJPA}}}</td>
+        </tr>
+        <tr>
+          <td class="siv-r-table-item">Are PoCs included in the national TB** strategic plan?</td>
+          <td class="siv-r-ind-val">{{{display_raw_value AR_PH_TB_STRATPLAN}}}</td>
+          <td class="siv-r-std-val">{{{standard AR_PH_TB_STRATPLAN}}}</td>
+          <td class="siv-r-table-score">{{{standard_result AR_PH_TB_STRATPLAN}}}</td>
+          <td class="siv-r-table-space">&nbsp;</td>
+          <td class="siv-r-empty-cell"></td>
+          <td class="siv-r-empty-cell"></td>
+          <td class="siv-r-empty-cell"></td>
+          <td class="siv-r-empty-cell"></td>
+        </tr>
+        <tr>
+          <td class="siv-r-table-item siv-r-table-hl">Do PoCs have equal access to MDR-TB*** treatment as nationals?</td>
+          <td class="siv-r-ind-val siv-r-table-hl">{{{display_raw_value AR_PH_TB_EQACCESS}}}</td>
+          <td class="siv-r-std-val siv-r-table-hl">{{{standard AR_PH_TB_EQACCESS}}}</td>
+          <td id="siv-r-AR_PH_TB_EQACCESS-r" class="siv-r-table-score siv-r-table-hl">{{{standard_result AR_PH_TB_EQACCESS}}}</td>
+          <td class="siv-r-table-space">&nbsp;</td>
+          <td class="siv-r-empty-cell"></td>
+          <td class="siv-r-empty-cell"></td>
+          <td class="siv-r-empty-cell"></td>
+          <td class="siv-r-empty-cell"></td>
+        </tr>
+        <tr>
+          <td class="siv-r-table-item">Are PoCs included in national HIV strategic plans? </td>
+          <td class="siv-r-ind-val">{{{display_raw_value AR_HIV_ACCESS_HIVSTRATPLAN}}}</td>
+          <td class="siv-r-std-val">{{{standard AR_HIV_ACCESS_HIVSTRATPLAN}}}</td>
+          <td class="siv-r-table-score">{{{standard_result AR_HIV_ACCESS_HIVSTRATPLAN}}}</td>
+          <td class="siv-r-table-space">&nbsp;</td>
+          <td class="siv-r-empty-cell"></td>
+          <td class="siv-r-empty-cell"></td>
+          <td class="siv-r-empty-cell"></td>
+          <td class="siv-r-empty-cell"></td>
+        </tr>
+        <tr>
+          <td class="siv-r-table-item siv-r-table-hl">Are PoCs included in national HIV sentinel surveillance?</td>
+          <td class="siv-r-ind-val siv-r-table-hl">{{{display_raw_value AR_HIV_ACCESS_SENTSURV}}}</td>
+          <td class="siv-r-std-val siv-r-table-hl">{{{standard AR_HIV_ACCESS_SENTSURV}}}</td>
+          <td class="siv-r-table-score siv-r-table-hl">{{{standard_result AR_HIV_ACCESS_SENTSURV}}}</td>
+          <td class="siv-r-table-space">&nbsp;</td>
+          <td class="siv-r-empty-cell"></td>
+          <td class="siv-r-empty-cell"></td>
+          <td class="siv-r-empty-cell"></td>
+          <td class="siv-r-empty-cell"></td>
+        </tr>
+      </table>
+      <!-- end of Nutrition and Food Security -->
+      <p class="clear siv-r-source">* Persons of concern ** Tuberculosis *** Multi-drug resistant tuberculosis </p>
+    </div>
+  </div>
+    <!-- End of Reporductive Health -->
+    <div class="siv-r-legend-wrap">
+      <div class="siv-r-legend-ctn">
+        <table class="siv-r-interactive-ctn">
+          <tr>
+            <td rowspan="2" class="siv-r-interactive-32"><img class="siv-r-interactive-32" src={{{local_asset "images/reports/phhiv/ico-earth.png"}}} /></td>
+            <td class="siv-r-interactive-title">Read <span>{{{embedded_value "locationdetails" "location_name"}}}</span> Operations Profile:</td>
+          </tr>
+          <tr>
+            <td class="siv-r-table-item siv-r-interactive-row"><a class="siv-r-interactive-link">{{{embedded_value "locationdetails" "LOC_COUNTRY_PROFILE_URL"}}}</a></td>
+          </tr>
+          <tr>
+            <td rowspan="2" class="siv-r-interactive-32"><img class="siv-r-interactive-32" src={{{local_asset "images/reports/phhiv/ico-pie.png"}}} /></td>
+            <td class="siv-r-interactive-title siv-r-interactive-space">View interactive maps and statistics online</td>
+          </tr>
+          <tr>
+            <td class="siv-r-table-item siv-r-interactive-row"><a href="#" class="siv-r-interactive-link">http://his.unhcr.org/his</a></td>
+			<!-- add country name with <span id="siv-r-LOC_COUNTRYNAME"></span>  -->
+          </tr>
+        </table>
+	  <table class="siv-r-legend">
+        <tbody>
+		<tr>
+          <td colspan="6"><h3 class="siv-r-legend-header">Legend</h3></td>
+        </tr>
+        <tr>
+          <td class="siv-r-score siv-r-score-green">2</td>
+          <td class="siv-r-table-indicator "><span>Standard met</span></td>
+          <td class="siv-r-score siv-r-score-yellow">!</td>
+          <td class="siv-r-table-indicator "><span>Standard borderline</span></td>
+          <td class="siv-r-score siv-r-score-red">D</td>
+          <td class="siv-r-table-indicator "><span>Standard not met</span></td>
+        </tr>
+        <tr>
+          <td class="siv-r-score siv-r-score-purple">^</td>
+          <td class="siv-r-table-indicator "><span>Interpret data with care</span></td>
+          <td class="siv-r-score siv-r-score-blue">?</td>
+          <td class="siv-r-table-indicator "><span>Data missing</span></td>
+		  <td></td>
+		  <td></td>
+        </tr>
+      </tbody>
+	  </table>
+      <img class="siv-r-contact-logo" src={{{local_asset "images/reports/phhiv/unhcr-logo.png"}}} />
+      <div class="clear"> </div>
+    </div>
+    <img class="siv-r-qrcode" src="{{{qr_code}}}"/>
+    <div class="clear"> </div>
+    </div>
+  </div>
+</div>
+</div>

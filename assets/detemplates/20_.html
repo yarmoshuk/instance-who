@@ -1,0 +1,1093 @@
+<div class="siv-r-food-aid">
+  <div class="siv-r-page-break">
+    <div class="siv-r-page-header">
+      <div class="siv-r-title-ctn"><img class="siv-r-report-type" src=<%- asset("icons/de_templates/round/20.svg") %> />
+        <p class="siv-r-title-txt">Food Aid</p>
+        <p class="siv-r-year-txt"><span data-fieldname="quarter"><%= data.quarter %></span> <span data-fieldname="year"><%= data.year %></span></p>
+      </div>
+      <div class="siv-r-loc-can"></div>
+      <div class="siv-r-loc-ctn">
+        <div class="siv-r-flag-ctn"><img class="siv-r-flag-img" data-fieldname="locid" src="<%- asset("/icons/flags/round/flags-svg/") %><%= data.locid.slice(3, 5) %>.svg" /></div>
+        <p class="siv-r-loc-txt" data-fieldname="COUNTRY"><%= data.country %></p>
+        <p class="siv-r-loc-cty" data-fieldname="LOCATION"><%= data.location %></p> 
+      </div>
+      <div class="clear"></div>
+    </div>
+    <!-- end of page header --> 
+  <div class="siv-r-country-map-ctn clear"></div>
+  <div class="siv-r-container siv-r-key-ctn">
+    <h2 class="siv-r-key-title">Key Dates</h2>
+    <p class="siv-r-key-desc">The following were key dates in the <span data-fieldname="year"><%= data.year %></span> PHHIV calendar.</p>
+    <table class="siv-r-key-list-ctn">
+      <tbody>
+        <tr>
+          <td class="siv-r-key-list-item">Last JAM</td>
+        </tr>
+        <tr class="siv-r-key-list-border">
+          <td class="siv-r-key-list-value"><span data-fieldname="jamlmonth"><%= data.jamlmonth %></span>, <span data-fieldname="jamlyear"><%= data.jamlyear %></span></td>
+        </tr>
+        <tr>
+          <td class="siv-r-key-list-item">Next JAM</td>
+        </tr>
+        <tr>
+          <td class="siv-r-key-list-value"><span data-fieldname="jamnmonth"><%= data.jamnmonth %></span>, <span data-fieldname="jamnmonth"><%= data.jamnyear %></span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <% if(data.ig_foodaid_general) { %>
+  <div class="clear">&nbsp;</div>
+  <div class="siv-r-sect-head-ctn">
+    <h2 class="siv-r-table-txt">General Dry Food Distribution</h2>
+  </div>
+  <div class="siv-r-table-can"></div>
+    <div class="siv-r-container siv-r-summary-ctn clear">
+    <div class="siv-r-obj-ctn clear">
+      <table class="siv-r-graph-ctn" style="width:49%; margin-right:5px; margin-top:0px;">
+        <tbody>
+          <tr>
+            <td class=" siv-r-score-black" colspan="2"><h4 class="siv-r-table-title">Funding Source</h4></td>
+          </tr>
+          <tr>
+            <td class="siv-r-container siv-r-indicator-name">Provider of food items</td>
+            <td class="siv-r-container siv-r-table-item-no" data-fieldname="gfd_provider"><%= data.gfd_provider %></td> 
+          </tr>
+        </tbody>
+      </table>
+      <table class="siv-r-graph-ctn" style="width:49%; margin-top:0px;">
+        <tbody>
+          <tr>
+            <td class="siv-r-score-black" colspan="2"><h4 class="siv-r-table-title">Actual Ration</h4></td>
+          </tr>
+          <tr>
+            <td class="siv-r-container siv-r-indicator-name">Number of beneficiaries</td>
+            <td class="siv-r-container siv-r-table-item-no" data-fieldname="gfd_benif"><%= data.gfd_benif %></td> 
+          </tr>
+        </tbody>
+      </table>
+      <div class="clear">&nbsp;</div>
+      <div class="clear">
+        <div class="siv-r-para-head">
+          <div class="siv-r-container">
+            <div class="siv-r-single-head-ctn">
+              <h2 class="siv-r-table-txt">Planned Ration</h2>
+            </div>
+            <div class="siv-r-single-table-can"></div>
+            <div class="siv-r-single-table-can-border"></div>
+            <div class="siv-r-sect-head-ctn-mod">
+              <h2 class="siv-r-table-txt-mod">Pipeline Break or Ration Reduction</h2>
+            </div>
+            <div class="clear"></div>
+          </div>
+          <div class="siv-r-table-phn-head">
+            <div class="siv-r-table-phn-name">
+              <h3 class="siv-r-table-phn-txt">Food Item</h3>
+            </div>
+            <div class="siv-r-table-phn-multihead">
+              <div class="siv-r-cmam-ind">
+                <h4 class="siv-r-mam-txt">g / Person / Day</h4>
+                <div class="siv-r-mam-can"></div>
+              </div>
+              <div class="siv-r-table-ind">
+                <h4 class="siv-r-std-txt">Food Group</h4>
+                <div class="siv-r-std-can"></div>
+              </div>
+            </div>
+          </div>
+          <div class="siv-r-table-head-space">&nbsp;</div>
+          <div class="siv-r-table-phn-multihead">
+            <div class="siv-r-eme-ind">
+              <h4 class="siv-r-eme-txt">Was food item affected in last 3 months</h4>
+            </div>
+            <div class="siv-r-table-sam">
+              <h4 class="siv-r-std-txt">Months</h4>
+              <div class="siv-r-std-can"></div>
+            </div>
+          </div>
+          <div class="siv-r-table-head-space">&nbsp;</div>
+          <div class="siv-r-table-phn-multihead">
+            <div class="siv-r-eme-ind">
+              <h4 class="siv-r-eme-txt">Is food item expected to be affected in next 3 - 6 months</h4>
+            </div>
+            <div class="siv-r-table-sam">
+              <h4 class="siv-r-std-txt">Months</h4>
+              <div class="siv-r-std-can"></div>
+            </div>
+          </div>
+          <table class="siv-r-table siv-r-sam-table clear">
+            <tbody>
+              <% _.each(data.ig_foodaid_general, function( ig_foodaid_general){ %>
+              <tr class="siv-r-table-hl">
+                <td class="siv-r-table-phn-item" data-fieldname="ig_foodaid_general.gfd_foodgrp"><%= ig_foodaid_general.gfd_foodgrp %></td> 
+                <td class="siv-r-emel-v" data-fieldname="ig_foodaid_general.gfd_fooditm"><%= ig_foodaid_general.gfd_fooditm %></td> 
+                <td class="siv-r-sam-v" data-fieldname="ig_foodaid_general.gfd_gpd"><%= ig_foodaid_general.gfd_gpd %></td> 
+                <td class="siv-r-phn-table-space">&nbsp;</td>
+                <td class="siv-r-eme-v" data-fieldname="ig_foodaid_general.gfd_last3mnth"><%= ig_foodaid_general.gfd_last3mnth %></td> 
+                <td class="siv-r-emel-v" data-fieldname="ig_foodaid_general.gfd_3yes"><%= ig_foodaid_general.gfd_3yes %></td> 
+                <td class="siv-r-phn-table-space">&nbsp;</td>
+                <td class="siv-r-eme-v" data-fieldname="ig_foodaid_general.gfd_36mnth"><%= ig_foodaid_general.gfd_36mnth %></td> 
+                <td class="siv-r-emel-v" data-fieldname="ig_foodaid_general.gfd_36yes"><%= ig_foodaid_general.gfd_36yes %></td> 
+              </tr>
+              <% }); %>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <!-- end of Planned ration -->
+      <table class="siv-r-graph-ctn" style="width:49%; margin-right:5px">
+        <tbody>
+          <tr>
+            <td class=" siv-r-score-black" colspan="2"><h4 class="siv-r-table-title">Planned Ration</h4></td>
+          </tr>
+          <tr>
+            <td class="siv-r-container siv-r-indicator-name">Total Planned Kcal per person per day</td>
+            <td class="siv-r-container siv-r-table-item-no" data-fieldname="gfd_tkcal"><%= data.gfd_tkcal %></td> 
+          </tr>
+        </tbody>
+      </table>
+      <table class="siv-r-graph-ctn" style="width:49%;">
+        <tbody>
+          <tr>
+            <td class="siv-r-score-black" colspan="2"><h4 class="siv-r-table-title">Actual Ration</h4></td>
+          </tr>
+          <tr>
+            <td class="siv-r-container siv-r-indicator-name">Average Kcal per person per day during the last 3 months</td>
+            <td class="siv-r-container siv-r-table-item-no" data-fieldname="gfd_avgkcal"><%= data.gfd_avgkcal %></td> 
+          </tr>
+        </tbody>
+      </table>
+      <div class="clear">&nbsp;</div>
+      <div class="clear">
+        <div class="siv-r-container siv-r-summary-ctn">
+          <div class="siv-r-para-head clear">
+            <div class="siv-r-para-img-ctn"><img class="siv-r-ico-summary" src=<%- asset("images/reports/phhiv/ico-report.png") %> /> </div>
+            <h2 class="siv-r-para-title">Past pipeline breaks</h2>
+          </div>
+          <div class="siv-r-obj-ctn clear">
+            <div class="siv-r-obj-title-ctn">
+              <p class="siv-r-obj-title-name">What was the main reason for the break(s) in the food item(s) listed above?</p>
+            </div>
+            <div class="siv-r-obj-txt" data-fieldname="gfd_pastpbrsn"></div>
+          </div>
+          <div class="siv-r-obj-ctn clear">
+            <div class="siv-r-obj-title-ctn">
+              <p class="siv-r-obj-title-name">What response was put into place?</p>
+            </div>
+            <div class="siv-r-obj-txt" data-fieldname="gfd_pastpbresp"></div>
+          </div>
+          <div class="siv-r-obj-ctn clear">
+            <div class="siv-r-obj-title-ctn">
+              <p class="siv-r-obj-title-name">Additional comments</p>
+            </div>
+            <div class="siv-r-obj-txt" data-fieldname="gfd_pastpbac"></div>
+          </div>
+        </div>
+      </div>
+      <div class="clear">
+        <div class="siv-r-container siv-r-summary-ctn">
+          <div class="siv-r-para-head clear">
+            <div class="siv-r-para-img-ctn"><img class="siv-r-ico-summary" src=<%- asset("images/reports/phhiv/ico-report.png") %> /></div>
+            <h2 class="siv-r-para-title">Expected pipeline breaks</h2>
+          </div>
+          <div class="siv-r-obj-ctn clear">
+            <div class="siv-r-obj-title-ctn">
+              <p class="siv-r-obj-title-name">What was the main reason for the break(s) in the food item(s) listed above?</p>
+            </div>
+            <div class="siv-r-obj-txt" data-fieldname="gfd_exppbrsn"></div>
+          </div>
+          <div class="siv-r-obj-ctn clear">
+            <div class="siv-r-obj-title-ctn">
+              <p class="siv-r-obj-title-name">What preparedness measures have been put in place?</p>
+            </div>
+            <div class="siv-r-obj-txt" data-fieldname="gfd_exppbresp"></div>
+          </div>
+          <div class="siv-r-obj-ctn clear">
+            <div class="siv-r-obj-title-ctn">
+              <p class="siv-r-obj-title-name">Additional comments</p>
+            </div>
+            <div class="siv-r-obj-txt" data-fieldname="gfd_exppbac"></div>
+          </div>
+        </div>
+      </div>
+      <table class="siv-r-graph-ctn" style="width:49%; margin-right:5px">
+        <tbody>
+          <tr>
+            <td class=" siv-r-score-black" colspan="2"><h4 class="siv-r-table-title">Food Basket Monitoring</h4></td>
+          </tr>
+          <tr>
+            <td class="siv-r-container siv-r-indicator-name">Was FBM conducted during the last 3 months?</td>
+            <td class="siv-r-container siv-r-table-item-no" data-fieldname="gfd_fbm3mnth"><%= data.gfd_fbm3mnth %></td> 
+          </tr>
+          <% if(data.gfd_fbmrep) { %>
+          <tr>
+            <td class="siv-r-container siv-r-indicator-name">Are FBM reports available?</td>
+            <td class="siv-r-container siv-r-table-item-no" data-fieldname="gfd_fbmrep"><%= data.gfd_fbmrep %></td> 
+          </tr>
+          <% } %>
+          <tr>
+            <td class="siv-r-container siv-r-indicator-name">Is FBM planned in the future?</td>
+            <td class="siv-r-container siv-r-table-item-no" data-fieldname="gfd_fbmplan"><%= data.gfd_fbmplan %></td> 
+          </tr>
+          <% if(data.gfd_fbmmonth) { %>
+          <tr>
+            <td class="siv-r-container siv-r-indicator-name">Date of next planned FBM <span>(month/year)</span></td>
+            <td class="siv-r-container siv-r-table-item-no"><span data-fieldname="gfd_fbmmonth"><%= data.gfd_fbmmonth %></span>, <span data-fieldname="gfd_fbmyear"><%= data.gfd_fbmyear %></span></td>
+          </tr>
+          <% } %>
+        </tbody>
+      </table>
+      <table class="siv-r-graph-ctn" style="width:49%;">
+        <tbody>
+          <tr>
+            <td class="siv-r-score-black" colspan="2"><h4 class="siv-r-table-title">Post Distribution Monitoring</h4></td>
+          </tr>
+          <tr>
+            <td class="siv-r-container siv-r-indicator-name">Was PDM conducted during the last 3 months?</td>
+            <td class="siv-r-container siv-r-table-item-no" data-fieldname="gfd_pdm3mnth"><%= data.gfd_pdm3mnth %></td> 
+          </tr>
+          <% if(data.gfd_pdmrep) { %>
+          <tr>
+            <td class="siv-r-container siv-r-indicator-name">Are reports available?</td>
+            <td class="siv-r-container siv-r-table-item-no" data-fieldname="gfd_pdmrep"><%= data.gfd_pdmrep %></td>
+          </tr>
+          <% } %>
+          <tr>
+            <td class="siv-r-container siv-r-indicator-name">Is PDM planned in future?</td>
+            <td class="siv-r-container siv-r-table-item-no" data-fieldname="gfd_pdmfut"><%= data.gfd_pdmfut %></td> 
+          </tr>
+          <% if(data.gfd_pdmmonth) { %>
+          <tr>
+            <td class="siv-r-container siv-r-indicator-name">Date of next planned PDM <span>(month/year)</span></td>
+            <td class="siv-r-container siv-r-table-item-no"><span data-fieldname="gfd_pdmmonth"><%= data.gfd_pdmmonth %></span>, <span data-fieldname="cfd_pdmyear"><%= data.gfd_pdmyear %></span></td>
+          </tr>
+          <% } %>
+        </tbody>
+      </table>
+      <div class="clear"></div>
+    </div>
+  </div>
+<!-- end of general dry food distribution -->
+<% } %>
+<% if(data.ig_foodaid_complementary) { %>
+<div class="clear">&nbsp;</div>
+<div class="siv-r-sect-head-ctn">
+  <h2 class="siv-r-table-txt">Complementary (non-fresh) Food Distribution</h2>
+</div>
+<div class="siv-r-table-can"></div>
+  <div class="siv-r-container siv-r-summary-ctn clear">
+  <div class="siv-r-obj-ctn clear">
+    <table class="siv-r-graph-ctn" style="width:49%; margin-right:5px; margin-top:0px;">
+      <tbody>
+        <tr>
+          <td class=" siv-r-score-black" colspan="2"><h4 class="siv-r-table-title">Funding Source</h4></td>
+        </tr>
+        <tr>
+          <td class="siv-r-container siv-r-indicator-name">Provider of food items</td>
+          <td class="siv-r-container siv-r-table-item-no" data-fieldname="cfd_provider"><%= data.cfd_provider %></td> 
+        </tr>
+      </tbody>
+    </table>
+    <table class="siv-r-graph-ctn" style="width:49%; margin-top:0px;">
+      <tbody>
+        <tr>
+          <td class="siv-r-score-black" colspan="2"><h4 class="siv-r-table-title">Actual Ration</h4></td>
+        </tr>
+        <tr>
+          <td class="siv-r-container siv-r-indicator-name">Number of beneficiaries</td>
+          <td class="siv-r-container siv-r-table-item-no" data-fieldname="cfd_benif"><%= data.cfd_benif %></td> 
+        </tr>
+      </tbody>
+    </table>
+    <div class="clear">&nbsp;</div>
+    <div class="clear">
+      <div class="siv-r-para-head">
+        <div class="siv-r-container">
+          <div class="siv-r-single-head-ctn">
+            <h2 class="siv-r-table-txt">Planned Ration</h2>
+          </div>
+          <div class="siv-r-single-table-can"></div>
+          <div class="siv-r-single-table-can-border"></div>
+          <div class="siv-r-sect-head-ctn-mod">
+            <h2 class="siv-r-table-txt-mod">Pipeline Break or Ration Reduction</h2>
+          </div>
+          <div class="clear"></div>
+        </div>
+        <div class="siv-r-table-phn-head">
+          <div class="siv-r-table-phn-name">
+            <h3 class="siv-r-table-phn-txt">Food Item</h3>
+          </div>
+          <div class="siv-r-table-phn-multihead">
+            <div class="siv-r-cmam-ind">
+              <h4 class="siv-r-mam-txt">g / Person / Day</h4>
+              <div class="siv-r-mam-can"></div>
+            </div>
+            <div class="siv-r-table-ind">
+              <h4 class="siv-r-std-txt">Food Group</h4>
+              <div class="siv-r-std-can"></div>
+            </div>
+          </div>
+        </div>
+        <div class="siv-r-table-head-space">&nbsp;</div>
+        <div class="siv-r-table-phn-multihead">
+          <div class="siv-r-eme-ind">
+            <h4 class="siv-r-eme-txt">Was food item affected in last 3 months</h4>
+          </div>
+          <div class="siv-r-table-sam">
+            <h4 class="siv-r-std-txt">Months</h4>
+            <div class="siv-r-std-can"></div>
+          </div>
+        </div>
+        <div class="siv-r-table-head-space">&nbsp;</div>
+        <div class="siv-r-table-phn-multihead">
+          <div class="siv-r-eme-ind">
+            <h4 class="siv-r-eme-txt">Is food item expected to be affected in next 3 - 6 months</h4>
+          </div>
+          <div class="siv-r-table-sam">
+            <h4 class="siv-r-std-txt">Months</h4>
+            <div class="siv-r-std-can"></div>
+          </div>
+        </div>
+        <table class="siv-r-table siv-r-sam-table clear">
+          <tbody>
+            <% _.each(data.ig_foodaid_complementary, function(ig_foodaid_complementary) { %>
+            <tr class="siv-r-table-hl">
+              <td class="siv-r-table-phn-item" data-fieldname="ig_foodaid_complementary.cfd_foodgrp"><%= ig_foodaid_complementary.cfd_foodgrp %></td> 
+              <td class="siv-r-emel-v" data-fieldname="ig_foodaid_complementary.cfd_fooditm"><%= ig_foodaid_complementary.cfd_fooditm %></td> 
+              <td class="siv-r-sam-v" data-fieldname="ig_foodaid_complementary.cfd_gpd"><%= ig_foodaid_complementary.cfd_gpd %></td> 
+              <td class="siv-r-phn-table-space">&nbsp;</td>
+              <td class="siv-r-eme-v" data-fieldname="ig_foodaid_complementary.cfd_last3mnth"><%= ig_foodaid_complementary.cfd_last3mnth %></td> 
+              <td class="siv-r-emel-v" data-fieldname="ig_foodaid_complementary.cfd_3yes"><%= ig_foodaid_complementary.cfd_3yes %></td> 
+              <td class="siv-r-phn-table-space">&nbsp;</td>
+              <td class="siv-r-eme-v" data-fieldname="ig_foodaid_complementary.cfd_36mnth"><%= ig_foodaid_complementary.cfd_36mnth %></td> 
+              <td class="siv-r-emel-v" data-fieldname="ig_foodaid_complementary.cfd_36yes"><%= ig_foodaid_complementary.cfd_36yes %></td> 
+            </tr>
+            <% }); %>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  <!-- end of Planned ration -->
+  <table class="siv-r-graph-ctn" style="width:49%; margin-right:5px">
+    <tbody>
+      <tr>
+        <td class=" siv-r-score-black" colspan="2"><h4 class="siv-r-table-title">Planned Ration</h4></td>
+      </tr>
+      <tr>
+        <td class="siv-r-container siv-r-indicator-name">Total Planned Kcal per person per day</td>
+        <td class="siv-r-container siv-r-table-item-no" data-fieldname="cfd_tkcal"><%= data.cfd_tkcal %></td> 
+      </tr>
+    </tbody>
+  </table>
+  <table class="siv-r-graph-ctn" style="width:49%;">
+    <tbody>
+      <tr>
+        <td class="siv-r-score-black" colspan="2"><h4 class="siv-r-table-title">Actual Ration</h4></td>
+      </tr>
+      <tr>
+        <td class="siv-r-container siv-r-indicator-name">Average Kcal per person per day during the last 3 months</td>
+        <td class="siv-r-container siv-r-table-item-no" data-fieldname="cfd_avgkcal"><%= data.cfd_avgkcal %></td> 
+      </tr>
+    </tbody>
+  </table>
+  <div class="clear">&nbsp;</div>
+  <div class="clear">
+    <div class="siv-r-container siv-r-summary-ctn">
+      <div class="siv-r-para-head clear">
+        <div class="siv-r-para-img-ctn"><img class="siv-r-ico-summary" src=<%- asset("images/reports/phhiv/ico-report.png") %> /></div>
+        <h2 class="siv-r-para-title">Past pipeline breaks</h2>
+      </div>
+      <div class="siv-r-obj-ctn clear">
+        <div class="siv-r-obj-title-ctn">
+          <p class="siv-r-obj-title-name">What was the main reason for the break(s) in the food item(s) listed above?</p>
+        </div>
+        <div class="siv-r-obj-txt" data-fieldname="cfd_pastpbrsn"><%= data.cfd_pastpbrsn %></div>
+      </div>
+      <div class="siv-r-obj-ctn clear">
+        <div class="siv-r-obj-title-ctn">
+          <p class="siv-r-obj-title-name">What response was put into place?</p>
+        </div>
+        <div class="siv-r-obj-txt" data-fieldname="cfd_pastbresp"><%= data.cfd_pastbresp %></div>
+      </div>
+      <div class="siv-r-obj-ctn clear">
+        <div class="siv-r-obj-title-ctn">
+          <p class="siv-r-obj-title-name">Additional comments</p>
+        </div>
+        <div class="siv-r-obj-txt" data-fieldname="cfd_pastpbac"><%= data.cfd_pastpbac %></div>
+      </div>
+    </div>
+  </div>
+  <div class="clear">
+    <div class="siv-r-container siv-r-summary-ctn">
+      <div class="siv-r-para-head clear">
+        <div class="siv-r-para-img-ctn"><img class="siv-r-ico-summary" src=<%- asset("images/reports/phhiv/ico-report.png") %> /></div>
+        <h2 class="siv-r-para-title">Expected pipeline breaks</h2>
+      </div>
+      <div class="siv-r-obj-ctn clear">
+        <div class="siv-r-obj-title-ctn">
+          <p class="siv-r-obj-title-name">What was the main reason for the break(s) in the food item(s) listed above?</p>
+        </div>
+        <div class="siv-r-obj-txt" data-fieldname="cfd_exppbrsn"><%= data.cfd_exppbrsn %></div>
+      </div>
+      <div class="siv-r-obj-ctn clear">
+        <div class="siv-r-obj-title-ctn">
+          <p class="siv-r-obj-title-name">What preparedness measures have been put in place?</p>
+        </div>
+        <div class="siv-r-obj-txt" data-fieldname="cfd_exppbresp"><%= data.cfd_exppbresp %></div>
+      </div>
+      <div class="siv-r-obj-ctn clear">
+        <div class="siv-r-obj-title-ctn">
+          <p class="siv-r-obj-title-name">Additional comments</p>
+        </div>
+        <div class="siv-r-obj-txt" data-fieldname="cfd_exppbac"><%= data.cfd_exppbac %></div>
+      </div>
+    </div>
+  </div>
+  <table class="siv-r-graph-ctn" style="width:49%; margin-right:5px">
+    <tbody>
+      <tr>
+        <td class=" siv-r-score-black" colspan="2"><h4 class="siv-r-table-title">Food Basket Monitoring</h4></td>
+      </tr>
+      <tr>
+        <td class="siv-r-container siv-r-indicator-name">Was FBM conducted during the last 3 months?</td>
+        <td class="siv-r-container siv-r-table-item-no" data-fieldname="cfd_fbm3mnth"><%= data.cfd_fbm3mnth %></td> 
+      </tr>
+      <% if(data.cfd_fbmrep) { %>
+      <tr>
+        <td class="siv-r-container siv-r-indicator-name">Are FBM reports available?</td>
+        <td class="siv-r-container siv-r-table-item-no" data-fieldname="cfd_fbmrep"><%= data.cfd_fbmrep %></td> 
+      </tr>
+      <% } %>
+      <tr>
+        <td class="siv-r-container siv-r-indicator-name">Is FBM planned in the future?</td>
+        <td class="siv-r-container siv-r-table-item-no" data-fieldname="cfd_fbmplan"><%= data.cfd_fbmplan %></td> 
+      </tr>
+      <% if(data.cfd_fbmmonth) { %>
+      <tr>
+        <td class="siv-r-container siv-r-indicator-name">Date of next planned FBM <span>(month/year)</span></td>
+        <td class="siv-r-container siv-r-table-item-no"><span data-fieldname="cfd_fbmmonth"><%= data.cfd_fbmmonth %></span>, <span data-fieldname="cfd_fbmyear"><%= data.cfd_fbmyear %></span></td>
+      </tr>
+      <% } %>
+    </tbody>
+  </table>
+  <table class="siv-r-graph-ctn" style="width:49%;">
+    <tbody>
+      <tr>
+        <td class="siv-r-score-black" colspan="2"><h4 class="siv-r-table-title">Post Distribution Monitoring</h4></td>
+      </tr>
+      <tr>
+        <td class="siv-r-container siv-r-indicator-name">Was PDM conducted during the last 3 months?</td>
+        <td class="siv-r-container siv-r-table-item-no" data-fieldname="cfd_pdm3mnth"><%= data.cfd_pdm3mnth %></td> 
+      </tr>
+      <% if(data.cfd_pdmrep) { %>
+      <tr>
+        <td class="siv-r-container siv-r-indicator-name">Are reports available?</td>
+        <td class="siv-r-container siv-r-table-item-no" data-fieldname="cfd_pdmrep"></td>
+      </tr>
+      <% } %>
+      <tr>
+        <td class="siv-r-container siv-r-indicator-name">Is PDM planned in future?</td>
+        <td class="siv-r-container siv-r-table-item-no" data-fieldname="cfd_pdmfut"><%= data.cfd_pdmfut %></td> 
+      </tr>
+      <% if(data.cfd_pdmmonth) { %>
+      <tr>
+        <td class="siv-r-container siv-r-indicator-name">Date of next planned PDM <span>(month/year)</span></td>
+        <td class="siv-r-container siv-r-table-item-no"><span data-fieldname="cfd_pdmmonth"><%= data.cfd_pdmmonth %></span>, <span data-fieldname="cfd_pdmyear"><%= data.cfd_pdmyear %></span></td>
+      </tr>
+      <% } %>
+    </tbody>
+  </table>
+  <div class="clear"></div>
+</div>
+</div>
+<!-- end of complementary non fresh food distribution -->
+<% } %>
+<% if(data.ig_foodaid_freshfood) { %>
+<div class="clear">&nbsp;</div>
+<div class="siv-r-sect-head-ctn">
+  <h2 class="siv-r-table-txt">Complementry (fresh) Food Distribution</h2>
+</div>
+<div class="siv-r-table-can"></div>
+  <div class="siv-r-container siv-r-summary-ctn clear">
+  <div class="siv-r-obj-ctn clear">
+    <table class="siv-r-graph-ctn" style="width:49%; margin-right:5px; margin-top:0px;">
+      <tbody>
+        <tr>
+          <td class=" siv-r-score-black" colspan="2"><h4 class="siv-r-table-title">Funding Source</h4></td>
+        </tr>
+        <tr>
+          <td class="siv-r-container siv-r-indicator-name">Provider of food items</td>
+          <td class="siv-r-container siv-r-table-item-no" data-fieldname="ffd_provider"><%= data.ffd_provider %></td> 
+        </tr>
+      </tbody>
+    </table>
+    <table class="siv-r-graph-ctn" style="width:49%; margin-top:0px;">
+      <tbody>
+        <tr>
+          <td class="siv-r-score-black" colspan="2"><h4 class="siv-r-table-title">Actual Ration</h4></td>
+        </tr>
+        <tr>
+          <td class="siv-r-container siv-r-indicator-name">Number of beneficiaries</td>
+          <td class="siv-r-container siv-r-table-item-no" data-fieldname="ffd_benif"><%= data.ffd_benif %></td> 
+        </tr>
+      </tbody>
+    </table>
+    <div class="clear">&nbsp;</div>
+    <div class="clear">
+      <div class="siv-r-para-head">
+        <div class="siv-r-container">
+          <div class="siv-r-single-head-ctn">
+            <h2 class="siv-r-table-txt">Planned Ration</h2>
+          </div>
+          <div class="siv-r-single-table-can"></div>
+          <div class="siv-r-single-table-can-border"></div>
+          <div class="siv-r-sect-head-ctn-mod">
+            <h2 class="siv-r-table-txt-mod">Pipeline Break or Ration Reduction</h2>
+          </div>
+          <div class="clear"></div>
+        </div>
+        <div class="siv-r-table-phn-head">
+          <div class="siv-r-table-phn-name">
+            <h3 class="siv-r-table-phn-txt">Food Item</h3>
+          </div>
+          <div class="siv-r-table-phn-multihead">
+            <div class="siv-r-cmam-ind">
+              <h4 class="siv-r-mam-txt">g / Person / Day</h4>
+              <div class="siv-r-mam-can"></div>
+            </div>
+            <div class="siv-r-table-ind">
+              <h4 class="siv-r-std-txt">Food Group</h4>
+              <div class="siv-r-std-can"></div>
+            </div>
+          </div>
+        </div>
+        <div class="siv-r-table-head-space">&nbsp;</div>
+        <div class="siv-r-table-phn-multihead">
+          <div class="siv-r-eme-ind">
+            <h4 class="siv-r-eme-txt">Was food item affected in last 3 months</h4>
+          </div>
+          <div class="siv-r-table-sam">
+            <h4 class="siv-r-std-txt">Months</h4>
+            <div class="siv-r-std-can"></div>
+          </div>
+        </div>
+        <div class="siv-r-table-head-space">&nbsp;</div>
+        <div class="siv-r-table-phn-multihead">
+          <div class="siv-r-eme-ind">
+            <h4 class="siv-r-eme-txt">Is food item expected to be affected in next 3 - 6 months</h4>
+          </div>
+          <div class="siv-r-table-sam">
+            <h4 class="siv-r-std-txt">Months</h4>
+            <div class="siv-r-std-can"></div>
+          </div>
+        </div>
+        <table class="siv-r-table siv-r-sam-table clear">
+          <tbody>
+            <% _.each(data.ig_foodaid_freshfood, function(ig_foodaid_freshfood) { %>
+            <tr class="siv-r-table-hl">
+              <td class="siv-r-table-phn-item" data-fieldname="ig_foodaid_freshfood.ffd_foodgrp"><%= ig_foodaid_freshfood.ffd_foodgrp %></td> 
+              <td class="siv-r-emel-v" data-fieldname="ig_foodaid_freshfood.ffd_fooditm"><%= ig_foodaid_freshfood.ffd_fooditm %></td> 
+              <td class="siv-r-sam-v"></td>
+              <td class="siv-r-phn-table-space">&nbsp;</td>
+              <td class="siv-r-eme-v" data-fieldname="ig_foodaid_freshfood.ffd_last3mnth"><%= ig_foodaid_freshfood.ffd_last3mnth %></td> 
+              <td class="siv-r-emel-v" data-fieldname="ig_foodaid_freshfood.ffd_3yes"><%= ig_foodaid_freshfood.ffd_3yes %></td> 
+              <td class="siv-r-phn-table-space">&nbsp;</td>
+              <td class="siv-r-eme-v" data-fieldname="ig_foodaid_freshfood.ffd_36mnth"><%= ig_foodaid_freshfood.ffd_36mnth %></td> 
+              <td class="siv-r-emel-v" data-fieldname="ig_foodaid_freshfood.ffd_36yes"><%= ig_foodaid_freshfood.ffd_36yes %></td> 
+            </tr>
+            <% }); %>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <!-- end of Planned ration -->
+    <div class="clear">&nbsp;</div>
+    <div class="clear">
+      <div class="siv-r-container siv-r-summary-ctn">
+        <div class="siv-r-para-head clear">
+          <div class="siv-r-para-img-ctn"><img class="siv-r-ico-summary" src=<%- asset("images/reports/phhiv/ico-report.png") %> /></div>
+          <h2 class="siv-r-para-title">Past pipeline breaks</h2>
+        </div>
+        <div class="siv-r-obj-ctn clear">
+          <div class="siv-r-obj-title-ctn">
+            <p class="siv-r-obj-title-name">What was the main reason for the break(s) in the food item(s) listed above?</p>
+          </div>
+          <div class="siv-r-obj-txt" data-fieldname="ffd_pastpbrsn"><%= data.ffd_pastpbrsn %></div>
+        </div>
+        <div class="siv-r-obj-ctn clear">
+          <div class="siv-r-obj-title-ctn">
+            <p class="siv-r-obj-title-name">What response was put into place?</p>
+          </div>
+          <div class="siv-r-obj-txt" data-fieldname="ffd_pastpbresp"><%= data.ffd_pastpbresp %></div>
+        </div>
+        <div class="siv-r-obj-ctn clear">
+          <div class="siv-r-obj-title-ctn">
+            <p class="siv-r-obj-title-name">Additional comments</p>
+          </div>
+          <div class="siv-r-obj-txt" data-fieldname="ffd_pastpbac"><%= data.ffd_pastpbac %></div>
+        </div>
+      </div>
+    </div>
+    <div class="clear">
+      <div class="siv-r-container siv-r-summary-ctn">
+        <div class="siv-r-para-head clear">
+          <div class="siv-r-para-img-ctn"><img class="siv-r-ico-summary" src=<%- asset("images/reports/phhiv/ico-report.png") %> /></div>
+          <h2 class="siv-r-para-title">Expected pipeline breaks</h2>
+        </div>
+        <div class="siv-r-obj-ctn clear">
+          <div class="siv-r-obj-title-ctn">
+            <p class="siv-r-obj-title-name">What was the main reason for the break(s) in the food item(s) listed above?</p>
+          </div>
+          <div class="siv-r-obj-txt" data-fieldname="ffd_exppbrsn"><%= data.ffd_exppbrsn %></div>
+        </div>
+        <div class="siv-r-obj-ctn clear">
+          <div class="siv-r-obj-title-ctn">
+            <p class="siv-r-obj-title-name">What preparedness measures have been put in place?</p>
+          </div>
+          <div class="siv-r-obj-txt" data-fieldname="FFD_EXPPBRESP"><%= data.FFD_EXPPBRESP %></div>
+        </div>
+        <div class="siv-r-obj-ctn clear">
+          <div class="siv-r-obj-title-ctn">
+            <p class="siv-r-obj-title-name">Additional comments</p>
+          </div>
+          <div class="siv-r-obj-txt" data-fieldname="ffd_exppbac"><%= data.ffd_exppbac %></div>
+        </div>
+      </div>
+    </div>
+    <table class="siv-r-graph-ctn" style="width:49%; margin-right:5px">
+      <tbody>
+        <tr>
+          <td class=" siv-r-score-black" colspan="2"><h4 class="siv-r-table-title">Food Basket Monitoring</h4></td>
+        </tr>
+        <tr>
+          <td class="siv-r-container siv-r-indicator-name">Was FBM conducted during the last 3 months?</td>
+          <td class="siv-r-container siv-r-table-item-no" data-fieldname="ffd_fbm3mnth"><%= data.ffd_fbm3mnth %></td> 
+        </tr>
+        <% if(data.ffd_fbmrep) { %>
+        <tr>
+          <td class="siv-r-container siv-r-indicator-name">Are FBM reports available?</td>
+          <td class="siv-r-container siv-r-table-item-no" data-fieldname="ffd_fbmrep"><%= data.ffd_fbmrep %></td> 
+        </tr>
+        <% } %>
+        <tr>
+          <td class="siv-r-container siv-r-indicator-name">Is FBM planned in the future?</td>
+          <td class="siv-r-container siv-r-table-item-no" data-fieldname="ffd_fbmplan"><%= data.ffd_fbmplan %></td> 
+        </tr>
+        <% if(data.ffd_fbmmonth) { %>
+        <tr>
+          <td class="siv-r-container siv-r-indicator-name">Date of next planned FBM <span>(month/year)</span></td>
+          <td class="siv-r-container siv-r-table-item-no"><span data-fieldname="ffd_fbmmonth"><%= data.ffd_fbmmonth %></span>, <span data-fieldname="ffd_fbmyear"><%= data.ffd_fbmyear %></span></td>
+        </tr>
+        <% } %>
+      </tbody>
+    </table>
+    <table class="siv-r-graph-ctn" style="width:49%;">
+      <tbody>
+        <tr>
+          <td class="siv-r-score-black" colspan="2"><h4 class="siv-r-table-title">Post Distribution Monitoring</h4></td>
+        </tr>
+        <tr>
+          <td class="siv-r-container siv-r-indicator-name">Was PDM conducted during the last 3 months?</td>
+          <td class="siv-r-container siv-r-table-item-no" data-fieldname="ffd_pdm3mnth"><%= data.ffd_pdm3mnth %></td> 
+        </tr>
+        <% if(data.ffd_pdmrep) { %>
+        <tr>
+          <td class="siv-r-container siv-r-indicator-name">Are reports available?</td>
+          <td class="siv-r-container siv-r-table-item-no" data-fieldname="ffd_pdmrep"><%= data.ffd_pdmrep %></td> 
+        </tr>
+        <% } %>
+        <tr>
+          <td class="siv-r-container siv-r-indicator-name">Is PDM planned in future?</td>
+          <td class="siv-r-container siv-r-table-item-no" data-fieldname="ffd_pdmfut"><%= data.ffd_pdmfut %></td> 
+        </tr>
+        <% if(data.ffd_pdmmonth) { %>
+        <tr>
+          <td class="siv-r-container siv-r-indicator-name">Date of next planned PDM <span>(month/year)</span></td>
+          <td class="siv-r-container siv-r-table-item-no"><span data-fieldname="ffd_pdmmonth"><%= data.ffd_pdmmonth %></span>, <span data-fieldname="ffd_pdmyear"><%= data.ffd_pdmyear %></span></td>
+        </tr>
+        <% } %>
+      </tbody>
+    </table>
+    <div class="clear"></div>
+  </div>
+  </div>
+  <!-- end of complementary food distribution -->
+  <% } %>
+  <% if(data.ig_foodaid_blanket) { %>
+  <div class="clear">&nbsp;</div>
+  <div class="siv-r-sect-head-ctn">
+    <h2 class="siv-r-table-txt">Blanket Feeding</h2>
+  </div>
+  <div class="siv-r-table-can"></div>
+    <div class="siv-r-container siv-r-summary-ctn clear">
+    <div class="siv-r-obj-ctn clear">
+      <table class="siv-r-graph-ctn" style="width:49%; margin-right:5px; margin-top:0px;">
+        <tbody>
+          <tr>
+            <td class=" siv-r-score-black" colspan="2"><h4 class="siv-r-table-title">Funding Source</h4></td>
+          </tr>
+          <tr>
+            <td class="siv-r-container siv-r-indicator-name">Provider of food items</td>
+            <td class="siv-r-container siv-r-table-item-no" data-fieldname="bfd_provider"><%= data.bfd_provider %></td> 
+          </tr>
+        </tbody>
+      </table>
+      <table class="siv-r-graph-ctn" style="width:49%; margin-top:0px;">
+        <tbody>
+          <tr>
+            <td class="siv-r-score-black" colspan="2"><h4 class="siv-r-table-title">Actual Ration</h4></td>
+          </tr>
+          <tr>
+            <td class="siv-r-container siv-r-indicator-name">Number of beneficiaries</td>
+            <td class="siv-r-container siv-r-table-item-no" data-fieldname="bfd_benif"><%= data.bfd_benif %></td> 
+          </tr>
+        </tbody>
+      </table>
+      <div class="clear">&nbsp;</div>
+      <div class="clear">
+        <div class="siv-r-para-head">
+          <div class="siv-r-container">
+            <div class="siv-r-single-head-ctn">
+              <h2 class="siv-r-table-txt">Planned Ration</h2>
+            </div>
+            <div class="siv-r-single-table-can"></div>
+            <div class="siv-r-single-table-can-border"></div>
+            <div class="siv-r-sect-head-ctn-mod">
+              <h2 class="siv-r-table-txt-mod">Pipeline Break or Ration Reduction</h2>
+            </div>
+            <div class="clear"></div>
+          </div>
+          <div class="siv-r-table-phn-head">
+            <div class="siv-r-table-phn-name">
+              <h3 class="siv-r-table-phn-txt">Food Item</h3>
+            </div>
+            <div class="siv-r-table-phn-multihead">
+              <div class="siv-r-cmam-ind">
+                <h4 class="siv-r-mam-txt">g / Person / Day</h4>
+                <div class="siv-r-mam-can"></div>
+              </div>
+              <div class="siv-r-table-ind">
+                <h4 class="siv-r-std-txt">Food Group</h4>
+                <div class="siv-r-std-can"></div>
+              </div>
+            </div>
+          </div>
+          <div class="siv-r-table-head-space">&nbsp;</div>
+          <div class="siv-r-table-phn-multihead">
+            <div class="siv-r-eme-ind">
+              <h4 class="siv-r-eme-txt">Was food item affected in last 3 months</h4>
+            </div>
+            <div class="siv-r-table-sam">
+              <h4 class="siv-r-std-txt">Months</h4>
+              <div class="siv-r-std-can"></div>
+            </div>
+          </div>
+          <div class="siv-r-table-head-space">&nbsp;</div>
+          <div class="siv-r-table-phn-multihead">
+            <div class="siv-r-eme-ind">
+              <h4 class="siv-r-eme-txt">Is food item expected to be affected in next 3 - 6 months</h4>
+            </div>
+            <div class="siv-r-table-sam">
+              <h4 class="siv-r-std-txt">Months</h4>
+              <div class="siv-r-std-can"></div>
+            </div>
+          </div>
+          <table class="siv-r-table siv-r-sam-table clear">
+            <tbody>
+              <% _.each(data.ig_foodaid_blanket, function(ig_foodaid_blanket) { %>
+              <tr class="siv-r-table-hl">
+                <td class="siv-r-table-phn-item" data-fieldname="ig_foodaid_blanket.bfd_foodgrp"><%= ig_foodaid_blanket.bfd_foodgrp %></td> 
+                <td class="siv-r-emel-v" data-fieldname="ig_foodaid_blanket.bfd_fooditm"><%= ig_foodaid_blanket.bfd_fooditm %></td> 
+                <td class="siv-r-sam-v" data-fieldname="ig_foodaid_blanket.bfd_gpd"><%= ig_foodaid_blanket.bfd_gpd %></td> 
+                <td class="siv-r-phn-table-space">&nbsp;</td>
+                <td class="siv-r-eme-v" data-fieldname="ig_foodaid_blanket.bfd_last3mnth"><%= ig_foodaid_blanket.bfd_last3mnth %></td> 
+                <td class="siv-r-emel-v" data-fieldname="ig_foodaid_blanket.bfd_3yes"><%= ig_foodaid_blanket.bfd_3yes %></td> 
+                <td class="siv-r-phn-table-space">&nbsp;</td>
+                <td class="siv-r-eme-v" data-fieldname="ig_foodaid_blanket.bfd_36mnth"><%= ig_foodaid_blanket.bfd_36mnth %></td> 
+                <td class="siv-r-emel-v" data-fieldname="ig_foodaid_blanket.bfd_36yes"><%= ig_foodaid_blanket.bfd_36yes %></td> 
+              </tr>
+              <% }); %>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <!-- end of Planned ration -->
+      <table class="siv-r-graph-ctn" style="width:49%; margin-right:5px">
+        <tbody>
+          <tr>
+            <td class=" siv-r-score-black" colspan="2"><h4 class="siv-r-table-title">Planned Ration</h4></td>
+          </tr>
+          <tr>
+            <td class="siv-r-container siv-r-indicator-name">Total Planned Kcal per person per day</td>
+            <td class="siv-r-container siv-r-table-item-no" data-fieldname="bfd_tkcal"><%= data.bfd_tkcal %></td> 
+          </tr>
+        </tbody>
+      </table>
+      <table class="siv-r-graph-ctn" style="width:49%;">
+        <tbody>
+          <tr>
+            <td class="siv-r-score-black" colspan="2"><h4 class="siv-r-table-title">Actual Ration</h4></td>
+          </tr>
+          <tr>
+            <td class="siv-r-container siv-r-indicator-name">Average Kcal per person per day during the last 3 months</td>
+            <td class="siv-r-container siv-r-table-item-no" data-fieldname="bfd_avgkcal"><%= data.bfd_avgkcal %></td> 
+          </tr>
+        </tbody>
+      </table>
+      <div class="clear">&nbsp;</div>
+      <div class="clear">
+        <div class="siv-r-container siv-r-summary-ctn">
+          <div class="siv-r-para-head clear">
+            <div class="siv-r-para-img-ctn"><img class="siv-r-ico-summary" src=<%- asset("images/reports/phhiv/ico-report.png") %> /></div>
+            <h2 class="siv-r-para-title">Past pipeline breaks</h2>
+          </div>
+          <div class="siv-r-obj-ctn clear">
+            <div class="siv-r-obj-title-ctn">
+              <p class="siv-r-obj-title-name">What was the main reason for the break(s) in the food item(s) listed above?</p>
+            </div>
+            <div class="siv-r-obj-txt" data-fieldname="bfd_pastpbrsn"><%= data.bfd_pastpbrsn %></div>
+          </div>
+          <div class="siv-r-obj-ctn clear">
+            <div class="siv-r-obj-title-ctn">
+              <p class="siv-r-obj-title-name">What response was put into place?</p>
+            </div>
+            <div class="siv-r-obj-txt" data-fieldname="bfd_pastpbresp"><%= data.bfd_pastpbresp %></div>
+          </div>
+          <div class="siv-r-obj-ctn clear">
+            <div class="siv-r-obj-title-ctn">
+              <p class="siv-r-obj-title-name">Additional comments</p>
+            </div>
+            <div class="siv-r-obj-txt" data-fieldname="bfd_pastpbac"><%= data.bfd_pastpbac %></div>
+          </div>
+        </div>
+      </div>
+      <div class="clear">
+        <div class="siv-r-container siv-r-summary-ctn">
+          <div class="siv-r-para-head clear">
+            <div class="siv-r-para-img-ctn"><img class="siv-r-ico-summary" src=<%- asset("images/reports/phhiv/ico-report.png") %> /></div>
+            <h2 class="siv-r-para-title">Expected pipeline breaks</h2>
+          </div>
+          <div class="siv-r-obj-ctn clear">
+            <div class="siv-r-obj-title-ctn">
+              <p class="siv-r-obj-title-name">What was the main reason for the break(s) in the food item(s) listed above?</p>
+            </div>
+            <div class="siv-r-obj-txt" data-fieldname="bfd_exppbrsn"><%= data.bfd_exppbrsn %></div>
+          </div>
+          <div class="siv-r-obj-ctn clear">
+            <div class="siv-r-obj-title-ctn">
+              <p class="siv-r-obj-title-name">What preparedness measures have been put in place?</p>
+            </div>
+            <div class="siv-r-obj-txt" data-fieldname="bfd_exppbresp"><%= data.bfd_exppbresp %></div>
+          </div>
+          <div class="siv-r-obj-ctn clear">
+            <div class="siv-r-obj-title-ctn">
+              <p class="siv-r-obj-title-name">Additional comments</p>
+            </div>
+            <div class="siv-r-obj-txt" data-fieldname="bfd_exppbac"><%= data.bfd_exppbac %></div>
+          </div>
+        </div>
+      </div>
+    </div>
+	</div>
+    <!-- end of blanket feeding -->
+    <% } %>
+    <% if(data.ig_foodaid_supplementary) { %>
+    <div class="clear">&nbsp;</div>
+    <div class="siv-r-sect-head-ctn">
+      <h2 class="siv-r-table-txt">Supplementary Feeding</h2>
+    </div>
+    <div class="siv-r-table-can"></div>
+      <div class="siv-r-container siv-r-summary-ctn clear">
+      <div class="siv-r-obj-ctn clear">
+        <table class="siv-r-graph-ctn" style="width:49%; margin-right:5px; margin-top:0px;">
+          <tbody>
+            <tr>
+              <td class=" siv-r-score-black" colspan="2"><h4 class="siv-r-table-title">Funding Source</h4></td>
+            </tr>
+            <tr>
+              <td class="siv-r-container siv-r-indicator-name">Provider of food items</td>
+              <td class="siv-r-container siv-r-table-item-no" data-fieldname="sfp_provider"><%= data.sfp_provider %></td> 
+            </tr>
+          </tbody>
+        </table>
+        <table class="siv-r-graph-ctn" style="width:49%; margin-top:0px;">
+          <tbody>
+            <tr>
+              <td class="siv-r-score-black" colspan="2"><h4 class="siv-r-table-title">Actual Ration</h4></td>
+            </tr>
+            <tr>
+              <td class="siv-r-container siv-r-indicator-name">Number of beneficiaries</td>
+              <td class="siv-r-container siv-r-table-item-no" data-fieldname="sfp_benif"><%= data.sfp_benif %></td> 
+            </tr>
+          </tbody>
+        </table>
+        <div class="clear">&nbsp;</div>
+        <div class="clear">
+          <div class="siv-r-para-head">
+            <div class="siv-r-container">
+              <div class="siv-r-single-head-ctn">
+                <h2 class="siv-r-table-txt">Planned Ration</h2>
+              </div>
+              <div class="siv-r-single-table-can"></div>
+              <div class="siv-r-single-table-can-border"></div>
+              <div class="siv-r-sect-head-ctn-mod">
+                <h2 class="siv-r-table-txt-mod">Pipeline Break or Ration Reduction</h2>
+              </div>
+              <div class="clear"></div>
+            </div>
+            <div class="siv-r-table-phn-head">
+              <div class="siv-r-table-phn-name">
+                <h3 class="siv-r-table-phn-txt">Food Item</h3>
+              </div>
+              <div class="siv-r-table-phn-multihead">
+                <div class="siv-r-cmam-ind">
+                  <h4 class="siv-r-mam-txt">g / Person / Day</h4>
+                  <div class="siv-r-mam-can"></div>
+                </div>
+                <div class="siv-r-table-ind">
+                  <h4 class="siv-r-std-txt">Food Group</h4>
+                  <div class="siv-r-std-can"></div>
+                </div>
+              </div>
+            </div>
+            <div class="siv-r-table-head-space">&nbsp;</div>
+            <div class="siv-r-table-phn-multihead">
+              <div class="siv-r-eme-ind">
+                <h4 class="siv-r-eme-txt">Was food item affected in last 3 months</h4>
+              </div>
+              <div class="siv-r-table-sam">
+                <h4 class="siv-r-std-txt">Months</h4>
+                <div class="siv-r-std-can"></div>
+              </div>
+            </div>
+            <div class="siv-r-table-head-space">&nbsp;</div>
+            <div class="siv-r-table-phn-multihead">
+              <div class="siv-r-eme-ind">
+                <h4 class="siv-r-eme-txt">Is food item expected to be affected in next 3 - 6 months</h4>
+              </div>
+              <div class="siv-r-table-sam">
+                <h4 class="siv-r-std-txt">Months</h4>
+                <div class="siv-r-std-can"></div>
+              </div>
+            </div>
+            <table class="siv-r-table siv-r-sam-table clear">
+              <tbody>
+                <% _.each(data.ig_foodaid_supplementary, function(ig_foodaid_supplementary) { %>
+                <tr class="siv-r-table-hl">
+                  <td class="siv-r-table-phn-item" data-fieldname="ig_foodaid_supplementary.sfp_foodgrp"><%= ig_foodaid_supplementary.sfp_foodgrp %></td> 
+                  <td class="siv-r-emel-v" data-fieldname="ig_foodaid_supplementary.sfp_fooditm"><%= ig_foodaid_supplementary.sfp_fooditm %></td> 
+                  <td class="siv-r-sam-v" data-fieldname="ig_foodaid_supplementary.sfp_gpd"><%= ig_foodaid_supplementary.sfp_gpd %></td> 
+                  <td class="siv-r-phn-table-space">&nbsp;</td>
+                  <td class="siv-r-eme-v" data-fieldname="ig_foodaid_supplementary.sfp_last3mnth"><%= ig_foodaid_supplementary.sfp_last3mnth %></td> 
+                  <td class="siv-r-emel-v" data-fieldname="ig_foodaid_supplementary.sfp_3yes"><%= ig_foodaid_supplementary.sfp_3yes %></td> 
+                  <td class="siv-r-phn-table-space">&nbsp;</td>
+                  <td class="siv-r-eme-v" data-fieldname="ig_foodaid_supplementary.sfp_36mnth"><%= ig_foodaid_supplementary.sfp_36mnth %></td> 
+                  <td class="siv-r-emel-v" data-fieldname="ig_foodaid_supplementary.sfp_36yes"><%= ig_foodaid_supplementary.sfp_36yes %></td> 
+                </tr>
+                <% }); %>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <!-- end of Planned ration -->
+        <table class="siv-r-graph-ctn" style="width:49%; margin-right:5px">
+          <tbody>
+            <tr>
+              <td class=" siv-r-score-black" colspan="2"><h4 class="siv-r-table-title">Planned Ration</h4></td>
+            </tr>
+            <tr>
+              <td class="siv-r-container siv-r-indicator-name">Total Planned Kcal per person per day</td>
+              <td class="siv-r-container siv-r-table-item-no" data-fieldname="sfp_tkcal"><%= data.sfp_tkcal %></td> 
+            </tr>
+          </tbody>
+        </table>
+        <table class="siv-r-graph-ctn" style="width:49%;">
+          <tbody>
+            <tr>
+              <td class="siv-r-score-black" colspan="2"><h4 class="siv-r-table-title">Actual Ration</h4></td>
+            </tr>
+            <tr>
+              <td class="siv-r-container siv-r-indicator-name">Average Kcal per person per day during the last 3 months</td>
+              <td class="siv-r-container siv-r-table-item-no" data-fieldname="sfp_avgkcal"><%= data.sfp_avgkcal %></td> 
+            </tr>
+          </tbody>
+        </table>
+        <div class="clear">&nbsp;</div>
+        <div class="clear">
+          <div class="siv-r-container siv-r-summary-ctn">
+            <div class="siv-r-para-head clear">
+              <div class="siv-r-para-img-ctn"><img class="siv-r-ico-summary" src=<%- asset("images/reports/phhiv/ico-report.png") %> /></div>
+              <h2 class="siv-r-para-title">Past pipeline breaks</h2>
+            </div>
+            <div class="siv-r-obj-ctn clear">
+              <div class="siv-r-obj-title-ctn">
+                <p class="siv-r-obj-title-name">What was the main reason for the break(s) in the food item(s) listed above?</p>
+              </div>
+              <div class="siv-r-obj-txt" data-fieldname="sfp_pastpbrsn"><%= data.sfp_pastpbrsn %></div>
+            </div>
+            <div class="siv-r-obj-ctn clear">
+              <div class="siv-r-obj-title-ctn">
+                <p class="siv-r-obj-title-name">What response was put into place?</p>
+              </div>
+              <div class="siv-r-obj-txt" data-fieldname="sfp_pastpbresp"><%= data.sfp_pastpbresp %></div>
+            </div>
+            <div class="siv-r-obj-ctn clear">
+              <div class="siv-r-obj-title-ctn">
+                <p class="siv-r-obj-title-name">Additional comments</p>
+              </div>
+              <div class="siv-r-obj-txt" data-fieldname="sfp_pastpbac"><%= data.sfp_pastpbac %></div>
+            </div>
+          </div>
+        </div>
+        <div class="clear">
+          <div class="siv-r-container siv-r-summary-ctn">
+            <div class="siv-r-para-head clear">
+              <div class="siv-r-para-img-ctn"><img class="siv-r-ico-summary" src=<%- asset("images/reports/phhiv/ico-report.png") %> /></div>
+              <h2 class="siv-r-para-title">Expected pipeline breaks</h2>
+            </div>
+            <div class="siv-r-obj-ctn clear">
+              <div class="siv-r-obj-title-ctn">
+                <p class="siv-r-obj-title-name">What was the main reason for the break(s) in the food item(s) listed above?</p>
+              </div>
+              <div class="siv-r-obj-txt" data-fieldname="sfp_exppbrsn"><%= data.sfp_exppbrsn %></div>
+            </div>
+            <div class="siv-r-obj-ctn clear">
+              <div class="siv-r-obj-title-ctn">
+                <p class="siv-r-obj-title-name">What preparedness measures have been put in place?</p>
+              </div>
+              <div class="siv-r-obj-txt" data-fieldname="sfp_exppbresp"><%= data.sfp_exppbresp %></div>
+            </div>
+            <div class="siv-r-obj-ctn clear">
+              <div class="siv-r-obj-title-ctn">
+                <p class="siv-r-obj-title-name">Additional comments</p>
+              </div>
+              <div class="siv-r-obj-txt" data-fieldname="sfp_exppbac"><%= data.sfp_exppbac %></div>
+            </div>
+          </div>
+        </div>
+      </div>
+	  </div>
+      <!-- end of supplemenatry feeding -->
+      <% } %>
+      <div class="siv-r-legend-wrap">
+        <div class="siv-r-legend-ctn">
+          <table class="siv-r-interactive-ctn">
+            <tbody>
+              <tr>
+                <td rowspan="2" class="siv-r-interactive-32"><img class="siv-r-interactive-32" src=<%- asset("images/logos/siv-logo-black.png")%> /></td>
+                <td class="siv-r-interactive-title">View interactive maps and statistics online</td>
+              </tr>
+              <tr>
+                <td class="siv-r-table-item siv-r-interactive-row "><a href="http://twine.unhcr.org" class="siv-r-interactive-space siv-r-interactive-link">http://twine.unhcr.org</a></td>
+              </tr>
+            </tbody>
+          </table>
+          <img class="siv-r-contact-logo" src=<%- asset("images/reports/phhiv/unhcr-logo.png")%> />
+          <div class="clear"></div>
+        </div>
+        <div class="siv-r-qrcode" id="qrcode"> </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

@@ -1,0 +1,198 @@
+<div class="siv-r-wash siv-r-wash-his">
+<div class="siv-r-page-break">
+  <div class="siv-r-page-header">
+      <div class="siv-r-title-ctn"><img class="siv-r-report-type" src={{{local_asset "icons/de_templates/round/1.svg"}}} />
+        <p class="siv-r-title-txt">WASH Report Card</p>
+        <p class="siv-r-year-txt"><span data-fieldname="month">{{{dateinfo "month"}}}</span> <span data-fieldname="year">{{{dateinfo "year"}}}</span></p>
+      </div>
+      <div class="siv-r-loc-can"></div>
+      <div class="siv-r-loc-ctn">
+        <div class="siv-r-flag-ctn">{{{helperFlagSVG "iso" "locationdetails" "icons/flags/round/flags-svg/" "siv-r-flag-img"}}}</div>
+        <p class="siv-r-loc-txt" data-fieldname="name">{{{embedded_value "locationdetails" "name"}}}</p>
+        <p class="siv-r-loc-cty" data-fieldname="countryname">{{{embedded_value "locationdetails" "countryname"}}}</p>
+      </div>
+      <div class="clear"></div>
+    </div>
+  <!--end of header -->
+  <div>
+    <div class="siv-r-sect-head-ctn">
+      <h2 class="siv-r-table-txt">Morbidity trends</h2>
+    </div>
+    <div class="siv-r-table-can"></div>
+    <div class="clear">
+      <div class="siv-r-chart-ctn siv-r-container">{{{multi_line_chart "linechartmorb" "siv-r-chart-ctn siv-r-container"}}}</div>
+    </div>
+  </div>
+  <div class="clear">
+    <div>
+      <div class="siv-r-sect-head-ctn">
+        <h2 class="siv-r-table-txt">Observations</h2>
+      </div>
+      <div class="siv-r-table-can"></div>
+      <div class="clear"></div>
+    </div>
+    <table class="siv-r-table">
+      <tr>
+        <td class="siv-r-mam-v" data-fieldname="observations">{{#section4}}{{val}} {{/section4}}</td>
+      </tr>
+    </table>
+  </div>
+  <!-- end of Observations and notes -->
+  <div class="clear">
+    <div class="siv-r-sect-head-ctn">
+      <h2 class="siv-r-table-txt">Access indicators</h2>
+    </div>
+    <div class="siv-r-table-can"></div>
+    <div class="clear">
+      <div class="siv-r-container siv-r-summary-ctn">
+        <div class="siv-r-para-img-ctn"><img class="siv-r-ico-comment" src={{{local_asset "images/reports/phhiv/ico-report.png"}}} /></div>
+        <div class="siv-r-obj-txt" data-fieldname="acc_note">{{{custom_comment "acc_note"}}</div>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <!-- end of Service level Notes -->
+    <div class="siv-r-table-head">
+      <div class="siv-r-table-col-name-no">
+        <h4 class="siv-r-table-name-txt">Indicator</h4>
+      </div>
+      <div class="siv-r-table-col-no">
+        <h4 class="siv-r-ind-txt">Value</h4>
+        <div class="siv-r-ind-can"></div>
+      </div>
+      <div class="siv-r-table-col-std">
+        <h4 class="siv-r-std-txt">Standard</h4>
+        <div class="siv-r-std-can"></div>
+      </div>
+      <div class="siv-r-table-ind siv-r-table-col-name">
+        <h4 class="siv-r-no-txt">12 month trend</h4>
+        <div class="siv-r-no-can"></div>
+      </div>
+    </div>
+    {{#section1}}
+    <table class="siv-r-table clear">
+      <tbody>
+        <tr>
+          <td class="siv-r-table-order">{{{item_number 1}}}</td>
+          <td colspan="3" class="siv-r-table-item" data-fieldname="{{id}}">{{lab}}</td>
+          <td class="siv-r-table-score" data-fieldname="{{id}}">{{{helperDisplayIndicator "this" "res" this}}}</td>
+          <td rowspan="3" class="siv-r-table-space"></td>
+          <td rowspan="3" class="siv-r-chart-img" data-fieldname="{{id}}">{{{wash_reportcard_line_chart this}}}</td>
+        </tr>
+        <tr>
+          <td class="siv-r-table-order">&nbsp;</td>
+          <td class="siv-r-mam-v">&nbsp;</td>
+          <td class="siv-r-mam-v">&nbsp;</td>
+          <td class="siv-r-ind-val" data-fieldname="{{id}}">{{{display_value this}}}{{{units this}}}</td>
+          <td class="siv-r-std-val" data-fieldname="{{id}}">{{txt}}</td>
+        </tr>
+       <tr class="siv-r-footnote">
+          <td class="siv-r-sam-v"></td>
+          <td colspan="5" class="siv-r-sam-v" data-fieldname="{{id}}">{{{custom_comment this}}}</td>
+        </tr>
+      </tbody>
+    </table>
+    {{/section1}}
+  </div>
+  <!-- end of Service level table --> 
+
+  <div class="clear">
+    <div class="siv-r-sect-head-ctn">
+      <h2 class="siv-r-table-txt">Household indicators</h2>
+    </div>
+    <div class="siv-r-table-can"></div>
+    <div class="clear">
+      <div class="siv-r-container siv-r-summary-ctn">
+        <div class="siv-r-para-img-ctn"><img class="siv-r-ico-comment" src={{{local_asset "images/reports/phhiv/ico-report.png"}}} /></div>
+        <div class="siv-r-obj-txt" data-fieldname="hh_note">{{{custom_comment "hh_note"}}}</div>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <!-- end of household comments -->
+    <div class="siv-r-table-head">
+      <div class="siv-r-table-col-name-no">
+        <h4 class="siv-r-table-name-txt">Indicator</h4>
+      </div>
+      <div class="siv-r-table-col-no">
+        <h4 class="siv-r-ind-txt">Value</h4>
+        <div class="siv-r-ind-can"></div>
+      </div>
+      <div class="siv-r-table-col-std">
+        <h4 class="siv-r-std-txt">Standard</h4>
+        <div class="siv-r-std-can"></div>
+      </div>
+      <div class="siv-r-table-ind siv-r-table-col-name">
+        <h4 class="siv-r-no-txt">12 month trend</h4>
+        <div class="siv-r-no-can"></div>
+      </div>
+    </div>
+    {{#section2}}
+    <table class="siv-r-table clear">
+      <tbody>
+        <tr>
+          <td class="siv-r-table-order">{{{item_number 2}}}</td>
+          <td colspan="3" class="siv-r-table-item" data-fieldname="{{id}}">{{lab}}</td>
+          <td class="siv-r-table-score" data-fieldname="{{id}}">{{{helperDisplayIndicator "this" "res" this}}}</td>
+          <td rowspan="3" class="siv-r-table-space"></td>
+          <td rowspan="3" class="siv-r-chart-img" data-fieldname="{{id}}">{{{wash_reportcard_line_chart this}}}</td>
+        </tr>
+        <tr>
+          <td class="siv-r-table-order">&nbsp;</td>
+          <td class="siv-r-mam-v">&nbsp;</td>
+          <td class="siv-r-mam-v">&nbsp;</td>
+          <td class="siv-r-ind-val" data-fieldname="{{id}}">{{{display_value this}}}{{{units this}}}</td>
+          <td class="siv-r-std-val" data-fieldname="{{id}}">{{txt}}</td>
+        </tr>      
+        <tr class="siv-r-footnote">
+          <td class="siv-r-sam-v"></td>
+          <td colspan="5" class="siv-r-sam-v" data-fieldname="{{id}}">{{{custom_comment this}}}</td>
+        </tr>        
+      </tbody>
+    </table>
+    {{/section2}}
+  </div>
+  <div class="clear"> </div>
+  <!-- End of Household table -->
+  <div class="siv-r-legend-wrap">
+ <div class="siv-r-legend-ctn">
+        <table class="siv-r-interactive-ctn">
+          <tbody>
+            <tr>
+              <td rowspan="2" class="siv-r-interactive-32"><img class="siv-r-interactive-32" src={{{local_asset "images/logos/siv-logo-black.png"}}}/></td>
+              <td class="siv-r-interactive-title siv-r-interactive-space">View interactive maps and statistics online</td>
+            </tr>
+            <tr>
+              <td class="siv-r-table-item siv-r-interactive-row"><a href="http://twine.unhcr.org" class="siv-r-interactive-link">http://twine.unhcr.org</a></td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="siv-r-legend">
+          <tbody>
+            <tr>
+              <td colspan="6"><h3 class="siv-r-legend-header">Legend</h3></td>
+            </tr>
+            <tr>
+              <td class="siv-r-score siv-r-score-green">2</td>
+              <td class="siv-r-table-indicator "><span>Standard met</span></td>
+              <td class="siv-r-score siv-r-score-yellow">!</td>
+              <td class="siv-r-table-indicator "><span>Standard borderline</span></td>
+              <td class="siv-r-score siv-r-score-red">D</td>
+              <td class="siv-r-table-indicator "><span>Standard not met</span></td>
+            </tr>
+            <tr>
+              <td class="siv-r-score siv-r-score-purple">^</td>
+              <td class="siv-r-table-indicator "><span>Interpret data with care</span></td>
+              <td class="siv-r-score siv-r-score-blue">?</td>
+              <td class="siv-r-table-indicator "><span>Data missing</span></td>
+              <td class="siv-r-score siv-r-score-black">-</td>
+              <td class="siv-r-table-indicator "><span>Not applicable</span></td>
+            </tr>
+          </tbody>
+        </table>
+        <img class="siv-r-contact-logo" src={{{local_asset "images/reports/phhiv/unhcr-logo.png"}}}/>
+        <div class="clear"> </div>
+      </div>
+      <div class="siv-r-qrcode" id="qrcode"> </div>
+      <div class="clear"> </div>
+    </div>
+  <!--end of page--> 
+</div>

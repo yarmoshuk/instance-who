@@ -1,0 +1,720 @@
+<div class="siv-r-mat siv-r-mat-out">
+<div class="siv-r-page-break">
+    <div class="siv-r-page-header">
+      <div class="siv-r-title-ctn"> <img class="siv-r-report-type" src={{{local_asset "icons/de_templates/round/13.svg"}}} />
+        <p class="siv-r-title-txt">Maternal Death Review</p>
+        <p class="siv-r-year-txt" data-fieldname="reportdate">{{{formatdate 0.reportdate "%e %b %Y"}}}</p>
+      </div>
+      <div class="siv-r-loc-can"></div>
+      <div class="siv-r-loc-ctn">
+        <div class="siv-r-flag-ctn">{{{helperFlagSVG "iso" "locationdetails" "icons/flags/round/flags-svg/" "siv-r-flag-img"}}}</div>
+        <p class="siv-r-loc-txt" data-fieldname="id">Case #{{{helperDisplayIndicator "id" "val" 0.id}}}</p>
+        <p class="siv-r-loc-cty"></p>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <!-- end of page header --> 
+  <table class="siv-r-graph-ctn" style="width:498px; margin-right:7px">
+    <tbody>
+      <tr>
+        <td class=" siv-r-score-black" colspan="2"><h4 class="siv-r-table-title">Women's identification</h4></td>
+      </tr>
+      <tr>
+        <td class="siv-r-container siv-r-indicator-name">Name</td>
+        <td class="siv-r-container siv-r-table-item-no"><span>Name not included</span></td>
+      </tr>
+      <tr>
+        <td class="siv-r-container siv-r-indicator-name">Host country</td>
+        <td class="siv-r-container siv-r-table-item-no" data-fieldname="countryname">{{{embedded_value "locationdetails" "countryname"}}}</td>
+      </tr>
+      <tr>
+        <td class="siv-r-container siv-r-indicator-name">Age</td>
+        <td class="siv-r-container siv-r-table-item-no" data-fieldname="age">{{{helperDisplayIndicator "age" "val" 0.age}}}</td>
+      </tr>
+      <tr>
+        <td class="siv-r-container siv-r-indicator-name">Camp</td>
+        <td class="siv-r-container siv-r-table-item-no" data-fieldname="name">{{{embedded_value "locationdetails" "name"}}}</td>
+      </tr>
+      <tr>
+        <td class="siv-r-container siv-r-indicator-name">Nationality</td>
+        <td class="siv-r-container siv-r-table-item-no" data-fieldname="nationality">{{{helperDisplayIndicator "nationality" "val" 0.nationality}}</td>
+      </tr>
+    </tbody>
+  </table>
+  <table class="siv-r-graph-ctn" style="width:370px;">
+    <tbody>
+      <tr>
+        <td class="siv-r-score-black" colspan="2"><h4 class="siv-r-table-title">Reported compiled by</h4></td>
+      </tr>
+      <tr>
+        <td class="siv-r-container siv-r-indicator-name">Name</td>
+        <td class="siv-r-container siv-r-table-item-no" data-fieldname="compilername">{{{helperDisplayIndicator "compilername" "val" 0.compilername}}}</td>
+      </tr>
+      <tr>
+        <td class="siv-r-container siv-r-indicator-name">Title</td>
+        <td class="siv-r-container siv-r-table-item-no" data-fieldname="compilertitle">{{{helperDisplayIndicator "compilertitle" "val" 0.compilertitle}}}</td>
+      </tr>
+      <tr>
+        <td class="siv-r-container siv-r-indicator-name">Organisation</td>
+        <td class="siv-r-container siv-r-table-item-no" data-fieldname="compilerorg">{{{helperDisplayIndicator "compilerorg" "val" 0.compilerorg}}}</td>
+      </tr>
+    </tbody>
+  </table>
+  <!-- end of women's identification -->
+  <table class="siv-r-graph-ctn">
+    <tbody>
+      <tr>
+        <td class=" siv-r-score-black" colspan="2"><h4 class="siv-r-table-title">Reviewers</h4></td>
+      </tr>
+      <tr>
+        <td class="siv-r-container siv-r-indicator-name">UNHCR health coordinator / focal point</td>
+        <td class="siv-r-container siv-r-table-item-no" data-fieldname="revunhcr">{{{helperDisplayIndicator "revunhcr" "val" 0.revunhcr}}}</td>
+      </tr>
+      <tr>
+        <td class="siv-r-container siv-r-indicator-name">Implementing partner focal point</td>
+        <td class="siv-r-container siv-r-table-item-no" data-fieldname="revipfp">{{{helperDisplayIndicator "revipfp" "val" 0.revipfp}}}</td>
+      </tr>
+      <tr>
+        <td class="siv-r-container siv-r-indicator-name">External expert</td>
+        <td class="siv-r-container siv-r-table-item-no" data-fieldname="revextexpert">{{{helperDisplayIndicator "revextexpert" "val" 0.revextexpert}}}</td>
+      </tr>
+      <tr>
+        <td class="siv-r-container siv-r-indicator-name">Community health workers / tbas</td>
+        <td class="siv-r-container siv-r-table-item-no" data-fieldname="revchw">{{{helperDisplayIndicator "revchw" "val" 0.revchw}}}</td>
+      </tr>
+      <tr>
+        <td class="siv-r-container siv-r-indicator-name">Health staff involved</td>
+        <td class="siv-r-container siv-r-table-item-no" data-fieldname="revhealthstaff">{{{helperDisplayIndicator "revhealthstaff" "val" 0.revhealthstaff}}}</td>
+      </tr>
+      <tr>
+        <td class="siv-r-container siv-r-indicator-name">Referal hospital involved</td>
+        <td class="siv-r-container siv-r-table-item-no" data-fieldname="revrefhosp">{{{helperDisplayIndicator "revrefhosp" "val" 0.revrefhosp}}}</td>
+      </tr>
+      <tr>
+        <td class="siv-r-container siv-r-indicator-name">Family members</td>
+        <td class="siv-r-container siv-r-table-item-no" data-fieldname="revfamily">{{{helperDisplayIndicator "revfamily" "val" 0.revfamily}}}</td>
+      </tr>
+      <tr>
+        <td class="siv-r-container siv-r-indicator-name">Community / block leaders</td>
+        <td class="siv-r-container siv-r-table-item-no" data-fieldname="revcomleader">{{{helperDisplayIndicator "revcomleader" "val" 0.revcomleader}}}</td>
+      </tr>
+      <tr>
+        <td class="siv-r-container siv-r-indicator-name">Date of maternal death review</td>
+        <td class="siv-r-container siv-r-table-item-no" data-fieldname="revdate">{{{helperDisplayIndicator "revdate" "val" 0.revdate}}}</td>
+      </tr>
+    </tbody>
+    <!-- end of reviewers -->
+  </table>
+  <div class="clear"></div>
+  <div class="clear">
+    <div class="siv-r-sect-head-ctn">
+      <h2 class="siv-r-table-txt">A. Obstetric history</h2>
+    </div>
+    <div class="siv-r-table-can"></div>
+    <div class="clear"> </div>
+    <div class="siv-r-table-head">
+      <div class="siv-r-table-col-name">
+        <h3 class="siv-r-table-name-txt">Information</h3>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-ind-txt">Result</h4>
+        <div class="siv-r-ind-can"></div>
+      </div>
+      <table class="siv-r-table clear">
+        <tbody>
+          <tr class="siv-r-table-hl">
+            <td class="siv-r-table-item">Gravida</td>
+            <td class="siv-r-ind-val" data-fieldname="gravida">{{{helperDisplayIndicator "gravida" "val" 0.gravida}}}</td>
+          </tr>
+          <tr>
+            <td class="siv-r-table-item">Parity</td>
+            <td class="siv-r-ind-val" data-fieldname="parity">{{{helperDisplayIndicator "parity" "val" 0.parity}}}</td>
+          </tr>
+          <tr class="siv-r-table-hl">
+            <td class="siv-r-table-item">Ever seen by health staff for this pregnancy prior to day of death</td>
+            <td class="siv-r-ind-val" data-fieldname="hlthstfpreg">{{{helperDisplayIndicator "hlthstfpreg" "val" 0.hlthstfpreg}}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="siv-r-table-head-space">&nbsp;</div>
+    <div class="siv-r-table-head">
+      <div class="siv-r-table-col-name">
+        <h3 class="siv-r-table-name-txt">Previous history</h3>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-ind-txt">Result </h4>
+        <div class="siv-r-ind-can"></div>
+      </div>
+      <table class="siv-r-table clear">
+        <tbody>
+          <tr class="siv-r-table-hl">
+            <td class="siv-r-table-item">{{{helperDisplayIndicator "obshist_cs" "lab" 0.obshist_cs}}}</td>
+            <td class="siv-r-ind-val" data-fieldname="obshist_cs">{{{helperDisplayIndicator "obshist_cs" "val" 0.obshist_cs}}}</td>
+          </tr>
+          <tr>
+            <td class="siv-r-table-item">{{{helperDisplayIndicator "obshist_sb" "lab" 0.obshist_sb}}}</td>
+            <td class="siv-r-ind-val" data-fieldname="obshist_sb">{{{helperDisplayIndicator "obshist_sb" "val" 0.obshist_sb}}}</td>
+          </tr>
+          <tr class="siv-r-table-hl">
+            <td class="siv-r-table-item">{{{helperDisplayIndicator "obshist_mc" "lab" 0.obshist_mc}}}</td>
+            <td class="siv-r-ind-val" data-fieldname="obshist_mc">{{{helperDisplayIndicator "obshist_mc" "val" 0.obshist_mc}}}</td>
+          </tr>
+          <tr>
+            <td class="siv-r-table-item">{{{helperDisplayIndicator "obshist_pph" "lab" 0.obshist_pph}}}</td>
+            <td class="siv-r-ind-val" data-fieldname="obshist_pph">{{{helperDisplayIndicator "obshist_pph" "val" 0.obshist_pph}}}</td>
+          </tr>
+          <tr class="siv-r-table-hl">
+            <td class="siv-r-table-item">{{{helperDisplayIndicator "obshist_aph" "lab" 0.obshist_aph}}}</td>
+            <td class="siv-r-ind-val" data-fieldname="obshist_aph">{{{helperDisplayIndicator "obshist_aph" "val" 0.obshist_aph}}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="clear">
+    <div class="siv-r-sect-head-ctn">
+      <h2 class="siv-r-table-txt">B. Antenatal care</h2>
+    </div>
+    <div class="siv-r-table-can"></div>
+    <div class="clear"> </div>
+    <div class="siv-r-table-head">
+      <div class="siv-r-table-col-name">
+        <h3 class="siv-r-table-name-txt">Antenatal period</h3>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-ind-txt">Result</h4>
+        <div class="siv-r-ind-can"></div>
+      </div>
+      <table class="siv-r-table clear">
+        <tbody>
+          <tr class="siv-r-table-hl">
+            <td class="siv-r-table-item">Number of ANC visits</td>
+            <td class="siv-r-ind-val" data-fieldname="ancvisit">{{{helperDisplayIndicator "ancvisit" "val" 0.ancvisit}}}</td>
+          </tr>
+          <tr>
+            <td class="siv-r-table-item">Date of last visit</td>
+            <td class="siv-r-ind-val" data-fieldname="lstancvst">{{{helperDisplayIndicator "lstancvst" "val" 0.lstancvst}}}</td>
+          </tr>
+          <tr class="siv-r-table-hl">
+            <td class="siv-r-table-item">Seen by</td>
+            <td class="siv-r-ind-val" data-fieldname="ancqual">{{{helperDisplayIndicator "ancqual" "val" 0.ancqual}}}</td>
+          </tr>
+          <tr>
+            <td class="siv-r-table-item">Haemoglobin</td>
+            <td class="siv-r-ind-val" data-fieldname="hbglob">{{{helperDisplayIndicator "hbglob" "val" 0.hbglob}}}
+            	{{#if 0.hbglob.val}}
+            	 g/dl on {{{helperDisplayIndicator "hbglobdate" "val" 0.hbglobdate}}}
+         		{{/if}}</td>
+          </tr>
+          <tr class="siv-r-table-hl">
+            <td class="siv-r-table-item">Blood sugar </td>
+            <td class="siv-r-ind-val" data-fieldname="bldsug">{{{helperDisplayIndicator "bldsug" "val" 0.bldsug}}}
+            	{{#if 0.bldsugdate.val}}
+            	  mmol/L on {{{helperDisplayIndicator "bldsugdate" "val" 0.bldsugdate}}}
+            	{{/if}}
+            </td>
+          </tr>
+          <tr>
+            <td class="siv-r-table-item">Proteinuria </td>
+            <td class="siv-r-ind-val" data-fieldname="protein">{{{helperDisplayIndicator "protein" "val" 0.protein}}}
+            	{{#if 0.protein.val}}
+            	  mg/dL on {{{helperDisplayIndicator "proteindate" "val" 0.proteindate}}}
+            	{{/if}}
+            </td>
+          </tr>
+          <tr class="siv-r-table-hl">
+            <td class="siv-r-table-item">Intermittent malaria prophylaxis</td>
+            <td class="siv-r-ind-val" data-fieldname="intmalprop">{{{helperDisplayIndicator "intmalprop" "val" 0.intmalprop}}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="siv-r-table-head-space">&nbsp;</div>
+    <div class="siv-r-table-head">
+      <div class="siv-r-table-col-name">
+        <h3 class="siv-r-table-name-txt">Contributing factors identified</h3>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-ind-txt">Result </h4>
+        <div class="siv-r-ind-can"></div>
+      </div>
+      <table class="siv-r-table clear">
+        <tbody>
+          <tr class="siv-r-table-hl">
+            <td class="siv-r-table-item">Age &lt; 18 years </td>
+            <td class="siv-r-ind-val" data-fieldname="age_under18">{{{helperDisplayIndicator "age_under18" "val" 0.age_under18}}}</td>
+          </tr>
+          <tr>
+            <td class="siv-r-table-item">Age &gt; 35 years </td>
+            <td class="siv-r-ind-val" data-fieldname="age_over35">{{{helperDisplayIndicator "age_over35" "val" 0.age_over35}}}</td>
+          </tr>
+          <tr class="siv-r-table-hl">
+            <td class="siv-r-table-item">Diabetes</td>
+            <td class="siv-r-ind-val" data-fieldname="riskandb">{{{helperDisplayIndicator "riskandb" "val" 0.riskandb}}}</td>
+          </tr>
+          <tr>
+            <td class="siv-r-table-item">Hypertensive disorder</td>
+            <td class="siv-r-ind-val" data-fieldname="riskanhd">{{{helperDisplayIndicator "riskanhd" "val" 0.riskanhd}}}</td>
+          </tr>
+          <tr class="siv-r-table-hl">
+            <td class="siv-r-table-item">Severe anaemia (Hb &lt; 7 g/dl)</td>
+            <td class="siv-r-ind-val" data-fieldname="hbglob_sevanae">{{{helperDisplayIndicator "hbglob_sevanae" "val" 0.hbglob_sevanae}}}</td>
+          </tr>
+          <tr>
+            <td class="siv-r-table-item">HIV/AIDS</td>
+            <td class="siv-r-ind-val" data-fieldname="riskanhiv">{{{helperDisplayIndicator "riskanhiv" "val" 0.riskanhiv}}}</td>
+          </tr>
+          <tr class="siv-r-table-hl">
+            <td class="siv-r-table-item">Multiple pregnancy (2 or more pregnancies)</td>
+            <td class="siv-r-ind-val" data-fieldname="gravida_multpreg">{{{helperDisplayIndicator "gravida_multpreg" "val" 0.gravida_multpreg}}}</td>
+          </tr>
+          <tr>
+            <td class="siv-r-table-item">High parity (above 4 pregnancies)</td>
+            <td class="siv-r-ind-val" data-fieldname="parity_high">{{{helperDisplayIndicator "parity_high" "val" 0.parity_high}}}</td>
+          </tr>
+          <tr class="siv-r-table-hl">
+            <td class="siv-r-table-item">Malpresentation</td>
+            <td class="siv-r-ind-val" data-fieldname="riskanmp">{{{helperDisplayIndicator "riskanmp" "val" 0.riskanmp}}}</td>
+          </tr>
+          <tr>
+            <td class="siv-r-table-item">Antepartum haemorrhage (APH)</td>
+            <td class="siv-r-ind-val" data-fieldname="riskanah">{{{helperDisplayIndicator "riskanah" "val" 0.riskanah}}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="clear">
+    <div class="siv-r-sect-head-ctn">
+      <h2 class="siv-r-table-txt">C. Postnatal care</h2>
+    </div>
+    <div class="siv-r-table-can"></div>
+    <div class="clear"> </div>
+    <div class="siv-r-table-head">
+      <div class="siv-r-table-col-name">
+        <h3 class="siv-r-table-name-txt">Postnatal period</h3>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-ind-txt">Result</h4>
+        <div class="siv-r-ind-can"></div>
+      </div>
+      <table class="siv-r-table clear">
+        <tbody>
+          <tr class="siv-r-table-hl">
+            <td class="siv-r-table-item">Number of postnatal visits</td>
+            <td class="siv-r-ind-val" data-fieldname="pncvisit">{{{helperDisplayIndicator "pncvisit" "val" 0.pncvisit}}}</td>
+          </tr>
+          <tr>
+            <td class="siv-r-table-item">Were postnatal visits provided on time according to schedule</td>
+            <td class="siv-r-ind-val" data-fieldname="pncdate">{{{helperDisplayIndicator "pncdate" "val" 0.pncdate}}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="siv-r-table-head-space">&nbsp;</div>
+    <div class="siv-r-table-head">
+      <div class="siv-r-table-col-name">
+        <h3 class="siv-r-table-name-txt">Contributing factors identified</h3>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-ind-txt">Result </h4>
+        <div class="siv-r-ind-can"></div>
+      </div>
+      <table class="siv-r-table clear">
+        <tbody>
+          <tr class="siv-r-table-hl">
+            <td class="siv-r-table-item">Fever </td>
+            <td class="siv-r-ind-val" data-fieldname="riskpnfev">{{{helperDisplayIndicator "riskpnfev" "val" 0.riskpnfev}}}</td>
+          </tr>
+          <tr>
+            <td class="siv-r-table-item">Pain </td>
+            <td class="siv-r-ind-val" data-fieldname="riskpnpain">{{{helperDisplayIndicator "riskpnpain" "val" 0.riskpnpain}}}</td>
+          </tr>
+          <tr class="siv-r-table-hl">
+            <td class="siv-r-table-item">Abnormal discharge</td>
+            <td class="siv-r-ind-val" data-fieldname="riskpndisch">{{{helperDisplayIndicator "riskpndisch" "val" 0.riskpndisch}}}</td>
+          </tr>
+          <tr>
+            <td class="siv-r-table-item">Excess bleeding</td>
+            <td class="siv-r-ind-val" data-fieldname="riskpnbleed">{{{helperDisplayIndicator "riskpnbleed" "val" 0.riskpnbleed}}}</td>
+          </tr>
+          <tr class="siv-r-table-hl">
+            <td class="siv-r-table-item">High Blood Pressure</td>
+            <td class="siv-r-ind-val" data-fieldname="riskpnhbp">{{{helperDisplayIndicator "riskpnhbp" "val" 0.riskpnhbp}}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="clear"></div>
+  
+  <!-- end of page1 --> 
+  <div class="clear siv-r-section">
+    <div class="siv-r-container siv-r-summary-ctn">
+      <div class="siv-r-para-img-ctn"><img class="siv-r-ico-comment" src={{{local_asset "images/reports/phhiv/ico-report.png"}}} /></div>
+      <h2 class="siv-r-para-title">Care provided during postnatal care</h2>
+      <p class="siv-r-obj-txt clear" data-fieldname="pncprov">{{{helperDisplayIndicator "pncprov" "val" 0.pncprov}}}</p>
+    </div>
+  </div>
+  <div class="clear"></div>
+  <div class="clear">
+    <div class="siv-r-sect-head-ctn">
+      <h2 class="siv-r-table-txt">D. Details of death</h2>
+    </div>
+    <div class="siv-r-table-can"></div>
+    <div class="clear"></div>
+    <div class="siv-r-table-head">
+      <div class="siv-r-table-col-name">
+        <h3 class="siv-r-table-name-txt">&nbsp;</h3>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-ind-txt">Result</h4>
+        <div class="siv-r-ind-can"></div>
+      </div>
+      <table class="siv-r-table clear">
+        <tbody>
+          <tr class="siv-r-table-hl">
+            <td class="siv-r-table-item">Date and time of death</td>
+            <td class="siv-r-ind-val" data-fieldname="datedeath">{{{helperDisplayIndicator "datedeath" "val" 0.datedeath}}}</td>
+          </tr>
+          <tr>
+            <td class="siv-r-table-item">Delivery outcome</td>
+            <td class="siv-r-ind-val" data-fieldname="deloutcome">{{{helperDisplayIndicator "deloutcome" "val" 0.deloutcome}}}</td>
+          </tr>
+          <tr class="siv-r-table-hl">
+            <td class="siv-r-table-item">Suspected gestational age at time of maternal death (weeks)</td>
+            <td class="siv-r-ind-val" data-fieldname="gestage">{{{helperDisplayIndicator "gestage" "val" 0.gestage}}}</td>
+          </tr>
+          <tr>
+            <td class="siv-r-table-item">Time between delivery/abortion and maternal death</td>
+            <td class="siv-r-ind-val" data-fieldname="timedeltodeath">{{{helperDisplayIndicator "timedeltodeath" "val" 0.timedeltodeath}}}</td>
+          </tr>
+          <tr class="siv-r-table-hl">
+            <td><h3 class="siv-r-table-name-txt">Location of death</h3></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="siv-r-table-item">At home</td>
+            <td class="siv-r-ind-val" data-fieldname="locdeath">{{{checkbox 0.this "locdeath" "home"}}}</td>
+          </tr>
+          <tr class="siv-r-table-hl">
+            <td class="siv-r-table-item">On route to camp health facility</td>
+            <td class="siv-r-ind-val" data-fieldname="locdeath">{{{checkbox 0.this "locdeath" "on route to camp health facility"}}}</td>
+          </tr>
+          <tr>
+            <td class="siv-r-table-item">On route to referral health facility</td>
+            <td class="siv-r-ind-val" data-fieldname="locdeath">{{{checkbox 0.this "locdeath" "on route to referral health facility"}}}</td>
+          </tr>
+          <tr class="siv-r-table-hl">
+            <td class="siv-r-table-item">In camp health facility</td>
+            <td class="siv-r-ind-val" data-fieldname="locdeath">{{{checkbox 0.this "locdeath" "camp health facility"}}}</td>
+          </tr>
+          <tr>
+            <td class="siv-r-table-item">In referral health facility</td>
+            <td class="siv-r-ind-val" data-fieldname="locdeath">{{{checkbox 0.this "locdeath" "referral health facility"}}}</td>
+          </tr>
+          <tr class="siv-r-table-hl">
+            <td><h3 class="siv-r-table-name-txt">Date & time of admission</h3></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="siv-r-table-item">At first health facility</td>
+            <td class="siv-r-ind-val" data-fieldname="dateadmission">{{{helperDisplayIndicator "dateadmission" "val" 0.dateadmission}}}</td>
+          </tr>
+          <tr class="siv-r-table-hl">
+            <td class="siv-r-table-item">At referral health facility</td>
+            <td class="siv-r-ind-val" data-fieldname="dateadmref">{{{helperDisplayIndicator "dateadmref" "val" 0.dateadmref}}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="siv-r-table-head-space">&nbsp;</div>
+    <div class="siv-r-table-head">
+      <div class="siv-r-table-col-name">
+        <h3 class="siv-r-table-name-txt">Main symptoms prior to death</h3>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-ind-txt">Result</h4>
+        <div class="siv-r-ind-can"></div>
+      </div>
+      <table class="siv-r-table clear">
+        <tbody>
+          <tr class="siv-r-table-hl">
+            <td class="siv-r-table-item">Abnormal bleeding</td>
+            <td class="siv-r-ind-val" data-fieldname="sympbleed">{{{helperDisplayIndicator "sympbleed" "val" 0.sympbleed}}}</td>
+          </tr>
+          <tr>
+            <td class="siv-r-table-item">Abnormal discharge</td>
+            <td class="siv-r-ind-val" data-fieldname="sympdisch">{{{helperDisplayIndicator "sympdisch" "val" 0.sympdisch}}}</td>
+          </tr>
+          <tr class="siv-r-table-hl">
+            <td class="siv-r-table-item">Fever/shivering</td>
+            <td class="siv-r-ind-val" data-fieldname="sympfever">{{{helperDisplayIndicator "sympfever" "val" 0.sympfever}}}</td>
+          </tr>
+          <tr>
+            <td class="siv-r-table-item">Severe pallor</td>
+            <td class="siv-r-ind-val" data-fieldname="symppallor">{{{helperDisplayIndicator "symppallor" "val" 0.symppallor}}}</td>
+          </tr>
+          <tr class="siv-r-table-hl">
+            <td class="siv-r-table-item">Abnormal pain</td>
+            <td class="siv-r-ind-val" data-fieldname="symppain">{{{helperDisplayIndicator "symppain" "val" 0.symppain}}}</td>
+          </tr>
+          <tr>
+            <td class="siv-r-table-item">Fits/convulsions</td>
+            <td class="siv-r-ind-val" data-fieldname="sympfits">{{{helperDisplayIndicator "sympfits" "val" 0.sympfits}}}</td>
+          </tr>
+          <tr class="siv-r-table-hl">
+            <td class="siv-r-table-item">Blurred vision</td>
+            <td class="siv-r-ind-val" data-fieldname="sympvision">{{{helperDisplayIndicator "sympvision" "val" 0.sympvision}}}</td>
+          </tr>
+          <tr>
+            <td class="siv-r-table-item">Frontal headache</td>
+            <td class="siv-r-ind-val" data-fieldname="sympheadache">{{{helperDisplayIndicator "sympheadache" "val" 0.sympheadache}}}</td>
+          </tr>
+          <tr class="siv-r-table-hl">
+            <td class="siv-r-table-item">Loss of consciousness</td>
+            <td class="siv-r-ind-val" data-fieldname="symplosscons">{{{helperDisplayIndicator "symplosscons" "val" 0.symplosscons}}}</td>
+          </tr>
+          <tr>
+            <td class="siv-r-table-item">Confusion</td>
+            <td class="siv-r-ind-val" data-fieldname="sympconfuse">{{{helperDisplayIndicator "sympconfuse" "val" 0.sympconfuse}}}</td>
+          </tr>
+          <tr class="siv-r-table-hl">
+            <td class="siv-r-table-item">Slow labour </td>
+            <td class="siv-r-ind-val" data-fieldname="symplabour">{{{helperDisplayIndicator "symplabour" "val" 0.symplabour}}}</td>
+          </tr>
+          <tr>
+            <td class="siv-r-table-item">Placenta retention</td>
+            <td class="siv-r-ind-val" data-fieldname="sympplacret">{{{helperDisplayIndicator "sympplacret" "val" 0.sympplacret}}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <div class="siv-r-container siv-r-summary-ctn clear">
+    <div class="siv-r-para-img-ctn"><img class="siv-r-ico-summary" src={{{local_asset "images/reports/phhiv/ico-report.png"}}} /></div>
+    <h2 class="siv-r-para-title">Summarised history of events</h2>
+    <p id="siv-r-AR_TEXT_OBJ_1-v" class="siv-r-obj-txt clear" data-fieldname="history">{{{helperDisplayIndicator "history" "val" 0.history}}}</p>
+    <!--end of summarised history of events --> 
+  </div>
+  <div class="siv-r-container siv-r-summary-ctn">
+    <div class="siv-r-para-img-ctn siv-r-ico-summary"></div>
+    <h2 class="siv-r-para-title">Delay factors</h2>
+    <div class="siv-r-obj-ctn clear">
+      <div class="siv-r-obj-title-ctn">
+        <div class="siv-r-obj-title">
+          <h3 class="siv-r-obj-title-txt">1st Delay<span class="siv-r-obj-title-sym">&gt;</span></h3>
+        </div>
+        <p class="siv-r-obj-title-name">Factors related to the 1st delay (delay in identifying and deciding to seek care) </p>
+      </div>
+      <ul class="siv-r-obj-title-ctn">
+        <p class="siv-r-obj-ques">For example: </p>
+        <li class="siv-r-obj-ques"> Cultural / educational / economic barriers at family level.</li>
+        <li class="siv-r-obj-ques">Lack of birth preparedness and absence of an emergency birth plan defined during ANC.</li>
+        <li class="siv-r-obj-ques"> Inappropriate care at home.</li>
+      </ul>
+      <div class="siv-r-obj-txt">
+      {{#if 0.f1d1.val}}<p class="siv-r-obj-txt" data-fieldname="f1d1">1.{{{helperDisplayIndicator "f1d1" "val" 0.f1d1}}}</p>{{/if}}
+      {{#if 0.f1d2.val}}<p class="siv-r-obj-txt" data-fieldname="f1d2">2.{{{helperDisplayIndicator "f1d2" "val" 0.f1d2}}}</p>{{/if}}
+      {{#if 0.f1d3.val}}<p class="siv-r-obj-txt" data-fieldname="f1d3">3.{{{helperDisplayIndicator "f1d3" "val" 0.f1d3}}}</p>{{/if}}
+      </div>
+    </div>
+    <div class="siv-r-obj-ctn clear">
+      <div class="siv-r-obj-title-ctn">
+        <div class="siv-r-obj-title">
+          <h3 class="siv-r-obj-title-txt">2nd Delay<span class="siv-r-obj-title-sym">&gt;</span></h3>
+        </div>
+        <p class="siv-r-obj-title-name">Factors related to the 2nd delay (delay in reaching care) </p>
+      </div>
+      <ul class="siv-r-obj-title-ctn">
+        <p class="siv-r-obj-ques">For example: </p>
+        <li class="siv-r-obj-ques">Barriers to access a health facility such as lack of transportation, distance to health facility, presence of insecurity.</li>
+      </ul>
+      <div class="siv-r-obj-txt">
+      {{#if 0.F2D1.val}}<p class="siv-r-obj-txt" data-fieldname="f2d1">1.{{{helperDisplayIndicator "f2d1" "val" 0.f2d1}}}</p>{{/if}}
+      {{#if 0.f2d2.val}}<p class="siv-r-obj-txt" data-fieldname="f2d2">2.{{{helperDisplayIndicator "f2d2" "val" 0.f2d2}}}</p>{{/if}}
+      {{#if 0.f2d3.val}}<p class="siv-r-obj-txt" data-fieldname="f2D3">3.{{{helperDisplayIndicator "F2D3" "val" 0.F2D3}}}</p>{{/if}}
+      </div>
+    </div>
+    <!-- end of delay factors --> 
+  </div>
+  <!-- end of page2 --> 
+  <div class="siv-r-container siv-r-summary-ctn">
+    <div class="siv-r-obj-ctn clear">
+      <div class="siv-r-obj-title-ctn">
+        <div class="siv-r-obj-title">
+          <h3 class="siv-r-obj-title-txt">3rd Delay<span class="siv-r-obj-title-sym">&gt;</span></h3>
+        </div>
+        <p class="siv-r-obj-title-name">Factors related to the 3rd delay (delay in receiving appropriate care at camp facility/referral hospital) </p>
+      </div>
+      <ul class="siv-r-obj-title-ctn">
+        <p class="siv-r-obj-ques">For example: </p>
+        <li class="siv-r-obj-ques">Incorrect diagnosis or failure to correctly assess the severity of the condition</li>
+        <li class="siv-r-obj-ques">Poor decision making in referring the patient between the first health facility and the referral hospital</li>
+        <li class="siv-r-obj-ques">Lack of timely case management (e.g. poorly trained staff, absence of clinical guidelines)</li>
+        <li class="siv-r-obj-ques">Inadequate resources (e.g. staff, equipment, drugs, blood)</li>
+      </ul>
+      <div class="siv-r-obj-txt">
+      {{#if 0.f3d1.val}}<p class="siv-r-obj-txt" data-fieldname="f3d1">1.{{{helperDisplayIndicator "f3d1" "val" 0.f3d1}}}</p>{{/if}}
+      {{#if 0.f3d2.val}}<p class="siv-r-obj-txt" data-fieldname="f3d2">2.{{{helperDisplayIndicator "f3d2" "val" 0.f3d2}}}</p>{{/if}}
+      {{#if 0.f3d3.val}}<p class="siv-r-obj-txt" data-fieldname="f3d3">3.{{{helperDisplayIndicator "f3d3" "val" 0.f3d3}}}</p>{{/if}}
+      </div>
+    </div>
+    <!-- end of delay factors --> 
+  </div>
+  <div class="clear">
+    <div class="siv-r-sect-head-ctn">
+      <h2 class="siv-r-table-txt">E. Cause of death</h2>
+    </div>
+    <div class="siv-r-table-can"></div>
+    <div class="siv-r-table clear">
+      <h3 class="siv-r-table-name-txt"><span>Direct cause</span></h3>
+    </div>
+    <table class="siv-r-table clear">
+      <tbody>
+        <tr class="siv-r-table-hl">
+          <td class="siv-r-table-item" data-fieldname="directdesc">{{#if directdesc.val}}{{{helperDisplayIndicator "directdesc" "val" 0.directdesc}}}{{else}}{{{helperDisplayIndicator "direct" "val" 0.}}}{{/if}}</td>
+        </tr>
+        <tr>
+          <td colspan=""><h3 class="siv-r-table-name-txt">Indirect causes</h3></td>
+        </tr>
+        <tr class="siv-r-table-hl">
+          <td class="siv-r-table-item" data-fieldname="indirect1">{{{helperDisplayIndicator "indirect1" "val" 0.indirect1}}}</td>
+        </tr>
+        <tr>
+          <td class="siv-r-table-item" data-fieldname="indirect2">{{{helperDisplayIndicator "indirect2" "val" 0.indirect2}}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="siv-r-glc clear">
+    <div class="siv-r-container">
+      <div class="siv-r-single-head-ctn">
+        <h2 class="siv-r-table-txt">F. Conclusion</h2>
+      </div>
+      <div class="siv-r-single-table-can"></div>
+      <div class="siv-r-single-table-can-border"></div>
+      <div class="siv-r-sect-head-ctn-mod">
+        <h2 class="siv-r-table-txt-mod">&nbsp;</h2>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div class="siv-r-ctn-head siv-r-glc-margin">
+      <h2 class="siv-r-ctn-head-txt">Key issues identified and lessons learned</h2>
+    </div>
+    <div class="siv-r-ctn-head siv-r-glc-margin">
+      <h2 class="siv-r-ctn-head-txt">Action to be taken / Proposed solutions </h2>
+    </div>
+    <div class="siv-r-ctn-head siv-r-glc-margin">
+      <h2 class="siv-r-ctn-head-txt">Responsible person / Organisation</h2>
+    </div>
+    <div class="siv-r-ctn-head">
+      <h2 class="siv-r-ctn-head-txt">Timeline</h2>
+    </div>
+    <div class="clear"></div>
+    <table class="siv-r-table">
+      <tbody>
+        <tr class="siv-r-table-hl">
+          <td class="siv-r-glc-margin"><div class="siv-r-list-num">1</div>
+            <p class="siv-r-glc-txt" data-fieldname="lessons1">{{{helperDisplayIndicator "lessons1" "val" 0.lessons1}}}</p></td>
+          <td class="siv-r-glc-margin"><div class="siv-r-list-num">1</div>
+            <p  class="siv-r-glc-txt" data-fieldname="actions1">{{{helperDisplayIndicator "actions1" "val" 0.actions1}}}</p></td>
+          <td class="siv-r-glc-margin"><div class="siv-r-list-num">1</div>
+            <p class="siv-r-glc-txt" data-fieldname="responsible1">{{{helperDisplayIndicator "responsible1" "val" 0.responsible1}}}</p></td>
+           <td><div class="siv-r-list-num">1</div>
+            <p class="siv-r-glc-txt" data-fieldname="timeline1">{{{helperDisplayIndicator "timeline1" "val" 0.timeline1}}}</p></td>
+        </tr>
+      {{#if 0.lessons2.val}}
+      <tr>
+        <td class="siv-r-glc-margin"><div class="siv-r-list-num">2</div>
+          <p class="siv-r-glc-txt" data-fieldname="lessons2">{{{helperDisplayIndicator "lessons2" "val" 0.lessons2}}}</p></td>
+        <td class="siv-r-glc-margin"><div class="siv-r-list-num">2</div>
+          <p  class="siv-r-glc-txt" data-fieldname="actions2">{{{helperDisplayIndicator "actions2" "val" 0.actions2}}}</p></td>
+        <td class="siv-r-glc-margin"><div class="siv-r-list-num">2</div>
+          <p class="siv-r-glc-txt" data-fieldname="responsible2">{{{helperDisplayIndicator "responsible2" "val" 0.responsible2}}}</p></td>
+         <td><div class="siv-r-list-num">2</div>
+          <p class="siv-r-glc-txt" data-fieldname="timeline2">{{{helperDisplayIndicator "timeline2" "val" 0.timeline2}}}</p></td>
+      </tr>
+      {{/if}}
+      {{#if 0.lessons3.val}}
+      <tr class="siv-r-table-hl">
+        <td class="siv-r-glc-margin"><div class="siv-r-list-num">3</div>
+          <p class="siv-r-glc-txt" data-fieldname="lessons3">{{{helperDisplayIndicator "lessons3" "val" 0.lessons3}}}</p></td>
+        <td class="siv-r-glc-margin"><div class="siv-r-list-num">3</div>
+          <p  class="siv-r-glc-txt" data-fieldname="actions3">{{{helperDisplayIndicator "actions3" "val" 0.actions3}}}</p></td>
+        <td class="siv-r-glc-margin"><div class="siv-r-list-num">3</div>
+          <p class="siv-r-glc-txt" data-fieldname="responsible3">{{{helperDisplayIndicator "responsible3" "val" 0.responsible3}}}</p></td>
+         <td><div class="siv-r-list-num">3</div>
+          <p class="siv-r-glc-txt" data-fieldname="timeline3">{{{helperDisplayIndicator "timeline3" "val" 0.timeline3}}}</p></td>
+      </tr>
+      {{/if}}
+      {{#if 0.lessons4.val}}
+      <tr>
+        <td class="siv-r-glc-margin"><div class="siv-r-list-num">4</div>
+          <p class="siv-r-glc-txt" data-fieldname="lessons4">{{{helperDisplayIndicator "lessons4" "val" 0.lessons4}}}</p></td>
+        <td class="siv-r-glc-margin"><div class="siv-r-list-num">4</div>
+          <p  class="siv-r-glc-txt" data-fieldname="actions4">{{{helperDisplayIndicator "actions4" "val" 0.actions4}}}</p></td>
+        <td class="siv-r-glc-margin"><div class="siv-r-list-num">4</div>
+          <p class="siv-r-glc-txt" data-fieldname="responsible4">{{{helperDisplayIndicator "responsible4" "val" 0.responsible4}}}</p></td>
+         <td><div class="siv-r-list-num">4</div>
+          <p class="siv-r-glc-txt" data-fieldname="timeline4">{{{helperDisplayIndicator "timeline4" "val" 0.timeline4}}}</p></td>
+      </tr>
+      {{/if}}
+      {{#if 0.lessons5.val}}
+      <tr class="siv-r-table-hl">
+        <td class="siv-r-glc-margin"><div class="siv-r-list-num">5</div>
+          <p class="siv-r-glc-txt" data-fieldname="lessons5">{{{helperDisplayIndicator "lessons5" "val" 0.lessons5}}}</p></td>
+        <td class="siv-r-glc-margin"><div class="siv-r-list-num">5</div>
+          <p  class="siv-r-glc-txt" data-fieldname="actions5">{{{helperDisplayIndicator "actions5" "val" 0.actions5}}}</p></td>
+        <td class="siv-r-glc-margin"><div class="siv-r-list-num">5</div>
+          <p class="siv-r-glc-txt" data-fieldname="responsible5">{{{helperDisplayIndicator "responsible5" "val" 0.responsible5}}}</p></td>
+        <td><div class="siv-r-list-num">5</div>
+          <p class="siv-r-glc-txt" data-fieldname="timeline5">{{{helperDisplayIndicator "timeline5" "val" 0.timeline5}}}</p></td>
+      </tr>
+      {{/if}}
+        </tbody>
+      
+    </table>
+    <div class="clear"></div>
+    <!-- end of conclusion --> 
+  </div>
+  <div class="siv-r-legend-wrap clear">
+    <div class="siv-r-contact-ctn clear">
+      <div class="siv-r-table siv-r-container">
+        <div class="clear"></div>
+        <div class="siv-r-contact-header-ctn">
+          <h3 class="siv-r-contact-header">Contact information</h3>
+        </div>
+        <div class="siv-r-contact-table-ctn">
+          <div class="siv-r-contact-table" style="border:none;">
+            <table class="siv-r-table">
+              <tbody>
+                <tr>
+                  <td class="siv-r-contact-camp" data-fieldname="compilername">{{{helperDisplayIndicator "compilername" "val" 0.compilername}}}</td>
+                  <td class="siv-r-contact-n">Email <span class="siv-r-contact-v" data-fieldname="compileremail">{{{helperDisplayIndicator "compileremail" "val" 0.compileremail}}}</span></td>
+                </tr>
+                <tr>
+                  <td rowspan="2" class="siv-r-contact-name" data-fieldname="compilertitle">{{{helperDisplayIndicator "compilertitle" "val" 0.compilertitle}}}</td>
+                  <td class="siv-r-contact-n">Telephone <span class="siv-r-contact-v" data-fieldname="compilerphone">{{{helperDisplayIndicator "compilerphone" "val" 0.compilerphone}}}</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <!-- end of contact info --> 
+    </div>
+    <div class="clear siv-r-legend-ctn siv-r-container ">
+      <div class="siv-r-ptn-ctn"> <img id="siv-r-partner_1" class="siv-r-ptn-logo" src="about:blank"> <img id="siv-r-partner_2" class="siv-r-ptn-logo" src="about:blank"> <img id="siv-r-partner_3" class="siv-r-ptn-logo" src="about:blank"> <img id="siv-r-partner_4" class="siv-r-ptn-logo" src="about:blank"> <img id="siv-r-partner_5" class="siv-r-ptn-logo" src="about:blank"> <img id="siv-r-partner_6" class="siv-r-ptn-logo" src="about:blank"> <img id="siv-r-partner_7" class="siv-r-ptn-logo" src="about:blank"> <img id="siv-r-partner_8" class="siv-r-ptn-logo" src="about:blank"> <img id="siv-r-partner_9" class="siv-r-ptn-logo" src="about:blank"></div>
+      <img class="siv-r-contact-logo" src={{{local_asset "images/reports/phhiv/unhcr-logo.png"}}}>
+      <div class="clear"></div>
+    </div>
+    <!--end of footer --> 
+  </div>
+  <!--end of page3 --> 
+</div>
+</div>

@@ -1,0 +1,698 @@
+<div class="siv-r-his-cty">
+<div class="siv-r-page-break">
+  <div class="siv-r-page-header">
+    <div class="siv-r-loc-ctn">
+      <h1 class="siv-r-loc-txt">{{{embedded_value "locationdetails" "location_name"}}}</h1>
+    </div>
+    <div class="siv-r-loc-can"></div>
+    <div class="siv-r-title-can"></div>
+    <div class="siv-r-title-ctn">
+      <p class="siv-r-title-txt">PHHIV Country Fact Sheet </p>
+      <div class="siv-r-year-ctn">
+        <p class="siv-r-year-txt">{{{dateinfo "year"}}}</p>
+      </div>
+    </div>
+  </div>
+  <div class="siv-r-flag-ctn clear">{{{helperFlagSVG "iso" "locationdetails" "icons/flags/round/flags-svg/" "siv-r-flag-img"}}}</div>
+  <div class="siv-r-container siv-r-gen clear">
+    <div class="siv-r-gen-head-ctn">
+      <h2 class="siv-r-gen-head-txt">General Information</h2>
+    </div>
+    <div class="siv-r-gen-graph-ctn">
+      <div class="siv-r-gen-graph-img">{{{poppie "popdata" "siv-r-gen-graph-img" }}}</div>
+    </div>
+    <div class="siv-r-gen-pop-ctn">
+      <p class="siv-r-gen-txt">Total population of concern:</p>
+      <p class="siv-r-gen-txt siv-r-gen-pop">{{{display_raw_value AR_GEN_POP_TOTAL}}}</p>
+    </div>
+  </div>
+  <div class="siv-r-gen-head-can"></div>
+  <div class="siv-r-country-map-ctn "> {{{image  "map" "locationdetails" "siv-r-country-map-img"}}} </div>
+ <!-- <div class="siv-r-container siv-r-key-ctn">
+    <h2 class="siv-r-key-title">Key Dates</h2>
+    <p class="siv-r-key-desc">The following were key dates in the <span id="siv-r-year_B"></span> PHHIV calendar.</p>
+    <div class="siv-r-key-list-ctn">
+      <p class="siv-r-key-list-item">Date of last KAPB/BSS</p>
+      <p id="siv-r-AR_NUT_SURV_DATE_KAPBBSS-v" class="siv-r-key-list-value">-</p>
+      <p class="siv-r-key-list-item">Date of last nutrition survey</p>
+      <p id="siv-r-AR_NUT_SURV_DATE_SURV-v" class="siv-r-key-list-value">-</p>
+      <p class="siv-r-key-list-item">Date of last JAM</p>
+      <p id="siv-r-AR_NUT_SURV_DATE_JAM-v" class="siv-r-key-list-value">-</p>
+    </div>
+  </div> -->
+  
+   <div class="siv-r-container siv-r-key-ctn">
+    <h2 class="siv-r-key-title">Sources of data</h2>
+    <p  class="siv-r-key-desc">This <span>{{{embedded_value "locationdetails" "location_name"}}}</span> Annual report is based on data collected using a standardised HIS and from UNHCR Nutrition surveys. It does not reflect the situation from areas outside refugee camps where no health services are offered or where UNHCR does not support health services.</p>
+  </div>
+  <br />
+  <div class="clear">
+    <div class="siv-r-sect-head-ctn">
+      <h2 class="siv-r-table-txt">Public Health</h2>
+    </div>
+    <div class="siv-r-table-can"></div>
+    <div class="clear"></div>
+    <div class="siv-r-table-head">
+      <div class="siv-r-table-col-name-no">
+        <h3 class="siv-r-table-name-txt">Human Resources</h3>
+      </div>
+      <div class="siv-r-table-col-no">
+        <h4 class="siv-r-no-txt">No.</h4>
+        <div class="siv-r-no-can"></div>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-ind-txt">Indicator</h4>
+        <div class="siv-r-ind-can"></div>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-std-txt">Standard</h4>
+        <div class="siv-r-std-can"></div>
+      </div>
+    </div>
+    <div class="siv-r-table-head-space">&nbsp;</div>
+    <div class="siv-r-table-head">
+      <div class="siv-r-table-col-name-no">
+        <h3 class="siv-r-table-name-txt">Access and Utilisation</h3>
+      </div>
+      <div class="siv-r-table-col-no">
+        <h4 class="siv-r-no-txt">No.</h4>
+        <div class="siv-r-no-can"></div>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-ind-txt">Indicator</h4>
+        <div class="siv-r-ind-can"></div>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-std-txt">Standard</h4>
+        <div class="siv-r-std-can"></div>
+      </div>
+    </div>
+    <table class="siv-r-table clear">
+      <tr>
+        <td class="siv-r-table-item-no siv-r-table-hl">No. of Medical Doctors</td>
+        <td class="siv-r-no-val siv-r-table-hl">{{{display_raw_value AR_GEN_STAFF_DOCTOR}}}</td>
+        <td class="siv-r-ind-val siv-r-table-hl">1 : <span>{{{display_calc_value AR_GEN_STAFF_DOCTOR}}}</span></td>
+        <td class="siv-r-std-val siv-r-table-hl">{{{standard AR_GEN_STAFF_DOCTOR}}}</td>
+        <td class="siv-r-table-score siv-r-table-hl">{{{standard_result AR_GEN_STAFF_DOCTOR}}}</td>
+        <td class="siv-r-table-space">&nbsp;</td>
+        <td class="siv-r-table-item-no siv-r-table-hl">No. of health facilities</td>
+        <td class="siv-r-no-val siv-r-table-hl">{{{display_raw_value AR_GEN_INFR_GEN_NUMHF}}}</td>
+        <td class="siv-r-ind-val siv-r-table-hl">1 : <span>{{{display_calc_value AR_GEN_INFR_GEN_NUMHF}}}</span></td>
+        <td class="siv-r-std-val siv-r-table-hl">{{{standard AR_GEN_INFR_GEN_NUMHF}}}</td>
+        <td class="siv-r-table-score siv-r-table-hl">{{{standard_result AR_GEN_INFR_GEN_NUMHF}}}</td>
+      </tr>
+      <tr>
+        <td class="siv-r-table-item-no">No. of Clinical Consultants</td>
+        <td class="siv-r-no-val">{{{display_raw_value AR_GEN_STAFF_CLINCONS}}}</td>
+        <td class="siv-r-ind-val">1 : <span>{{{display_calc_value AR_GEN_STAFF_CLINCONS}}}</span></td>
+        <td class="siv-r-std-val">{{{standard AR_GEN_STAFF_CLINCONS}}}</td>
+        <td class="siv-r-table-score">{{{standard_result AR_GEN_STAFF_CLINCONS}}}</td>
+        <td class="siv-r-table-space">&nbsp;</td>
+        <td class="siv-r-table-item-no">No. of consultations per trained clinician per day</td>
+        <td class="siv-r-no-val"></td>
+        <td class="siv-r-ind-val">{{{display_raw_value AR_PH_UTIL_CONSCLINDAY}}}</td>
+        <td class="siv-r-std-val">{{{standard AR_PH_UTIL_CONSCLINDAY}}}</td>
+        <td class="siv-r-table-score">{{{standard_result AR_PH_UTIL_CONSCLINDAY}}}</td>
+      </tr>
+      <tr>
+        <td class="siv-r-table-item-no siv-r-table-hl">No. of Nurses (qualified)</td>
+        <td class="siv-r-no-val siv-r-table-hl">{{{display_raw_value AR_GEN_STAFF_NURSE}}}</td>
+        <td  class="siv-r-ind-val siv-r-table-hl">1 : <span>{{{display_calc_value AR_GEN_STAFF_NURSE}}}</span></td>
+        <td class="siv-r-std-val siv-r-table-hl">{{{standard AR_GEN_STAFF_NURSE}}}</td>
+        <td class="siv-r-table-score siv-r-table-hl">{{{standard_result AR_GEN_STAFF_NURSE}}}</td>
+        <td class="siv-r-table-space">&nbsp;</td>
+        <td class="siv-r-table-item-no siv-r-table-hl">Health Utilization Rate (new visits/person/year)</td>
+        <td class="siv-r-no-val siv-r-table-hl"></td>
+        <td class="siv-r-ind-val siv-r-table-hl">{{{display_raw_value AR_PH_UTIL_HEALTHUTIL}}}</td>
+        <td class="siv-r-std-val siv-r-table-hl">{{{standard AR_PH_UTIL_HEALTHUTIL}}}</td>
+        <td class="siv-r-table-score siv-r-table-hl">{{{standard_result AR_PH_UTIL_HEALTHUTIL}}}</td>
+      </tr>
+       <tr>
+        <td class="siv-r-table-item-no">No. of MCH staff / Midwifes</td>
+        <td class="siv-r-no-val">{{{display_raw_value AR_GEN_STAFF_MCH}}}</td>
+        <td class="siv-r-ind-val">1 : <span>{{{display_calc_value AR_GEN_STAFF_MCH}}}</span></td>
+        <td class="siv-r-std-val">{{{standard AR_GEN_STAFF_MCH}}}</td>
+        <td class="siv-r-table-score">{{{standard_result AR_GEN_STAFF_MCH}}}</td>
+        <td class="siv-r-table-space">&nbsp;</td>
+        <td class="siv-r-table-item-no">Proportion of consultations by host population</td>
+        <td class="siv-r-no-val"></td>
+        <td class="siv-r-ind-val">{{{display_raw_value AR_PH_UTIL_PCTNATCONS}}}</td>
+        <td class="siv-r-std-val">{{{standard AR_PH_UTIL_PCTNATCONS}}}</td>
+        <td class="siv-r-table-score">{{{standard_result AR_PH_UTIL_PCTNATCONS}}}</td>
+      </tr>
+      <tr>
+        <td class="siv-r-table-item-no siv-r-table-hl">No. of Laboratory Technicians</td>
+        <td class="siv-r-no-val siv-r-table-hl">{{{display_raw_value AR_GEN_STAFF_LAB}}}</td>
+        <td class="siv-r-ind-val siv-r-table-hl">1 : <span>{{{display_calc_value AR_GEN_STAFF_LAB}}}</span></td>
+        <td class="siv-r-std-val siv-r-table-hl">{{{standard AR_GEN_STAFF_LAB}}}</td>
+        <td class="siv-r-table-score siv-r-table-hl">{{{standard_result AR_GEN_STAFF_LAB}}}</td>
+        <td class="siv-r-table-space">&nbsp;</td>      
+        <td class="siv-r-table-hl"></td>
+        <td class="siv-r-table-hl"></td>
+        <td class="siv-r-table-hl"></td>
+        <td class="siv-r-table-hl"></td>
+        <td class="siv-r-table-hl"></td>
+      </tr> 
+      <tr>
+        <td class="siv-r-table-item-no">No. of Community Health Workers (CHWs)</td>
+        <td class="siv-r-no-val">{{{display_raw_value AR_GEN_STAFF_CHW}}}</td>
+        <td class="siv-r-ind-val">1 : <span>{{{display_calc_value AR_GEN_STAFF_CHW}}}</span></td>
+        <td class="siv-r-std-val">{{{standard AR_GEN_STAFF_CHW}}}</td>
+        <td class="siv-r-table-score">{{{standard_result AR_GEN_STAFF_CHW}}}</td>
+        <td class="siv-r-table-space">&nbsp;</td>
+        <td><h3 class="siv-r-table-name-txt">Malaria</h3></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="siv-r-table-item-no siv-r-table-hl">No. of Hygiene Promoters</td>
+        <td class="siv-r-no-val siv-r-table-hl">{{{display_raw_value AR_GEN_STAFF_HYGPROM}}}</td>
+        <td class="siv-r-ind-val siv-r-table-hl">1 : <span>{{{display_calc_value AR_GEN_STAFF_HYGPROM}}}</span></td>
+        <td class="siv-r-std-val siv-r-table-hl">{{{standard AR_GEN_STAFF_HYGPROM}}}</td>
+        <td class="siv-r-table-score siv-r-table-hl">{{{standard_result AR_GEN_STAFF_HYGPROM}}}</td>
+        <td class="siv-r-table-space">&nbsp;</td>
+        <td class="siv-r-table-item-no siv-r-table-hl">Is ACT* Introduced as 1st line malaria treatment?</td>
+        <td class="siv-r-no-val siv-r-table-hl"></td>
+        <td class="siv-r-ind-val siv-r-table-hl">{{{display_raw_value AR_PH_MAL_ACT}}}</td>
+        <td class="siv-r-std-val siv-r-table-hl">{{{standard AR_PH_MAL_ACT}}}</td>
+        <td class="siv-r-table-score siv-r-table-hl">{{{standard_result AR_PH_MAL_ACT}}}</td>
+      </tr>
+       <tr>
+        <td><h3 class="siv-r-table-name-txt">Health Impact</h3></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="siv-r-table-space">&nbsp;</td>
+        <td><h3 class="siv-r-table-name-txt">Tuberculosis</h3></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="siv-r-table-item-no siv-r-table-hl">Crude Mortality Rate <br>(CMR) (/1000/month)<br /></td>
+        <td  class="siv-r-no-val siv-r-table-hl"></td>
+        <td class="siv-r-ind-val siv-r-table-hl">{{{display_raw_value AR_PH_MORT_CMR}}}</td>
+        <td class="siv-r-std-val siv-r-table-hl">{{{standard AR_PH_MORT_CMR}}}</td>
+        <td  class=" siv-r-table-score siv-r-table-hl">{{{standard_result AR_PH_MORT_CMR}}}</td>
+        <td class="siv-r-table-space">&nbsp;</td>
+        <td class="siv-r-table-item-no siv-r-table-hl">Have any MDR-TB** cases been diagnosed among PoCs?</td>
+        <td class="siv-r-no-val siv-r-table-hl"></td>
+        <td class="siv-r-ind-val siv-r-table-hl">{{{display_raw_value AR_PH_TB_MDR}}}</td>
+        <td class="siv-r-std-val siv-r-table-hl">{{{standard AR_PH_TB_MDR}}}</td>
+        <td class="siv-r-table-score siv-r-table-hl">{{{standard_result AR_PH_TB_MDR}}}</td>
+      </tr>
+      <tr>
+        <td class="siv-r-table-item-no">Under-five Mortality Rate <br>(U5MR) (/1000/month)<br /></td>
+        <td class="siv-r-no-val"></td>
+        <td class="siv-r-ind-val">{{{display_raw_value AR_PH_MORT_U5MR}}}</td>
+        <td class="siv-r-std-val">{{{standard AR_PH_MORT_U5MR}}}</td>
+        <td class="siv-r-table-score">{{{standard_result AR_PH_MORT_U5MR}}}</td>
+        <td class="siv-rtable-space">&nbsp;</td>
+        <td><h3 class="siv-r-table-name-txt">Immunization</h3></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="siv-r-table-item-no siv-r-table-hl">Infant Mortality Rate <br>(IMR) (/1000 livebirths)<br /></td>
+        <td class="siv-r-no-val siv-r-table-hl"></td>
+        <td class="siv-r-ind-val siv-r-table-hl">{{{display_raw_value AR_PH_MORT_IMR}}}</td>
+        <td class="siv-r-std-val siv-r-table-hl">{{{standard AR_PH_MORT_IMR}}}</td>
+        <td class="siv-r-table-score siv-r-table-hl">{{{standard_result AR_PH_MORT_IMR}}}</td>
+        <td class="siv-r-table-space">&nbsp;</td>
+        <td class="siv-r-table-item-no siv-r-table-hl">Measles vaccination rate</td>
+        <td class="siv-r-no-val siv-r-table-hl"></td>
+        <td class="siv-r-ind-val siv-r-table-hl">{{{display_raw_value AR_PH_VACC_MEASCOV}}}</td>
+        <td class="siv-r-std-val siv-r-table-hl">{{{standard AR_PH_VACC_MEASCOV}}}</td>
+        <td class="siv-r-table-score siv-r-table-hl">{{{standard_result AR_PH_VACC_MEASCOV}}}</td>
+      </tr>
+      <tr>
+        <td class="siv-r-table-item-no">Neonatal Mortality Rate <br>(NNMR) (/1000 livebirths)<br /></td>
+        <td class="siv-r-no-val"></td>
+        <td class="siv-r-ind-val">{{{display_raw_value AR_PH_MORT_NNMR}}}</td>
+        <td class="siv-r-std-val">{{{standard AR_PH_MORT_NNMR}}}</td>
+        <td class="siv-r-table-score">{{{standard_result AR_PH_MORT_NNMR}}}</td>
+        <td class="siv-r-table-space">&nbsp;</td>
+        <td class="siv-r-table-item-no">Full vaccination rate</td>
+        <td class="siv-r-no-val"></td>
+        <td class="siv-r-ind-val">{{{display_raw_value AR_PH_VACC_FULL}}}</td>
+        <td class="siv-r-std-val">{{{standard AR_PH_VACC_FULL}}}</td>
+        <td class="siv-r-table-score">{{{standard_result AR_PH_VACC_FULL}}}</td>
+      </tr>
+    </table>
+  	<p class="clear siv-r-source-r">*Artemisinin-combination therapy **Multi-drug resistant tuberculosis</p>
+  </div>
+  <!-- end of Public Health -->
+  <div class="clear">
+    <div class="siv-r-sect-head-ctn">
+      <h2 class="siv-r-table-txt">Reproductive Health</h2>
+    </div>
+    <div class="siv-r-table-can"></div>
+    <div class="clear"></div>
+    <div class="siv-r-table-head">
+      <div class="siv-r-table-col-name">
+        <h3 class="siv-r-table-name-txt">Maternal and Newborn Health</h3>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-ind-txt">Indicator</h4>
+        <div class="siv-r-ind-can"></div>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-std-txt">Standard</h4>
+        <div class="siv-r-std-can"></div>
+      </div>
+    </div>
+    <div class="siv-r-table-head-space">&nbsp;</div>
+    <div class="siv-r-table-head">
+      <div class="siv-r-table-col-name">
+        <h3 class="siv-r-table-name-txt">Sexual and Gender-based Violence</h3>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-ind-txt">Indicator</h4>
+        <div class="siv-r-ind-can"></div>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-std-txt">Standard</h4>
+        <div class="siv-r-std-can"></div>
+      </div>
+    </div>
+    <table class="siv-r-table clear">
+      <tr>
+        <td class="siv-r-table-item siv-r-table-hl">Coverage of complete antenatal care (4 or more visits)</td>
+        <td class="siv-r-ind-val siv-r-table-hl">{{{display_raw_value AR_RH_ANC_ANCCOV}}}</td>
+        <td class="siv-r-std-val siv-r-table-hl">{{{standard AR_RH_ANC_ANCCOV}}}</td>
+        <td class="siv-r-table-score siv-r-table-hl">{{{standard_result AR_RH_ANC_ANCCOV}}}</td>
+        <td class="siv-r-table-space">&nbsp;</td>
+        <td class="siv-r-table-item siv-r-table-hl">Incidence of rape (reported cases/10,000/year)*</td>
+        <td class="siv-r-ind-val siv-r-table-hl">{{{display_raw_value AR_RH_SGBV_RH_INCIDRAPE}}}</td>
+        <td class="siv-r-std-val siv-r-table-hl">{{{standard AR_RH_SGBV_RH_INCIDRAPE}}}</td>
+        <td class="siv-r-table-score siv-r-table-hl">{{{standard_result AR_RH_SGBV_RH_INCIDRAPE}}}</td>
+      </tr>
+      <tr>
+        <td class="siv-r-table-item">Proportion of deliveries attended by skilled personnel</td>
+        <td class="siv-r-ind-val">{{{display_raw_value AR_RH_ANC_SKILLATT}}}</td>
+        <td class="siv-r-std-val">{{{standard AR_RH_ANC_SKILLATT}}}</td>
+        <td class="siv-r-table-score">{{{standard_result AR_RH_ANC_SKILLATT}}}</td>
+        <td class="siv-r-table-space">&nbsp;</td>
+        <td class="siv-r-table-item">Proportion of rape survivors who received PEP**<br>&lt; 72 hours </td>
+        <td class="siv-r-ind-val">{{{display_raw_value AR_RH_SGBV_PEP}}}</td>
+        <td class="siv-r-std-val">{{{standard AR_RH_SGBV_PEP}}}</td>
+        <td class="siv-r-table-score">{{{standard_result AR_RH_SGBV_PEP}}}</td>
+      </tr>
+      <tr>
+        <td class="siv-r-table-item siv-r-table-hl">Proportion of deliveries performed by caesarean section</td>
+        <td class="siv-r-ind-val siv-r-table-hl">{{{display_raw_value AR_RH_DEL_CSECTION}}}</td>
+        <td class="siv-r-std-val siv-r-table-hl">{{{standard AR_RH_DEL_CSECTION}}}</td>
+        <td class="siv-r-table-score siv-r-table-hl">{{{standard_result AR_RH_DEL_CSECTION}}}</td>
+        <td class="siv-r-table-space">&nbsp;</td>
+        <td class="siv-r-table-item siv-r-table-hl">Proportion of rape survivors who received ECP*** &lt; 120 hours</td>
+        <td class="siv-r-ind-val siv-r-table-hl">{{{display_raw_value AR_RH_SGBV_ECP}}}</td>
+        <td class="siv-r-std-val siv-r-table-hl">{{{standard AR_RH_SGBV_ECP}}}</td>
+        <td class="siv-r-table-score siv-r-table-hl">{{{standard_result AR_RH_SGBV_ECP}}}</td>
+      </tr>
+      <tr>
+        <td class="siv-r-table-item">Proportion of low birth weight deliveries (&lt;2500g)</td>
+        <td class="siv-r-ind-val">{{{display_raw_valueAR_RH_DEL_LBWDEL }}}</td>
+        <td class="siv-r-std-val">{{{standard AR_RH_DEL_LBWDEL}}}</td>
+        <td class="siv-r-table-score">{{{standard_result AR_RH_DEL_LBWDEL}}}</td>
+        <td class="siv-r-table-space">&nbsp;</td>
+        <td class="siv-r-table-item">Proportion of rape survivors who received STI**** prophylaxis &lt; 2 wks</td>
+        <td class="siv-r-ind-val">{{{display_raw_value AR_RH_SGBV_STI}}}</td>
+        <td class="siv-r-std-val">{{{standard AR_RH_SGBV_STI}}}</td>
+        <td class="siv-r-table-score">{{{standard_result AR_RH_SGBV_STI}}}</td>
+      </tr>
+      <tr>
+        <td class="siv-r-table-item siv-r-table-hl">Contraceptive prevalence rate</td>
+        <td class="siv-r-ind-val siv-r-table-hl">{{{display_raw_value AR_RH_FP_RH_CPR}}}</td>
+        <td class="siv-r-std-val siv-r-table-hl">{{{standard AR_RH_FP_RH_CPR}}}</td>
+        <td class="siv-r-table-score siv-r-table-hl">{{{standard_result AR_RH_FP_RH_CPR}}}</td>
+        <td class="siv-r-table-space">&nbsp;</td>
+        <td class="siv-r-table-hl"></td>
+        <td class="siv-r-table-hl"></td>
+        <td class="siv-r-table-hl"></td>
+        <td class="siv-r-table-hl"></td>
+      </tr>
+    </table>
+    <p class="clear siv-r-source-r">*Only includes rapes reported at health facilities **Post-exposure prophylaxis ***Emergency contraceptive pill ****Sexually transmitted infection</p>
+  </div>
+  <!-- End of Reporductive Health -->
+</div>
+
+<div class="siv-r-page-break siv-r-foot-page">
+   <div>
+    <div class="siv-r-sect-head-ctn">
+      <h2 class="siv-r-table-txt">HIV/AIDS</h2>
+    </div>
+    <div class="siv-r-table-can"></div>
+    <div class="clear"></div>
+    <div class="siv-r-table-head">
+      <div class="siv-r-table-col-name">
+        <h3 class="siv-r-table-name-txt">Monitoring and Evaluation</h3>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-ind-txt">Indicator</h4>
+        <div class="siv-r-ind-can"></div>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-std-txt">Standard</h4>
+        <div class="siv-r-std-can"></div>
+      </div>
+    </div>
+    <div class="siv-r-table-head-space">&nbsp;</div>
+    <div class="siv-r-table-head">
+      <div class="siv-r-table-col-name">
+        <h3 class="siv-r-table-name-txt">Prevention</h3>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-ind-txt">Indicator</h4>
+        <div class="siv-r-ind-can"></div>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-std-txt">Standard</h4>
+        <div class="siv-r-std-can"></div>
+      </div>
+    </div>
+    <table class="siv-r-table clear">
+      <tr>
+        <td class="siv-r-table-item siv-r-table-hl">Are PoCs* included in national HIV strategic plans? </td>
+        <td class="siv-r-ind-val siv-r-table-hl">{{{display_raw_value AR_HIV_ACCESS_HIVSTRATPLAN}}}</td>
+        <td class="siv-r-std-val siv-r-table-hl">{{{standard AR_HIV_ACCESS_HIVSTRATPLAN}}}</td>
+        <td class="siv-r-table-score siv-r-table-hl">{{{standard_result AR_HIV_ACCESS_HIVSTRATPLAN}}}</td>
+        <td class="siv-r-table-space">&nbsp;</td>
+        <td class="siv-r-table-item siv-r-table-hl">Condom distribution rate (/person/month)</td>
+        <td class="siv-r-ind-val siv-r-table-hl">{{{display_raw_value AR_HIV_CONDOM_HIV_CONDOM}}}</td>
+        <td class="siv-r-std-val siv-r-table-hl">{{{standard AR_HIV_CONDOM_HIV_CONDOM}}}</td>
+        <td class="siv-r-table-score siv-r-table-hl">{{{standard_result AR_HIV_CONDOM_HIV_CONDOM}}}</td>
+      </tr>
+      <tr>
+        <td class="siv-r-table-item">Are PoCs included in national HIV sentinel surveillance?</td>
+        <td class="siv-r-ind-val">{{{display_raw_value AR_HIV_ACCESS_SENTSURV}}}</td>
+        <td class="siv-r-std-val">{{{standard AR_HIV_ACCESS_SENTSURV}}}</td>
+        <td class="siv-r-table-score">{{{standard_result AR_HIV_ACCESS_SENTSURV}}}</td>
+        <td class="siv-r-table-space">&nbsp;</td>
+        <td class="siv-r-table-item">Do appropriate IEC*** materials exist for PoCs?</td>
+        <td class="siv-r-ind-val">{{{display_raw_value AR_HIV_ACCESS_HIV_IECMATS}}}</td>
+        <td class="siv-r-std-val">{{{standard AR_HIV_ACCESS_HIV_IECMATS}}}</td>
+        <td class="siv-r-table-score">{{{standard_result AR_HIV_ACCESS_HIV_IECMATS}}}</td>
+      </tr>
+      <tr>
+        <td class="siv-r-table-item siv-r-table-hl">Date of last last KAPB/BSS</td>
+        <td class="siv-r-ind-val siv-r-table-hl">{{{display_raw_value AR_NUT_SURV_DATE_KAPBBSS_B}}}</td>
+        <td class="siv-r-std-val siv-r-table-hl">{{{standard AR_NUT_SURV_DATE_KAPBBSS_B}}}</td>
+        <td class="siv-r-table-score siv-r-table-hl">{{{standard_result AR_NUT_SURV_DATE_KAPBBSS_B}}}</td>
+        <td class="siv-r-table-space">&nbsp;</td>
+        <td class="siv-r-table-item siv-r-table-hl">Are risk groups targeted with prevention programmes?</td>
+        <td class="siv-r-ind-val siv-r-table-hl">{{{display_raw_value AR_HIV_ACCESS_HIV_RISKGROUPS}}}</td>
+        <td class="siv-r-std-val siv-r-table-hl">{{{standard AR_HIV_ACCESS_HIV_RISKGROUPS}}}</td>
+        <td class="siv-r-table-score siv-r-table-hl">{{{standard_result AR_HIV_ACCESS_HIV_RISKGROUPS}}}</td>
+      </tr>
+      <tr>
+        <td class="siv-r-table-col-name"><h3 class="siv-r-table-name-txt">Care and Treatment</h3></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="siv-r-table-space">&nbsp;</td>
+        <td class="siv-r-table-item">Proportion of blood units screened for HIV</td>
+        <td class="siv-r-ind-val">{{{display_raw_value AR_HIV_LAB_HIV_BLOODSCREEN}}}</td>
+        <td class="siv-r-std-val">{{{standard AR_HIV_LAB_HIV_BLOODSCREEN}}}</td>
+        <td class="siv-r-table-score">{{{standard_result AR_HIV_LAB_HIV_BLOODSCREEN}}}</td>
+      </tr>
+      <tr>
+        <td class="siv-r-table-item siv-r-table-hl">Do PoCs have equal access to ART** as host nationals?</td>
+        <td class="siv-r-ind-val siv-r-table-hl">{{{display_raw_value AR_HIV_ACCESS_ARTEQACCESS}}}</td>
+        <td class="siv-r-std-val siv-r-table-hl">{{{standard AR_HIV_ACCESS_ARTEQACCESS}}}</td>
+        <td class="siv-r-table-score siv-r-table-hl">{{{standard_result AR_HIV_ACCESS_ARTEQACCESS}}}</td>
+        <td class="siv-r-table-space">&nbsp;</td>
+        <td class="siv-r-table-item siv-r-table-hl">PMTCT**** coverage</td>
+        <td class="siv-r-ind-val siv-r-table-hl">{{{display_raw_value AR_HIV_PMTCT_HIV_PMTCTCOV}}}</td>
+        <td class="siv-r-std-val siv-r-table-hl">{{{standard AR_HIV_PMTCT_HIV_PMTCTCOV}}}</td>
+        <td class="siv-r-table-score siv-r-table-hl">{{{standard_result AR_HIV_PMTCT_HIV_PMTCTCOV}}}</td>
+      </tr>
+      <tr>
+        <td class="siv-r-table-item">Number of PoCs receving ART</td>
+        <td class="siv-r-ind-val">{{{display_raw_value AR_HIV_ART_HIV_NUMBART}}}</td>
+        <td class="siv-r-std-val">{{{standard AR_HIV_ART_HIV_NUMBART}}}</td>
+        <td class="siv-r-table-score">{{{standard_result AR_HIV_ART_HIV_NUMBART}}}</td>
+        <td class="siv-r-table-space">&nbsp;</td>
+        <td class="siv-r-empty-cell"></td>
+        <td class="siv-r-empty-cell"></td>
+        <td class="siv-r-empty-cell"></td>
+        <td class="siv-r-empty-cell"></td>
+      </tr>
+      <tr>
+        <td class="siv-r-table-item siv-r-table-hl">Proportion of HIV positive mothers receiving<br>co-trimoxazole</td>
+        <td class="siv-r-ind-val siv-r-table-hl">{{{display_raw_value AR_HIV_PMTCT_HIV_COTRIM_MOTH}}}</td>
+        <td class="siv-r-std-val siv-r-table-hl">{{{standard AR_HIV_PMTCT_HIV_COTRIM_MOTH}}}</td>
+        <td class="siv-r-table-score siv-r-table-hl">{{{standard_result AR_HIV_PMTCT_HIV_COTRIM_MOTH}}}</td>
+        <td class="siv-r-table-space">&nbsp;</td>
+        <td class="siv-r-empty-cell"></td>
+        <td class="siv-r-empty-cell"></td>
+        <td class="siv-r-empty-cell"></td>
+        <td class="siv-r-empty-cell"></td>
+      </tr>
+      <tr>
+        <td class="siv-r-table-item">Proportion of HIV positive infants receiving<br>co-trimoxazole</td>
+        <td class="siv-r-ind-val">{{{display_raw_valueAR_HIV_PMTCT_HIV_COTRIM_INF }}}</td>
+        <td class="siv-r-std-val">{{{standard AR_HIV_PMTCT_HIV_COTRIM_INF}}}</td>
+        <td class="siv-r-table-score">{{{standard_result AR_HIV_PMTCT_HIV_COTRIM_INF}}}</td>
+        <td class="siv-r-table-space">&nbsp;</td>
+        <td class="siv-r-empty-cell"></td>
+        <td class="siv-r-empty-cell"></td>
+        <td class="siv-r-empty-cell"></td>
+        <td class="siv-r-empty-cell"></td>
+      </tr>
+    </table>
+    <p class="clear siv-r-source">*Persons of concern **Anti-retroviral therapy  ***Information, education and communication ****Prevention of mother-to-child transmission</p>
+  </div>
+  <div class="clear"> </div>
+  <!-- End of HIV/AIDS -->
+
+  <div class="clear">
+    <div class="siv-r-sect-head-ctn">
+      <h2 class="siv-r-table-txt">Nutrition and Food Security</h2>
+    </div>
+    <div class="siv-r-table-can"></div>
+    <div class="clear"> </div>
+    <div class="siv-r-table-head">
+      <div class="siv-r-table-col-name">
+        <h3 class="siv-r-table-name-txt">Nutrition</h3>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-ind-txt">Indicator</h4>
+        <div class="siv-r-ind-can"></div>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-std-txt">Standard</h4>
+        <div class="siv-r-std-can"></div>
+      </div>
+    </div>
+    <div class="siv-r-table-head-space">&nbsp;</div>
+    <div class="siv-r-table-head">
+      <div class="siv-r-table-col-name">
+        <h3 class="siv-r-table-name-txt">Food Security</h3>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-ind-txt">Indicator</h4>
+        <div class="siv-r-ind-can"></div>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-std-txt">Standard</h4>
+        <div class="siv-r-std-can"></div>
+      </div>
+    </div>
+    <table class="siv-r-table clear">
+      <tr>
+        <td class="siv-r-table-item siv-r-table-hl">Global acute malnutrition rate (GAM)<br>in children &lt;5</td>
+        <td class="siv-r-ind-val siv-r-table-hl">{{{display_raw_value AR_NUT_SURV_GAM}}}</td>
+        <td class="siv-r-std-val siv-r-table-hl">{{{standard AR_NUT_SURV_GAM}}}</td>
+        <td class="siv-r-table-score siv-r-table-hl">{{{standard_result AR_NUT_SURV_GAM}}}</td>
+        <td class="siv-r-table-space">&nbsp;</td>
+        <td class="siv-r-table-item siv-r-table-hl">Does UNHCR provide complementary food?</td>
+        <td class="siv-r-ind-val siv-r-table-hl">{{{display_raw_value AR_FS_COMPLFOOD}}}</td>
+        <td class="siv-r-std-val siv-r-table-hl">{{{standard AR_FS_COMPLFOOD}}}</td>
+        <td class="siv-r-table-score siv-r-table-hl">{{{standard_result AR_FS_COMPLFOOD}}}</td>
+      </tr>
+      <tr>
+        <td class="siv-r-table-item">Severe acute malnutrition rate (SAM)<br>in children &lt;5</td>
+        <td class="siv-r-ind-val">{{{display_raw_value AR_NUT_SURV_SAM}}}</td>
+        <td class="siv-r-std-val">{{{standard AR_NUT_SURV_SAM}}}</td>
+        <td class="siv-r-table-score">{{{standard_result AR_NUT_SURV_SAM}}}</td>
+        <td class="siv-r-table-space">&nbsp;</td>
+        <td class="siv-r-table-item">Did the content of the GFR* change during the year? </td>
+        <td class="siv-r-ind-val">{{{display_raw_valueAR_FS_GFRCHANGE }}}</td>
+        <td class="siv-r-std-val">{{{standard AR_FS_GFRCHANGE}}}</td>
+        <td class="siv-r-table-score">{{{standard_result AR_FS_GFRCHANGE}}}</td>
+      </tr>
+      <tr>
+        <td class="siv-r-table-item siv-r-table-hl">Prevalence of anaemia in children &lt;5</td>
+        <td class="siv-r-ind-val siv-r-table-hl">{{{display_raw_value AR_NUT_SURV_ANAE_U5}}}</td>
+        <td class="siv-r-std-val siv-r-table-hl">{{{standard AR_NUT_SURV_ANAE_U5}}}</td>
+        <td class="siv-r-table-score siv-r-table-hl">{{{standard_result AR_NUT_SURV_ANAE_U5}}}</td>
+        <td class="siv-r-table-space">&nbsp;</td>
+        <td class="siv-r-table-item siv-r-table-hl">Did WFP report any pipeline breaks during the year?</td>
+        <td class="siv-r-ind-val siv-r-table-hl">{{{display_raw_value AR_FS_PIPELINEBRK}}}</td>
+        <td class="siv-r-std-val siv-r-table-hl">{{{standard AR_FS_PIPELINEBRK}}}</td>
+        <td class="siv-r-table-score siv-r-table-hl">{{{standard_result AR_FS_PIPELINEBRK}}}</td>
+      </tr>
+      <tr>
+        <td class="siv-r-table-item">Prevalence of anaemia in women of reproductive age</td>
+        <td class="siv-r-ind-val">{{{display_raw_value AR_NUT_SURV_ANAE_WRA}}}</td>
+        <td class="siv-r-std-val">{{{standard AR_NUT_SURV_ANAE_WRA}}}</td>
+        <td class="siv-r-table-score">{{{standard_result AR_NUT_SURV_ANAE_WRA}}}</td>
+        <td class="siv-r-table-space">&nbsp;</td>
+        <td class="siv-r-table-item">Have PoCs** been included in the National Food Security Plan?</td>
+        <td class="siv-r-ind-val">{{{display_raw_value AR_FS_POCFSPLAN}}}</td>
+        <td class="siv-r-std-val">{{{standard AR_FS_POCFSPLAN}}}</td>
+        <td class="siv-r-table-score">{{{standard_result AR_FS_POCFSPLAN}}}</td>
+      </tr>
+      <tr>
+        <td class="siv-r-table-item siv-r-table-hl">Average number of kilocalories per person per day</td>
+        <td class="siv-r-ind-val siv-r-table-hl">{{{display_raw_value AR_FS_MINKCAL}}}</td>
+        <td class="siv-r-std-val siv-r-table-hl">{{{standard AR_FS_MINKCAL}}}</td>
+        <td class="siv-r-table-score siv-r-table-hl">{{{standard_result AR_FS_MINKCAL}}}</td>
+        <td class="siv-r-table-space">&nbsp;</td>
+        <td class="siv-r-table-item siv-r-table-hl">Proportion of ration sold by refugees to buy other food items</td>
+        <td class="siv-r-ind-val siv-r-table-hl">{{{display_raw_value AR_FS_PROPRATSOLD}}}</td>
+        <td class="siv-r-std-val siv-r-table-hl">{{{standard AR_FS_PROPRATSOLD}}}</td>
+        <td class="siv-r-table-score siv-r-table-hl">{{{standard_result AR_FS_PROPRATSOLD}}}</td>
+      </tr>
+    </table>
+    <p class="clear siv-r-source-r">*General Food Ration **Persons of concern </p>
+  </div>
+  <div class="clear"> </div>
+  <!-- end of Nutrtion and Food Security -->
+  <div>
+    <div class="siv-r-sect-head-ctn">
+      <h2 class="siv-r-table-txt">Water, Sanitation and Hygiene</h2>
+    </div>
+    <div class="siv-r-table-can"></div>
+    <div class="clear"></div>
+    <div class="siv-r-table-head">
+      <div class="siv-r-table-col-name">
+        <h3 class="siv-r-table-name-txt">&nbsp;</h3>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-ind-txt">Indicator</h4>
+        <div class="siv-r-ind-can"></div>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-std-txt">Standard</h4>
+        <div class="siv-r-std-can"></div>
+      </div>
+    </div>
+    <div class="siv-r-table-head-space">&nbsp;</div>
+    <div class="siv-r-table-head">
+      <div class="siv-r-table-col-name">
+        <h3 class="siv-r-table-name-txt">&nbsp;</h3>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-ind-txt">Indicator</h4>
+        <div class="siv-r-ind-can"></div>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-std-txt">Standard</h4>
+        <div class="siv-r-std-can"></div>
+      </div>
+    </div>
+    <table class="siv-r-table clear">
+      <tr>
+        <td class="siv-r-table-item siv-r-table-hl">Average quantity of potable water per person per day</td>
+        <td class="siv-r-ind-val siv-r-table-hl">{{{display_raw_value AR_WASH_WATERPPPD}}}</td>
+        <td class="siv-r-std-val siv-r-table-hl">{{{standard AR_WASH_WATERPPPD}}}</td>
+        <td class="siv-r-table-score siv-r-table-hl">{{{standard_result AR_WASH_WATERPPPD}}}</td>
+        <td class="siv-r-table-space">&nbsp;</td>
+        <td class="siv-r-table-item siv-r-table-hl">Proportion of families with latrines</td>
+        <td class="siv-r-ind-val siv-r-table-hl">{{{display_raw_value AR_WASH_LATRINES}}}</td>
+        <td class="siv-r-std-val siv-r-table-hl">{{{standard AR_WASH_LATRINES}}}</td>
+        <td class="siv-r-table-score siv-r-table-hl">{{{standard_result AR_WASH_LATRINES}}}</td>
+      </tr>
+      <tr>
+        <td class="siv-r-table-item">Number of persons per usable water tap</td>
+        <td class="siv-r-ind-val">{{{display_raw_value AR_WASH_WATERTAP}}}</td>
+        <td class="siv-r-std-val">{{{standard AR_WASH_WATERTAP}}}</td>
+        <td class="siv-r-table-score">{{{standard_result AR_WASH_WATERTAP}}}</td>
+        <td class="siv-r-table-space">&nbsp;</td>
+        <td class="siv-r-table-item">Proportion of families receiving >250g soap / person / month</td>
+        <td class="siv-r-ind-val">{{{display_raw_value AR_WASH_SOAP}}}</td>
+        <td class="siv-r-std-val">{{{standard AR_WASH_SOAP}}}</td>
+        <td class="siv-r-table-score">{{{standard_result AR_WASH_SOAP}}}</td>
+      </tr>
+      <tr>
+        <td class="siv-r-table-item siv-r-table-hl">Number of persons per drop-hole in communal latrine</td>
+        <td class="siv-r-ind-val siv-r-table-hl">{{{display_raw_value AR_WASH_DROPHOLE}}}</td>
+        <td class="siv-r-std-val siv-r-table-hl">{{{standard AR_WASH_DROPHOLE}}}</td>
+        <td class="siv-r-table-score siv-r-table-hl">{{{standard_result AR_WASH_DROPHOLE}}}</td>
+        <td class="siv-r-table-space">&nbsp;</td>
+        <td class="siv-r-table-item siv-r-table-hl"> Proportion of camps with 1 hygiene promoter / 500 persons</td>
+        <td class="siv-r-ind-val siv-r-table-hl">{{{display_raw_value AR_GEN_STAFF_HYGPROM_RESULT}}}</td>
+        <td class="siv-r-std-val siv-r-table-hl">{{{standard AR_GEN_STAFF_HYGPROM_RESULT}}}</td>
+        <td class="siv-r-table-score siv-r-table-hl">{{{standard_result AR_GEN_STAFF_HYGPROM_RESULT}}}</td>
+      </tr>
+      <tr>
+        <td class="siv-r-table-item">Proportion of population living within 200m from water point</td>
+        <td class="siv-r-ind-val">{{{display_raw_value AR_WASH_200M}}}</td>
+        <td class="siv-r-std-val">{{{standard AR_WASH_200M}}}</td>
+        <td class="siv-r-table-score">{{{standard_result AR_WASH_200M}}}</td>
+        <td class="siv-r-table-space">&nbsp;</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+  </div>
+  <!-- end of Water, Sanitation and Hygiene -->
+  <div class="siv-r-legend-wrap">
+    <div class="siv-r-legend-ctn">
+      <table class="siv-r-interactive-ctn">
+        <tr>
+          <td rowspan="2" class="siv-r-interactive-32"><img class="siv-r-interactive-32" src={{{local_asset "images/reports/phhiv/ico-earth.png"}}} /></td>
+          <td class="siv-r-interactive-title">Read <span>{{{embedded_value "locationdetails" "location_name"}}}</span> Operations Profile:</td>
+        </tr>
+        <tr>
+          <td class="siv-r-table-item siv-r-interactive-row"><a class="siv-r-interactive-link">{{{embedded_value "locationdetails" "LOC_COUNTRY_PROFILE_URL"}}}</a></td>
+        </tr>
+        <tr>
+          <td rowspan="2" class="siv-r-interactive-32"><img class="siv-r-interactive-32" src={{{local_asset "images/reports/phhiv/ico-pie.png"}}} /></td>
+          <td class="siv-r-interactive-title siv-r-interactive-space">View interactive maps and statistics online</td>
+        </tr>
+        <tr>
+          <td class="siv-r-table-item siv-r-interactive-row"><a href="#" class="siv-r-interactive-link">http://his.unhcr.org/his</a></td>
+        </tr>
+      </table>
+	  <table class="siv-r-legend">
+        <tbody>
+		<tr>
+          <td colspan="6"><h3 class="siv-r-legend-header">Legend</h3></td>
+        </tr>
+        <tr>
+          <td class="siv-r-score siv-r-score-green">2</td>
+          <td class="siv-r-table-indicator "><span>Standard met</span></td>
+          <td class="siv-r-score siv-r-score-yellow">!</td>
+          <td class="siv-r-table-indicator "><span>Standard borderline</span></td>
+          <td class="siv-r-score siv-r-score-red">D</td>
+          <td class="siv-r-table-indicator "><span>Standard not met</span></td>
+        </tr>
+        <tr>
+          <td class="siv-r-score siv-r-score-purple">^</td>
+          <td class="siv-r-table-indicator "><span>Interpret data with care</span></td>
+          <td class="siv-r-score siv-r-score-blue">?</td>
+          <td class="siv-r-table-indicator "><span>Data missing</span></td>
+		  <td></td>
+		  <td></td>
+        </tr>
+      </tbody>
+	  </table>
+      <img class="siv-r-contact-logo" src={{{local_asset "images/reports/phhiv/unhcr-logo.png"}}} />
+      <div class="clear"> </div>
+    </div>
+    <img class="siv-r-qrcode" src="{{{qr_code}}}"/>
+    <div class="clear"> </div>
+  </div>
+</div>
+</div>

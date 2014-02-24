@@ -1,0 +1,338 @@
+<div class="siv-r-scr siv-r-mid-east">
+  <div class="siv-r-page-break">
+   <div class="siv-r-page-header">
+    <div class="siv-r-title-ctn"><img class="siv-r-report-type" src={{{local_asset "icons/de_templates/round/12.svg"}}} />
+      <p class="siv-r-title-txt">Balanced Scorecard</p>
+      <p class="siv-r-year-txt"><span class="siv-r-title-month" data-fieldname="month">{{{dateinfo "month"}}}</span> <span class="siv-r-title-month" data-fieldname="year">{{{dateinfo "year"}}}</span></p>
+    </div>
+    <div class="siv-r-loc-can"></div>
+    <div class="siv-r-loc-ctn">
+      <div class="siv-r-flag-ctn">{{{helperFlagSVG "iso" "locationdetails" "icons/flags/round/flags-svg/" "siv-r-flag-img"}}}</div>
+      <p class="siv-r-loc-txt" data-fieldname="name">{{{embedded_value "locationdetails" "name"}}}</p>
+      <p class="siv-r-loc-cty" data-fieldname="countryname">{{{embedded_value "locationdetails" "countryname"}}}</p>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <div class="clear"></div>
+    <!-- end of page header -->
+  <div class="siv-r-gen clear">
+    <div class="siv-r-gen-graph-ctn">
+      <div class="siv-r-gen-head-ctn">
+        <h2 class="siv-r-gen-head-txt">Overall score</h2>
+      </div>
+      <div class="siv-r-gen-head-can"></div>
+      {{{helperTemplate12_overallscore this "met"}}}
+    </div>
+    <div class="siv-r-gen-graph-ctn">
+      <div class="siv-r-gen-head-ctn">
+        <h2 class="siv-r-gen-head-txt">1-2. Capacity for service provision</h2>
+      </div>
+      <div class="siv-r-gen-head-can"></div>
+      {{{scorecard_score this "met" 1 2}}}
+    </div>
+    <div class="siv-r-gen-graph-ctn">
+      <div class="siv-r-gen-head-ctn">
+        <h2 class="siv-r-gen-head-txt">3. Service provision</h2>
+      </div>
+      <div class="siv-r-gen-head-can"></div>
+      {{{scorecard_score this "met" 3}}}
+    </div>
+    <div class="siv-r-gen-graph-ctn">
+      <div class="siv-r-gen-head-ctn">
+        <h2 class="siv-r-gen-head-txt">4. Patient and community satisfaction</h2>
+      </div>
+      <div class="siv-r-gen-head-can"></div>
+      {{{scorecard_score this "met" 4}}}
+    </div>
+    <div class="siv-r-gen-graph-ctn">
+      <div class="siv-r-gen-head-ctn">
+        <h2 class="siv-r-gen-head-txt">5. Staff satisfaction</h2>
+      </div>
+      <div class="siv-r-gen-head-can"></div>
+      {{{scorecard_score this "met" 5}}}
+    </div>
+    <!-- end of genreal info ---> 
+  </div>
+  <!-- map -->
+  <div class="siv-r-country-map-ctn ">{{{helperDrawMap "svg" "iso" "locationdetails" "siv-r-country-map-img"}}}</div>
+  <!--key facts -->
+  <div class="siv-r-container siv-r-key-ctn">
+    <h2 class="siv-r-key-title">Key facts</h2>
+    <table class="siv-r-key-list-ctn">
+      <tr>
+        <td  class="siv-r-key-list-item">Date of assessment</td>
+        <td  class="siv-r-key-list-value"><span data-fieldname="month">{{{dateinfo "month"}}}</span> <span data-fieldname="year">{{{dateinfo "year"}}}</span></td>
+      </tr>
+      <tr>
+        <td  class="siv-r-key-list-item">Name of assessor(s)</td>
+        <td  class="siv-r-key-list-value"><p></p>
+          <p></p>
+          <p></p></td>
+      </tr>
+      <tr>
+        <td  class="siv-r-key-list-item">Name of health facility</td>        
+        <td  class="siv-r-key-list-value" data-fieldname="name">{{{embedded_value "locationdetails" "name"}}}</td>
+      </tr>
+      <tr>
+        <td  class="siv-r-key-list-item">Date of previous assessments</td>
+        <td  class="siv-r-key-list-value">None</td>
+      </tr>
+    </table>
+    <!-- end of keyfacts --> 
+  </div>
+  <div class="clear"></div>
+  <div class="siv-r-container siv-r-obs-ctn">
+    <div class="siv-r-sum-can"></div>
+    <h3 class="siv-r-obs-title">Comments</h3>
+    <p class="siv-r-obj-txt"></p>
+  </div>
+  <!-- end of comments -->
+  <div class="siv-r-glc">
+    <div class="siv-r-glc-head-ctn">
+      <h2 class="siv-r-glc-head-txt">Recommendations</h2>
+    </div>
+    <div class="siv-r-glc-ctn siv-r-container">
+      <p class="siv-r-obj-txt"></p>
+    </div>
+  </div>
+  <div class="siv-r-glc-head-can"></div>
+  <!-- end of recommendations -->   
+  <div class="clear siv-r-section">
+    <div class="siv-r-sect-head-ctn">
+      <h2 class="siv-r-table-txt">1. Capacity for service provision <em>inputs</em></h2>
+    </div>
+    <div class="siv-r-table-can"></div>
+    <div class="siv-r-table-head">
+      <div class="siv-r-table-col-no">
+        <h4 class="siv-r-no-txt">Domain</h4>
+        <div class="siv-r-no-can"></div>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-no-txt siv-r-black">Method</h4>
+        <div class="siv-r-no-can siv-r-black-can"></div>
+      </div>
+      <div class="siv-r-table-std">
+        <h4 class="siv-r-ind-txt">Indicator</h4>
+        <div class="siv-r-ind-can"></div>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-std-txt">Result</h4>
+        <div class="siv-r-std-can"></div>
+      </div>
+    </div>
+    <table class="siv-r-table clear">
+     {{#section1}}
+      <tr>
+        <td class="siv-r-table-item-domain" data-fieldname="{{id}}">{{{display_extra_data this "domain_num"}}} {{{display_extra_data this "domain"}}}</td>
+        <td class="siv-r-table-item-method" data-fieldname="{{id}}">{{{methodology this}}}</td>
+        <td class="siv-r-table-item-indicator" data-fieldname="{{id}}">{{{display_extra_data this "ind_num"}}} {{lab}}</td>
+        <td class="siv-r-table-item-result" data-fieldname="{{id}}">{{{display_score this}}}</td>
+      </tr>
+      {{/section1}}
+      </table>	 
+  <!-- end of Capacity for Service Provision --> 
+</div>
+  <div class="clear siv-r-section">
+    <div class="siv-r-sect-head-ctn">
+      <h2 class="siv-r-table-txt">2. Capacity for service provision <em>process</em></h2>
+    </div>
+    <div class="siv-r-table-can"></div>
+    <div class="siv-r-table-head">
+      <div class="siv-r-table-col-no">
+        <h4 class="siv-r-no-txt">Domain</h4>
+        <div class="siv-r-no-can"></div>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-no-txt siv-r-black">Method</h4>
+        <div class="siv-r-no-can siv-r-black-can"></div>
+      </div>
+      <div class="siv-r-table-std">
+        <h4 class="siv-r-ind-txt">Indicator</h4>
+        <div class="siv-r-ind-can"></div>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-std-txt">Result</h4>
+        <div class="siv-r-std-can"></div>
+      </div>
+    </div>
+     <table class="siv-r-table clear">
+     {{#section2}}
+      <tr>
+        <td class="siv-r-table-item-domain" data-fieldname="{{id}}">{{{display_extra_data this "domain_num"}}} {{{display_extra_data this "domain"}}}</td>
+        <td class="siv-r-table-item-method" data-fieldname="{{id}}">{{{methodology this}}}</td>
+        <td class="siv-r-table-item-indicator" data-fieldname="{{id}}">{{{display_extra_data this "ind_num"}}} {{lab}}</td>
+        <td class="siv-r-table-item-result" data-fieldname="{{id}}">{{{display_score this}}}</td>     
+      </tr>
+      {{/section2}}
+      </table>	   
+  </div>
+  <!-- end of compacity cont. -->
+  <!-- end of page1 --> 
+  <div class="clear siv-r-section">
+    <div class="siv-r-sect-head-ctn">
+      <h2 class="siv-r-table-txt">3. Service provision</h2>
+    </div>
+    <div class="siv-r-table-can"></div>
+    <div class="siv-r-table-head">
+      <div class="siv-r-table-col-no">
+        <h4 class="siv-r-no-txt">Domain</h4>
+        <div class="siv-r-no-can"></div>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-no-txt siv-r-black">Method</h4>
+        <div class="siv-r-no-can siv-r-black-can"></div>
+      </div>
+      <div class="siv-r-table-std">
+        <h4 class="siv-r-ind-txt">Indicator</h4>
+        <div class="siv-r-ind-can"></div>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-std-txt">Result</h4>
+        <div class="siv-r-std-can"></div>
+      </div>
+    </div>
+    <table class="siv-r-table clear">
+     {{#section3}}
+      <tr>
+        <td class="siv-r-table-item-domain" data-fieldname="{{id}}">{{{display_extra_data this "domain_num"}}} {{{display_extra_data this "domain"}}}</td>
+        <td class="siv-r-table-item-method" data-fieldname="{{id}}">{{{methodology this}}}</td>
+        <td class="siv-r-table-item-indicator" data-fieldname="{{id}}">{{{display_extra_data this "ind_num"}}} {{lab}}</td>
+        <td class="siv-r-table-item-result" data-fieldname="{{id}}">{{{display_score this}}}</td>     
+      </tr>
+      {{/section3}}
+      </table>	
+  </div>
+  <!-- end of 2. Service Provision -->
+  <div class="clear siv-r-section">
+    <div class="siv-r-sect-head-ctn">
+      <h2 class="siv-r-table-txt">4. Patient satisfaction</h2>
+    </div>
+    <div class="siv-r-table-can"></div>
+    <div class="siv-r-table-head">
+      <div class="siv-r-table-col-no">
+        <h4 class="siv-r-no-txt">Domain</h4>
+        <div class="siv-r-no-can"></div>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-no-txt siv-r-black">Method</h4>
+        <div class="siv-r-no-can siv-r-black-can"></div>
+      </div>
+      <div class="siv-r-table-std">
+        <h4 class="siv-r-ind-txt">Indicator</h4>
+        <div class="siv-r-ind-can"></div>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-std-txt">Result</h4>
+        <div class="siv-r-std-can"></div>
+      </div>
+    </div>
+    <table class="siv-r-table clear">
+    {{#section4}}
+      <tr>
+        <td class="siv-r-table-item-domain" data-fieldname="{{id}}">{{{display_extra_data this "domain_num"}}} {{{display_extra_data this "domain"}}}</td>
+        <td class="siv-r-table-item-method" data-fieldname="{{id}}">{{{methodology this}}}</td>
+        <td class="siv-r-table-item-indicator" data-fieldname="{{id}}">{{{display_extra_data this "ind_num"}}} {{lab}}</td>
+        <td class="siv-r-table-item-result" data-fieldname="{{id}}">{{{display_score this}}}</td>     
+      </tr>
+      {{/section4}}
+      </table>	
+  </div>
+  <!-- end of 3. Patient satisfaction -->
+  <div class="clear siv-r-section">
+    <div class="siv-r-sect-head-ctn">
+      <h2 class="siv-r-table-txt">5. Staff satisfaction</h2>
+    </div>
+    <div class="siv-r-table-can"></div>
+    <div class="siv-r-table-head">
+      <div class="siv-r-table-col-no">
+        <h4 class="siv-r-no-txt">Domain</h4>
+        <div class="siv-r-no-can"></div>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-no-txt siv-r-black">Method</h4>
+        <div class="siv-r-no-can siv-r-black-can"></div>
+      </div>
+      <div class="siv-r-table-std">
+        <h4 class="siv-r-ind-txt">Indicator</h4>
+        <div class="siv-r-ind-can"></div>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-std-txt">Result</h4>
+        <div class="siv-r-std-can"></div>
+      </div>
+    </div>
+    <table class="siv-r-table clear">
+ {{#section5}}
+ 		<tr>
+          <td class="siv-r-table-item-domain" data-fieldname="{{id}}">{{{display_extra_data this "domain_num"}}} {{{display_extra_data this "domain"}}}</td>
+          <td class="siv-r-table-item-method" data-fieldname="{{id}}">{{{methodology this}}}</td>
+          <td class="siv-r-table-item-indicator" data-fieldname="{{id}}">{{{display_extra_data this "ind_num"}}} {{lab}}</td>
+          <td class="siv-r-table-item-result" data-fieldname="{{id}}">{{{display_score this}}}</td> 
+        </tr>    
+  {{/section5}}
+	</table>	
+  </div>
+  <!-- end of 4. Staff satisfaction -->
+  <div class="siv-r-legend-wrap">
+    <div class="siv-r-legend-ctn">
+      <table class="siv-r-interactive-ctn">
+        <thead>
+          <tr>
+            <td colspan="6" class="siv-r-legend-header">Methodology</td>
+          </tr>
+          <tr>
+            <td colspan="6"><span>The indicators in this scorecard are collected using 5 different methodologies:</span></td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="siv-r-score siv-r-score-blue">E</td>
+            <td class="siv-r-table-indicator "><span>Health facility observation</span></td>
+            <td class="siv-r-score siv-r-score-purple">E</td>
+            <td class="siv-r-table-indicator "><span>Observations of clinical care</span></td>
+            <td class="siv-r-score siv-r-score-blue">W</td>
+            <td class="siv-r-table-indicator "><span>Prescription analysis</span></td>
+          </tr>
+          <tr>
+            <td class="siv-r-score siv-r-score-yellow">U</td>
+            <td class="siv-r-table-indicator "><span>Exit-interviews with patients</span></td>
+            <td class="siv-r-score siv-r-score-black">U</td>
+            <td class="siv-r-table-indicator "><span>Interviews with health workers</span></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="siv-r-legend">
+        <tbody>
+          <tr>
+            <td colspan="6"><h3 class="siv-r-legend-header">Legend</h3></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+          <tr>
+            <td class="siv-r-score siv-r-score-green">2</td>
+            <td class="siv-r-table-indicator "><span>Indicator met</span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          </tr>
+          <tr>
+            <td class="siv-r-score siv-r-score-red">D</td>
+            <td class="siv-r-table-indicator "><span>Indicator not met</span></td>
+          </tr>
+        </tbody>
+      </table>
+      <img class="siv-r-contact-logo" src={{{local_asset "images/reports/phhiv/unhcr-logo.png"}}}>
+      <div class="clear"> </div>
+    </div>
+    <div class="siv-r-qrcode" id="qrcode"> </div>
+    <div class="clear"> </div>
+  </div>
+  <!-- end of legend wrap --> 
+  <!-- end of page2 --> 
+</div>
+</div>

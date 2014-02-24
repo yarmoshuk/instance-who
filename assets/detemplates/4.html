@@ -1,0 +1,317 @@
+<div class="siv-r-nut-suv siv-r-mid-east">
+  <div class="siv-r-page-break  siv-r-foot-page">
+    <div class="siv-r-page-header">
+      <div class="siv-r-title-ctn"> <img class="siv-r-report-type" src={{{local_asset "icons/de_templates/round/4.svg"}}} />
+        <p class="siv-r-title-txt">Nutrition Survey Report</p>
+        <p class="siv-r-year-txt"><span class="siv-r-title-month">{{{dateinfo "month"}}}</span> <span class="siv-r-title-month">{{{dateinfo "year"}}}</span></p>
+      </div>
+      <div class="siv-r-loc-can"></div>
+      <div class="siv-r-loc-ctn">
+        <div class="siv-r-flag-ctn">{{{helperFlagSVG "iso" "locationdetails" "icons/flags/round/flags-svg/" "siv-r-flag-img"}}}</div>
+        <p class="siv-r-loc-txt" data-fieldname="name">{{{embedded_value "locationdetails" "name"}}}</p>
+        <p class="siv-r-loc-cty" data-fieldname="countryname">{{{embedded_value "locationdetails" "countryname"}}}</p>
+      </div>
+      <div class="clear"></div>
+    </div>
+  <div class="clear"></div>
+  <!-- end of page header -->
+  <table class="siv-r-graph-ctn">
+    <tbody>
+      <tr>
+        <td class=" siv-r-score-black" colspan="2"><h4 class="siv-r-table-title">General info</h4></td>
+      </tr>
+      <tr>
+        <td class="siv-r-container siv-r-indicator-name">Survey partners</td>
+        <td class="siv-r-container siv-r-table-item-no">{{{helperDisplayIndicator "surv_part" "val" 0.surv_part}}}</td>
+      </tr>
+      <tr>
+        <td class="siv-r-container siv-r-indicator-name">Context</td>
+        <td class="siv-r-container siv-r-table-item-no">{{{helperDisplayIndicator "context" "val" 0.context}}}</td>
+      </tr>
+      <tr>
+        <td class="siv-r-container siv-r-indicator-name">Population</td>
+        <td class="siv-r-container siv-r-table-item-no" >{{{helperDisplayIndicator "poptype" "val" 0.poptype}}}</td>
+      </tr>
+      <tr>
+        <td class=" siv-r-score-black" colspan="2"><h4 class="siv-r-table-title">Population</h4></td>
+      </tr>
+      <tr>
+        <td class="siv-r-container siv-r-indicator-name">Total population in surveyed area</td>
+        <td class="siv-r-container siv-r-table-item-no" >{{{helperDisplayIndicator "tot_ref" "val" 0.tot_ref}}}</td>
+      </tr>
+      <tr>
+        <td class="siv-r-container siv-r-indicator-name">Under 5 population in surveyed area</td>
+        <td class="siv-r-container siv-r-table-item-no">{{{helperDisplayIndicator "tot_u5" "val" 0.tot_u5}}}</td>
+      </tr>
+    </tbody>
+    <!-- end of reviewers -->
+  </table>
+  <table class="siv-r-glc">
+    <tbody>
+      <!--	
+      <tr>
+        <td class="siv-r-score-black"><h4>List of other surveys for <span id="siv-r-location_name_2">Kobe</span></h4></td>
+      </tr>
+      <tr>
+        <td class="siv-r-container siv-r-indicator-name">Jan 2008 (UNHCR, WFP) </td>
+      </tr>
+      <tr>
+        <td class="siv-r-container siv-r-indicator-name">Jan 2008 (UNHCR, WFP) </td>
+      </tr>
+      <tr>
+        <td class="siv-r-container siv-r-indicator-name">Jan 2008 (UNHCR, WFP) </td>
+      </tr>
+      -->
+    </tbody>
+  </table>
+  <div class="clear">
+    <div class="siv-r-sect-head-ctn">
+      <h2 class="siv-r-table-txt">Malnutrition results </h2>
+    </div>
+    <div class="siv-r-table-can"></div>
+    <div class="clear"> </div>
+    <div class="siv-r-table-head">
+      <div class="siv-r-table-col-name">
+        <h3 class="siv-r-table-name-txt">Acute malnutrition (6-59 months)</h3>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-std-txt">NCHS</h4>
+        <div class="siv-r-std-can"></div>
+      </div>
+      <div class="siv-r-table-col-no">
+        <h4 class="siv-r-ind-txt">WHO</h4>
+        <div class="siv-r-ind-can"></div>
+      </div>
+    </div>
+    <div class="siv-r-table-head-space">&nbsp;</div>
+    <div class="siv-r-table-head">
+      <div class="siv-r-table-col-name">
+        <h3 class="siv-r-table-name-txt">Stunting (6-59 months)</h3>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-std-txt">NCHS</h4>
+        <div class="siv-r-std-can"></div>
+      </div>
+      <div class="siv-r-table-col-no">
+        <h4 class="siv-r-ind-txt">WHO</h4>
+        <div class="siv-r-ind-can"></div>
+      </div>
+    </div>
+    <table class="siv-r-table clear">
+      <tbody>
+        <tr class="siv-r-table-hl">
+          <td class="siv-r-table-item">Global Acute Malnutrition (GAM)</td>
+          <td class="siv-r-std-val">{{{ind_w_range 0.waste_nchs_lowgam 0.waste_nchs_lowgam 0.waste_nchs_upgam}}}</td>
+          <td class="siv-r-ind-val">{{{ind_w_range 0.waste_nchs_lowgam 0.waste_who_lowgam 0.waste_who_upgam}}}</td>
+          <td class="siv-r-table-space">&nbsp;</td>
+          <td class="siv-r-table-item">HAZ &lt;-2 z-score </td>
+          <td class="siv-r-std-val">{{{ind_w_range 0.stunt_nchs_lowhaz2 0.stunt_nchs_lowhaz2 0.stunt_nchs_lowhaz2}}}</td>
+          <td class="siv-r-ind-val">{{{ind_w_range 0.stunt_nchs_lowhaz2 0.stunt_nchs_lowhaz2 0.stunt_nchs_lowhaz2}}}</td>
+        </tr>
+        <tr>
+          <td class="siv-r-table-item">Severe Acute Malnutrition (SAM)</td>
+          <td class="siv-r-std-val">{{{ind_w_range 0.waste_nchs_lowsam 0.waste_nchs_lowsam 0.waste_nchs_lowsam}}}</td>
+          <td class="siv-r-ind-val">{{{ind_w_range 0.waste_nchs_lowsam 0.waste_nchs_lowsam 0.waste_nchs_lowsam}}}</td>
+          <td class="siv-r-table-space">&nbsp;</td>
+          <td class="siv-r-table-item">HAZ &lt;-3 z-score</td>
+          <td class="siv-r-std-val">{{{ind_w_range 0.stunt_nchs_lowhaz3 0.stunt_nchs_lowhaz3 0.stunt_nchs_lowhaz3}}}</td>
+          <td class="siv-r-ind-val">{{{ind_w_range 0.stunt_nchs_lowhaz3 0.stunt_nchs_lowhaz3 0.stunt_nchs_lowhaz3}}}</td>
+        </tr>
+        <tr class="siv-r-table-hl">
+          <td></td>
+          <td></td>
+          <td></td>
+          <td class="siv-r-table-space">&nbsp;</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="siv-r-table-item">Total number surveyed</td>
+          <td id="siv-r--s" class="siv-r-no-val">{{{helperDisplayIndicator "waste_who_gamn" "val" 0.waste_who_gamn}}}</td>
+          <td id="siv-r--v" class="siv-r-ind-val"></td>
+          <td class="siv-r-table-space">&nbsp;</td>
+          <td id="siv-r--v" class="siv-r-empty-cell"></td>
+          <td id="siv-r--v" class="siv-r-empty-cell"></td>
+          <td id="siv-r--v" class="siv-r-empty-cell"></td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- end of malnutrition results --> 
+  </div>
+  <div class="clear">
+    <div class="siv-r-sect-head-ctn">
+      <h2 class="siv-r-table-txt">Anaemia results</h2>
+    </div>
+    <div class="siv-r-table-can"></div>
+    <div class="clear"> </div>
+    <div class="siv-r-table-head">
+      <div class="siv-r-table-col-name">
+        <h3 class="siv-r-table-name-txt">Anaemia (6-59 months)</h3>
+      </div>
+    </div>
+    <div class="siv-r-table-head-space">&nbsp;</div>
+    <div class="siv-r-table-head">
+        <h3 class="siv-r-table-name-txt">Anaemia (women reproductive age)</h3>
+    </div>
+    <table class="siv-r-table clear">
+      <tbody>
+        <tr class="siv-r-table-hl">
+          <td class="siv-r-table-item">Total Anaemia (Hb &lt;11 g/dl)</td>
+          <td id="siv-r--v" class="siv-r-no-val">{{{ind_w_range 0.anae_659 0.anae_659_lowci 0.anae_659_upci}}}</td>
+          <td class="siv-r-table-space">&nbsp;</td>
+          <td class="siv-r-table-item">Total Anaemia (Hb &lt;11 g/dl)</td>
+          <td id="siv-r--v" class="siv-r-no-val">{{{ind_w_range 0.anae_wra 0.anae_wra_lowci 0.anae_wra_upci}}}</td>
+        </tr>
+        <tr>
+          <td class="siv-r-table-item">Mild (Hb 10-10.9)</td>
+          <td id="siv-r--v" class="siv-r-no-val">{{{helperDisplayIndicator "anae_659_mild" "val" 0.anae_659_mild}}}% </td>
+          <td class="siv-r-table-space">&nbsp;</td>
+          <td class="siv-r-table-item">Mild (Hb 10-10.9)</td>
+          <td id="siv-r--v" class="siv-r-no-val">{{{helperDisplayIndicator "anae_wra_mild" "val" 0.anae_wra_mild}}}%</td>
+        </tr>
+        <tr class="siv-r-table-hl">
+          <td class="siv-r-table-item">Moderate (Hb 7-9.9)</td>
+          <td id="siv-r--v" class="siv-r-no-val">{{{helperDisplayIndicator "anae_659_mod" "val" 0.anae_659_mod}}}%</td>
+          <td class="siv-r-table-space">&nbsp;</td>
+          <td class="siv-r-table-item">Moderate (Hb 7-9.9)</td>
+          <td id="siv-r--v" class="siv-r-no-val">{{{helperDisplayIndicator "anae_wra_mod" "val" 0.anae_wra_mod}}}%</td>
+        </tr>
+        <tr>
+          <td class="siv-r-table-item">Severe (Hb&lt;7.0))</td>
+          <td id="siv-r--v" class="siv-r-no-val">{{{ind_w_range 0.anae_659_sev 0.anae_659_sev_lowci 0.anae_659_sev_upci}}}</td>
+          <td class="siv-r-table-space">&nbsp;</td>
+          <td class="siv-r-table-item">Severe (Hb&lt;7.0)</td>
+          <td id="siv-r--v" class="siv-r-no-val">{{{ind_w_range 0.anae_wra_sev 0.anae_wra_sev_lowci 0.anae_wra_sev_upci}}}</td>
+        </tr>
+        <tr class="siv-r-table-hl">
+          <td class="siv-r-table-item">Total number surveyed</td>
+          <td id="siv-r--v" class="siv-r-no-val">{{{helperDisplayIndicator "anae_659_n" "val" 0.anae_659_n}}}</td>
+          <td class="siv-r-table-space">&nbsp;</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="siv-r-table-item">Were pregnant women included in the sample? </td>
+          <td id="siv-r--v" class="siv-r-no-val">{{{helperDisplayIndicator "anae_wra_pw" "val" 0.anae_wra_pw}}}</td>
+          <td class="siv-r-table-space">&nbsp;</td>
+          <td class="siv-r-table-item">Were lactating women included in the sample? </td>
+          <td id="siv-r--v" class="siv-r-no-val">{{{helperDisplayIndicator "anae_wra_lw" "val" 0.anae_wra_lw}}</td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- end of Anaemia results  --> 
+  </div>
+  <div class="clear">
+    <div class="siv-r-sect-head-ctn">
+      <h2 class="siv-r-table-txt">Other results</h2>
+    </div>
+    <div class="siv-r-table-can"></div>
+    <div class="clear"> </div>
+    <div class="siv-r-table-head">
+      <div class="siv-r-table-col-name">
+        <h3 class="siv-r-table-name-txt">Mortality</h3>
+      </div>
+    </div>
+    <div class="siv-r-table-head-space">&nbsp;</div>
+    <div class="siv-r-table-head">
+      <div class="siv-r-table-col-name">
+        <h3 class="siv-r-table-name-txt">Vitamin A and EPI coverage</h3>
+      </div>
+    </div>
+    <table class="siv-r-table clear">
+      <tbody>
+        <tr class="siv-r-table-hl">
+          <td class="siv-r-table-item">Crude Mortality Rate (CMR) (/1000/month)</td>
+          <td id="siv-r--v" class="siv-r-no-val">{{{ind_w_range 0.cmr 0.cmr_lowci 0.cmr_upci}}}</td>
+          <td class="siv-r-table-space">&nbsp;</td>
+          <td class="siv-r-table-item">Vitamin A coverage</td>
+          <td id="siv-r--v" class="siv-r-no-val">{{{helperDisplayIndicator "vita659" "val" 0.vita659}}}%</td>
+        </tr>
+        <tr>
+          <td class="siv-r-table-item">Under 5 Mortality Rate (U5MR) (/1000/month)</td>
+          <td id="siv-r--v" class="siv-r-no-val">{{{ind_w_range 0.u5mr 0.u5mr_lowci 0.u5mr_upci}}</td>
+          <td class="siv-r-table-space">&nbsp;</td>
+          <td class="siv-r-table-item">Measles coverage by card</td>
+          <td id="siv-r--v" class="siv-r-no-val">{{{helperDisplayIndicator "measles_card" "val" 0.measles_card}}}%</td>
+        </tr>
+        <tr class="siv-r-table-hl">
+          <td></td>
+          <td></td>
+          <td class="siv-r-table-space">&nbsp;</td>
+          <td class="siv-r-table-item">Measles coverage by history</td>
+          <td id="siv-r--v" class="siv-r-no-val">{{{helperDisplayIndicator "measles_his" "val" 0.measles_his}}}%</td>
+        </tr>
+        <tr>
+          <td><h3 class="siv-r-table-name-txt">Other survey indicators</h3></td>
+          <td></td>
+          <td class="siv-r-table-space">&nbsp;</td>
+          <td class="siv-r-table-item">Measles coverage by card and history</td>
+          <td id="siv-r--v" class="siv-r-no-val">{{{helperDisplayIndicator "measles_hiscard" "val" 0.measles_hiscard}}}%</td>
+        </tr>
+        <tr class="siv-r-table-hl">
+          <td class="siv-r-table-item">Infant and Young Child Feeding Indicators (IYCF) </td>
+          <td id="siv-r--v" class="siv-r-no-val">{{{helperDisplayIndicator "iycf" "val" 0.iycf}}}</td>
+          <td class="siv-r-table-space">&nbsp;</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="siv-r-table-item">Food security</td>
+          <td id="siv-r--v" class="siv-r-no-val">{{{helperDisplayIndicator "fdsec" "val" 0.fdsec}}} </td>
+          <td class="siv-r-table-space">&nbsp;</td>
+          <td><h3 class="siv-r-table-name-txt">Survey information</h3></td>
+          <td></td>
+        </tr>
+        <tr class="siv-r-table-hl">
+          <td class="siv-r-table-item">Morbidity</td>
+          <td id="siv-r--v" class="siv-r-no-val">{{{helperDisplayIndicator "morb" "val" 0.morb}}}</td>
+          <td class="siv-r-table-space">&nbsp;</td>
+          <td class="siv-r-table-item">Planned dates for next survey</td>
+          <td id="siv-r--v" class="siv-r-no-val">{{{helperDisplayIndicator "survey_date" "val" 0.survey_date}}}</td>
+        </tr>
+        <tr>
+          <td class="siv-r-table-item">Vaccination</td>
+          <td id="siv-r--v" class="siv-r-no-val">{{{helperDisplayIndicator "vacc" "val" 0.vacc}}}</td>
+          <td class="siv-r-table-space">&nbsp;</td>
+          <td class="siv-r-table-item">Final version of report received/available</td>
+          <td id="siv-r--v" class="siv-r-no-val">{{{helperDisplayIndicator "fnl_rpt" "val" 0.fnl_rpt}}}</td>
+        </tr>
+        <tr class="siv-r-table-hl">
+          <td class="siv-r-table-item">WASH</td>
+          <td id="siv-r--v" class="siv-r-no-val">{{{helperDisplayIndicator "wash_ind" "val" 0.wash_ind}}}</td>
+          <td class="siv-r-table-space">&nbsp;</td>
+          <td class="siv-r-table-item">Data files received/available</td>
+          <td id="siv-r--v" class="siv-r-no-val">{{{helperDisplayIndicator "data_rec" "val" 0.data_rec}}}</td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- end of Other results  --> 
+  </div>
+  <div class="clear">
+    <div class="siv-r-sum-can"></div>
+    <div class="siv-r-container siv-r-summary-ctn">
+      <h2 class="siv-r-para-title">Survey information comments</h2>
+      <p id="TEXT_OBS_HIV-v" class="siv-r-obj-txt clear">{{{helperDisplayIndicator "comments" "val" 0.comments}}}</p>
+    </div>
+  </div>
+  <div class="siv-r-legend-wrap clear">
+    <div class="clear siv-r-legend-ctn siv-r-container ">
+      <table class="siv-r-interactive-ctn">
+        <tbody>
+          <tr>
+            <td rowspan="2" class="siv-r-interactive-32"><img class="siv-r-interactive-32" src={{{local_asset "images/logos/siv-logo-black.png"}}}/></td>
+            <td class="siv-r-interactive-title siv-r-interactive-space">View interactive maps and statistics online</td>
+          </tr>
+          <tr>
+            <td class="siv-r-table-item siv-r-interactive-row"><a href="http://twine.unhcr.org" class="siv-r-interactive-link">http://twine.unhcr.org</a></td>
+          </tr>
+        </tbody>
+      </table> <img class="siv-r-contact-logo" src={{{local_asset "images/reports/phhiv/unhcr-logo.png"}}} />
+      <div class="clear"></div>
+    </div>
+    <!--end of footer --> 
+  </div>
+  <!-- end of page 1 --> 
+</div>
+</div>

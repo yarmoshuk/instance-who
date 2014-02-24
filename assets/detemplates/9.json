@@ -1,0 +1,27 @@
+{
+	"css":"formattedreports.css",
+	"defaultimelevel":5,
+	"partners":false,
+	"popindexid":"de_ar.gen_pop_total",
+	"template":true,
+	"dataset":[
+		{
+			"options":5,
+			"requestID":"main",
+			"setuuid":"ae5db634-5b87-45de-85c0-c5ceea79f2e5",
+			"trendCharts":false
+		},{
+			"options":1,
+			"requestID":"locationdetails",
+			"setuuid":"453f2845-61f4-4d26-8202-1dd95773400d",
+			"trendCharts":false
+		},{
+			"options":1,
+			"requestID":"popdata",
+			"setuuid":"121ecac7-c7ad-4671-a2f4-4725b07512dd"
+		}
+	],
+	"morbpies":{
+		"enable":false
+	}
+}

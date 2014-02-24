@@ -1,0 +1,53 @@
+{
+    "success": true,
+    "bales": {
+        "public_health": {
+	        "displayName": "Public Health",
+	        "icon": "public-health",
+	        "indicators": [
+	            "4a5e70ed-6102-452f-ac5d-aad03443d7a1",
+	            "75c62dda-19c2-4a0e-8844-b748c93ea0ac"
+	        ]
+        },
+        "nutrition": {
+            "displayName": "Nutrition",
+            "icon": "nutrition",
+            "indicators": [
+                "dbc50471-b22b-478d-ad13-0c1501bd5ba3",
+                "7c1b1916-4ab0-4a6b-ae63-d8e778578527"
+            ]
+        },
+        "reproductive_health": {
+            "displayName": "Reproductive Health",
+            "icon": "reproductive-health",
+            "indicators": [
+                "45eed6d0-d7b7-4bde-8bec-0c65aba85cac",
+                "7b89b244-9134-4015-abb4-58705c663a1d"
+            ]
+        },
+        "hiv_aids": {
+            "displayName": "HIV/AIDS",
+            "icon": "hiv-aids",
+            "indicators": [
+                "0540f667-0943-4762-b7ef-7bcef2835a2f",
+                "8d338bc5-ac62-45fd-a5b9-23a563e60945"
+            ]
+        },
+        "wash": {
+            "displayName": "WASH",
+            "icon": "wash",
+            "indicators": [
+                "246958b8-530d-46af-ab86-950bad9ddd21",
+                "f6a0da28-c07b-4e2a-9cc2-2320562adddf"
+            ]
+        },
+        "food_security": {
+            "displayName": "Food Security",
+            "icon": "food-security",
+            "indicators": [
+                "dbfd0b8b-9a9d-41b1-abd0-490413b35220",
+                "b89aa012-5b6c-4865-90d0-304082cec227"
+            ]
+        }
+    }
+}

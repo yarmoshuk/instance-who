@@ -1,0 +1,77 @@
+{
+    "success": true,
+    "layers": {
+        "twine_map": {
+            "active": true,
+            "name": "Twine Map",
+            "type": "Tile",
+            "url": "",
+            "icon": "",
+            "class": "",
+            "visible": true,
+            "baseMap": true,
+            "mapControl": true,
+            "vendor": "Twine"
+        },
+        "twine_terrain": {
+            "active": true,
+            "name": "Twine Terrain",
+            "type": "TwineLayer",
+            "url": "",
+            "icon": "",
+            "class": "",
+            "visible": false,
+            "baseMap": true,
+            "mapControl": true,
+            "vendor": "Twine"
+        },
+        "street_map": {
+            "active": true,
+            "name": "Street Map",
+            "type": "Tile",
+            "url": "https://{s}.tiles.mapbox.com/v3/examples.map-vyofok3q/{z}/{x}/{y}.png",
+            "icon": "",
+            "class": "",
+            "visible": false,
+            "baseMap": true,
+            "mapControl": true,
+            "vendor": "MapBox"
+        },
+        "terrain_map": {
+            "active": true,
+            "name": "Terrain",
+            "type": "Tile",
+            "url": "http://{s}.tiles.mapbox.com/v3/examples.map-qogxobv1/{z}/{x}/{y}.png",
+            "icon": "",
+            "class": "",
+            "visible": false,
+            "baseMap": true,
+            "mapControl": true,
+            "vendor": "MapBox"
+        },      
+        "grey_map": {
+            "active": false,
+            "name": "Grey",
+            "type": "Tile",
+            "url": "https://{s}.tiles.mapbox.com/v3/examples.map-9d0r2yso/{z}/{x}/{y}.png",
+            "icon": "",
+            "class": "",
+            "visible": false,
+            "baseMap": true,
+            "mapControl": true,
+            "vendor": "MapBox"
+        },
+        "geolevels": {
+            "active": true,
+            "name": "Geolevels",
+            "type": "TwineJSON",
+            "url": "geolevels.json",
+            "icon": "",
+            "class": "",
+            "visible": true,
+            "baseMap": false,          
+            "mapControl": false,
+            "vendor": "Twine"
+        }        
+    }
+}

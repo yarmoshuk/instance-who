@@ -1,0 +1,1796 @@
+<div class="siv-r-urb-his">
+     <div class="siv-r-page-header">
+      <div class="siv-r-title-ctn"> <img class="siv-r-report-type" src="<%- asset("icons/de_templates/round/15.svg") %>" />
+        <p class="siv-r-title-txt">Health Information System</p>
+        <p class="siv-r-year-txt"> <% if(data.reportdate) { %>
+              <%= data.reportdate %>
+      <% } else { %>
+              unknown date
+      <% } %></p>
+      </div>
+      <div class="siv-r-loc-can"></div>
+      <div class="siv-r-loc-ctn">
+        <div class="siv-r-flag-ctn"><img class="siv-r-flag-img" src="<%- asset("icons/flags/round/flags-svg/") %><%= data.locid.slice(3, 5) %>.svg"/></div>
+        <p class="siv-r-loc-txt" data-fieldname="country"><%= data.country %></p>
+        <p class="siv-r-loc-cty"><% if(data.hlthfac) { %><span data-fieldname="hlthfac"><%= data.hlthfac %>, </span><% } %><% if(data.location) { %><span data-fieldname="location"><%= data.location %>, </span><% } %></p>
+      </div>
+      <div class="clear"></div>
+    </div>
+  <div class="clear siv-r-container">
+    <h2 class="siv-r-ctn-head-txt">1.0 Population</h2>
+  <% if(data.pop) { %> 
+	<div class="siv-r-chart-ctn">
+      <table class="siv-r-table">
+        <thead>
+          <tr>
+            <th class="siv-r-ind-val siv-r-row-head-raw" rowspan="2">Population</th>
+            <th class="siv-r-std-val siv-r-row-head-raw" colspan="2">0 to &lt;1</th>
+            <th class="siv-r-std-val siv-r-data-calc" rowspan="2">Total &lt;1</th>
+            <th class="siv-r-std-val siv-r-row-head-raw" colspan="2">1 - 4</th>
+            <th class="siv-r-std-val siv-r-data-calc" rowspan="2">Total 1 - 4</th>
+            <th class="siv-r-std-val siv-r-row-head-raw" colspan="2">5 - 17</th>
+            <th class="siv-r-std-val siv-r-data-calc" rowspan="2">Total 5 - 17</th>
+            <th class="siv-r-std-val siv-r-row-head-raw" colspan="2">18 - 59</th>
+            <th class="siv-r-std-val siv-r-data-calc" rowspan="2">Total 18 - 59</th>
+            <th class="siv-r-std-val siv-r-row-head-raw" colspan="2">&gt; 60</th>
+            <th class="siv-r-std-val siv-r-data-calc" rowspan="2">Total &gt; 60</th>
+            <th class="siv-r-std-val siv-r-data-tot" rowspan="2">Grand Total</th>
+          </tr>
+          <tr>
+            <th class="siv-r-std-val siv-r-row-head-raw">M</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">F</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">M</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">F</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">M</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">F</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">M</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">F</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">M</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">F</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="siv-r-ind-val">Refugee population</td>
+            <td class="siv-r-std-val" data-fieldname="pop01m"><%= numeral(data.pop01m).format("0,0") %></td>
+            <td class="siv-r-std-val" data-fieldname="pop01f"><%= numeral(data.pop01f).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="pop01"><%= numeral(data.pop01).format("0,0") %></td>
+            <td class="siv-r-std-val" data-fieldname="pop01"><%= numeral(data.pop01).format("0,0") %></td>
+            <td class="siv-r-std-val" data-fieldname="pop14f"><%= numeral(data.pop14f).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="pop14"><%= numeral(data.pop14).format("0,0") %></td>
+            <td class="siv-r-std-val" data-fieldname="pop517m"><%= numeral(data.pop517m).format("0,0") %></td>
+            <td class="siv-r-std-val" data-fieldname="pop517f"><%= numeral(data.pop517f).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="pop517"><%= numeral(data.pop517).format("0,0") %></td>
+            <td class="siv-r-std-val" data-fieldname="pop1859m"><%= numeral(data.pop1859m).format("0,0") %></td>
+            <td class="siv-r-std-val" data-fieldname="pop1859f"><%= numeral(data.pop1859f).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="pop1859"><%= numeral(data.pop1859).format("0,0") %></td>
+            <td class="siv-r-std-val" data-fieldname="pop60m"><%= numeral(data.pop60m).format("0,0") %></td>
+            <td class="siv-r-std-val" data-fieldname="pop60f"><%= numeral(data.pop60f).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="pop60"><%= numeral(data.pop60).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-tot" data-fieldname="pop"><%= numeral(data.pop).format("0,0") %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val siv-r-row-head-ind">% by age group</td>
+            <td class="siv-r-std-val siv-r-data-blank"></td>
+            <td class="siv-r-std-val siv-r-data-blank"></td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="poppct01"><%= numeral(data.poppct01).format("0 %") %></td>
+            <td class="siv-r-std-val siv-r-data-blank"></td>
+            <td class="siv-r-std-val siv-r-data-blank"></td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="poppct14"><%= numeral(data.poppct14).format("0 %") %></td>
+            <td class="siv-r-std-val siv-r-data-blank"></td>
+            <td class="siv-r-std-val siv-r-data-blank"></td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="poppct517"><%= numeral(data.poppct517).format("0 %") %></td>
+            <td class="siv-r-std-val siv-r-data-blank"></td>
+            <td class="siv-r-std-val siv-r-data-blank"></td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="poppct1859"><%= numeral(data.poppct1859).format("0 %") %></td>
+            <td class="siv-r-std-val siv-r-data-blank"></td>
+            <td class="siv-r-std-val siv-r-data-blank"></td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="poppct60"> <%= numeral(data.poppct60).format("0 %") %></td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="poppct"><%= numeral(data.poppct).format("0 %") %></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <% } else { %>
+        <p class="siv-r-section-message">This section was not collected</p>
+    <% } %>   
+	</div>
+<div class="clear siv-r-container">
+<h2 class="siv-r-ctn-head-txt">2.0 Mortality</h2>
+ <div class="siv-r-chart-ctn">
+      <p class="siv-r-key-list-value">2.1 Mortality</p>
+      <% if(("ig_urban_mortality" in data)) { %>
+       <table class="siv-r-table">
+        <thead>
+          <tr>
+            <th class="siv-r-ind-val siv-r-row-head-raw" rowspan="2">Record ONE cause of mortality per case</th>
+            <th class="siv-r-std-val siv-r-row-head-raw" colspan="2">0 - 4</th>
+            <th class="siv-r-std-val siv-r-data-calc" rowspan="2">Total 0 - 4</th>
+            <th class="siv-r-std-val siv-r-row-head-ind" rowspan="2">U5 % mort</th>
+            <th class="siv-r-std-val siv-r-row-head-raw" colspan="2">5 - 17</th>
+            <th class="siv-r-std-val siv-r-data-calc" rowspan="2">Total 5 - 17</th>
+            <th class="siv-r-std-val siv-r-row-head-raw" colspan="2">18 - 59</th>
+            <th class="siv-r-std-val siv-r-data-calc" rowspan="2">Total 18 - 59</th>
+            <th class="siv-r-std-val siv-r-row-head-raw" colspan="2">&gt; 60</th>
+            <th class="siv-r-std-val siv-r-data-calc" rowspan="2">Total &gt; 60</th>
+            <th class="siv-r-std-val siv-r-data-tot" rowspan="2">Grand Total</th>
+            <th class="siv-r-std-val siv-r-row-head-ind" rowspan="2">Crude % mort</th>
+          </tr>
+          <tr>
+            <th class="siv-r-std-val siv-r-row-head-raw">M</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">F</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">M</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">F</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">M</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">F</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">M</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">F</th>
+          </tr>
+        </thead>
+        <tbody>
+        <% _.each(data.ig_urban_mortality, function( ig_urban_mortality ){ %>
+          <tr data-row-id="ig_urban_mortality.<%= ig_urban_mortality.mortcause %>">
+            <td class="siv-r-ind-val" data-fieldname="ig_urban_mortality.mortcause"><%= ig_urban_mortality.mortcause %></td>
+            <td class="siv-r-std-val" data-fieldname="ig_urban_mortality.mort04m"><%= ig_urban_mortality.mort04m %></td>
+            <td class="siv-r-std-val" data-fieldname="ig_urban_mortality.mort04f"><%= ig_urban_mortality.mort04f %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ig_urban_mortality.mort04"><%= ig_urban_mortality.mort04 %></td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="ig_urban_mortality.mortpctcause04"><%= numeral(ig_urban_mortality.mortpctcause04).format("0 %") %></td>
+            <td class="siv-r-std-val" data-fieldname="ig_urban_mortality.mort517m"><%= ig_urban_mortality.mort517m %></td>
+            <td class="siv-r-std-val" data-fieldname="ig_urban_mortality.mort517f"><%= ig_urban_mortality.mort517f %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ig_urban_mortality.mort517"><%= ig_urban_mortality.mort517 %></td>
+            <td class="siv-r-std-val" data-fieldname="ig_urban_mortality.mort1859m"><%= ig_urban_mortality.mort1859m %></td>
+            <td class="siv-r-std-val" data-fieldname="ig_urban_mortality.mort1859f"><%= ig_urban_mortality.mort1859f %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ig_urban_mortality.mort1859"><%= ig_urban_mortality.mort1859 %></td>
+            <td class="siv-r-std-val" data-fieldname="ig_urban_mortality.mort60m"><%= ig_urban_mortality.mort60m %></td>
+            <td class="siv-r-std-val" data-fieldname="ig_urban_mortality.mort60f"><%= ig_urban_mortality.mort60f %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ig_urban_mortality.mort60"><%= ig_urban_mortality.mort60 %></td>
+            <td class="siv-r-std-val siv-r-data-tot" data-fieldname="ig_urban_mortality.mort"><%= ig_urban_mortality.mort %></td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="ig_urban_mortality.mortpctcausetot"><%= numeral(ig_urban_mortality.mortpctcausetot).format("0 %") %></td>
+          </tr>
+          <% }); %>
+          <tr>
+            <td class="siv-r-ind-val siv-r-data-calc">Total</td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="mort04m"><%= data.mort04m %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="mort04f"><%= data.mort04f %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="mort04"><%= data.mort04 %></td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="mortpctage04"><%= numeral(data.mortpctage04).format("0 %") %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="mort517m"><%= data.mort517m %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="mort517f"><%= data.mort517f %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="mort517"><%= data.mort517 %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="mort1859m"><%= data.mort1859m %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="mort1859f"><%= data.mort1859f %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="mort1859"><%= data.mort1859 %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="mort60m"><%= data.mort60m %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="mort60f"><%= data.mort60f %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="mort60"><%= data.mort60 %></td>
+            <td class="siv-r-std-val siv-r-data-tot" data-fieldname="mort"><%= data.mort %></td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="mortcause"><%= numeral(data.mortcause).format("0 %") %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val siv-r-row-head-ind">% by age group</td>
+            <td class="siv-r-std-val siv-r-data-blank"></td>
+            <td class="siv-r-std-val siv-r-data-blank"></td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="mortpctage04"><%= numeral(data.mortpctage04).format("0 %") %></td>
+            <td class="siv-r-std-val siv-r-data-blank"></td>
+            <td class="siv-r-std-val siv-r-data-blank"></td>
+            <td class="siv-r-std-val siv-r-data-blank"></td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="mortpctage517"><%= numeral(data.mortpctage517).format("0 %") %></td>
+            <td class="siv-r-std-val siv-r-data-blank"></td>
+            <td class="siv-r-std-val siv-r-data-blank"></td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="mortpctage1859"><%= numeral(data.mortpctage1859).format("0 %") %></td>
+            <td class="siv-r-std-val siv-r-data-blank"></td>
+            <td class="siv-r-std-val siv-r-data-blank"></td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="mortpctage60"><%= numeral(data.mortpctage60).format("0 %") %></td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="mortpctage"><%= numeral(data.mortpctage).format("0 %") %></td>
+            <td class="siv-r-std-val siv-r-data-blank"></td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="siv-r-table">
+        <thead>
+          <tr>
+            <th class="siv-r-ind-val siv-r-row-head-ind">Mortality indicators</th>
+            <th class="siv-r-std-val siv-r-row-head-ind">M</th>
+            <th class="siv-r-std-val siv-r-row-head-ind">F</th>
+            <th class="siv-r-std-val siv-r-row-head-ind">Total</th>
+          </tr>
+          </thead>
+        <tbody>
+          <tr>
+            <td class="siv-r-ind-val siv-r-row-head-ind">Crude mortality rate (CMR) (/1,000/month)</td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="mortcmrm"><%= numeral(data.mortcmrm).format("0.0") %></td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="mortcmrf"><%= numeral(data.mortcmrf).format("0.0") %></td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="mortcmr"><%= numeral(data.mortcmr).format("0.0") %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val siv-r-row-head-ind">Under 5 mortality rate (U5MR) (/1,000/month)</td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="mortu5mrm"><%= numeral(data.mortu5mrm).format("0.0") %></td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="mortu5mrf"><%= numeral(data.mortu5mrf).format("0.0") %></td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="mortu5mr"><%= numeral(data.mortu5mr).format("0.0") %></td>
+          </tr>
+          <!--<tr>
+            <td class="siv-r-ind-val siv-r-row-head-ind">Neonatal mortality rate (NNMR) (/1,000 livebirths)</td>
+            <td class="siv-r-std-val siv-r-data-mis"></td>
+            <td class="siv-r-std-val siv-r-data-mis"></td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="mortnnmr"><%= numeral(data.mortnnmr).format("0.0") %></td>
+          </tr>-->
+        </tbody>
+      </table>
+	  <% } else { %>
+            <p class="siv-r-section-message">This section was not collected</p>
+      <% } %>  
+      </div>
+ <div class="siv-r-chart-ctn">
+ <p class="siv-r-key-list-value">2.2 Maternal Death</p>
+      <% if(("ig_urban_mortality" in data)) { %>
+      <table class="siv-r-table">
+        <tbody>
+          <tr>
+            <td class="siv-r-ind-val">Number of maternal deaths reported</td>
+            <td class="siv-r-std-val" data-fieldname="matdeathrep"><%= data.matdeathrep %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val">Number of maternal deaths investigated</td>
+            <td class="siv-r-std-val" data-fieldname="matdeathinv"><%= data.matdeathinv %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val siv-r-row-head-ind">Proportion of maternal deaths investigated</td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="mortmatdeathpctinv"><%= data.mortmatdeathpctinv %></td>
+          </tr>        
+         </tbody>
+      </table>
+	  <% } else { %>
+            <p class="siv-r-section-message">This section was not collected</p>
+      <% } %>  
+    </div>
+	</div>
+<div class="clear siv-r-container">
+    <h2 class="siv-r-ctn-head-txt">3.0 Out-patient Department</h2>
+    <div class="siv-r-chart-ctn">
+      <p class="siv-r-key-list-value">3.1 Staffing and service availability</p>
+      <% if(data.ftclinicians) { %>
+      <table class="siv-r-table">
+        <tbody>
+          <tr>
+            <td class="siv-r-ind-val">Number of full-time clinicians </td>
+            <td class="siv-r-std-val" data-fieldname="ftclinicians"><%= data.ftclinicians %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val">Number of full days on which the health facility was functioning </td>
+            <td class="siv-r-std-val" data-fieldname="dayshcfunct"><%= numeral(data.dayshcfunct).format("0.0") %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val siv-r-row-head-ind">Health facility utilisation rate (total visits/refugee/year)</td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="morbhlthfacutil"><%= numeral(data.morbhlthfacutil).format("0.0") %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val siv-r-row-head-ind">Consultations per clinician per day</td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="morbconsclinday"><%= numeral(data.morbconsclinday).format("0.0") %></td>
+          </tr>
+        </tbody>
+      </table>
+	  <% } else { %>
+            <p class="siv-r-section-message">This section was not collected</p>
+      <% } %>  
+      </div>
+    <div class="siv-r-chart-ctn">
+      <p class="siv-r-key-list-value">3.2 Acute health conditions</p>
+      <% if("ig_urban_comm_disease" in data) { %>
+      <table class="siv-r-table">
+        <thead>
+          <tr>
+            <th class="siv-r-ind-val siv-r-row-head-raw" rowspan="2">Record NEW cases of disease only</th>
+            <th class="siv-r-std-val siv-r-row-head-raw" colspan="2">0 - 4</th>
+            <th class="siv-r-std-val siv-r-data-calc" rowspan="2">Total 0 - 4</th>
+            <th class="siv-r-std-val siv-r-row-head-ind" rowspan="2">U5% by cause</th>
+            <th class="siv-r-std-val siv-r-row-head-raw" colspan="2">5 - 17</th>
+            <th class="siv-r-std-val siv-r-data-calc" rowspan="2">Total 5 - 17</th>
+            <th class="siv-r-std-val siv-r-row-head-raw" colspan="2">18 - 59</th>
+            <th class="siv-r-std-val siv-r-data-calc" rowspan="2">Total 18 - 59</th>
+            <th class="siv-r-std-val siv-r-row-head-raw" colspan="2">&gt; 60</th>
+            <th class="siv-r-std-val siv-r-data-calc" rowspan="2">Total &gt; 60</th>
+            <th class="siv-r-std-val siv-r-data-tot" rowspan="2">Grand Total</th>
+            <th class="siv-r-std-val siv-r-row-head-ind" rowspan="2">% by cause</th>
+            <!--<th class="siv-r-std-val siv-r-row-head-ind" rowspan="2">Crude Incid</th>-->
+          </tr>
+          <tr>
+            <th class="siv-r-std-val siv-r-row-head-raw">M</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">F</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">M</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">F</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">M</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">F</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">M</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">F</th>
+          </tr>
+        </thead>
+        <tbody>
+        <% _.each(data.ig_urban_comm_disease, function( ig_urban_comm_disease){ %>
+          <tr data-row-id="ig_urban_comm_disease.<%= ig_urban_comm_disease.cdcause %>">
+            <td class="siv-r-ind-val" data-fieldname="ig_urban_comm_disease.cdcause"><%= ig_urban_comm_disease.cdcause %></td>
+            <td class="siv-r-std-val" data-fieldname="ig_urban_comm_disease.cd04m"><%= ig_urban_comm_disease.cd04m %></td>
+            <td class="siv-r-std-val" data-fieldname="ig_urban_comm_disease.cd04f"><%= ig_urban_comm_disease.cd04f %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ig_urban_comm_disease.cd04"><%= ig_urban_comm_disease.cd04 %></td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="ig_urban_comm_disease.cdincid04"><%= numeral(ig_urban_comm_disease.cdincid04).format("0 %") %></td>
+            <td class="siv-r-std-val" data-fieldname="ig_urban_comm_disease.cd517m"><%= ig_urban_comm_disease.cd517m %></td>
+            <td class="siv-r-std-val" data-fieldname="ig_urban_comm_disease.cd517f"><%= ig_urban_comm_disease.cd517f %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ig_urban_comm_disease.cd517"><%= ig_urban_comm_disease.cd517 %></td>
+            <td class="siv-r-std-val" data-fieldname="ig_urban_comm_disease.cd1859m"><%= ig_urban_comm_disease.cd1859m %></td>
+            <td class="siv-r-std-val" data-fieldname="ig_urban_comm_disease.cd1859f"><%= ig_urban_comm_disease.cd1859f %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ig_urban_comm_disease.cd1859"><%= ig_urban_comm_disease.cd1859 %></td>
+            <td class="siv-r-std-val" data-fieldname="ig_urban_comm_disease.cd60m"><%= ig_urban_comm_disease.cd60m %></td>
+            <td class="siv-r-std-val" data-fieldname="ig_urban_comm_disease.cd60f"><%= ig_urban_comm_disease.cd60f %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ig_urban_comm_disease.cd60"><%= ig_urban_comm_disease.cd60 %></td>
+            <td class="siv-r-std-val siv-r-data-tot" data-fieldname="ig_urban_comm_disease.cd"><%= numeral(ig_urban_comm_disease.cd).format("0,0")  %></td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="ig_urban_comm_disease.cdpctcause"><%= numeral(ig_urban_comm_disease.cdpctcause).format("0 %") %></td>
+            <!--<td class="siv-r-std-val siv-r-data-ind" data-fieldname="ig_urban_comm_disease.cdincidtot"><%= ig_urban_comm_disease.cdincidtot %></td>-->
+          </tr>
+          <% }); %>
+          <tr>
+            <td class="siv-r-ind-val siv-r-data-calc">Total</td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="cd04m"><%= numeral(data.cd04m).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="cd04f"><%= numeral(data.cd04f).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="cd04"><%= numeral(data.cd04).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="cdincidtot04"><%= numeral(data.cdincidtot04).format("0 %") %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="cd517m"><%= numeral(data.cd517m).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="cd517f"><%= numeral(data.cd517f).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="cd517"><%= numeral(data.cd517).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="cd1859m"><%= numeral(data.cd1859m).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="cd1859f"><%= numeral(data.cd1859f).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="cd1859"><%= numeral(data.cd1859).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="cd60m"><%= numeral(data.cd60m).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="cd60f"><%= numeral(data.cd60f).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="cd60"><%= numeral(data.cd60).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-tot" data-fieldname="cd"><%= numeral(data.cd).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="cdpctcausetot"><%= numeral(data.cdpctcausetot).format("0 %") %></td>
+            <!--<td class="siv-r-std-val siv-r-data-ind" data-fieldname="cdcause"><%= numeral(data.cdcause).format("0,0") %></td>-->
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val siv-r-row-head-ind">% by age group</td>
+            <td class="siv-r-std-val siv-r-data-blank"></td>
+            <td class="siv-r-std-val siv-r-data-blank"></td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="cdpctage04"><%= numeral(data.cdpctage04).format("0 %") %></td>
+            <td class="siv-r-std-val siv-r-data-blank"></td>
+            <td class="siv-r-std-val siv-r-data-blank"></td>
+            <td class="siv-r-std-val siv-r-data-blank"></td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="cdpctage517"><%= numeral(data.cdpctage517).format("0 %") %></td>
+            <td class="siv-r-std-val siv-r-data-blank"></td>
+            <td class="siv-r-std-val siv-r-data-blank"></td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="cdpctage1859"><%= numeral(data.cdpctage1859).format("0 %") %></td>
+            <td class="siv-r-std-val siv-r-data-blank"></td>
+            <td class="siv-r-std-val siv-r-data-blank"></td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="cdpctage60"><%= numeral(data.cdpctage60).format("0 %") %></td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="cdpctage"><%= numeral(data.cdpctage).format("0 %") %></td>
+            <td class="siv-r-std-val siv-r-data-blank"></td>
+            <!--<td class="siv-r-std-val siv-r-data-blank"></td>-->
+          </tr>
+        </tbody>
+      </table>
+      <p class="siv-r-source">* indicates disease with epidemic potential. See guidance for alert thresholds and advice on how these should be interpreted</p>
+	  <% } else { %>
+            <p class="siv-r-section-message">This section was not collected</p>
+      <% } %>  
+      </div>
+    <div class="siv-r-chart-ctn">  
+	<p class="siv-r-key-list-value">3.3 Chronic health conditions</p>
+      <% if("ig_urban_noncomm_disease" in data) { %>
+      <table class="siv-r-table">
+        <thead>
+          <tr>
+            <th class="siv-r-ind-val siv-r-row-head-raw" rowspan="2">Record NEW and REVISITS</th>
+            <th class="siv-r-std-val siv-r-row-head-raw" colspan="2">0 - 4</th>
+            <th class="siv-r-std-val siv-r-data-calc" rowspan="2">Total &lt; 5</th>
+            <th class="siv-r-std-val siv-r-row-head-raw" colspan="2">5 - 17</th>
+            <th class="siv-r-std-val siv-r-data-calc" rowspan="2">Total 5 - 17</th>
+            <th class="siv-r-std-val siv-r-row-head-raw" colspan="2">18 - 59</th>
+            <th class="siv-r-std-val siv-r-data-calc" rowspan="2">Total 18 - 59</th>
+            <th class="siv-r-std-val siv-r-row-head-raw" colspan="2">&gt; 60</th>
+            <th class="siv-r-std-val siv-r-data-calc" rowspan="2">Total &gt; 60</th>
+            <th class="siv-r-std-val siv-r-data-tot" rowspan="2">Grand Total</th>
+            <th class="siv-r-std-val siv-r-row-head-ind" rowspan="2">% by cause</th>
+          </tr>
+          <tr>
+            <th class="siv-r-std-val siv-r-row-head-raw">M</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">F</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">M</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">F</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">M</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">F</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">M</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">F</th>
+          </tr>
+        </thead>
+        <tbody>
+        <% _.each(data.ig_urban_noncomm_disease, function(ig_urban_noncomm_disease) { %>
+          <tr data-row-id="ig_urban_noncomm_disease.<%= ig_urban_noncomm_disease.ncdcause %>">
+            <td class="siv-r-ind-val" data-fieldname="ig_urban_noncomm_disease.ncdcause"><%= ig_urban_noncomm_disease.ncdcause %></td>
+            <td class="siv-r-std-val" data-fieldname="ig_urban_noncomm_disease.ncd04m"><%= ig_urban_noncomm_disease.ncd04m %></td>
+            <td class="siv-r-std-val" data-fieldname="ig_urban_noncomm_disease.ncd04f"><%= ig_urban_noncomm_disease.ncd04f %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ig_urban_noncomm_disease.ncd04"><%= numeral(ig_urban_noncomm_disease.ncd04).format("0,0") %></td>
+            <td class="siv-r-std-val" data-fieldname="ig_urban_noncomm_disease.ncd517m"><%= ig_urban_noncomm_disease.ncd517m %></td>
+            <td class="siv-r-std-val" data-fieldname="ig_urban_noncomm_disease.ncd517f"><%= ig_urban_noncomm_disease.ncd517f %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ig_urban_noncomm_disease.ncd517"><%= numeral(ig_urban_noncomm_disease.ncd517).format("0,0") %></td>
+            <td class="siv-r-std-val" data-fieldname="ig_urban_noncomm_disease.ncd1859m"><%= ig_urban_noncomm_disease.ncd1859m %></td>
+            <td class="siv-r-std-val" data-fieldname="ig_urban_noncomm_disease.ncd1859f"><%= ig_urban_noncomm_disease.ncd1859f %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ig_urban_noncomm_disease.ncd1859"><%= numeral(ig_urban_noncomm_disease.ncd1859).format("0,0") %></td>
+            <td class="siv-r-std-val" data-fieldname="ig_urban_noncomm_disease.ncd60m"><%= ig_urban_noncomm_disease.ncd60m %></td>
+            <td class="siv-r-std-val" data-fieldname="ig_urban_noncomm_disease.ncd60f"><%= ig_urban_noncomm_disease.ncd60f %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ig_urban_noncomm_disease.ncd60"><%= numeral(ig_urban_noncomm_disease.ncd60).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-tot" data-fieldname="ig_urban_noncomm_disease.ncd"><%= numeral(ig_urban_noncomm_disease.ncd).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="ig_urban_noncomm_disease.ncdpctcausetot"><%= numeral(ig_urban_noncomm_disease.ncdpctcausetot).format("0 %") %></td>
+          </tr>
+          <% }); %>
+          <tr>
+            <td class="siv-r-ind-val siv-r-data-calc">Total</td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ncd04m"><%= numeral(data.ncd04m).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ncd04f"><%= numeral(data.ncd04f).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ncd04"><%= numeral(data.ncd04).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ncd517m"><%= numeral(data.ncd517m).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ncd517f"><%= numeral(data.ncd517f).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ncd517"><%= numeral(data.ncd517).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ncd1859m"><%= numeral(data.ncd1859m).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ncd1859f"><%= numeral(data.ncd1859f).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ncd1859"><%= numeral(data.ncd1859).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ncd60m"><%= numeral(data.ncd60m).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ncd60f"><%= numeral(data.ncd60f).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ncd60"><%= numeral(data.ncd60).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-tot" data-fieldname="ncd"><%= numeral(data.ncd).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="ncdpctage"><%= numeral(data.ncdpctage).format("0 %") %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val siv-r-row-head-ind">% by age group</td>
+            <td class="siv-r-std-val siv-r-data-blank"></td>
+            <td class="siv-r-std-val siv-r-data-blank"></td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="ncdpctage04"><%= numeral(data.ncdpctage04).format("0 %") %></td>
+            <td class="siv-r-std-val siv-r-data-blank"></td>
+            <td class="siv-r-std-val siv-r-data-blank"></td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="ncdpctage517"><%= numeral(data.ncdpctage517).format("0 %") %></td>
+            <td class="siv-r-std-val siv-r-data-blank"></td>
+            <td class="siv-r-std-val siv-r-data-blank"></td>
+            <td class="siv-r-std-val  siv-r-data-ind" data-fieldname="ncdpctage1859"><%= numeral(data.ncdpctage1859).format("0 %") %></td>
+            <td class="siv-r-std-val siv-r-data-blank"></td>
+            <td class="siv-r-std-val siv-r-data-blank"></td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="ncdpctage60"><%= numeral(data.ncdpctage60).format("0 %") %></td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="ncdpctagecausetot"><%= numeral(data.ncdpctagecausetot).format("0 %") %></td>
+            <td class="siv-r-std-val siv-r-data-blank"></td>
+          </tr>
+        </tbody>
+      </table>
+	  <% } else { %>
+            <p class="siv-r-section-message">This section was not collected</p>
+      <% } %>  
+      </div>
+    <div class="siv-r-chart-ctn"> <p class="siv-r-key-list-value">3.4 Mental Health</p>
+      <% if("ig_urban_mental" in data) { %>
+      <table class="siv-r-table">
+        <thead>
+          <tr>
+            <th class="siv-r-ind-val siv-r-row-head-raw" rowspan="2"></th>
+            <th class="siv-r-std-val siv-r-row-head-raw" colspan="2">0 - 4</th>
+            <th class="siv-r-std-val siv-r-data-calc" rowspan="2">Total &lt; 5</th>
+            <th class="siv-r-std-val siv-r-row-head-raw" colspan="2">5 - 17</th>
+            <th class="siv-r-std-val siv-r-data-calc" rowspan="2">Total 5 - 17</th>
+            <th class="siv-r-std-val siv-r-row-head-raw" colspan="2">18 - 59</th>
+            <th class="siv-r-std-val siv-r-data-calc" rowspan="2">Total 18 - 59</th>
+            <th class="siv-r-std-val siv-r-row-head-raw" colspan="2">&gt; 60</th>
+            <th class="siv-r-std-val siv-r-data-calc" rowspan="2">Total &gt; 60</th>
+            <th class="siv-r-std-val siv-r-data-tot" rowspan="2">Grand Total</th>
+            <th class="siv-r-std-val siv-r-row-head-ind" rowspan="2">% by cause</th>
+          </tr>
+          <tr>
+            <th class="siv-r-std-val siv-r-row-head-raw">M</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">F</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">M</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">F</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">M</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">F</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">M</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">F</th>
+          </tr>
+        </thead>
+        <tbody>
+        <% _.each(data.ig_urban_mental, function(ig_urban_mental) { %>
+          <tr data-row-id="ig_urban_mental.<%= ig_urban_mental.mencause %>">
+            <td class="siv-r-ind-val" data-fieldname="ig_urban_mental.mencause"><%= ig_urban_mental.mencause %></td>
+            <td class="siv-r-std-val" data-fieldname="ig_urban_mental.men04m"><%= ig_urban_mental.men04m %></td>
+            <td class="siv-r-std-val" data-fieldname="ig_urban_mental.men04f"><%= ig_urban_mental.men04f %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ig_urban_mental.men04"><%= numeral(ig_urban_mental.men04).format("0,0") %></td>
+            <td class="siv-r-std-val" data-fieldname="ig_urban_mental.men517m"><%= ig_urban_mental.men517m %></td>
+            <td class="siv-r-std-val" data-fieldname="ig_urban_mental.men517f"><%= ig_urban_mental.men517f %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ig_urban_mental.men517"><%= numeral(ig_urban_mental.men517).format("0,0") %></td>
+            <td class="siv-r-std-val" data-fieldname="ig_urban_mental.men1859m"><%= ig_urban_mental.men1859m %></td>
+            <td class="siv-r-std-val" data-fieldname="ig_urban_mental.men1859f"><%= ig_urban_mental.men1859f %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ig_urban_mental.men1859"><%= numeral(ig_urban_mental.men1859).format("0,0") %></td>
+            <td class="siv-r-std-val" data-fieldname="ig_urban_mental.men60m"><%= ig_urban_mental.men60m %></td>
+            <td class="siv-r-std-val" data-fieldname="ig_urban_mental.men60f"><%= ig_urban_mental.men60f %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ig_urban_mental.men60"><%= numeral(ig_urban_mental.men60).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-tot" data-fieldname="ig_urban_mental.men"><%= numeral(ig_urban_mental.men).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="ig_urban_mental.menpctcausetot"><%= numeral(ig_urban_mental.menpctcausetot).format("0 %") %></td>
+          </tr>
+          <% }); %>
+          <tr>
+            <td class="siv-r-ind-val siv-r-data-calc">Total</td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="men04m"><%= numeral(data.men04m).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="men04f"><%= numeral(data.men04f).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="men04"><%= numeral(data.men04).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="men517m"><%= numeral(data.men517m).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="men517f"><%= numeral(data.men517f).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="men517"><%= numeral(data.men517).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="men1859m"><%= numeral(data.men1859m).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="men1859f"><%= numeral(data.men1859f).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="men1859"><%= numeral(data.men1859).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="men60m"><%= numeral(data.men60m).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="men60f"><%= numeral(data.men60f).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="men60"><%= numeral(data.men60).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-tot" data-fieldname="men"><%= numeral(data.men).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="mencause"><%= numeral(data.mencause).format("0 %") %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val siv-r-row-head-ind">% by age group</td>
+            <td class="siv-r-std-val siv-r-data-blank"></td>
+            <td class="siv-r-std-val siv-r-data-blank"></td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="menpctage04"><%= numeral(data.menpctage04).format("0 %") %></td>
+            <td class="siv-r-std-val siv-r-data-blank"></td>
+            <td class="siv-r-std-val siv-r-data-blank"></td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="menpctage517"><%= numeral(data.menpctage517).format("0 %") %></td>
+            <td class="siv-r-std-val siv-r-data-blank"></td>
+            <td class="siv-r-std-val siv-r-data-blank"></td>
+            <td class="siv-r-std-val  siv-r-data-ind" data-fieldname="menpctage1859"><%= numeral(data.menpctage1859).format("0 %") %></td>
+            <td class="siv-r-std-val siv-r-data-blank"></td>
+            <td class="siv-r-std-val siv-r-data-blank"></td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="menpctage60"><%= numeral(data.menpctage60).format("0 %") %></td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="menpctage"><%= numeral(data.menpctage).format("0 %") %></td>
+            <td class="siv-r-std-val siv-r-data-blank"></td>
+          </tr>
+        </tbody>
+      </table>
+	  <% } else { %>
+            <p class="siv-r-section-message">This section was not collected</p>
+      <% } %>  
+      </div>
+    <div class="siv-r-chart-ctn"> <p class="siv-r-key-list-value">3.5 Injuries</p>
+      <% if("ig_urban_injuries" in data) { %>
+      <table class="siv-r-table">
+        <thead>
+          <tr>
+            <th class="siv-r-ind-val siv-r-row-head-raw" rowspan="2"></th>
+            <th class="siv-r-std-val siv-r-row-head-raw" colspan="2">0 - 4</th>
+            <th class="siv-r-std-val siv-r-data-calc" rowspan="2">Total &lt; 5</th>
+            <th class="siv-r-std-val siv-r-row-head-raw" colspan="2">5 - 17</th>
+            <th class="siv-r-std-val siv-r-data-calc" rowspan="2">Total 5 - 17</th>
+            <th class="siv-r-std-val siv-r-row-head-raw" colspan="2">18 - 59</th>
+            <th class="siv-r-std-val siv-r-data-calc" rowspan="2">Total 18 - 59</th>
+            <th class="siv-r-std-val siv-r-row-head-raw" colspan="2">&gt; 60</th>
+            <th class="siv-r-std-val siv-r-data-calc" rowspan="2">Total &gt; 60</th>
+            <th class="siv-r-std-val siv-r-data-tot" rowspan="2">Grand Total</th>
+            <th class="siv-r-std-val siv-r-row-head-ind" rowspan="2">% by cause</th>
+          </tr>
+          <tr>
+            <th class="siv-r-std-val siv-r-row-head-raw">M</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">F</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">M</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">F</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">M</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">F</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">M</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">F</th>
+          </tr>
+        </thead>
+        <tbody>
+        <% _.each(data.ig_urban_injuries, function(ig_urban_injuries){ %>
+          <tr data-row-id="ig_urban_injuries.<%= ig_urban_injuries.injcause %>">
+            <td class="siv-r-ind-val" data-fieldname="ig_urban_injuries.injcause"><%= ig_urban_injuries.injcause %></td>
+            <td class="siv-r-std-val" data-fieldname="ig_urban_injuries.inj04m"><%= ig_urban_injuries.inj04m %></td>
+            <td class="siv-r-std-val" data-fieldname="ig_urban_injuries.inj04f"><%= ig_urban_injuries.inj04f %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ig_urban_injuries.inj04"><%= numeral(ig_urban_injuries.inj04).format("0,0") %></td>
+            <td class="siv-r-std-val" data-fieldname="ig_urban_injuries.inj517m"><%= ig_urban_injuries.inj517m %></td>
+            <td class="siv-r-std-val" data-fieldname="ig_urban_injuries.inj517f"><%= ig_urban_injuries.inj517f %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ig_urban_injuries.inj517"><%= numeral(ig_urban_injuries.inj517).format("0,0") %></td>
+            <td class="siv-r-std-val" data-fieldname="ig_urban_injuries.inj1859m"><%= ig_urban_injuries.inj1859m %></td>
+            <td class="siv-r-std-val" data-fieldname="ig_urban_injuries.inj1859f"><%= ig_urban_injuries.inj1859f %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ig_urban_injuries.inj1859"><%= numeral(ig_urban_injuries.inj1859).format("0,0") %></td>
+            <td class="siv-r-std-val" data-fieldname="ig_urban_injuries.inj60m"><%= ig_urban_injuries.inj60m %></td>
+            <td class="siv-r-std-val" data-fieldname="ig_urban_injuries.inj60f"><%= ig_urban_injuries.inj60f %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ig_urban_injuries.inj60"><%= numeral(ig_urban_injuries.inj60).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-tot" data-fieldname="ig_urban_injuries.inj"><%= numeral(ig_urban_injuries.inj).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="ig_urban_injuries.injpctcausetot"><%= numeral(ig_urban_injuries.injpctcausetot).format("0 %") %></td>
+          </tr>
+        <% }); %>
+        <tr>
+            <td class="siv-r-ind-val siv-r-data-calc">Total</td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="inj04m"><%= numeral(data.inj04m).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="inj04f"><%= numeral(data.inj04f).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="inj04"><%= numeral(data.inj04).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="inj517m"><%= numeral(data.inj517m).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="inj517f"><%= numeral(data.inj517f).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="inj517"><%= numeral(data.inj517).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="inj1859m"><%= numeral(data.inj1859m).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="inj1859f"><%= numeral(data.inj1859f).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="inj1859"><%= numeral(data.inj1859).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="inj60m"><%= numeral(data.inj60m).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="inj60f"><%= numeral(data.inj60f).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="inj60"><%= numeral(data.inj60).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-tot" data-fieldname="inj"><%= numeral(data.inj).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="injcause"><%= numeral(data.injcause).format("0 %") %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val siv-r-row-head-ind">% by age group</td>
+            <td class="siv-r-std-val siv-r-data-blank"></td>
+            <td class="siv-r-std-val siv-r-data-blank"></td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="injpctage04"><%= numeral(data.injpctage04).format("0 %") %></td>
+            <td class="siv-r-std-val siv-r-data-blank"></td>
+            <td class="siv-r-std-val siv-r-data-blank"></td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="injpctage517"><%= numeral(data.injpctage517).format("0 %") %></td>
+            <td class="siv-r-std-val siv-r-data-blank"></td>
+            <td class="siv-r-std-val siv-r-data-blank"></td>
+            <td class="siv-r-std-val  siv-r-data-ind" data-fieldname="injpctage1859"><%= numeral(data.injpctage1859).format("0 %") %></td>
+            <td class="siv-r-std-val siv-r-data-blank"></td>
+            <td class="siv-r-std-val siv-r-data-blank"></td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="injpctage60"><%= numeral(data.injpctage60).format("0 %") %></td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="injpctage"><%= numeral(data.injpctage).format("0 %") %></td>
+            <td class="siv-r-std-val siv-r-data-blank"></td>
+          </tr>
+        </tbody>
+      </table>
+	  <% } else { %>
+            <p class="siv-r-section-message">This section was not collected</p>
+      <% } %>  
+      </div>
+	  </div>
+<div class="clear siv-r-container">
+    <h2 class="siv-r-ctn-head-txt">4.0 In-patient Department</h2>
+    <div class="siv-r-chart-ctn">
+      <p class="siv-r-key-list-value">4.1  In-patient department activities</p>
+      <% if("ig_urban_inpatients" in data) { %>
+      <table class="siv-r-table">
+        <thead>
+          <tr>
+            <th class="siv-r-ind-val siv-r-row-head-raw" rowspan="2" colspan="2"></th>
+            <th class="siv-r-std-val siv-r-row-head-raw" colspan="2">0 - 4</th>
+            <th class="siv-r-std-val siv-r-data-calc" rowspan="2">Total &lt; 5</th>
+            <th class="siv-r-std-val siv-r-row-head-raw" colspan="2">5 - 17</th>
+            <th class="siv-r-std-val siv-r-data-calc" rowspan="2">Total 5 - 17</th>
+            <th class="siv-r-std-val siv-r-row-head-raw" colspan="2">18 - 59</th>
+            <th class="siv-r-std-val siv-r-data-calc" rowspan="2">Total 18 - 59</th>
+            <th class="siv-r-std-val siv-r-row-head-raw" colspan="2">&gt; 60</th>
+            <th class="siv-r-std-val siv-r-data-calc" rowspan="2">Total &gt; 60</th>
+            <th class="siv-r-std-val siv-r-data-tot" rowspan="2">Grand Total</th>
+          </tr>
+          <tr>
+            <th class="siv-r-std-val siv-r-row-head-raw">M</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">F</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">M</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">F</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">M</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">F</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">M</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">F</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="siv-r-ind-val siv-r-data-calc" colspan="2">Number at beginning of reporting period</td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ipdbeg04m"><%= data.ipdbeg04m %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ipdbeg04f"><%= data.ipdbeg04f %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ipdbeg04"><%= data.ipdbeg04 %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ipdbeg517m"><%= data.ipdbeg517m %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ipdbeg517f"><%= data.ipdbeg517f %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ipdbeg517"><%= data.ipdbeg517 %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ipdbeg1859m"><%= data.ipdbeg1859m %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ipdbeg1859f"><%= data.ipdbeg1859f %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ipdbeg1859"><%= data.ipdbeg1859 %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ipdbeg60m"><%= data.ipdbeg60m %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ipdbeg60f"><%= data.ipdbeg60f %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ipdbeg60"><%= data.ipdbeg60 %></td>
+            <td class="siv-r-std-val siv-r-data-tot" data-fieldname="ipdbeg"><%= data.ipdbeg %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val" colspan="2">Total admissions</td>
+            <td class="siv-r-std-val" data-fieldname="ipdadm04m"><%= data.ipdadm04m %></td>
+            <td class="siv-r-std-val" data-fieldname="ipdadm04f"><%= data.ipdadm04f %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ipdadm04a"><%= numeral(data.ipdadm04a).format("0,0") %></td>
+            <td class="siv-r-std-val" data-fieldname="ipdadm517m"><%= data.ipdadm517m %></td>
+            <td class="siv-r-std-val" data-fieldname="ipdadm517f"><%= data.ipdadm517f %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ipdadm517a"><%= numeral(data.ipdadm517a).format("0,0") %></td>
+            <td class="siv-r-std-val" data-fieldname="ipdadm1859m"><%= data.ipdadm1859m %></td>
+            <td class="siv-r-std-val" data-fieldname="ipdadm1859f"><%= data.ipdadm1859f %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ipdadm1859a"><%= numeral(data.ipdadm1859a).format("0,0") %></td>
+            <td class="siv-r-std-val" data-fieldname="ipdadm60m"><%= data.ipdadm60m %></td>
+            <td class="siv-r-std-val" data-fieldname="ipdadm60f"><%= data.ipdadm60f %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ipdadm60a"><%= numeral(data.ipdadm60a).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-tot" data-fieldname="ipdadma"><%= numeral(data.ipdadma).format("0,0") %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val" rowspan="4">Number of exits</td>
+            <td class="siv-r-ind-val">authorized</td>
+            <td class="siv-r-std-val" data-fieldname="ipdauth04m"><%= data.ipdauth04m %></td>
+            <td class="siv-r-std-val" data-fieldname="ipdauth04f"><%= data.ipdauth04f %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ipdauth04"><%= numeral(data.ipdauth04).format("0,0") %></td>
+            <td class="siv-r-std-val" data-fieldname="ipdauth517m"><%= data.ipdauth517m %></td>
+            <td class="siv-r-std-val" data-fieldname="ipdauth517f"><%= data.ipdauth517f %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ipdauth517"><%= numeral(data.ipdauth517).format("0,0") %></td>
+            <td class="siv-r-std-val" data-fieldname="ipdauth1859m"><%= data.ipdauth1859m %></td>
+            <td class="siv-r-std-val" data-fieldname="ipdauth1859f"><%= data.ipdauth1859f %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ipdauth1859"><%= numeral(data.ipdauth1859).format("0,0") %></td>
+            <td class="siv-r-std-val" data-fieldname="ipdauth60m"><%= data.ipdauth60m %></td>
+            <td class="siv-r-std-val" data-fieldname="ipdauth60f"><%= data.ipdauth60f %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ipdauth60"><%= numeral(data.ipdauth60).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-tot" data-fieldname="ipdauth"><%= numeral(data.ipdauth).format("0,0") %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val">unauthorized</td>
+            <td class="siv-r-std-val" data-fieldname="ipdunauth04m"><%= data.ipdunauth04m %></td>
+            <td class="siv-r-std-val" data-fieldname="ipdunauth04f"><%= data.ipdunauth04f %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ipdunauth04"><%= numeral(data.ipdunauth04).format("0,0") %></td>
+            <td class="siv-r-std-val" data-fieldname="ipdunauth517m"><%= data.ipdunauth517m %></td>
+            <td class="siv-r-std-val" data-fieldname="ipdunauth517f"><%= data.ipdunauth517f %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ipdunauth517"><%= numeral(data.ipdunauth517).format("0,0") %></td>
+            <td class="siv-r-std-val" data-fieldname="ipdunauth1859m"><%= data.ipdunauth1859m %></td>
+            <td class="siv-r-std-val" data-fieldname="ipdunauth1859f"><%= data.ipdunauth1859f %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ipdunauth1859"><%= numeral(data.ipdunauth1859).format("0,0") %></td>
+            <td class="siv-r-std-val" data-fieldname="ipdunauth60m"><%= data.ipdunauth60m %></td>
+            <td class="siv-r-std-val" data-fieldname="ipdunauth60f"><%= data.ipdunauth60f %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ipdunauth60"><%= numeral(data.ipdunauth60).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-tot" data-fieldname="ipdunauth"><%= numeral(data.ipdunauth).format("0,0") %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val">death</td>
+            <td class="siv-r-std-val" data-fieldname="ipddth04m"><%= data.ipddth04m %></td>
+            <td class="siv-r-std-val" data-fieldname="ipddth04f"><%= data.ipddth04f %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ipddth04"><%= numeral(data.ipddth04).format("0,0") %></td>
+            <td class="siv-r-std-val" data-fieldname="ipddth517m"><%= data.ipddth517m %></td>
+            <td class="siv-r-std-val" data-fieldname="ipddth517f"><%= data.ipddth517f %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ipddth517"><%= numeral(data.ipddth517).format("0,0") %></td>
+            <td class="siv-r-std-val" data-fieldname="ipddth1859m"><%= data.ipddth1859m %></td>
+            <td class="siv-r-std-val" data-fieldname="ipddth1859f"><%= data.ipddth1859f %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ipddth1859"><%= numeral(data.ipddth1859).format("0,0") %></td>
+            <td class="siv-r-std-val" data-fieldname="ipddth60m"><%= data.ipddth60m %></td>
+            <td class="siv-r-std-val" data-fieldname="ipddth60f"><%= data.ipddth60f %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ipddth60"><%= numeral(data.ipddth60).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-tot" data-fieldname="ipddth"><%= numeral(data.ipddth).format("0,0") %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val">referral</td>
+            <td class="siv-r-std-val" data-fieldname="ipdref04m"><%= data.ipdref04m %></td>
+            <td class="siv-r-std-val" data-fieldname="ipdref04f"><%= data.ipdref04f %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ipdref04"><%= numeral(data.ipdref04).format("0,0") %></td>
+            <td class="siv-r-std-val" data-fieldname="ipdref517m"><%= data.ipdref517m %></td>
+            <td class="siv-r-std-val" data-fieldname="ipdref517f"><%= data.ipdref517f %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ipdref517"><%= numeral(data.ipdref517).format("0,0") %></td>
+            <td class="siv-r-std-val" data-fieldname="ipdref1859m"><%= data.ipdref1859m %></td>
+            <td class="siv-r-std-val" data-fieldname="ipdref1859f"><%= data.ipdref1859f %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ipdref1859"><%= numeral(data.ipdref1859).format("0,0") %></td>
+            <td class="siv-r-std-val" data-fieldname="ipdref60m"><%= data.ipdref60m %></td>
+            <td class="siv-r-std-val" data-fieldname="ipdref60m"><%= data.ipdref60m %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ipdref60"><%= numeral(data.ipdref60).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-tot" data-fieldname="ipdref"><%= numeral(data.ipdref).format("0,0") %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val siv-r-data-calc" colspan="2">Total exits</td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ipdext04m"><%= numeral(data.ipdext04m).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ipdext04f"><%= numeral(data.ipdext04f).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ipdext04"><%= numeral(data.ipdext04).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ipdext517m"><%= numeral(data.ipdext517m).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ipdext517f"><%= numeral(data.ipdext517f).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ipdext517"><%= numeral(data.ipdext517).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ipdext1859m"><%= numeral(data.ipdext1859m).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ipdext1859f"><%= numeral(data.ipdext1859f).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ipdext1859"><%= numeral(data.ipdext1859).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ipdext60m"><%= numeral(data.ipdext60m).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ipdext60f"><%= numeral(data.ipdext60f).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ipdext60"><%= numeral(data.ipdext60).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-tot" data-fieldname="ipdext"><%= numeral(data.ipdext).format("0,0") %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val" colspan="2">Deaths within 24 hours</td>
+            <td class="siv-r-std-val" data-fieldname="ipddth2404m"><%= data.ipddth2404m %></td>
+            <td class="siv-r-std-val" data-fieldname="ipddth2404f"><%= data.ipddth2404f %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ipddth2404"><%= numeral(data.ipddth2404).format("0,0") %></td>
+            <td class="siv-r-std-val" data-fieldname="ipddth24517m"><%= data.ipddth24517m %></td>
+            <td class="siv-r-std-val" data-fieldname="ipddth24517f"><%= data.ipddth24517f %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ipddth24517"><%= numeral(data.ipddth24517).format("0,0") %></td>
+            <td class="siv-r-std-val" data-fieldname="ipddth241859m"><%= data.ipddth241859m %></td>
+            <td class="siv-r-std-val" data-fieldname="ipddth241859f"><%= data.ipddth241859f %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ipddth241859"><%= numeral(data.ipddth241859).format("0,0") %></td>
+            <td class="siv-r-std-val" data-fieldname="ipddth2460m"><%= data.ipddth2460m %></td>
+            <td class="siv-r-std-val" data-fieldname="ipddth2460f"><%= data.ipddth2460f %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ipddth2460"><%= numeral(data.ipddth2460).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-tot" data-fieldname="ipddth24"><%= numeral(data.ipddth24).format("0,0") %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val siv-r-data-calc" colspan="2">Number at end of reporting period</td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ipdend04m"><%= numeral(data.ipdend04m).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ipdend04f"><%= numeral(data.ipdend04f).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ipdend04"><%= numeral(data.ipdend04).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ipdend517m"><%= numeral(data.ipdend517m).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ipdend517f"><%= numeral(data.ipdend517f).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ipdend517"><%= numeral(data.ipdend517).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ipdend1859m"><%= numeral(data.ipdend1859m).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ipdend1859f"><%= numeral(data.ipdend1859f).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ipdend1859"><%= numeral(data.ipdend1859).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ipdend60m"><%= numeral(data.ipdend60m).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ipdend60f"><%= numeral(data.ipdend60f).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ipdend60"><%= numeral(data.ipdend60).format("0,0") %></td>
+            <td class="siv-r-std-val siv-r-data-tot" data-fieldname="ipdend"><%= numeral(data.ipdend).format("0,0") %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val siv-r-row-head-ind" colspan="2">% at end of reporting period by age group</td>
+            <td class="siv-r-std-val siv-r-data-blank"></td>
+            <td class="siv-r-std-val siv-r-data-blank"></td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="ipdpctend04"><%= numeral(data.ipdpctend04).format("0 %") %></td>
+            <td class="siv-r-std-val siv-r-data-blank"></td>
+            <td class="siv-r-std-val siv-r-data-blank"></td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="ipdpctend517"><%= numeral(data.ipdpctend517).format("0 %") %></td>
+            <td class="siv-r-std-val siv-r-data-blank"></td>
+            <td class="siv-r-std-val siv-r-data-blank"></td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="ipdpctend1859"><%= numeral(data.ipdpctend1859).format("0 %") %></td>
+            <td class="siv-r-std-val siv-r-data-blank"></td>
+            <td class="siv-r-std-val siv-r-data-blank"></td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="ipdpctend60"><%= numeral(data.ipdpctend60).format("0 %") %></td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="ipdpctend"><%= numeral(data.ipdpctend).format("0 %") %></td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="siv-r-table">
+        <tbody>
+          <tr>
+            <td class="siv-r-ind-val">Number of days in reporting period</td>
+            <td class="siv-r-std-val" data-fieldname="ipddaysreppd"><%= data.ipddaysreppd %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val">Number of beds</td>
+            <td class="siv-r-std-val" data-fieldname="ipdbeds"><%= data.ipdbeds %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val">Sum number of days stay for authorised discharges</td>
+            <td class="siv-r-std-val" data-fieldname="ipdsumdaysauth"><%= data.ipdsumdaysauth %></td>
+          </tr>
+          <tr>
+            <th class="siv-r-ind-val siv-r-row-head-ind" colspan="2">IPD Indicators </th>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val siv-r-row-head-ind">Proportion of &lt; 5 IPD deaths within 24 hours</td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="ipdpctdthu24"><%= data.ipdpctdthu24 %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val siv-r-row-head-ind">Average length of stay (days)</td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="ipdavglstay"><%= numeral(data.ipdavglstay).format("0.0") %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val siv-r-row-head-ind">Bed occupancy</td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="ipdbedocc"><%= numeral(data.ipdbedocc).format("0 %") %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val siv-r-row-head-ind">Hospitalisation rate (/1,000/month)</td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="ipdhosprate"><%= numeral(data.ipdhosprate).format("0.0") %></td>
+          </tr>
+        </tbody>
+        </table>
+	  <% } else { %>
+            <p class="siv-r-section-message">This section was not collected</p>
+      <% } %>  
+      </div>
+    <div class="siv-r-chart-ctn">
+      <p class="siv-r-key-list-value">4.2  In-patient admissions and deaths</p>
+      <% if("ig_urban_inpatients" in data) { %>
+      <table class="siv-r-table">
+        <thead>
+          <tr>
+            <th class="siv-r-ind-val siv-r-row-head-raw" rowspan="2"></th>
+            <th class="siv-r-std-val siv-r-row-head-raw" colspan="2">0 - 4</th>
+            <th class="siv-r-std-val siv-r-row-head-ind" rowspan="2">U5 CFR</th>
+            <th class="siv-r-std-val siv-r-row-head-raw" colspan="2">5 - 17</th>
+            <th class="siv-r-std-val siv-r-row-head-ind" rowspan="2">5 - 17 CFR</th>
+            <th class="siv-r-std-val siv-r-row-head-raw" colspan="2">18 - 59</th>
+            <th class="siv-r-std-val siv-r-row-head-ind" rowspan="2">18 - 59 CFR</th>
+            <th class="siv-r-std-val siv-r-row-head-raw" colspan="2">&gt; 60</th>
+            <th class="siv-r-std-val siv-r-row-head-ind" rowspan="2">&gt; 60 CFR</th>
+            <th class="siv-r-std-val siv-r-data-calc" rowspan="2">Total Adm</th>
+            <th class="siv-r-std-val siv-r-data-calc" rowspan="2">Total Deaths</th>
+            <th class="siv-r-std-val siv-r-row-head-ind" rowspan="2">Crude CFR</th>
+          </tr>
+          <tr>
+            <th class="siv-r-std-val siv-r-row-head-raw">Adm</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">Deaths</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">Adm</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">Deaths</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">Adm</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">Deaths</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">Adm</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">Deaths</th>
+          </tr>
+        </thead>
+        <tbody>
+        <% _.each(data.ig_urban_inpatients, function(ig_urban_inpatients){ %>
+          <tr data-row-id="ig_urban_inpatients.<%= ig_urban_inpatients.ipdcause %>">
+            <td class="siv-r-ind-val" data-fieldname="ig_urban_inpatients.ipdcause"><%= ig_urban_inpatients.ipdcause %></td>
+            <td class="siv-r-std-val" data-fieldname="ig_urban_inpatients.ipdadm04"><%= ig_urban_inpatients.ipdadm04 %></td>
+            <td class="siv-r-std-val" data-fieldname="ig_urban_inpatients.ipddth04"><%= ig_urban_inpatients.ipddth04 %></td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="ig_urban_inpatients.ipdcausecfr04"><%= numeral(ig_urban_inpatients.ipdcausecfr04).format("0.0") %></td>
+            <td class="siv-r-std-val" data-fieldname="ig_urban_inpatients.ipdadm517"><%= ig_urban_inpatients.ipdadm517 %></td>
+            <td class="siv-r-std-val" data-fieldname="ig_urban_inpatients.ipddth517"><%= ig_urban_inpatients.ipddth517 %></td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="ig_urban_inpatients.ipdcausecfr517"><%= numeral(ig_urban_inpatients.ipdcausecfr517).format("0.0") %></td>
+            <td class="siv-r-std-val" data-fieldname="ig_urban_inpatients.ipdadm1859"><%= ig_urban_inpatients.ipdadm1859 %></td>
+            <td class="siv-r-std-val" data-fieldname="ig_urban_inpatients.ipddth1859"><%= ig_urban_inpatients.ipddth1859 %></td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="ig_urban_inpatients.ipdcausecfr1859"><%= numeral(ig_urban_inpatients.ipdcausecfr1859).format("0.0") %></td>
+            <td class="siv-r-std-val" data-fieldname="ig_urban_inpatients.ipdadm60"><%= ig_urban_inpatients.ipdadm60 %></td>
+            <td class="siv-r-std-val" data-fieldname="ig_urban_inpatients.ipddth60"><%= ig_urban_inpatients.ipddth60 %></td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="ig_urban_inpatients.ipdcausecfr60"><%= numeral(ig_urban_inpatients.ipdcausecfr60).format("0.0") %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ig_urban_inpatients.ipdadm"><%= ig_urban_inpatients.ipdadm %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ig_urban_inpatients.ipddth"><%= ig_urban_inpatients.ipddth %></td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="ig_urban_inpatients.ipdcausecfr"><%= numeral(ig_urban_inpatients.ipdcausecfr).format("0.0") %></td>
+          </tr>
+        <% }); %>
+        <tr>
+            <td class="siv-r-ind-val siv-r-data-calc">Total</td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ipdadm04"><%= data.ipdadm04 %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ipddth04"><%= data.ipddth04 %></td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="ipdcfr04"><%= numeral(data.ipdcfr04).format("0.0") %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ipdadm517"><%= data.ipdadm517 %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ipddth517"><%= data.ipddth517 %></td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="ipdcfr517"><%= numeral(data.ipdcfr517).format("0.0") %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ipdadm1859"><%= data.ipdadm1859 %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ipddth1859"><%= data.ipddth1859 %></td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="ipdcfr1859"><%= numeral(data.ipdcfr1859).format("0.0") %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ipdadm60"><%= data.ipdadm60 %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ipddth60"><%= data.ipddth60 %></td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="ipdcfr60"><%= numeral(data.ipdcfr60).format("0.0") %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ipdadm"><%= data.ipdadm %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ipddth"><%= data.ipddth %></td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="ipdcfr"><%= numeral(data.ipdcfr).format("0.0") %></td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="siv-r-source">Adm. = Admission; CFR = Case Fatality Rate</p>
+	  <% } else { %>
+            <p class="siv-r-section-message">This section was not collected</p>
+      <% } %>  
+      </div>
+	</div>
+<div class="clear siv-r-container">
+    <h2 class="siv-r-ctn-head-txt">5.0 Referral</h2>
+    <div class="siv-r-chart-ctn">
+      <p class="siv-r-key-list-value">5.1  Referrals by location</p>
+      <% if("ig_urban_ref_by_location" in data) { %>
+      <table class="siv-r-table">
+        <thead>
+          <tr>
+            <th class="siv-r-ind-val siv-r-row-head-raw"></th>
+            <th class="siv-r-std-val siv-r-row-head-raw">0 - 4</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">5 - 17</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">18 - 59</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">&gt; 60</th>
+            <th class="siv-r-std-val siv-r-data-calc">Total</th>
+          </tr>
+        </thead>
+        <tbody>
+        <% _.each(data.ig_urban_ref_by_location, function(ig_urban_ref_by_location){ %>
+          <tr data-row-id="ig_urban_ref_by_location.<%= ig_urban_ref_by_location.refloctype %>">
+            <td class="siv-r-ind-val" data-fieldname="ig_urban_ref_by_location.refloctype"><%= ig_urban_ref_by_location.refloctype %></td>
+            <td class="siv-r-std-val" data-fieldname="ig_urban_ref_by_location.refloc04"><%= ig_urban_ref_by_location.refloc04 %></td>
+            <td class="siv-r-std-val" data-fieldname="ig_urban_ref_by_location.refloc517"><%= ig_urban_ref_by_location.refloc517 %></td>
+            <td class="siv-r-std-val" data-fieldname="ig_urban_ref_by_location.refloc1859"><%= ig_urban_ref_by_location.refloc1859 %></td>
+            <td class="siv-r-std-val" data-fieldname="ig_urban_ref_by_location.refloc60"><%= ig_urban_ref_by_location.refloc60 %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ig_urban_ref_by_location.refloc"><%= ig_urban_ref_by_location.refloc %></td>
+          </tr>
+          <% }); %>
+          <tr>
+            <td class="siv-r-ind-val siv-r-data-calc">Total</td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="refloc04"><%= data.refloc04 %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="refloc517"><%= data.refloc517 %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="refloc1859"><%= data.refloc1859 %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="refloc60"><%= data.refloc60 %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="refloctype"><%= data.refloctype %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val siv-r-row-head-ind">Referral rate by location</td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="reflocrate04"><%= data.reflocrate04 %></td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="reflocrate517"><%= data.reflocrate517 %></td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="reflocrate1859"><%= data.reflocrate1859 %></td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="reflocrate60"><%= data.reflocrate60 %></td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="reflocrate"><%= data.reflocrate %></td>
+          </tr>
+        </tbody>
+      </table>	 
+	  <% } else { %>
+            <p class="siv-r-section-message">This section was not collected</p>
+      <% } %>  
+      </div>
+    <div class="siv-r-chart-ctn"> <p class="siv-r-key-list-value">5.2  Referrals by service</p>
+      <% if("ig_urban_ref_by_service" in data) { %>
+      <table class="siv-r-table">
+        <thead>
+          <tr>
+            <th class="siv-r-ind-val siv-r-row-head-raw"></th>
+            <th class="siv-r-std-val siv-r-row-head-raw">0 - 4</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">5 - 17</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">18 - 59</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">&gt; 60</th>
+            <th class="siv-r-std-val siv-r-data-calc">Total</th>
+          </tr>
+        </thead>
+        <tbody>
+        <% _.each(data.ig_urban_ref_by_service, function(ig_urban_ref_by_service){ %>
+          <tr data-row-id="ig_urban_ref_by_service.<%= ig_urban_ref_by_service.refservtype %>">
+            <td class="siv-r-ind-val" data-fieldname="ig_urban_ref_by_service.refservtype"><%= ig_urban_ref_by_service.refservtype %></td>
+            <td class="siv-r-std-val" data-fieldname="ig_urban_ref_by_service.refserv04"><%= ig_urban_ref_by_service.refserv04 %></td>
+            <td class="siv-r-std-val" data-fieldname="ig_urban_ref_by_service.refserv517"><%= ig_urban_ref_by_service.refserv517 %></td>
+            <td class="siv-r-std-val" data-fieldname="ig_urban_ref_by_service.refserv1859"><%= ig_urban_ref_by_service.refserv1859 %></td>
+            <td class="siv-r-std-val" data-fieldname="ig_urban_ref_by_service.refserv60"><%= ig_urban_ref_by_service.refserv60 %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ig_urban_ref_by_service.refserv"><%= ig_urban_ref_by_service.refserv %></td>
+          </tr>
+        <% }); %>
+        <tr>
+            <td class="siv-r-ind-val siv-r-data-calc">Total</td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="refserv04"><%= data.refserv04 %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="refserv517"><%= data.refserv517 %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="refserv1859"><%= data.refserv1859 %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="refserv60"><%= data.refserv60 %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="refservtype"><%= data.refservtype %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val siv-r-row-head-ind">Referral rate by location</td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="refservrate04"><%= data.refservrate04 %></td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="refservrate517"><%= data.refservrate517 %></td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="refservrate1859"><%= data.refservrate1859 %></td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="refservrate60"><%= data.refservrate60 %></td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="refservrate"><%= data.refservrate %></td>
+          </tr>
+        </tbody>
+      </table>	  
+	  <% } else { %>
+            <p class="siv-r-section-message">This section was not collected</p>
+      <% } %>  
+      </div>
+	 </div>
+<div class="clear siv-r-container">
+    <h2 class="siv-r-ctn-head-txt">6.0 Laboratory</h2>
+<div class="siv-r-chart-ctn">
+    <% if("labtest" in data) { %>
+      <table class="siv-r-table">
+        <thead>
+          <tr>
+            <th class="siv-r-ind-val siv-r-row-head-raw" rowspan="2"></th>
+            <th class="siv-r-std-val siv-r-data-calc" rowspan="2">Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="siv-r-ind-val">Number of laboratory tests conducted</td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="labtest"><%= data.labtest %></td>
+          </tr>
+        </tbody>
+      </table>
+	  <% } else { %>
+            <p class="siv-r-section-message">This section was not collected</p>
+      <% } %>  
+    </div>
+	</div>
+    <div class="clear siv-r-container">
+	<h2 class="siv-r-ctn-head-txt">7.0 EPI and Vitamin A</h2>
+    <div class="siv-r-chart-ctn">
+      <p class="siv-r-key-list-value">7.1  Vaccination</p>
+      <% if("vaccbcg" in data) { %>
+      <table class="siv-r-table">
+        <thead>
+          <tr>
+            <th class="siv-r-ind-val siv-r-row-head-raw" colspan="2"></th>
+            <th class="siv-r-std-val siv-r-row-head-raw">&lt; 1</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">&ge; 1 to &lt; 5</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="siv-r-ind-val" colspan="2">BCG</td>
+            <td class="siv-r-std-val" data-fieldname="vaccbcg1"><%= data.vaccbcg1 %></td>
+            <td class="siv-r-std-val" data-fieldname="vaccbcg15"><%= data.vaccbcg15 %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="vaccbcg"><%= data.vaccbcg %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val" colspan="2">Polio 0</td>
+            <td class="siv-r-std-val" data-fieldname="vaccpolio1"><%= data.vaccpolio1 %></td>
+            <td class="siv-r-std-val" data-fieldname="vaccpolio15"><%= data.vaccpolio15 %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="vaccpoli"><%= data.vaccpoli %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val" colspan="2">Polio I</td>
+            <td class="siv-r-std-val" data-fieldname="vaccpolioi1"><%= data.vaccpolioi1 %></td>
+            <td class="siv-r-std-val" data-fieldname="vaccpolioi15"><%= data.vaccpolioi15 %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="vaccpolioi"><%= data.vaccpolioi %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val" colspan="2">Polio II</td>
+            <td class="siv-r-std-val" data-fieldname="vaccpolioii1"><%= data.vaccpolioii1 %></td>
+            <td class="siv-r-std-val" data-fieldname="vaccpolioii15"><%= data.vaccpolioii15 %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="vaccpolioii"><%= data.vaccpolioii %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val" colspan="2">Polio III</td>
+            <td class="siv-r-std-val" data-fieldname="vaccpolioiii1"><%= data.vaccpolioiii1 %></td>
+            <td class="siv-r-std-val" data-fieldname="vaccpolioiii15"><%= data.vaccpolioiii15 %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="vaccpolioiii"><%= data.vaccpolioiii %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val" colspan="2">DPT I</td>
+            <td class="siv-r-std-val" data-fieldname="vaccdpti1"><%= data.vaccdpti1 %></td>
+            <td class="siv-r-std-val" data-fieldname="vaccdpti15"><%= data.vaccdpti15 %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="vaccdpti"><%= data.vaccdpti %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val" colspan="2">DPT II</td>
+            <td class="siv-r-std-val" data-fieldname="vaccdptii1"><%= data.vaccdptii1 %></td>
+            <td class="siv-r-std-val" data-fieldname="vaccdptii15"><%= data.vaccdptii15 %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="vaccdptii"><%= data.vaccdptii %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val" colspan="2">DPT III</td>
+            <td class="siv-r-std-val" data-fieldname="vaccdptiii1"><%= data.vaccdptiii1 %></td>
+            <td class="siv-r-std-val" data-fieldname="vaccdptiii15"><%= data.vaccdptiii15 %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="vaccdptiii"><%= data.vaccdptiii %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val" colspan="2">Measles</td>
+            <td class="siv-r-std-val" data-fieldname="vaccmeasle1"><%= data.vaccmeasle1 %></td>
+            <td class="siv-r-std-val" data-fieldname="vaccmeasle15"><%= data.vaccmeasle15 %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="vaccmeasle"><%= data.vaccmeasle %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val" colspan="2">Fully vaccinated</td>
+            <td class="siv-r-std-val" data-fieldname="vaccfullvac1"><%= data.vaccfullvac1 %></td>
+            <td class="siv-r-std-val" data-fieldname="vaccfullvac15"><%= data.vaccfullvac15 %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="vaccfullvac"><%= data.vaccfullvac %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val" id="ADDVACCMON" rowspan="6">Additional vaccine monitoring</td>
+            <td class="siv-r-ind-val"></td>
+            <td class="siv-r-ind-val"></td>
+            <td class="siv-r-ind-val"></td>
+            <td class="siv-r-std-val siv-r-data-calc"></td>
+          </tr>
+          <% _.each( data.ig_urban_vaccination, function(ig_urban_vaccination){ %>
+		  <tr>
+            <td class="siv-r-ind-val" data-fieldname="ig_urban_vaccination.vaccaddvac"><%= ig_urban_vaccination.vaccaddvac %></td>
+            <td class="siv-r-std-val" data-fieldname="ig_urban_vaccination.vaccaddvac1"><%= ig_urban_vaccination.vaccaddvac1 %></td>
+            <td class="siv-r-std-val" data-fieldname="ig_urban_vaccination.vaccaddvac15"><%= ig_urban_vaccination.vaccaddvac15 %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ig_urban_vaccination.vaccaddvacc"><%= ig_urban_vaccination.vaccaddvacc %></td>
+          </tr>
+          <% }); %>
+          </tbody>
+      </table>
+      <table class="siv-r-table">
+        <thead>
+          <tr>
+            <th class="siv-r-ind-val siv-r-row-head-ind" colspan="3">EPI Indicators</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="siv-r-ind-val siv-r-row-head-ind" colspan="2">Target population for reporting period</td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="vacctarget"><%= numeral(data.vacctarget).format("0.0") %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val siv-r-row-head-ind" colspan="2">a. Program dropout rate</td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="vaccdropout"><%= numeral(data.vaccdropout).format("0.0") %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val siv-r-row-head-ind" rowspan="5">b. Vaccine coverage rate</td>
+            <td class="siv-r-ind-val siv-r-row-head-ind">BCG</td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="vacccovbcg"><%= numeral(data.vacccovbcg).format("0 %") %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val siv-r-row-head-ind">Polio</td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="vacccovpolio"><%= numeral(data.vacccovpolio).format("0 %") %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val siv-r-row-head-ind">DPT</td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="vacccovdpt"><%= numeral(data.vacccovdpt).format("0 %") %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val siv-r-row-head-ind">Measles</td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="vacccovmeasle"><%= numeral(data.vacccovmeasle).format("0 %") %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val siv-r-row-head-ind">Fully vaccinated</td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="vacccovfullvacc"><%= numeral(data.vacccovfullvacc).format("0 %") %></td>
+          </tr>
+        </tbody>
+      </table>
+	  <% } else { %>
+            <p class="siv-r-section-message">This section was not collected</p>
+      <% } %>  
+    </div> 
+    <div class="siv-r-chart-ctn">
+      <p class="siv-r-key-list-value">7.2  Vaccine wastage</p>
+      <% if("vaccbcg" in data) { %>
+       <table class="siv-r-table">
+        <thead>
+          <tr>
+            <th class="siv-r-ind-val siv-r-row-head-raw">Number of doses supplied</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">Number</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="siv-r-ind-val">BCG</td>
+            <td class="siv-r-std-val" data-fieldname="vaccsupplbcg"><%= data.vaccsupplbcg %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val">Polio</td>
+            <td class="siv-r-std-val" data-fieldname="vaccsupplpolio"><%= data.vaccsupplpolio %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val">DPT</td>
+            <td class="siv-r-std-val" data-fieldname="vaccsuppldpt"><%= data.vaccsuppldpt %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val">Measles</td>
+            <td class="siv-r-std-val" data-fieldname="vaccsupplmeasle"><%= data.vaccsupplmeasle %></td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="siv-r-table">
+        <thead>
+          <tr>
+            <th class="siv-r-ind-val siv-r-row-head-ind" colspan="2">EPI Indicators</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="siv-r-ind-val siv-r-row-head-ind">BCG</td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="vaccwastbcg"><%= numeral(data.vaccwastbcg).format("0 %") %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val siv-r-row-head-ind">Polio</td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="vaccwastpolio"><%= numeral(data.vaccwastpolio).format("0 %") %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val siv-r-row-head-ind">DPT</td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="vaccwastdpt"><%= numeral(data.vaccwastdpt).format("0 %") %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val siv-r-row-head-ind">Measles</td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="vaccwastmeasle"><%= numeral(data.vaccwastmeasle).format("0 %") %></td>
+          </tr>
+        </tbody>
+      </table>
+	  <% } else { %>
+            <p class="siv-r-section-message">This section was not collected</p>
+      <% } %>  
+    </div>
+	</div>
+<div class="clear siv-r-container">
+    <h2 class="siv-r-ctn-head-txt">8.0 Reproductive Heath</h2>
+    <div class="siv-r-chart-ctn">
+      <p class="siv-r-key-list-value">8.1  Antenatal care</p>
+      <% if(data.ancvat) { %>
+      <table class="siv-r-table">
+        <thead>
+          <tr>
+            <th class="siv-r-ind-val siv-r-row-head-raw" colspan="2"></th>
+            <th class="siv-r-std-val siv-r-row-head-raw">&lt; 18</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">&gt; 18</th>
+            <th class="siv-r-std-val siv-r-data-calc">Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="siv-r-ind-val" colspan="2">First antenatal visit &lt; 1st trimester</td>
+            <td class="siv-r-std-val" data-fieldname="ancvbtu18"><%= data.ancvbtu18 %></td>
+            <td class="siv-r-std-val" data-fieldname="ancvbto18"><%= data.ancvbto18 %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ancvbt"><%= data.ancvbt %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val" colspan="2">First antenatal visit &gt;1st trimester</td>
+            <td class="siv-r-std-val" data-fieldname="ancvatu18"><%= data.ancvatu18 %></td>
+            <td class="siv-r-std-val" data-fieldname="ancvato18"><%= data.ancvato18 %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ancvat"><%= data.ancvat %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val" rowspan="3">Number of pregnant women at time of delivery who:</td>
+            <td class="siv-r-ind-val">Received 2 doses of tetanus toxioid vaccine during antenatal period</td>
+            <td class="siv-r-std-val" data-fieldname="ancttvu18"><%= data.ancttvu18 %></td>
+            <td class="siv-r-std-val" data-fieldname="ancttvo18"><%= data.ancttvo18 %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ancttv"><%= data.ancttv %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val">Were screened for anaemia during antenatal period</td>
+            <td class="siv-r-std-val" data-fieldname="ancanaeu18"><%= data.ancanaeu18 %></td>
+            <td class="siv-r-std-val" data-fieldname="ancanaeo18"><%= data.ancanaeo18 %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ancanae"><%= data.ancanae %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val">Received 4 or more ANC visits at end of period</td>
+            <td class="siv-r-std-val" data-fieldname="anc4ancvu18"><%= data.anc4ancvu18 %></td>
+            <td class="siv-r-std-val" data-fieldname="anc4ancvo18"><%= data.anc4ancvo18 %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="anc4ancv"><%= data.anc4ancv %></td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="siv-r-table">
+        <thead>
+          <tr>
+            <th class="siv-r-ind-val siv-r-row-head-ind" colspan="2">ANC Indicators</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="siv-r-ind-val siv-r-row-head-ind">Proportion of first time antenatal visits made &lt; 1st trimester</td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="ancpctvbt"><%= numeral(data.ancpctvbt).format("0 %") %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val siv-r-row-head-ind">Coverage of anaemia screening in pregnancy</td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="anccovanae"><%= numeral(data.anccovanae).format("0 %") %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val siv-r-row-head-ind">Coverage of complete antenatal care</td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="anccovcompl"><%= numeral(data.anccovcompl).format("0 %") %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val siv-r-row-head-ind">Coverage of antenatal tetanus immunisation</td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="anccovtt"><%= numeral(data.anccovtt).format("0 %") %></td>
+          </tr>
+        </tbody>
+      </table>
+	  <% } else { %>
+            <p class="siv-r-section-message">This section was not collected</p>
+      <% } %>  
+      </div>
+    <div class="siv-r-chart-ctn">
+      <p class="siv-r-key-list-value">8.2  Delivery care</p>
+      <% if(data.dellivbirth) { %>
+      <table class="siv-r-table">
+        <thead>
+          <tr>
+            <th class="siv-r-ind-val siv-r-row-head-raw"></th>
+            <th class="siv-r-std-val siv-r-row-head-raw">&lt; 18</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">&ge; 18</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="siv-r-ind-val">Live births</td>
+            <td class="siv-r-std-val" data-fieldname="dellivbirthu18"><%= data.dellivbirthu18 %></td>
+            <td class="siv-r-std-val" data-fieldname="dellivbirtho18"><%= data.dellivbirtho18 %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="dellivbirth"><%= data.dellivbirth %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val">Still births</td>
+            <td class="siv-r-std-val" data-fieldname="delstlbirthu18"><%= data.delstlbirthu18 %></td>
+            <td class="siv-r-std-val" data-fieldname="delstlbirtho18"><%= data.delstlbirtho18 %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="delstlbirth"><%= data.delstlbirth %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val">Low birth weight (&lt;2500 g)</td>
+            <td class="siv-r-std-val" data-fieldname="dellbwu18"><%= data.dellbwu18 %></td>
+            <td class="siv-r-std-val" data-fieldname="dellbwo18"><%= data.dellbwo18 %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="dellbw"><%= data.dellbw %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val">Attended by skilled health worker</td>
+            <td class="siv-r-std-val" data-fieldname="delsklhlthwu18"><%= data.delsklhlthwu18 %></td>
+            <td class="siv-r-std-val" data-fieldname="delsklhlthwo18"><%= data.delsklhlthwo18 %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="delsklhlthw"><%= data.delsklhlthw %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val">Number of obstetric complications treated</td>
+            <td class="siv-r-std-val" data-fieldname="delobscompu18"><%= data.delobscompu18 %></td>
+            <td class="siv-r-std-val" data-fieldname="delobscompo18"><%= data.delobscompo18 %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="delobscomp"><%= data.delobscomp %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val">Number of caesarean sections performed</td>
+            <td class="siv-r-std-val" data-fieldname="delcaesu18"><%= data.delcaesu18 %></td>
+            <td class="siv-r-std-val" data-fieldname="delcaeso18"><%= data.delcaeso18 %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="delcaes"><%= data.delcaes %></td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="siv-r-table">
+        <thead>
+          <tr>
+            <th class="siv-r-ind-val siv-r-row-head-ind" colspan="2">Delivery Indicators</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="siv-r-ind-val siv-r-row-head-ind">Crude birth rate (/1,000/month)</td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="delcbr"><%= numeral(data.delcbr).format("0.0") %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val siv-r-row-head-ind">Proportion of births attended by skilled health worker (excl. TBA)</td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="delpctsklhlthw"><%= numeral(data.delpctsklhlthw).format("0 %") %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val siv-r-row-head-ind">Proportion of low birth weight deliveries</td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="delpctlbw"><%= numeral(data.delpctlbw).format("0 %") %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val siv-r-row-head-ind">Proportion of all births perfomed by caesarean section</td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="delpctcs"><%= numeral(data.delpctcs).format("0 %") %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val siv-r-row-head-ind">Proportion obsetric complications treated among girls &lt; 18</td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="delpctobscomp"><%= numeral(data.delpctobscomp).format("0 %") %></td>
+          </tr>
+        </tbody>
+      </table>
+	  <% } else { %>
+            <p class="siv-r-section-message">This section was not collected</p>
+      <% } %>  
+      </div>
+    <div class="siv-r-chart-ctn">
+      <p class="siv-r-key-list-value">8.3  Postnatal care</p>
+      <% if(data.pncvisits) { %>
+      <table class="siv-r-table">
+        <thead>
+          <tr>
+            <th class="siv-r-ind-val siv-r-row-head-raw"></th>
+            <th class="siv-r-std-val siv-r-row-head-raw">&lt; 18</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">&gt; 18</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="siv-r-ind-val">Women who attended 3 postnatal visits within 6 wks of delivery</td>
+            <td class="siv-r-std-val" data-fieldname="pncvisitsu18"><%= data.pncvisitsu18 %></td>
+            <td class="siv-r-std-val" data-fieldname="pncvisitso18"><%= data.pncvisitso18 %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="pncvisits"><%= data.pncvisits %></td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="siv-r-table">
+        <thead>
+          <tr>
+            <th class="siv-r-ind-val siv-r-row-head-ind" colspan="2">Postnatal Indicators</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="siv-r-ind-val siv-r-row-head-ind">Coverage of complete postnatal care</td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="pnccovcompl"><%= numeral(data.pnccovcompl).format("0 %") %></td>
+          </tr>
+        </tbody>
+      </table>
+	  <% } else { %>
+            <p class="siv-r-section-message">This section was not collected</p>
+      <% } %>  
+      </div>
+    <div class="siv-r-chart-ctn">
+      <p class="siv-r-key-list-value">8.4 Family planning</p>
+      <% if("ig_urban_fam_planning" in data) { %>
+      <table class="siv-r-table">
+        <thead>
+          <tr>
+            <th class="siv-r-ind-val siv-r-row-head-raw" rowspan="2">Number of users</th>
+            <th class="siv-r-std-val siv-r-data-calc" rowspan="2">Total at beginning</th>
+            <th class="siv-r-std-val siv-r-row-head-raw" colspan="2">New</th>
+            <th class="siv-r-std-val siv-r-row-head-raw" colspan="2">Repeat</th>
+            <th class="siv-r-std-val siv-r-row-head-raw" colspan="2">Discontinued</th>
+            <th class="siv-r-std-val siv-r-data-calc" rowspan="2">Total at end</th>
+          </tr>
+          <tr>
+            <th class="siv-r-std-val siv-r-row-head-raw">&lt; 18</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">&ge;18</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">&lt; 18</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">&ge;18</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">&lt; 18</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">&ge;18</th>
+          </tr>
+        </thead>
+        <tbody>
+        <% _.each(data.ig_urban_fam_planning, function(ig_urban_fam_planning){ %>
+          <tr data-row-id="ig_urban_fam_planning.<%= ig_urban_fam_planning.fpmethod %>">
+            <td class="siv-r-ind-val" data-fieldname="ig_urban_fam_planning.fpmethod"><%= ig_urban_fam_planning.fpmethod %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ig_urban_fam_planning.fptotbeg"><%= ig_urban_fam_planning.fptotbeg %></td>
+            <td class="siv-r-std-val" data-fieldname="ig_urban_fam_planning.fpnewu18"><%= ig_urban_fam_planning.fpnewu18 %></td>
+            <td class="siv-r-std-val" data-fieldname="ig_urban_fam_planning.fpnewo18"><%= ig_urban_fam_planning.fpnewo18 %></td>
+            <td class="siv-r-std-val" data-fieldname="ig_urban_fam_planning.fprepu18"><%= ig_urban_fam_planning.fprepu18 %></td>
+            <td class="siv-r-std-val" data-fieldname="ig_urban_fam_planning.fprepo18"><%= ig_urban_fam_planning.fprepo18 %></td>
+            <td class="siv-r-std-val" data-fieldname="ig_urban_fam_planning.fpdiscu18"><%= ig_urban_fam_planning.fpdiscu18 %></td>
+            <td class="siv-r-std-val" data-fieldname="ig_urban_fam_planning.fpdisco18"><%= ig_urban_fam_planning.fpdisco18 %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="ig_urban_fam_planning.fpmethodtotend"><%= ig_urban_fam_planning.fpmethodtotend %></td>
+          </tr>
+          <% }); %>
+          <tr>
+          	<td class="siv-r-ind-val siv-r-data-calc">Totals</td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="fptotbeg"><%= data.fptotbeg %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="fpnewu18"><%= data.fpnewu18 %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="fpnewo18"><%= data.fpnewo18 %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="fprepu18"><%= data.fprepu18 %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="fprepo18"><%= data.fprepo18 %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="fpdiscu18"><%= data.fpdiscu18 %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="fpdisco18"><%= data.fpdisco18 %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="fptotend"><%= data.fptotend %></td>
+          </tr>
+        </tbody>
+      </table>	  
+	  <% } else { %>
+            <p class="siv-r-section-message">This section was not collected</p>
+      <% } %>  
+      </div>
+    <div class="siv-r-chart-ctn">
+      <p class="siv-r-key-list-value">8.5 Sexual and gender-based violence</p>
+      <% if(data.sgbvtotrs) { %>
+      <table class="siv-r-table">
+        <thead>
+          <tr>
+            <th class="siv-r-ind-val siv-r-row-head-raw" rowspan="2"></th>
+            <th class="siv-r-std-val siv-r-row-head-raw" colspan="2">&lt; 18</th>
+            <th class="siv-r-std-val siv-r-row-head-raw" colspan="2">&ge;18</th>
+            <th class="siv-r-std-val siv-r-data-calc" rowspan="2">Total</th>
+          </tr>
+          <tr>
+            <th class="siv-r-std-val siv-r-row-head-raw">M</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">F</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">M</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">F</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="siv-r-ind-val">Total no rape survivors seen</td>
+            <td class="siv-r-std-val" data-fieldname="sgbvtotrsu18m"><%= data.sgbvtotrsu18m %></td>
+            <td class="siv-r-std-val" data-fieldname="sgbvtotrsu18f"><%= data.sgbvtotrsu18f %></td>
+            <td class="siv-r-std-val" data-fieldname="sgbvtotrso18m"><%= data.sgbvtotrso18m %></td>
+            <td class="siv-r-std-val" data-fieldname="sgbvtotrso18f"><%= data.sgbvtotrso18f %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="sgbvtotrs"><%= data.sgbvtotrs %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val">No. of rape survivors examined within 72 hours</td>
+            <td class="siv-r-std-val" data-fieldname="sgbvrs72u18m"><%= data.sgbvrs72u18m %></td>
+            <td class="siv-r-std-val" data-fieldname="sgbvrs72u18f"><%= data.sgbvrs72u18f %></td>
+            <td class="siv-r-std-val" data-fieldname="sgbvrs72o18m"><%= data.sgbvrs72o18m %></td>
+            <td class="siv-r-std-val" data-fieldname="sgbvrs72o18f"><%= data.sgbvrs72o18f %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="sgbvrs72"><%= data.sgbvrs72 %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val">No. of rape survivors examined within 72-120 hours</td>
+            <td class="siv-r-std-val" data-fieldname="sgbvrs72120u18m"><%= data.sgbvrs72120u18m %></td>
+            <td class="siv-r-std-val" data-fieldname="sgbvrs72120u18f"><%= data.sgbvrs72120u18f %></td>
+            <td class="siv-r-std-val" data-fieldname="sgbvrs72120o18m"><%= data.sgbvrs72120o18m %></td>
+            <td class="siv-r-std-val" data-fieldname="sgbvrs72120o18f"><%= data.sgbvrs72120o18f %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="sgbvrs72120"><%= data.sgbvrs72120 %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val">No. of rape survivors examined within 120 hrs - 2 weeks</td>
+            <td class="siv-r-std-val" data-fieldname="sgbvrs1202u18m"><%= data.sgbvrs1202u18m %></td>
+            <td class="siv-r-std-val" data-fieldname="sgbvrs1202u18f"><%= data.sgbvrs1202u18f %></td>
+            <td class="siv-r-std-val" data-fieldname="sgbvrs1202o18m"><%= data.sgbvrs1202o18m %></td>
+            <td class="siv-r-std-val" data-fieldname="sgbvrs1202o18f"><%= data.sgbvrs1202o18f %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="sgbvrs1202"><%= data.sgbvrs1202 %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val">No. of rape survivors examined after 2 weeks</td>
+            <td class="siv-r-std-val" data-fieldname="sgbvrs2wku18m"><%= data.sgbvrs2wku18m %></td>
+            <td class="siv-r-std-val" data-fieldname="sgbvrs2wku18f"><%= data.sgbvrs2wku18f %></td>
+            <td class="siv-r-std-val" data-fieldname="sgbvrs2wko18m"><%= data.sgbvrs2wko18m %></td>
+            <td class="siv-r-std-val" data-fieldname="sgbvrs2wko18f"><%= data.sgbvrs2wko18f %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="sgbvrs2wk"><%= data.sgbvrs2wk %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val">No. of rape survivors given PEP* within 72 hours</td>
+            <td class="siv-r-std-val" data-fieldname="sgbvrspepu18m"><%= data.sgbvrspepu18m %></td>
+            <td class="siv-r-std-val" data-fieldname="sgbvrspepu18f"><%= data.sgbvrspepu18f %></td>
+            <td class="siv-r-std-val" data-fieldname="sgbvrspepo18m"><%= data.sgbvrspepo18m %></td>
+            <td class="siv-r-std-val" data-fieldname="sgbvrspepo18f"><%= data.sgbvrspepo18f %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="sgbvrspep"><%= data.sgbvrspep %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val">No. of female rape survivors given ECP* within 120 hours</td>
+            <td class="siv-r-std-val siv-r-data-mis"></td>
+            <td class="siv-r-std-val" data-fieldname="sgbvrsecpu18f"><%= data.sgbvrsecpu18f %></td>
+            <td class="siv-r-std-val siv-r-data-mis"></td>
+            <td class="siv-r-std-val" data-fieldname="sgbvrsecpo18f"><%= data.sgbvrsecpo18f %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="sgbvrsecp"><%= data.sgbvrsecp %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val">No. of rape survivors given STI* presumptive treatment &lt;2 weeks</td>
+            <td class="siv-r-std-val" data-fieldname="sgbvrsstiu18m"><%= data.sgbvrsstiu18m %></td>
+            <td class="siv-r-std-val" data-fieldname="sgbvrsstiu18f"><%= data.sgbvrsstiu18f %></td>
+            <td class="siv-r-std-val" data-fieldname="sgbvrsstio18m"><%= data.sgbvrsstio18m %></td>
+            <td class="siv-r-std-val" data-fieldname="sgbvrsstio18f"><%= data.sgbvrsstio18f %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="sgbvrssti"><%= data.sgbvrssti %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val">No. cases of trauma in health centre due to domestic violence</td>
+            <td class="siv-r-std-val" data-fieldname="sgbvdomviou18m"><%= data.sgbvdomviou18m %></td>
+            <td class="siv-r-std-val" data-fieldname="sgbvdomviou18f"><%= data.sgbvdomviou18f %></td>
+            <td class="siv-r-std-val" data-fieldname="sgbvdomvioo18m"><%= data.sgbvdomvioo18m %></td>
+            <td class="siv-r-std-val" data-fieldname="sgbvdomvioo18f"><%= data.sgbvdomvioo18f %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="sgbvdomvio"><%= data.sgbvdomvio %></td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="siv-r-source">*ECP = Emergency Contractive Pill; PEP = Post-exposure Prophylaxis; STI = Sexually Transmitted Infection</p>
+      <table class="siv-r-table">
+        <thead>
+          <tr>
+            <th class="siv-r-ind-val siv-r-row-head-ind" colspan="2">SGBV Indicators</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="siv-r-ind-val siv-r-row-head-ind">Incidence of reported rape (/10,000/year)</td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="sgbvincrape"><%= numeral(data.sgbvincrape).format("0.0") %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val siv-r-row-head-ind">Proportion of rape survivors who recieve PEP &lt; 72 hrs</td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="sgbvpctpep"><%= numeral(data.sgbvpctpep).format("0 %") %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val siv-r-row-head-ind">Proportion of female rape survivors who recieve ECP &lt; 120 hrs</td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="sgbvpctecp"><%= numeral(data.sgbvpctecp).format("0 %") %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val siv-r-row-head-ind">Proportion of rape survivors who receive STI presumptive treatments &lt; 2 wks</td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="sgbvpctsti"><%= numeral(data.sgbvpctsti).format("0 %") %></td>
+          </tr>
+        </tbody>
+      </table>
+	  <% } else { %>
+            <p class="siv-r-section-message">This section was not collected</p>
+      <% } %>  
+      </div>
+	</div>
+<div class="clear siv-r-container">
+    <h2 class="siv-r-ctn-head-txt">9.0 HIV/AIDS </h2>
+    <div class="siv-r-chart-ctn">
+      <p class="siv-r-key-list-value">9.1  Voluntary counselling and testing (VCT)</p>
+      <% if(data.vctpretest) { %>
+      <table class="siv-r-table">
+        <thead>
+          <tr>
+            <th class="siv-r-ind-val siv-r-row-head-raw" rowspan="2"></th>
+            <th class="siv-r-std-val siv-r-row-head-raw" colspan="2">&lt; 18</th>
+            <th class="siv-r-std-val siv-r-row-head-raw" colspan="2">&ge;18</th>
+            <th class="siv-r-std-val siv-r-data-calc" rowspan="2">Total</th>
+          </tr>
+          <tr>
+            <th class="siv-r-std-val siv-r-row-head-raw">M</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">F</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">M</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">F</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="siv-r-ind-val">Pre-test counselled</td>
+            <td class="siv-r-std-val" data-fieldname="vctpretestu18m"><%= data.vctpretestu18m %></td>
+            <td class="siv-r-std-val" data-fieldname="vctpretestu18f"><%= data.vctpretestu18f %></td>
+            <td class="siv-r-std-val" data-fieldname="vctpretesto18m"><%= data.vctpretesto18m %></td>
+            <td class="siv-r-std-val" data-fieldname="vctpretesto18f"><%= data.vctpretesto18f %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="vctpretest"><%= data.vctpretest %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val">Tested for HIV</td>
+            <td class="siv-r-std-val" data-fieldname="vcthivtestu18m"><%= data.vcthivtestu18m %></td>
+            <td class="siv-r-std-val" data-fieldname="vcthivtestu18f"><%= data.vcthivtestu18f %></td>
+            <td class="siv-r-std-val" data-fieldname="vcthivtesto18m"><%= data.vcthivtesto18m %></td>
+            <td class="siv-r-std-val" data-fieldname="vcthivtesto18f"><%= data.vcthivtesto18f %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="vcthivtest"><%= data.vcthivtest %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val">Tested positive for HIV</td>
+            <td class="siv-r-std-val" data-fieldname="vcthivtestu18m"><%= data.vcthivtestu18m %></td>
+            <td class="siv-r-std-val" data-fieldname="vcthivtestu18f"><%= data.vcthivtestu18f %></td>
+            <td class="siv-r-std-val" data-fieldname="vcthivtesto18m"><%= data.vcthivtesto18m %></td>
+            <td class="siv-r-std-val" data-fieldname="vcthivtesto18f"><%= data.vcthivtesto18f %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="vcthivtest"><%= data.vcthivtest %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val">Post-test counselled</td>
+            <td class="siv-r-std-val" data-fieldname="vctposttestu18m"><%= data.vctposttestu18m %></td>
+            <td class="siv-r-std-val" data-fieldname="vctposttestu18f"><%= data.vctposttestu18f %></td>
+            <td class="siv-r-std-val" data-fieldname="vctposttesto18m"><%= data.vctposttesto18m %></td>
+            <td class="siv-r-std-val" data-fieldname="vctposttesto18f"><%= data.vctposttesto18f %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="vctposttest"><%= data.vctposttest %></td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="siv-r-table">
+        <thead>
+          <tr>
+            <th class="siv-r-ind-val siv-r-row-head-ind" colspan="2">VCT Indicators</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="siv-r-ind-val siv-r-row-head-ind">Proportion who received post-test counselling and result</td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="vctpctpostest"><%= numeral(data.vctpctpostest).format("0 %") %></td>
+          </tr>
+        </tbody>
+       </table>	   
+	  <% } else { %>
+            <p class="siv-r-section-message">This section was not collected</p>
+      <% } %>  
+       </div>
+    <div class="siv-r-chart-ctn">
+      <p class="siv-r-key-list-value">9.2 Prevention of mother-to-child transmission (PMTCT)</p>
+      <% if(data.pmtctpretest) { %>
+      <table class="siv-r-table">
+        <thead>
+          <tr>
+            <th class="siv-r-ind-val siv-r-row-head-raw"></th>
+            <th class="siv-r-std-val siv-r-row-head-raw">&lt; 18</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">&ge;18</th>
+            <th class="siv-r-std-val siv-r-data-calc">Total</th>
+            <th class="siv-r-std-val siv-r-row-head-raw">Partners</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="siv-r-ind-val">Pre-test counselled</td>
+            <td class="siv-r-std-val" data-fieldname="pmtctpretestu18f"><%= data.pmtctpretestu18f %></td>
+            <td class="siv-r-std-val" data-fieldname="pmtctpretesto18f"><%= data.pmtctpretesto18f %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="pmtctpretest"><%= data.pmtctpretest %></td>
+            <td class="siv-r-std-val" data-fieldname="pmtctpretestpart"><%= data.pmtctpretestpart %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val">Tested for HIV</td>
+            <td class="siv-r-std-val" data-fieldname="pmtcthivtestu18f"><%= data.pmtcthivtestu18f %></td>
+            <td class="siv-r-std-val" data-fieldname="pmtcthivtesto18f"><%= data.pmtcthivtesto18f %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="pmtcthivtest"><%= data.pmtcthivtest %></td>
+            <td class="siv-r-std-val" data-fieldname="pmtcthivtestpart"><%= data.pmtcthivtestpart %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val">Tested positive for HIV</td>
+            <td class="siv-r-std-val" data-fieldname="pmtctposhivu18f"><%= data.pmtctposhivu18f %></td>
+            <td class="siv-r-std-val" data-fieldname="pmtctposhivo18f"><%= data.pmtctposhivo18f %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="pmtctposhiv"><%= data.pmtctposhiv %></td>
+            <td class="siv-r-std-val" data-fieldname="pmtctposhivpart"><%= data.pmtctposhivpart %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val">Pre-test counselled</td>
+            <td class="siv-r-std-val" data-fieldname="pmtctposttestu18f"><%= data.pmtctposttestu18f %></td>
+            <td class="siv-r-std-val" data-fieldname="pmtctposttesto18f"><%= data.pmtctposttesto18f %></td>
+            <td class="siv-r-std-val siv-r-data-calc" data-fieldname="pmtctposttest"><%= data.pmtctposttest %></td>
+            <td class="siv-r-std-val" data-fieldname="pmtctposttestpart"><%= data.pmtctposttestpart %></td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="siv-r-table">
+        <thead>
+          <tr>
+            <th class="siv-r-ind-val siv-r-row-head-ind" colspan="2">PMTCT Indicators</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="siv-r-ind-val siv-r-row-head-ind">PMTCT coverage</td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="pmtctcov"><%= numeral(data.pmtctcov).format("0 %") %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val siv-r-row-head-ind">Proportion who received post-test counselling and result</td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="pmtctpctposttest"><%= numeral(data.pmtctpctposttest).format("0 %") %></td>
+          </tr>
+          <tr>
+            <td class="siv-r-ind-val siv-r-row-head-ind">Proportion of partners who received post-test counselling and result</td>
+            <td class="siv-r-std-val siv-r-data-ind" data-fieldname="pmtctpctpartposttest"><%= numeral(data.pmtctpctpartposttest).format("0 %") %></td>
+          </tr>
+        </tbody>
+       </table>	   
+	  <% } else { %>
+            <p class="siv-r-section-message">This section was not collected</p>
+      <% } %>  
+       </div>
+	</div>
+  <div class="siv-r-legend-ctn siv-r-legend-wrap siv-r-container">
+  <table class="siv-r-interactive-ctn">
+        <tbody>
+            <tr>
+              <td rowspan="2" class="siv-r-interactive-32"><img class="siv-r-interactive-32" src="<%- asset("images/logos/siv-logo-black.png") %>"/></td>
+              <td class="siv-r-interactive-title siv-r-interactive-space">View interactive maps and statistics online</td>
+            </tr>
+            <tr>
+              <td class="siv-r-table-item siv-r-interactive-row"><a href="http://twine.unhcr.org" class="siv-r-interactive-link">http://twine.unhcr.org</a></td>
+            </tr>
+		</tbody>
+	 </table>
+  <img class="siv-r-contact-logo" src="<%- asset("images/reports/phhiv/unhcr-logo.png") %>" />
+  <div class="clear"></div>
+  </div>
+  </div>
+</div>

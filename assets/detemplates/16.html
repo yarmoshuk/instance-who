@@ -1,0 +1,736 @@
+
+<div class="siv-r-pub-heal">
+  <div class="siv-r-page-break">
+     <div class="siv-r-page-header">
+      <div class="siv-r-title-ctn"> <img class="siv-r-report-type" src={{{local_asset "icons/de_templates/round/16.svg"}}} />
+        <p class="siv-r-title-txt">Public Health Profile</p>
+        <p class="siv-r-year-txt"><span>{{{dateinfo "week"}}}</span><span>{{{dateinfo "month"}}}</span> <span>{{{dateinfo "year"}}}</span><span>{{{dateinfo "divider"}}}</span><span>{{{dateinfo "datespan"}}}</span></p>
+      </div>
+      <div class="siv-r-loc-can"></div>
+      <div class="siv-r-loc-ctn">
+        <div class="siv-r-flag-ctn">{{{helperFlagSVG "iso" "locationdetails" "icons/flags/round/flags-svg/" "siv-r-flag-img"}}}</div>
+        <p class="siv-r-loc-txt" data-fieldname="name">{{{embedded_value "locationdetails" "name"}}}</p>
+        <p class="siv-r-loc-cty" data-fieldname="countryname">{{{embedded_value "locationdetails" "countryname"}}}</p>
+      </div>
+      <div class="clear"></div>
+    </div>
+  <div class="siv-r-container siv-r-gen clear">
+    <div class="siv-r-gen-head-ctn">
+      <h2 class="siv-r-gen-head-txt">Refugee Population<!--<sup>a</sup>--></h2>
+    </div>
+    <div class="siv-r-gen-pop-ctn">
+      <p><span class="siv-r-gen-txt">Total refugee population:</span> <span class="siv-r-gen-txt siv-r-gen-pop">{{{display_value pop}}}</span></p>
+    </div>
+    <div class="siv-r-gen-graph-ctn">
+      <div class="siv-r-gen-graph-img">{{{popbreakdownchart "popbreakdown" "siv-r-gen-graph-img"}}}</div>
+    </div>
+  </div>
+  <div class="siv-r-gen-head-can"></div>
+  <div class="siv-r-country-map-ctn ">{{{helperDrawMap "svg" "iso" "locationdetails" "siv-r-country-map-img"}}}</div>
+  <div class="siv-r-container siv-r-key-ctn">
+    <h2 class="siv-r-key-title">Key Facts</h2>
+    <table class="siv-r-key-list-ctn">
+      <tbody>
+        <tr>
+          <td class="siv-r-key-list-item">Camp opened</td>
+        </tr>
+        <tr>
+          <td class="siv-r-key-list-value"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <!--<div class="siv-r-disclaimer siv-r-source">
+	<div class="siv-r-disclaimer-content">The boundaries and names shown and the designations used on this map do not imply official endorsement or acceptance by the United Nations.</div>
+  </div>-->
+  <br class="clear" />
+  <div class="siv-r-container siv-r-org">
+    <div class="siv-r-ctn-head">
+      <h2 class="siv-r-ctn-head-txt">Indicators at a Glance:</h2>
+    </div>
+    <table class="siv-r-table">
+      <tbody>
+        <tr>
+          <td class="siv-r-table-list-num">1</td>
+          <td class="siv-r-ind-table-txt">Health utilisation rate</td>
+          <td class="siv-r-ind-table-value">{{{display_value morbhlthfacutil}}}</td>
+          <td class="siv-r-table-score">{{{standard_result morbhlthfacutil}}}</td>
+        </tr>
+        <tr class="siv-r-table-hl">
+          <td class="siv-r-table-list-num">2</td>
+          <td class="siv-r-ind-table-txt">Number of consultations per clinician per day</td>
+          <td class="siv-r-ind-table-value">{{{display_value morbconsclinday}}}</td>
+          <td class="siv-r-table-score">{{{standard_result morbconsclinday}}}</td>
+        </tr>
+        <tr>
+          <td class="siv-r-table-list-num">3</td>
+          <td class="siv-r-ind-table-txt">Hospitalisation rate</td>
+          <td class="siv-r-ind-table-value">{{{display_value ipdhosprate}}}</td>
+          <td class="siv-r-table-score">{{{standard_result ipdhosprate}}}</td>
+        </tr>
+        <tr class="siv-r-table-hl">
+          <td class="siv-r-table-list-num">4</td>
+          <td class="siv-r-ind-table-txt">Referral rate</td>
+          <td class="siv-r-ind-table-value">{{{display_value reflocrate}}}</td>
+          <td class="siv-r-table-score">{{{standard_result reflocrate}}}</td>
+        </tr>
+        <tr>
+          <td class="siv-r-table-list-num">5</td>
+          <td class="siv-r-ind-table-txt">% deliveries attended by skilled personnel</td>
+          <td class="siv-r-ind-table-value">{{{display_value delpctsklhthw}}}</td>
+          <td class="siv-r-table-score">{{{standard_result delpctsklhthw}}}</td>
+        </tr>
+        <tr class="siv-r-table-hl">
+          <td class="siv-r-table-list-num">6</td>
+          <td class="siv-r-ind-table-txt">% consultations due to non-comm. disease</td>
+          <td class="siv-r-ind-table-value"></td>
+          <td class="siv-r-table-score"></td>
+        </tr>
+        <tr>
+          <td class="siv-r-table-list-num">7</td>
+          <td class="siv-r-ind-table-txt">% consultations to females</td>
+          <td class="siv-r-ind-table-value"></td>
+          <td class="siv-r-table-score"></td>
+        </tr>
+        <tr class="siv-r-table-hl">
+          <td class="siv-r-table-list-num">8</td>
+          <td class="siv-r-ind-table-txt">% consultations to children under 5</td>
+          <td class="siv-r-ind-table-value"></td>
+          <td class="siv-r-table-score"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="siv-r-glc-wrap">
+    <div class="siv-r-glc-head-can"></div>
+    <div class="siv-r-glc">
+      <div class="siv-r-glc-head-ctn">
+        <h2 class="siv-r-glc-head-txt">Notes</h2>
+      </div>
+      <p class="siv-r-glc-txt"></p>
+    </div>
+  </div>
+  <div class=" clear">
+    <div class="siv-r-sect-head-ctn">
+      <h2 class="siv-r-table-txt">Morbidity</h2>
+    </div>
+    <div class="siv-r-table-can"></div>
+    <div class="clear"></div>
+    <div class="siv-r-container siv-r-chart-ctn">
+      <div class="siv-r-ctn-head">
+        <h3 class="siv-r-chart-title">Acute health conditions (%)</h3>
+      </div>
+      <div class="siv-r-pub-chart-img">{{{drawPieChart "" "acute_health_pct" "siv-r-pub-chart-img" "mort_morb_pie"}}}</div>
+    </div>
+  </div>
+  <div class="siv-r-table-head-space">&nbsp;</div>
+  <div class="siv-r-container siv-r-chart-ctn">
+    <div class="siv-r-ctn-head">
+      <h3 class="siv-r-chart-title">Chronic health conditions (%)</h3>
+    </div>
+    <div id="" class="siv-r-pub-chart-img">{{{drawPieChart "" "chronic_health_pct" "siv-r-pub-chart-img" "mort_morb_pie"}}}</div>
+  </div>
+  <div class="clear"></div>
+  <div class="clear">
+    <div class="siv-r-container siv-r-chart-ctn">
+      <h2 class="siv-r-chart-title">Top 5 acute health conditions</h2>
+      <div class="siv-r-causes-col-name">&nbsp; </div>
+      <div class="siv-r-causes-ind">
+        <h4 class="siv-r-std-txt">% morbidity</h4>
+        <div class="siv-r-std-can"></div>
+      </div>
+      <div class="siv-r-causes-ind">
+        <h4 class="siv-r-no-txt"># of cases</h4>
+        <div class="siv-r-no-can"></div>
+      </div>
+      <div class="siv-r-mor-table clear">
+        <table class="siv-r-table">
+          <tbody>
+            <tr class="siv-r-table-hl">
+              <td class="siv-r-table-list-num">1</td>
+              <td class="siv-r-mor-table-txt">{{{orderedList "chronic_and_acute_health_top5" "topn2" "lab" 1 "cd_embedded"}}}</td>
+              <td class="siv-r-ind-table-value">{{{orderedList "chronic_and_acute_health_top5" "topn2" "fun" 1 "cd_embedded"}}}</td>
+              <td class="siv-r-ind">{{{orderedList "chronic_and_acute_health_top5" "topn2" "val" 1 "cd_embedded"}}}</td>
+            </tr>
+            <tr>
+              <td class="siv-r-table-list-num">2</td>
+              <td class="siv-r-mor-table-txt">{{{orderedList "chronic_and_acute_health_top5" "topn2" "lab" 2 "cd_embedded"}}}</td>
+              <td class="siv-r-ind-table-value">{{{orderedList "chronic_and_acute_health_top5" "topn2" "fun" 2 "cd_embedded"}}}</td>
+              <td class="siv-r-ind">{{{orderedList "chronic_and_acute_health_top5" "topn2" "val" 2 "cd_embedded"}}}</td>
+            </tr>
+            <tr class="siv-r-table-hl">
+              <td class="siv-r-table-list-num">3</td>
+              <td class="siv-r-mor-table-txt">{{{orderedList "chronic_and_acute_health_top5" "topn2" "lab" 3 "cd_embedded"}}}</td>
+              <td class="siv-r-ind-table-value">{{{orderedList "chronic_and_acute_health_top5" "topn2" "fun" 3 "cd_embedded"}}}</td>
+              <td class="siv-r-ind">{{{orderedList "chronic_and_acute_health_top5" "topn2" "val" 3 "cd_embedded"}}}</td>
+            </tr>
+            <tr>
+              <td class="siv-r-table-list-num">4</td>
+              <td class="siv-r-mor-table-txt">{{{orderedList "chronic_and_acute_health_top5" "topn2" "lab" 4 "cd_embedded"}}}</td>
+              <td class="siv-r-ind-table-value">{{{orderedList "chronic_and_acute_health_top5" "topn2" "fun" 4 "cd_embedded"}}}</td>
+              <td class="siv-r-ind">{{{orderedList "chronic_and_acute_health_top5" "topn2" "val" 4 "cd_embedded"}}}</td>
+            </tr>
+            <tr class="siv-r-table-hl">
+            	<td class="siv-r-table-list-num">5</td>
+              <td class="siv-r-mor-table-txt">{{{orderedList "chronic_and_acute_health_top5" "topn2" "lab" 5 "cd_embedded"}}}</td>
+              <td class="siv-r-ind-table-value">{{{orderedList "chronic_and_acute_health_top5" "topn2" "fun" 5 "cd_embedded"}}}</td>
+              <td class="siv-r-ind">{{{orderedList "chronic_and_acute_health_top5" "topn2" "val" 5 "cd_embedded"}}}</td>
+            </tr>
+            <tr class="siv-r-table">
+            	<td class="siv-r-table-list-num">6</td>
+              <td class="siv-r-mor-table-txt">{{{orderedList "chronic_and_acute_health_top5" "topn2" "lab" 6 "cd_embedded"}}}</td>
+              <td class="siv-r-ind-table-value">{{{orderedList "chronic_and_acute_health_top5" "topn2" "fun" 6 "cd_embedded"}}}</td>
+              <td class="siv-r-ind">{{{orderedList "chronic_and_acute_health_top5" "topn2" "val" 6 "cd_embedded"}}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="siv-r-table-head-space">&nbsp;</div>
+    <div class="siv-r-container siv-r-chart-ctn">
+      <h2 class="siv-r-chart-title">Top 5 chronic health conditions</h2>
+      <div class="siv-r-causes-col-name">&nbsp; </div>
+      <div class="siv-r-causes-ind">
+        <h4 class="siv-r-std-txt">% morbidity</h4>
+        <div class="siv-r-std-can"></div>
+      </div>
+      <div class="siv-r-causes-ind">
+        <h4 class="siv-r-no-txt"># of cases</h4>
+        <div class="siv-r-no-can"></div>
+      </div>
+      <div class="siv-r-mor-table clear">
+        <table class="siv-r-table">
+          <tbody>
+            <tr class="siv-r-table-hl">
+              <td class="siv-r-table-list-num">1</td>
+              <td class="siv-r-mor-table-txt">{{{orderedList "chronic_and_acute_health_top5" "topn2" "lab" 1 "ncd_embedded"}}}</td>
+              <td class="siv-r-ind-table-value">{{{orderedList "chronic_and_acute_health_top5" "topn2" "fun" 1 "ncd_embedded"}}}</td>
+              <td class="siv-r-ind">{{{orderedList "chronic_and_acute_health_top5" "topn2" "val" 1 "ncd_embedded"}}}</td>
+            </tr>
+            <tr>
+              <td class="siv-r-table-list-num">2</td>
+              <td class="siv-r-mor-table-txt">{{{orderedList "chronic_and_acute_health_top5" "topn2" "lab" 2 "ncd_embedded"}}}</td>
+              <td class="siv-r-ind-table-value">{{{orderedList "chronic_and_acute_health_top5" "topn2" "fun" 2 "ncd_embedded"}}}</td>
+              <td class="siv-r-ind">{{{orderedList "chronic_and_acute_health_top5" "topn2" "val" 2 "ncd_embedded"}}}</td>
+            </tr>
+            <tr class="siv-r-table-hl">
+              <td class="siv-r-table-list-num">3</td>
+              <td class="siv-r-mor-table-txt">{{{orderedList "chronic_and_acute_health_top5" "topn2" "lab" 3 "ncd_embedded"}}}</td>
+              <td class="siv-r-ind-table-value">{{{orderedList "chronic_and_acute_health_top5" "topn2" "fun" 3 "ncd_embedded"}}}</td>
+              <td class="siv-r-ind">{{{orderedList "chronic_and_acute_health_top5" "topn2" "val" 3 "ncd_embedded"}}}</td>
+            </tr>
+            <tr>
+              <td class="siv-r-table-list-num">4</td>
+              <td class="siv-r-mor-table-txt">{{{orderedList "chronic_and_acute_health_top5" "topn2" "lab" 4 "ncd_embedded"}}}</td>
+              <td class="siv-r-ind-table-value">{{{orderedList "chronic_and_acute_health_top5" "topn2" "fun" 4 "ncd_embedded"}}}</td>
+              <td class="siv-r-ind">{{{orderedList "chronic_and_acute_health_top5" "topn2" "val" 4 "ncd_embedded"}}}</td>
+            </tr>
+            <tr class="siv-r-table-hl">
+            	<td class="siv-r-table-list-num">5</td>
+              <td class="siv-r-mor-table-txt">{{{orderedList "chronic_and_acute_health_top5" "topn2" "lab" 5 "ncd_embedded"}}}</td>
+              <td class="siv-r-ind-table-value">{{{orderedList "chronic_and_acute_health_top5" "topn2" "fun" 5 "ncd_embedded"}}}</td>
+              <td class="siv-r-ind">{{{orderedList "chronic_and_acute_health_top5" "topn2" "val" 5 "ncd_embedded"}}}</td>
+            </tr>
+            <tr class="siv-r-table">
+            	<td class="siv-r-table-list-num">6</td>
+              <td class="siv-r-mor-table-txt">{{{orderedList "chronic_and_acute_health_top5" "topn2" "lab" 6 "ncd_embedded"}}}</td>
+              <td class="siv-r-ind-table-value">{{{orderedList "chronic_and_acute_health_top5" "topn2" "fun" 6 "ncd_embedded"}}}</td>
+              <td class="siv-r-ind">{{{orderedList "chronic_and_acute_health_top5" "topn2" "val" 6 "ncd_embedded"}}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <div class="clear">
+    <div class="siv-r-container siv-r-chart-ctn">
+      <div class="siv-r-mor-table">
+        <p class="siv-r-mor-title">Breakdown of acute health conditions</p>
+      </div>
+      <h2 class="siv-r-chart-title"><span class="siv-r-pie-title siv-r-double-pie">by age</span> <span class="siv-r-pie-title siv-r-double-pie">by gender</span>
+        <div class="clear"></div>
+      </h2>
+      <div class="siv-r-mor-table clear">
+        <div class="siv-r-double-pie">{{{drawPieChart "" "acute_health_by_age" "siv-r-double-chart" "mort_morb_pie"}}}</div>
+        <div class="siv-r-double-pie">{{{drawPieChart "" "acute_health_by_gender" "siv-r-double-chart" "mort_morb_pie"}}}</div>
+      </div>
+    </div>
+    <div class="siv-r-table-head-space">&nbsp;</div>
+    <div class="siv-r-container siv-r-chart-ctn">
+      <div class="siv-r-mor-table">
+        <p class="siv-r-mor-title">Breakdown of chronic health conditions</p>
+      </div>
+      <h2 class="siv-r-chart-title"><span class="siv-r-pie-title siv-r-double-pie">by age</span> <span class="siv-r-pie-title siv-r-double-pie">by gender</span>
+        <div class="clear"></div>
+      </h2>
+      <div class="siv-r-mor-table clear">
+ 				<div class="siv-r-double-pie">{{{drawPieChart "" "chronic_health_by_age" "siv-r-double-chart" "mort_morb_pie"}}}</div>
+        <div class="siv-r-double-pie">{{{drawPieChart "" "chronic_health_by_gender" "siv-r-double-chart" "mort_morb_pie"}}}</div>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+  </div>  
+  <div class="siv-r-legend-wrap">
+    <div class="siv-r-container siv-r-ptn-wrap clear">
+      <p class="siv-r-ptn-txt"> UNHCR gratefully acknowledges the support of the following partners:</p>
+      <div class="siv-r-ptn-ctn"> <img id="siv-r-partner_1" class="siv-r-ptn-logo" src=""> <img id="siv-r-partner_2" class="siv-r-ptn-logo" src=""> <img id="siv-r-partner_3" class="siv-r-ptn-logo" src=""> <img id="siv-r-partner_4" class="siv-r-ptn-logo" src=""> <img id="siv-r-partner_5" class="siv-r-ptn-logo" src=""> <img id="siv-r-partner_6" class="siv-r-ptn-logo" src=""> <img id="siv-r-partner_7" class="siv-r-ptn-logo" src=""> <img id="siv-r-partner_8" class="siv-r-ptn-logo" src=""> <img id="siv-r-partner_9" class="siv-r-ptn-logo" src=""></div>
+    </div>
+  </div>
+<!--end of page-->
+  <div class="clear siv-r-section">
+    <div class="siv-r-sect-head-ctn">
+      <h2 class="siv-r-table-txt">Public Health</h2>
+    </div>
+    <div class="siv-r-table-can"></div>
+    <div class="clear"></div>
+    <div class="siv-r-table-head">
+      <div class="siv-r-table-col-name">
+        <h3 class="siv-r-table-name-txt">Health Impact</h3>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-ind-txt">Indicator</h4>
+        <div class="siv-r-ind-can"></div>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-std-txt">Standard</h4>
+        <div class="siv-r-std-can"></div>
+      </div>
+    </div>
+    <div class="siv-r-table-head-space">&nbsp;</div>
+    <div class="siv-r-table-head">
+      <div class="siv-r-table-col-name">
+        <h3 class="siv-r-table-name-txt">Laboratory</h3>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-ind-txt">Indicator</h4>
+        <div class="siv-r-ind-can"></div>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-std-txt">Standard</h4>
+        <div class="siv-r-std-can"></div>
+      </div>
+    </div>
+    <table class="siv-r-table clear">
+      <tbody>
+        <tr>
+          <td class="siv-r-table-item siv-r-table-hl">Crude Mortality Rate <br>
+            (/1000/month)</td>
+          <td class="siv-r-ind-val siv-r-table-hl">{{{display_value mortcmr}}}</td>
+          <td class="siv-r-std-val siv-r-table-hl">{{{standard mortcmr}}}</td>
+          <td class="siv-r-table-score siv-r-table-hl">{{{standard_result mortcmr}}}</td>
+          <td class="siv-r-table-space">&nbsp;</td>
+          <td class="siv-r-table-item siv-r-table-hl">Number of laboratory samples</td>
+          <td class="siv-r-ind-val siv-r-table-hl">{{{display_value labtest}}}</td>
+          <td class="siv-r-std-val siv-r-table-hl">{{{standard labtest}}}</td>
+          <td class="siv-r-table-score siv-r-table-hl">{{{standard_result labtest}}}</td>
+        <tr>
+          <td class="siv-r-table-item">Under-five Mortality Rate<br>
+            (/10,000/day)</td>
+          <td class="siv-r-ind-val">{{{display_value mortu5mr}}}</td>
+          <td class="siv-r-std-val">{{{standard mortu5mr}}}</td>
+          <td class="siv-r-table-score">{{{standard_result mortu5mr}}}</td>
+          <td class="siv-r-table-space">&nbsp;</td>
+          <td><h3 class="siv-r-table-name-txt">Outbreak Alert and Response</h3></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="siv-r-table-item siv-r-table-hl">Infant Mortality Rate (IMR)<br>
+            (/1000 livebirths)</td>
+          <td class="siv-r-ind-val siv-r-table-hl">{{{display_value mortimr}}}</td>
+          <td class="siv-r-std-val siv-r-table-hl">{{{standard mortimr}}}</td>
+          <td class="siv-r-table-score siv-r-table-hl">{{{standard_result mortimr}}}</td>
+          <td class="siv-r-table-space">&nbsp;</td>
+          <td class="siv-r-table-item siv-r-table-hl">Number of outbreaks reported</td>
+          <td class="siv-r-ind-val siv-r-table-hl"></td>
+          <td class="siv-r-std-val siv-r-table-hl"></td>
+          <td class="siv-r-table-score siv-r-table-hl"></td>
+        </tr>
+        </tr>
+        <tr>
+          <td class="siv-r-table-item">Neonatal Mortality Rate (NNMR)<br>
+            (/1000 livebirths)</td>
+          <td class="siv-r-ind-val">{{{display_value mortnnmr}}}</td>
+          <td class="siv-r-std-val">{{{standard mortnnmr}}}</td>
+          <td class="siv-r-table-score">{{{standard_result mortnnmr}}}</td>
+          <td class="siv-r-table-space">&nbsp;</td>
+          <td class="siv-r-table-item">% of outbreaks investigated within 48 hours</td>
+          <td class="siv-r-ind-val"></td>
+          <td class="siv-r-std-val"></td>
+          <td class="siv-r-table-score"></td>
+        </tr>
+        <tr>
+          <td><h3 class="siv-r-table-name-txt">Access and Utilization</h3></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td class="siv-r-table-space">&nbsp;</td>
+          <td><h3 class="siv-r-table-name-txt">Immunization</h3></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="siv-r-table-item siv-r-table-hl">No. of health facilities</td>
+          <td class="siv-r-ind-val siv-r-table-hl"></td>
+          <td class="siv-r-std-val siv-r-table-hl"></td>
+          <td class="siv-r-table-score siv-r-table-hl"></td>
+          <td class="siv-r-table-space">&nbsp;</td>
+          <td class="siv-r-table-item siv-r-table-hl">Measles vaccination rate</td>
+          <td class="siv-r-ind-val siv-r-table-hl">{{{display_value vacccovmeasle}}}</td>
+          <td class="siv-r-std-val siv-r-table-hl">{{{standard vacccovmeasle}}}</td>
+          <td class="siv-r-table-score siv-r-table-hl">{{{standard_result vacccovmeasle}}}</td>
+        </tr>
+        <tr>
+          <td class="siv-r-table-item">Total number of consultations</td>
+          <td class="siv-r-ind-val">{{{display_value morbopdcons}}}</td>
+          <td class="siv-r-std-val">{{{standard morbopdcons}}}</td>
+          <td class="siv-r-table-score">{{{standard_result morbopdcons}}}</td>
+          <td class="siv-r-table-space">&nbsp;</td>
+          <td class="siv-r-table-item ">Full vaccination rate</td>
+          <td class="siv-r-no-val"></td>
+          <td class="siv-r-std-val"></td>
+          <td class="siv-r-table-score"></td>
+        </tr>
+        <tr>
+          <td class="siv-r-table-item siv-r-table-hl">Health utilisation rate</td>
+          <td class="siv-r-ind-val siv-r-table-hl">{{{display_value morbhlthfacutil}}}</td>
+          <td class="siv-r-std-val siv-r-table-hl">{{{standard morbhlthfacutil}}}</td>
+          <td class="siv-r-table-score siv-r-table-hl">{{{standard_result morbhlthfacutil}}}</td>
+          <td class="siv-r-table-space">&nbsp;</td>
+          <td class="siv-r-table-item siv-r-table-hl">Program drop-out rate</td>
+          <td class="siv-r-ind-val siv-r-table-hl">{{{display_value vaccdropout}}}</td>
+          <td class="siv-r-std-val siv-r-table-hl">{{{standard vaccdropout}}}</td>
+          <td class="siv-r-table-score siv-r-table-hl">{{{standard_result vaccdropout}}}</td>
+        </tr>
+        <tr>
+          <td class="siv-r-table-item">No. of consultations per trained clinician per day</td>
+          <td class="siv-r-ind-val">{{{display_value morbconsclinday}}}</td>
+          <td class="siv-r-std-val">{{{standard morbconsclinday}}}</td>
+          <td class="siv-r-table-score">{{{standard_result morbconsclinday}}}</td>
+          <td class="siv-r-table-space">&nbsp;</td>
+          <td class="siv-r-table-item ">Vaccine wastage rate</td>
+          <td class="siv-r-no-val"></td>
+          <td class="siv-r-std-val"></td>
+          <td class="siv-r-table-score"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <!-- End of Public Health -->
+  
+  <div class="clear">
+    <div class="siv-r-container siv-r-table">
+      <div class="siv-r-mor-table">
+        <p class="siv-r-mor-title">Breakdown of mental health conditions</p>
+      </div>
+      <h2 class="siv-r-chart-title"><span class="siv-r-pie-title siv-r-triple-pie">By cause</span> <span class="siv-r-pie-title siv-r-triple-pie">By age</span> <span class="siv-r-pie-title siv-r-triple-pie">By gender</span>
+        <div class="clear"></div>
+      </h2>
+      <div class="siv-r-mor-table clear">
+        <div class="siv-r-triple-pie">{{{drawPieChart "" "mental_by_cause" "siv-r-triple-chart" "mort_morb_pie"}}}</div>
+        <div class="siv-r-triple-pie">{{{drawPieChart "" "mental_by_age" "siv-r-triple-chart" "mort_morb_pie"}}}</div>
+        <div class="siv-r-triple-pie">{{{drawPieChart "" "mental_by_gender" "siv-r-triple-chart" "mort_morb_pie"}}}</div>
+        <div class="clear"></div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div class="clear">
+    <div class="siv-r-container siv-r-table">
+      <div class="siv-r-mor-table">
+        <p class="siv-r-mor-title">Breakdown of injuries</p>
+      </div>
+      <h2 class="siv-r-chart-title"><span class="siv-r-pie-title siv-r-triple-pie">By cause</span> <span class="siv-r-pie-title siv-r-triple-pie">By age</span> <span class="siv-r-pie-title siv-r-triple-pie">By gender</span>
+        <div class="clear"></div>
+      </h2>
+      <div class="siv-r-mor-table clear">
+      	<div class="siv-r-triple-pie">{{{drawPieChart "" "injuries_by_cause" "siv-r-triple-chart" "mort_morb_pie"}}}</div>
+      	<div class="siv-r-triple-pie">{{{drawPieChart "" "injuries_by_age" "siv-r-triple-chart" "mort_morb_pie"}}}</div>
+      	<div class="siv-r-triple-pie">{{{drawPieChart "" "injuries_by_gender" "siv-r-triple-chart" "mort_morb_pie"}}}</div>
+        <div class="clear"></div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <!-- end of breakd down of mental health -->
+  <div class="clear">
+    <div class="siv-r-sect-head-ctn">
+      <h2 class="siv-r-table-txt">In-patient and Referral</h2>
+    </div>
+    <div class="siv-r-table-can"></div>
+    <div class="clear"></div>
+    <div class="siv-r-table-head">
+      <div class="siv-r-table-col-name">
+        <h3 class="siv-r-table-name-txt">In-patient Department</h3>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-ind-txt">Indicator</h4>
+        <div class="siv-r-ind-can"></div>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-std-txt">Standard</h4>
+        <div class="siv-r-std-can"></div>
+      </div>
+    </div>
+    <div class="siv-r-table-head-space">&nbsp;</div>
+    <div class="siv-r-table-head">
+      <div class="siv-r-table-col-name">
+        <h3 class="siv-r-table-name-txt">&nbsp;</h3>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-ind-txt">Indicator</h4>
+        <div class="siv-r-ind-can"></div>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-std-txt">Standard</h4>
+        <div class="siv-r-std-can"></div>
+      </div>
+    </div>
+    <table class="siv-r-table clear">
+      <tbody>
+        <tr>
+          <td class="siv-r-table-item siv-r-table-hl">Hospitalisation rate (/1000/month)</td>
+          <td class="siv-r-ind-val siv-r-table-hl">{{{display_value ipdhosprate}}}</td>
+          <td class="siv-r-std-val siv-r-table-hl">{{{standard ipdhosprate}}}</td>
+          <td class="siv-r-table-score siv-r-table-hl">{{{standard_result ipdhosprate}}}</td>
+          <td class="siv-r-table-space">&nbsp;</td>
+          <td class="siv-r-table-item">Overall case fatality rate</td>
+          <td class="siv-r-ind-val">{{{display_value ipdcfr}}}</td>
+          <td class="siv-r-std-val">{{{standard ipdcfr}}}</td>
+          <td class="siv-r-table-score">{{{standard_result ipdcfr}}}</td>
+        </tr>
+        <tr>
+          <td class="siv-r-table-item">Bed occupancy rate</td>
+          <td class="siv-r-ind-val">{{{display_value ipdbedocc}}}</td>
+          <td class="siv-r-std-val">{{{standard ipdbedocc}}}</td>
+          <td class="siv-r-table-score">{{{standard_result ipdbedocc}}}</td>
+          <td class="siv-r-table-space">&nbsp;</td>
+          <td class="siv-r-table-item siv-r-table-hl">Proportion of deaths within 24 hours of admission</td>
+          <td class="siv-r-ind-val siv-r-table-hl">{{{display_value ipdexitdthu24}}}</td>
+          <td class="siv-r-std-val siv-r-table-hl">{{{standard ipdexitdthu24}}}</td>
+          <td class="siv-r-table-score siv-r-table-hl">{{{standard_result ipdexitdthu24}}}</td>
+        </tr>
+        <tr>
+          <td class="siv-r-table-item siv-r-table-hl">Mean length of stay for authorised discharges (days)</td>
+          <td class="siv-r-ind-val siv-r-table-hl">{{{display_value ipdavglstay}}}</td>
+          <td class="siv-r-std-val siv-r-table-hl">{{{standard ipdavglstay}}}</td>
+          <td class="siv-r-table-score siv-r-table-hl">{{{standard_result ipdavglstay}}}</td>
+          <td class="siv-r-table-space">&nbsp;</td>
+          <td><h3 class="siv-r-table-name-txt">Referral</h3></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="siv-r-empty-cell"></td>
+          <td class="siv-r-empty-cell"></td>
+          <td class="siv-r-empty-cell"></td>
+          <td class="siv-r-empty-cell"></td>
+          <td class="siv-r-table-space">&nbsp;</td>
+          <td class="siv-r-table-item siv-r-table-hl">Total referral rate</td>
+          <td class="siv-r-ind-val siv-r-table-hl">{{{display_value reflocrate}}}</td>
+          <td class="siv-r-std-val siv-r-table-hl">{{{standard reflocrate}}}</td>
+          <td class="siv-r-table-score siv-r-table-hl">{{{standard_result reflocrate}}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <!-- end of in-patient and referral -->
+  <div class="clear">
+    <div class="siv-r-sect-head-ctn">
+      <h2 class="siv-r-table-txt">Reproductive Health</h2>
+    </div>
+    <div class="siv-r-table-can"></div>
+    <div class="clear"></div>
+    <div class="siv-r-table-head">
+      <div class="siv-r-table-col-name">
+        <h3 class="siv-r-table-name-txt">Antenatal Care</h3>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-ind-txt">Indicator</h4>
+        <div class="siv-r-ind-can"></div>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-std-txt">Standard</h4>
+        <div class="siv-r-std-can"></div>
+      </div>
+    </div>
+    <div class="siv-r-table-head-space">&nbsp;</div>
+    <div class="siv-r-table-head">
+      <div class="siv-r-table-col-name">
+        <h3 class="siv-r-table-name-txt">Postnatal Care</h3>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-ind-txt">Indicator</h4>
+        <div class="siv-r-ind-can"></div>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-std-txt">Standard</h4>
+        <div class="siv-r-std-can"></div>
+      </div>
+    </div>
+    <table class="siv-r-table clear">
+      <tbody>
+        <tr>
+          <td class="siv-r-table-item siv-r-table-hl">Coverage of antenatal care (4 or more visits)</td>
+          <td class="siv-r-ind-val siv-r-table-hl">{{{display_value anc4ancv}}}</td>
+          <td class="siv-r-std-val siv-r-table-hl">{{{standard anc4ancv}}}</td>
+          <td class="siv-r-table-score siv-r-table-hl">{{{standard_result anc4ancv}}}</td>
+          <td class="siv-r-table-space">&nbsp;</td>
+          <td class="siv-r-table-item siv-r-table-hl">Coverage of postnatal care</td>
+          <td class="siv-r-ind-val siv-r-table-hl">{{{display_value pnccovcompl}}}</td>
+          <td class="siv-r-std-val siv-r-table-hl">{{{standard pnccovcompl}}}</td>
+          <td class="siv-r-table-score siv-r-table-hl">{{{standard_result pnccovcompl}}}</td>
+        </tr>
+        <tr>
+          <td class="siv-r-table-item">Coverage of TT vaccination</td>
+          <td class="siv-r-ind-val">{{{display_value anccovtt}}}</td>
+          <td class="siv-r-std-val">{{{standard anccovtt}}}</td>
+          <td class="siv-r-table-score">{{{standard_result anccovtt}}}</td>
+          <td class="siv-r-table-space">&nbsp;</td>
+          <td><h3 class="siv-r-table-name-txt">Family Planning</h3></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="siv-r-table-item siv-r-table-hl">Coverage of anaemia screening in pregnancy</td>
+          <td class="siv-r-ind-val siv-r-table-hl">{{{display_value anccovanae}}}</td>
+          <td class="siv-r-std-val siv-r-table-hl">{{{standard anccovanae}}}</td>
+          <td class="siv-r-table-score siv-r-table-hl">{{{standard_result anccovanae}}}</td>
+          <td class="siv-r-table-space">&nbsp;</td>
+          <td class="siv-r-table-item siv-r-table-hl">Contraceptive prevalence rate</td>
+          <td class="siv-r-ind-val siv-r-table-hl">{{{display_value fpcpr}}}</td>
+          <td class="siv-r-std-val siv-r-table-hl">{{{standard fpcpr}}}</td>
+          <td class="siv-r-table-score siv-r-table-hl">{{{standard_result fpcpr}}}</td>
+        </tr>
+        <tr>
+          <td><h3 class="siv-r-table-name-txt">Delivery Care</h3></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td class="siv-r-table-space">&nbsp;</td>
+          <td><h3 class="siv-r-table-name-txt">Sexual and Gender-based Violence</h3></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="siv-r-table-item siv-r-table-hl">Proportion of deliveries attended by skilled personnel</td>
+          <td class="siv-r-ind-val siv-r-table-hl">{{{display_value delpctsklhlthw}}}</td>
+          <td class="siv-r-std-val siv-r-table-hl">{{{standard delpctsklhlthw}}}</td>
+          <td class="siv-r-table-score siv-r-table-hl">{{{standard_result delpctsklhlthw}}}</td>
+          <td class="siv-r-table-space">&nbsp;</td>
+          <td class="siv-r-table-item siv-r-table-hl">Incidence of rape (reported cases/10,000/year)*</td>
+          <td class="siv-r-no-val siv-r-table-hl">{{{display_value sgbvincrape}}}</td>
+          <td class="siv-r-std-val siv-r-table-hl">{{{standard sgbvincrape}}}</td>
+          <td class="siv-r-table-score siv-r-table-hl">{{{standard_result sgbvincrape}}}</td>
+        </tr>
+        <tr>
+          <td class="siv-r-table-item">Proportion of deliveries performed by caesarean section</td>
+          <td class="siv-r-ind-val">{{{display_value delpctcs}}}</td>
+          <td class="siv-r-std-val">{{{standard delpctcs}}}</td>
+          <td class="siv-r-table-score">{{{standard_result delpctcs}}}</td>
+          <td class="siv-r-table-space">&nbsp;</td>
+          <td class="siv-r-table-item">% of rape survivors who received PEP** &lt; 72 hours</td>
+          <td class="siv-r-no-val">{{{display_value sgbvpctpep}}}</td>
+          <td class="siv-r-std-val">{{{standard sgbvpctpep}}}</td>
+          <td class="siv-r-table-score">{{{standard_result sgbvpctpep}}}</td>
+        </tr>
+        <tr>
+          <td class="siv-r-table-item siv-r-table-hl">Proportion of low birth weight deliveries (&lt;2500g)</td>
+          <td class="siv-r-ind-val siv-r-table-hl">{{{display_value delpctlbw}}}</td>
+          <td class="siv-r-std-val siv-r-table-hl">{{{standard delpctlbw}}}</td>
+          <td class="siv-r-table-score siv-r-table-hl">{{{standard_result delpctlbw}}}</td>
+          <td class="siv-r-table-space">&nbsp;</td>
+          <td class="siv-r-table-item siv-r-table-hl">% of rape survivors who received ECP*** &lt; 120 hours</td>
+          <td class="siv-r-ind-val siv-r-table-hl">{{{display_value sgbvpctecp}}}</td>
+          <td class="siv-r-std-val siv-r-table-hl">{{{standard sgbvpctecp}}}</td>
+          <td class="siv-r-table-score siv-r-table-hl">{{{standard_result sgbvpctecp}}}</td>
+        </tr>
+        <tr>
+          <td><h3 class="siv-r-table-name-txt">Maternal Mortality</h3></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td class="siv-r-table-space">&nbsp;</td>
+          <td class="siv-r-table-item">% of rape survivors who received STI**** prophylaxis &lt; 2 wks</td>
+          <td class="siv-r-no-val">{{{display_value sgbvpctsti}}}</td>
+          <td class="siv-r-std-val">{{{standard sgbvpctsti}}}</td>
+          <td class="siv-r-table-score">{{{standard_result sgbvpctsti}}}</td>
+        </tr>
+        <tr>
+          <td class="siv-r-table-item siv-r-table-hl">Number of maternal deaths reported</td>
+          <td class="siv-r-ind-val siv-r-table-hl">{{{display_value matdeathrep}}}</td>
+          <td class="siv-r-std-val siv-r-table-hl">{{{standard matdeathrep}}}</td>
+          <td class="siv-r-table-score siv-r-table-hl">{{{standard_result matdeathrep}}}</td>
+          <td class="siv-r-table-space">&nbsp;</td>
+          <td class="siv-r-empty-cell"></td>
+          <td class="siv-r-empty-cell"></td>
+          <td class="siv-r-empty-cell"></td>
+          <td class="siv-r-empty-cell"></td>
+        </tr>
+        <tr>
+          <td class="siv-r-table-item">% of maternal deaths investigated within 48 hours</td>
+          <td class="siv-r-ind-val">{{{display_value matdeathinv}}}</td>
+          <td class="siv-r-std-val">{{{standard matdeathinv}}}</td>
+          <td class="siv-r-table-score">{{{standard_result matdeathinv}}}</td>
+          <td class="siv-r-table-space">&nbsp;</td>
+          <td colspan="4" class="siv-r-empty-cell"><span class="siv-r-source">*Only includes rapes reported at health facilities **Post-exposure prophylaxis ***Emergency contraceptive pill ****Sexually transmitted infection</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <!-- End of Reporductive Health -->
+  <div class="siv-r-legend-wrap2">
+    <div class="siv-r-legend-ctn">
+      <table class="siv-r-interactive-ctn">
+        <tbody>
+            <tr>
+              <td rowspan="2" class="siv-r-interactive-32"><img class="siv-r-interactive-32" src={{{local_asset "images/logos/siv-logo-black.png"}}}/></td>
+              <td class="siv-r-interactive-title siv-r-interactive-space">View interactive maps and statistics online</td>
+            </tr>
+            <tr>
+              <td class="siv-r-table-item siv-r-interactive-row"><a href="http://twine.unhcr.org" class="siv-r-interactive-link">http://twine.unhcr.org</a></td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="siv-r-legend">
+        <tbody>
+          <tr>
+            <td colspan="6"><h3 class="siv-r-legend-header">Legend</h3></td>
+          </tr>
+          <tr>
+            <td class="siv-r-score siv-r-score-green">2</td>
+            <td class="siv-r-table-indicator "><span>Standard met</span></td>
+            <td class="siv-r-score siv-r-score-yellow">!</td>
+            <td class="siv-r-table-indicator "><span>Standard borderline</span></td>
+            <td class="siv-r-score siv-r-score-red">D</td>
+            <td class="siv-r-table-indicator "><span>Standard not met</span></td>
+          </tr>
+          <tr>
+            <td class="siv-r-score siv-r-score-purple">^</td>
+            <td class="siv-r-table-indicator "><span>Interpret data with care</span></td>
+            <td class="siv-r-score siv-r-score-blue">?</td>
+            <td class="siv-r-table-indicator "><span>Data missing</span></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <img class="siv-r-contact-logo" src={{{local_asset "images/reports/phhiv/unhcr-logo.png"}}}/>
+      <div class="clear"> </div>
+    </div>
+	<div class="siv-r-qrcode">
+    <img src="{{{qr_code}}}"/>
+	</div>
+    <div class="clear"> </div>
+  </div>
+</div>
+<!--end of page-->
+</div>
