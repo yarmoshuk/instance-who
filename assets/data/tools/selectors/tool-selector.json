@@ -3,6 +3,11 @@
     "success":true,
     "displayName":"Selector",
     "name":"selector",
+	"buttonColor":	
+	    {
+			"up":"#7F7F7F",
+			"over":"#ffcc66"
+		},
     "toolsets":[
 		{
             "displayName":"Settings",

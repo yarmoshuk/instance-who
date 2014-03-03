@@ -3,6 +3,11 @@
     "success":true,
     "displayName":"Sector",
     "name":"sector",
+	"buttonColor":	
+	    {
+			"up":"#7F7F7F",
+			"over":"#ffcc66"
+		},
     "toolsets":[
 		{
             "displayName":"Tools that collect public heath data",

@@ -3,6 +3,11 @@
     "success":true,
     "displayName":"Method",
     "name":"method",
+	"buttonColor":	
+	    {
+			"up":"#7F7F7F",
+			"over":"#ffcc66"
+		},
     "toolsets":[
 		{
             "displayName":"Assessment/Survey tools",

@@ -3,6 +3,11 @@
     "success":true,
     "displayName":"Measurement",
     "name":"measurement",
+	"buttonColor":	
+	    {
+			"up":"#7F7F7F",
+			"over":"#ffcc66"
+		},
     "toolsets":[
 		{
             "displayName":"Tools for measuring individuals",
