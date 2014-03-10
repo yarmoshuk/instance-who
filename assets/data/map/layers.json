@@ -64,7 +64,7 @@
         "geolevels": {
             "active": true,
             "name": "Geolevels",
-            "type": "TwineJSON",
+            "type": "TwineGeolevels",
             "url": "geolevels.json",
             "icon": "",
             "class": "",
@@ -72,6 +72,42 @@
             "baseMap": false,          
             "mapControl": false,
             "vendor": "Twine"
-        }        
+        },
+        "locations": {
+            "active": true,
+            "name": "Locations",
+            "type": "TwineLocation",
+            "url": "",
+            "icon": "",
+            "class": "",
+            "visible": true,
+            "baseMap": false,          
+            "mapControl": true,
+            "vendor": "Twine"
+        },
+        "health_facilities": {
+            "active": true,
+            "name": "Health Facilities",
+            "type": "TwineLocation",
+            "url": "",
+            "icon": "",
+            "class": "",
+            "visible": true,
+            "baseMap": false,          
+            "mapControl": true,
+            "vendor": "Twine"
+        },
+        "location_clusters": {
+            "active": true,
+            "name": "Location Clusters",
+            "type": "TwineLocation",
+            "url": "",
+            "icon": "",
+            "class": "",
+            "visible": false,
+            "baseMap": false,          
+            "mapControl": true,
+            "vendor": "Twine"
+        }
     }
 }
