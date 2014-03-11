@@ -1,5 +1,5 @@
 @import "../../css/less/variables.less";
-@import "../../css/less/mixins.less";
+@import "../../css/less/bootstrap/mixins.less";
 
 @charset "utf-8";
 /* CSS Document */
@@ -29,34 +29,32 @@ html, body {
 	padding: 0px 0px 0px;
 }
 
-.toolset .span3 {
+.toolset .col-sm-3 {
 	background-color:#f2fdff;
-}
-.span3 {
 	color:#767676;
 	border-radius: 4px;
-	width: 236px;
 	height: 149px;
 	position:relative;
 	padding:7px 7px 7px 15px;
+	margin-right:15px;
 }
-.toolset .span3 offset1 {
+.toolset .col-sm-3 offset1 {
 	margin-left:75px;
 }
-.toolset.span3 h2 {
+.toolset.col-sm-3 h2 {
 	font-size:20px;
 	margin:0 0 10px 0;
 	line-height: 36px;
 }
-.toolset .span3 img {
+.toolset .col-sm-3 img {
 	margin-right:16px;
 }
-.toolset .span3 p {
+.toolset .col-sm-3 p {
 	font-size:11px;
 	margin-left:65px;
 	height:54px;
 }
-.toolset .span2 img { 
+.toolset .col-sm-2 img { 
 	max-height:50px;
 }
 .siv-background-circle {
@@ -87,7 +85,7 @@ p small {
 }
 /* Buttons */
 .btn {
-   .buttonBackground(#767676, #fff, #f1f1f1);
+   .button-variant(#767676, #fff, #f1f1f1);
 }
 
 .public-hero {
@@ -114,13 +112,13 @@ p small {
 	padding: 5px 10px 15px 10px;
 }
 
-.public-container .span4 {
+.public-container .col-sm-4 {
 	min-height: 150px;
 	height: 150px;
 	font-size: 11px;
 }
 
-.public-container .span4 .btn {
+.public-container .col-sm-4 .btn {
 	position:absolute;
 	bottom:7px;
 	right:7px;
@@ -167,9 +165,6 @@ a.explore-bg:hover .siv-background-blue {
 }
 
 /*--- Metrics ---*/
-.row-fluid .span3 {
-	height:115px;
-}
 h2.media-heading {
 	font-size:16px;
 }
