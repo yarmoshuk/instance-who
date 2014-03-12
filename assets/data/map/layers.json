@@ -1,5 +1,6 @@
 {
     "success": true,
+    "worldCopyJump": true,
     "layers": {
         "twine_map": {
             "active": true,
@@ -86,7 +87,7 @@
             "vendor": "Twine"
         },
         "health_facilities": {
-            "active": true,
+            "active": false,
             "name": "Health Facilities",
             "type": "TwineLocation",
             "url": "",
@@ -98,7 +99,7 @@
             "vendor": "Twine"
         },
         "location_clusters": {
-            "active": true,
+            "active": false,
             "name": "Location Clusters",
             "type": "TwineLocation",
             "url": "",
