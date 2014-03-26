@@ -74,6 +74,20 @@
             "mapControl": false,
             "vendor": "Twine"
         },
+        "geolevel4": {
+            "active": true,
+            "name": "Geolevel4",
+            "type": "TopoJson",
+            "url": "geolevel4.json",
+            "minZoom":30,
+            "maxZoom":8,
+            "icon": "",
+            "class": "",
+            "visible": true,
+            "baseMap": false,          
+            "mapControl": false,
+            "vendor": "Twine"
+        },        
         "locations": {
             "active": true,
             "name": "Locations",
