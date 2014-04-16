@@ -1,0 +1,17 @@
+{
+	"css":"formattedreports.css",
+	"defaulttimelevel":1,
+	"dataset":[
+		{
+			"options":5,
+		    "requestID":"main",
+			"setuuid":"b8c1e9a0-b15e-46ea-880a-df3c4a0686a7",
+			"trendCharts":false
+		},{
+			"options":1,
+			"requestID":"locationdetails",
+			"setuuid":"453f2845-61f4-4d26-8202-1dd95773400d",
+			"trendCharts":false
+		}
+	]
+}

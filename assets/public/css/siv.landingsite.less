@@ -1,0 +1,196 @@
+@import "../../css/less/variables.less";
+@import "../../css/less/bootstrap/mixins.less";
+
+@charset "utf-8";
+/* CSS Document */
+* {
+	font-family:Arial, Helvetica, sans-serif !important;
+}
+html, body {
+	height:100%;
+}
+.public-container {
+	background-color:inherit;
+	padding: 20px 0 0 0;
+}
+.siv-hero-unit {
+	background:url(../img/launch-bg.png) no-repeat center;
+	background-color:#e5ffff;
+}
+.hero-unit {
+	background-color:transparent;
+	padding:29px 0px 0px;
+	margin:0px auto;
+	z-index: 999;
+	width:886px;
+	margin-bottom:-15px;
+}
+.siv-container {
+	padding: 0px 0px 0px;
+}
+
+.toolset .col-sm-3 {
+	background-color:#f2fdff;
+	color:#767676;
+	border-radius: 4px;
+	height: 149px;
+	position:relative;
+	padding:7px 7px 7px 15px;
+	margin-right:15px;
+}
+.toolset .col-sm-3 offset1 {
+	margin-left:75px;
+}
+.toolset.col-sm-3 h2 {
+	font-size:20px;
+	margin:0 0 10px 0;
+	line-height: 36px;
+}
+.toolset .col-sm-3 img {
+	margin-right:16px;
+}
+.toolset .col-sm-3 p {
+	font-size:11px;
+	margin-left:65px;
+	height:54px;
+}
+.toolset .col-sm-2 img { 
+	max-height:50px;
+}
+.siv-background-circle {
+	height: 22px;
+	width:23px;
+	border-radius: 11px;
+	display: inline-block;
+	margin-left: -5px;
+	*margin-right:5px;
+}
+.siv-background-salmon {
+	background-color:#f29e85;
+}
+.siv-background-blue {
+	background-color: #00BCC7;
+}
+.siv-background-orange {
+	background-color:#ffc86b;
+}
+
+footer {
+	position:absolute;
+	bottom:5px;
+}
+p small {
+	font-size: 11px;
+	color: #999999;
+}
+/* Buttons */
+.btn {
+   .button-variant(#767676, #fff, #f1f1f1);
+}
+
+.public-hero {
+	background-color: transparent;
+	padding: 50px 0px 0px;
+	margin: 0px auto;
+	width: 886px;
+	margin-bottom: -15px;
+	position:relative;
+}
+
+.row h2 {
+	font-size:20px;
+	margin-bottom:10px;
+}
+
+.row h3 {
+	color:#767676;
+	margin-bottom:10px;
+	font-size: 18px;
+}
+
+.public-container .padding {
+	padding: 5px 10px 15px 10px;
+}
+
+.public-container .col-sm-4 {
+	min-height: 150px;
+	height: 150px;
+	font-size: 11px;
+}
+
+.public-container .col-sm-4 .btn {
+	position:absolute;
+	bottom:7px;
+	right:7px;
+}
+
+.public-container img {
+	padding: 0 2px 0 0;
+}
+
+a {
+	color:#767676;
+}
+a:hover {
+	text-decoration:none;
+	color:#767676;
+}
+a.tools-bg:hover{
+	background-color:#FFC86B;
+}
+a.work-bg:hover{
+	background-color:#F29E85;
+	color:#FFF;
+}
+a.explore-bg:hover{
+	background-color:#00BCC7;
+	color:#FFF;
+}
+a.tools-bg:hover .siv-background-orange {
+	background-color:#FFDF9F;
+}
+a.work-bg:hover  .siv-background-salmon{
+	background-color:#E76F6F;
+}
+a.explore-bg:hover .siv-background-blue {
+	background-color:@primary;
+}
+
+#partners-carousel a img {
+	opacity: 0.8;
+}
+
+#partners-carousel a:hover img {
+	opacity: 1;
+}
+
+/*--- Metrics ---*/
+h2.media-heading {
+	font-size:16px;
+}
+.metric-value {
+	font-size: 50px;
+	line-height: 1em;
+	margin: 10px 0px 15px 0px;
+	font-weight: bold;
+	text-align: center;
+	color: #FFF;
+	height:50px;
+}
+
+.metric-name {
+	font-size: 14px;
+	color: #FFF;
+	text-align: center;
+	height:20px;
+}
+
+.metric-container{
+	background: #9DCC94;
+	-webkit-border-top-left-radius: 35px;
+	-webkit-border-top-right-radius: 35px;
+	-moz-border-radius-topleft: 35px;
+	-moz-border-radius-topright: 35px;
+	border-top-left-radius: 35px;
+	border-top-right-radius: 35px;
+}

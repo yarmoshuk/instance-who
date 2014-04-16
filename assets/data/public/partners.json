@@ -1,0 +1,37 @@
+[
+	{
+		"image": "MDM.jpg",
+		"url": "http://www.medecinsdumonde.ca/",
+		"alt": "Medecines du Monde"
+	},
+	{
+		"image": "UNAIDS.jpg",
+		"url": "http://www.unaids.org",
+		"alt": "UNAIDS"
+	},
+	{
+		"image": "IntermonOxfam.jpg",
+		"url": "http://www.intermonoxfam.org/",
+		"alt": "Intermon Oxfam"
+	},
+	{
+		"image": "UNICEF.jpg",
+		"url": "http://www.unicef.org",
+		"alt": "UNICEF"
+	},
+	{
+		"image": "MSF.jpg",
+		"url": "http://www.msf.org",
+		"alt": "Medecines Sans Frontieres"
+	},
+	{
+		"image": "IMC.jpg",
+		"url": "http://internationalmedicalcorps.org/",
+		"alt": "International Medical Corps"
+	},
+	{
+		"image": "AAHI.jpg",
+		"url": "http://google.com",
+		"alt": "TBS"
+	}
+]

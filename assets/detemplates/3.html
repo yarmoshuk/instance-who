@@ -1,0 +1,1058 @@
+<div class="siv-r-camp-prf">
+<div class="siv-r-page-break">
+     <div class="siv-r-page-header">
+      <div class="siv-r-title-ctn"> <img class="siv-r-report-type" src={{{local_asset "icons/de_templates/round/3.svg"}}} />
+        <p class="siv-r-title-txt">Comprehensive Indicator Report</p>
+        <p class="siv-r-year-txt">{{{dateinfo "week"}}} {{{dateinfo "month"}}} {{{dateinfo "year"}}} {{{dateinfo "divider"}}} {{{dateinfo "datespan"}}}</p>
+      </div>
+      <div class="siv-r-loc-can"></div>
+      <div class="siv-r-loc-ctn">
+        <div class="siv-r-flag-ctn">{{{helperFlagSVG "iso" "locationdetails" "icons/flags/round/flags-svg/" "siv-r-flag-img"}}}</div>
+        <p class="siv-r-loc-txt" data-fieldname="name">{{{embedded_value "locationdetails" "name"}}}</p>
+        <p class="siv-r-loc-cty" data-fieldname="countryname">{{{embedded_value "locationdetails" "countryname"}}}</p>
+      </div>
+      <div class="clear"></div>
+    </div>
+  <div class="siv-r-container siv-r-gen clear">
+    <div class="siv-r-gen-head-ctn">
+      <h2 class="siv-r-gen-head-txt">Refugee Population<!--<sup>a</sup>--></h2>
+    </div>
+    <div class="siv-r-gen-graph-ctn">
+      <div class="siv-r-gen-graph-img">{{{helperDrawChart "pie" "popdata" "siv-r-gen-graph-img"}}}</div>
+    </div>
+    <div class="siv-r-gen-pop-ctn">
+      <p class="siv-r-gen-txt siv-r-gen-pop" data-fieldname="gen_pop_total">{{{helperDisplayIndicator "gen_pop_total" "val" 0.gen_pop_total}}}</p>
+      <p class="siv-r-gen-txt">at end of period</p>
+    </div>
+  </div>
+  <div class="siv-r-gen-head-can"></div>
+  <div class="siv-r-country-map-ctn ">{{{helperDrawMap "svg" "iso" "locationdetails" "siv-r-country-map-img"}}}</div>
+  <div class="siv-r-container siv-r-key-ctn">
+    <h2 class="siv-r-key-title">Key Dates</h2>
+    <table class="siv-r-key-list-ctn">
+      <tbody>
+        <tr>
+          <td class="siv-r-key-list-item">Camp opened</td>
+          <td class="siv-r-key-list-item">Camp closed</td>
+        </tr>
+        <tr>
+          <td class="siv-r-key-list-value" data-fieldname="gen_date_camp_open">{{{helperDisplayIndicator "gen_date_camp_open" "val" 0.gen_date_camp_open "yyyy"}}}</td>
+          <td class="siv-r-key-list-value" data-fieldname="gen_date_camp_close">{{{helperDisplayIndicator "gen_date_camp_close" "val" 0.gen_date_camp_close "yyyy"}}}</td>
+        </tr>
+      </tbody>
+    </table>
+    <!--    
+    <div class="siv-r-key-list-ctn">
+      <p class="siv-r-key-list-item">Date of last KAPB/BSS</p>
+      <p id="siv-r-NUT_SURV_DATE_KAPBBSS-v" class="siv-r-key-list-value">-</p>
+      <p class="siv-r-key-list-item">Date of last nutrition survey</p>
+      <p id="siv-r-NUT_SURV_DATE_SURV-v" class="siv-r-key-list-value">-</p>
+      <p class="siv-r-key-list-item">Date of last JAM</p>
+      <p id="siv-r-NUT_SURV_DATE_JAM-v" class="siv-r-key-list-value">-</p>
+    </div>
+ --> 
+  </div><div class="siv-r-disclaimer siv-r-source"><div class="siv-r-disclaimer-content">The boundaries and names shown and the designations used on this map do not imply official endorsement or acceptance by the United Nations.</div></div>
+    
+  <div class="clear"></div>
+  <div class="siv-r-container siv-r-org">
+    <div class="siv-r-ctn-head">
+      <h2 class="siv-r-ctn-head-txt">Indicators at a Glance:</h2>
+    </div>
+    <table class="siv-r-table">
+      <tbody>
+        <tr>
+          <td class="siv-r-table-list-num">1</td>
+          <td class="siv-r-ind-table-txt">Crude Mortality Rate <small>(/1,000/month)</small></td>
+          <td class="siv-r-ind-table-value" data-fieldname="ph_mort_cmr">{{{helperDisplayIndicator "ph_mort_cmr" "val"  0.ph_mort_cmr}}}</td>
+          <td class="siv-r-table-score" data-fieldname="ph_mort_cmr">{{{helperDisplayIndicator "ph_mort_cmr" "res" 0.ph_mort_cmr}}}</td>
+        </tr>
+        <tr class="siv-r-table-hl">
+          <td class="siv-r-table-list-num">2</td>
+          <td class="siv-r-ind-table-txt">Under 5 Mortality Rate <small>(/1,000/month)</small></td>
+          <td class="siv-r-ind-table-value" data-fieldname="ph_mort_u5mr">{{{helperDisplayIndicator "ph_mort_u5mr" "val"  0.ph_mort_u5mr}}}</td>
+          <td class="siv-r-table-score" data-fieldname="ph_mort_u5mr">{{{helperDisplayIndicator "ph_mort_u5mr" "res" 0.ph_mort_u5mr}}}</td>
+        </tr>
+        <tr>
+          <td class="siv-r-table-list-num">3</td>
+          <td class="siv-r-ind-table-txt">Infant Mortality Rate <small>(/1,000 livebirths)</small></td>
+          <td class="siv-r-ind-table-value" data-fieldname="ph_mort_imr">{{{helperDisplayIndicator "ph_mort_imr" "val"  0.ph_mort_imr}}}</td>
+          <td class="siv-r-table-score" data-fieldname="ph_mort_imr">{{{helperDisplayIndicator "ph_mort_imr" "res" 0.ph_mort_imr}}}</td>
+        </tr>
+        <tr class="siv-r-table-hl">
+          <td class="siv-r-table-list-num">4</td>
+          <td class="siv-r-ind-table-txt">Severe Acute Malnutrition (SAM) rate </td>
+          <td class="siv-r-ind-table-value" data-fieldname="nut_surv_sam">{{{helperDisplayIndicator "nut_surv_sam" "val"  0.nut_surv_sam}}}</td>
+          <td class="siv-r-table-score" data-fieldname="nut_surv_sam">{{{helperDisplayIndicator "nut_surv_sam" "res" 0.nut_surv_sam}}}</td>
+        </tr>
+        <tr>
+          <td class="siv-r-table-list-num">5</td>
+          <td class="siv-r-ind-table-txt">Global Acute Malnutrition (GAM) rate </td>
+          <td class="siv-r-ind-table-value" data-fieldname="nut_surv_gam">{{{helperDisplayIndicator "nut_surv_gam" "val"  0.nut_surv_gam}}}</td>
+          <td class="siv-r-table-score" data-fieldname="nut_surv_gam">{{{helperDisplayIndicator "nut_surv_gam" "res" 0.nut_surv_gam}}}</td>
+        </tr>
+        <tr class="siv-r-table-hl">
+          <td class="siv-r-table-list-num">6</td>
+          <td class="siv-r-ind-table-txt">Measles coverage </td>
+          <td class="siv-r-ind-table-value" data-fieldname="ph_vacc_meascov">{{{helperDisplayIndicator "ph_vacc_meascov" "val"  0.ph_vacc_meascov}}}</td>
+          <td class="siv-r-table-score" data-fieldname="ph_vacc_meascov">{{{helperDisplayIndicator "ph_vacc_meascov" "res" 0.ph_vacc_meascov}}}</td>
+        </tr>
+        <tr>
+          <td class="siv-r-table-list-num">7</td>
+          <td class="siv-r-ind-table-txt">Skilled attendance at delivery </td>
+          <td class="siv-r-ind-table-value" data-fieldname="Rh_anc_skillatt">{{{helperDisplayIndicator "rh_anc_skillatt" "val"  0.rh_anc_skillatt}}}</td>
+          <td class="siv-r-table-score" data-fieldname="rh_anc_skillatt">{{{helperDisplayIndicator "rh_anc_skillatt" "res" 0.rh_anc_skillatt}}}</td>
+        </tr>
+        <tr class="siv-r-table-hl">
+          <td class="siv-r-table-list-num">8</td>
+          <td class="siv-r-ind-table-txt">Water  <small>(litres / refugee / day)</small></td>
+          <td class="siv-r-ind-table-value" data-fieldname="wash_waterpppd">{{{helperDisplayIndicator "wash_waterpppd" "val"  0.wash_waterpppd}}}</td>
+          <td class="siv-r-table-score" data-fieldname="wash_waterpppd">{{{helperDisplayIndicator "wash_waterpppd" "res" 0.wash_waterpppd}}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="siv-r-glc-wrap">
+    <div class="siv-r-glc-head-can"></div>
+    <div class="siv-r-glc">
+      <div class="siv-r-glc-head-ctn">
+        <h2 class="siv-r-glc-head-txt">Action Points</h2>
+      </div>
+      <div class="siv-r-glc-ctn siv-r-container">
+        <div>
+          <div class="siv-r-list-num">1</div>
+          <p class="siv-r-glc-txt" data-fieldname="text_sum_1">{{{helperDisplayIndicator "text_sum_1" "val"  0.text_sum_1}}}</p>
+        </div>
+      </div>
+      <div class="siv-r-glc-ctn siv-r-glc-margin siv-r-container">
+        <div>
+          <div class="siv-r-list-num">3</div>
+          <p class="siv-r-glc-txt" data-fieldname="text_sum_3">{{{helperDisplayIndicator "text_sum_3" "val"  0.text_sum_3}}}</p>
+        </div>
+      </div>
+      <div class="clear"></div>
+      <div class="siv-r-glc-bctn siv-r-container">
+        <div>
+          <div class="siv-r-list-num">2</div>
+          <p class="siv-r-glc-txt" data-fieldname="text_sum_2">{{{helperDisplayIndicator "text_sum_2" "val"  0.text_sum_2}}}</p>
+        </div>
+      </div>
+      <div class="siv-r-glc-bctn siv-r-glc-margin siv-r-container">
+        <div>
+          <div class="siv-r-list-num">4</div>
+          <p class="siv-r-glc-txt" data-fieldname="text_sum_4">{{{helperDisplayIndicator "text_sum_4" "val"  0.text_sum_4}}}</p>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+    <div class="siv-r-sect-head-ctn">
+      <h2 class="siv-r-table-txt">Mortality and Morbidity</h2>
+    </div>
+    <div class="siv-r-table-can"></div>
+    <div class="clear"></div>
+    <div class="siv-r-container siv-r-chart-ctn">
+      <div class="siv-r-ctn-head">
+        <h3 class="siv-r-chart-title">Crude Mortality (%)</h3>
+      </div>
+      <div class="siv-r-chart-img">{{{morbpie "mortdata" "siv-r-chart-img"}}}</div>
+    </div>
+    <div class="siv-r-table-head-space">&nbsp;</div>
+    <div class="siv-r-container siv-r-chart-ctn">
+      <div class="siv-r-ctn-head">
+        <h3 class="siv-r-chart-title">Crude Morbidity (%)</h3>
+      </div>
+      <div class="siv-r-chart-img">{{{morbpie "morbdata" "siv-r-chart-img"}}}</div>
+    </div>
+    <!--end of chart ctn --> 
+  <div class="clear">
+    <div class="siv-r-container siv-r-chart-ctn">
+      <h2 class="siv-r-chart-title">Top causes of crude mortality</h2>
+      <div class="siv-r-causes-col-name">&nbsp; </div>
+      <div class="siv-r-causes-ind">
+        <h4 class="siv-r-std-txt">% mortality</h4>
+        <div class="siv-r-std-can"></div>
+      </div>
+      <div class="siv-r-causes-ind">
+        <h4 class="siv-r-no-txt">No. of deaths</h4>
+        <div class="siv-r-no-can"></div>
+      </div>
+      <div class="siv-r-mor-table">
+        <table class="siv-r-table">
+          <tbody>
+            <tr class="siv-r-table-hl">
+              <td class="siv-r-table-list-num">1</td>
+              <td class="siv-r-mor-table-txt" data-fieldname="mortdata">{{{orderedList "mortdata" "topn2" "lab" 1}}}</td>
+              <td class="siv-r-ind-table-value" data-fieldname="mortdata">{{{orderedList "mortdata" "topn2" "frm" 1}}}</td>
+              <td class="siv-r-ind" data-fieldname="mortdata">{{{orderedList "mortdata" "topn2" "val" 1}}}</td>
+            </tr>
+            <tr>
+              <td class="siv-r-table-list-num">2</td>
+ 			  <td class="siv-r-mor-table-txt" data-fieldname="mortdata">{{{orderedList "mortdata" "topn2" "lab" 2}}}</td>
+              <td class="siv-r-ind-table-value" data-fieldname="mortdata">{{{orderedList "mortdata" "topn2" "frm" 2}}}</td>
+              <td class="siv-r-ind" data-fieldname="mortdata">{{{orderedList "mortdata" "topn2" "val" 2}}}</td>
+            </tr>
+            <tr class="siv-r-table-hl">
+              <td class="siv-r-table-list-num">3</td>
+			  <td class="siv-r-mor-table-txt" data-fieldname="mortdata">{{{orderedList "mortdata" "topn2" "lab" 3}}}</td>
+              <td class="siv-r-ind-table-value" data-fieldname="mortdata">{{{orderedList "mortdata" "topn2" "frm" 3}}}</td>
+              <td class="siv-r-ind" data-fieldname="morbdata">{{{orderedList "mortdata" "topn2" "val" 3}}}</td>
+            </tr>
+            <tr>
+              <td class="siv-r-table-list-num">4</td>
+              <td class="siv-r-mor-table-txt" data-fieldname="mortdata">{{{orderedList "mortdata" "topn2" "lab" 4}}}</td>
+              <td class="siv-r-ind-table-value" data-fieldname="mortdata">{{{orderedList "mortdata" "topn2" "frm" 4}}}</td>
+              <td class="siv-r-ind" data-fieldname="mortdata">{{{orderedList "mortdata" "topn2" "val" 4}}}</td>
+            </tr>
+            <tr class="siv-r-table-hl">
+              <td class="siv-r-table-list-num">5</td>
+              <td class="siv-r-mor-table-txt" data-fieldname="mortdata">{{{orderedList "mortdata" "topn2" "lab" 5}}}</td>
+              <td class="siv-r-ind-table-value" data-fieldname="mortdata">{{{orderedList "mortdata" "topn2" "frm" 5}}}</td>
+              <td class="siv-r-ind" data-fieldname="mortdata">{{{orderedList "mortdata" "topn2" "val" 5}}}</td>
+            </tr>
+            <tr>
+              <td class="siv-r-table-list-num">6</td>
+              <td class="siv-r-mor-table-txt" data-fieldname="mortdata">{{{orderedList "mortdata" "topn2" "lab" 6}}}</td>
+              <td class="siv-r-ind-table-value" data-fieldname="mortdata">{{{orderedList "mortdata" "topn2" "frm" 6}}}</td>
+              <td class="siv-r-ind" data-fieldname="mortdata">{{{orderedList "mortdata" "topn2" "val" 6}}}</td>
+          </tbody>
+        </table>
+      </div>
+      <!--p class=" siv-r-source-l">LRTI:  Lower respiratory tract infection</p--> 
+    </div>
+    <div class="siv-r-table-head-space">&nbsp;</div>
+    <div class="siv-r-container siv-r-chart-ctn">
+      <h2 class="siv-r-chart-title">Top causes of crude morbidity<!--<sup>b</sup>--></h2>
+      <div class="siv-r-causes-col-name">&nbsp; </div>
+      <div class="siv-r-causes-ind">
+        <h4 class="siv-r-std-txt">% morbidity</h4>
+        <div class="siv-r-std-can"></div>
+      </div>
+      <div class="siv-r-causes-ind">
+        <h4 class="siv-r-no-txt">No. of cases</h4>
+        <div class="siv-r-no-can"></div>
+      </div>
+      <div class="siv-r-mor-table">
+        <table class="siv-r-table">
+          <tbody>
+            <tr class="siv-r-table-hl">
+              <td class="siv-r-table-list-num">1</td>
+			  <td class="siv-r-mor-table-txt" data-fieldname="morbdata">{{{orderedList "morbdata" "topn2" "lab" 1}}}</td>
+              <td class="siv-r-ind-table-value" data-fieldname="morbdata">{{{orderedList "morbdata" "topn2" "frm" 1}}}</td>
+              <td class="siv-r-ind" data-fieldname="morbdata">{{{orderedList "morbdata" "topn2" "val" 1}}}</td>
+            </tr>
+            <tr>
+              <td class="siv-r-table-list-num">2</td>
+              <td class="siv-r-mor-table-txt" data-fieldname="morbdata">{{{orderedList "morbdata" "topn2" "lab" 2}}}</td>
+              <td class="siv-r-ind-table-value" data-fieldname="morbdata">{{{orderedList "morbdata" "topn2" "frm" 2}}}</td>
+              <td class="siv-r-ind" data-fieldname="morbdata">{{{orderedList "morbdata" "topn2" "val" 2}}}</td>
+            </tr>
+            <tr class="siv-r-table-hl">
+              <td class="siv-r-table-list-num">3</td>
+			  <td class="siv-r-mor-table-txt" data-fieldname="morbdata">{{{orderedList "morbdata" "topn2" "lab" 3}}}</td>
+              <td class="siv-r-ind-table-value" data-fieldname="morbdata">{{{orderedList "morbdata" "topn2" "frm" 3}}}</td>
+              <td class="siv-r-ind" data-fieldname="morbdata">{{{orderedList "morbdata" "topn2" "val" 3}}}</td>
+            <tr>
+              <td class="siv-r-table-list-num">4</td>
+			  <td class="siv-r-mor-table-txt" data-fieldname="morbdata">{{{orderedList "morbdata" "topn2" "lab" 4}}}</td>
+              <td class="siv-r-ind-table-value" data-fieldname="morbdata">{{{orderedList "morbdata" "topn2" "frm" 4}}}</td>
+              <td class="siv-r-ind" data-fieldname="morbdata">{{{orderedList "morbdata" "topn2" "val" 4}}}</td>
+            </tr>
+            <tr class="siv-r-table-hl">
+              <td class="siv-r-table-list-num">5</td>
+			  <td class="siv-r-mor-table-txt" data-fieldname="morbdata">{{{orderedList "morbdata" "topn2" "lab" 5}}}</td>
+              <td class="siv-r-ind-table-value" data-fieldname="morbdata">{{{orderedList "morbdata" "topn2" "frm" 5}}}</td>
+              <td class="siv-r-ind" data-fieldname="morbdata">{{{orderedList "morbdata" "topn2" "val" 5}}}</td>
+            </tr>
+            <tr>
+              <td class="siv-r-table-list-num">6</td>
+              <td class="siv-r-mor-table-txt" data-fieldname="morbdata">{{{orderedList "morbdata" "topn2" "lab" 6}}}</td>
+              <td class="siv-r-ind-table-value" data-fieldname="morbdata">{{{orderedList "morbdata" "topn2" "frm" 6}}}</td>
+              <td class="siv-r-ind" data-fieldname="morbdata">{{{orderedList "morbdata" "topn2" "val" 6}}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!--p class=" siv-r-source-l">URTI:Upper respiratory tract infection</p-->
+      <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <div class="siv-r-legend-wrap">
+    <div class=" siv-r-container siv-r-contact-ctn clear">
+      <div class="clear"></div>
+      <div class="siv-r-contact-header-ctn">
+        <h3 class="siv-r-contact-header"> Data Sources</h3>
+      </div>
+      <div class="siv-r-contact-table-ctn">
+        <table class="siv-r-table">
+          <tr>
+            <td class="siv-r-causes-li"><span>1.</span> <span data-fieldname="datasource1">{{{helperDisplayIndicator "datasource1" "val"  0.datasource1}}}</span></td>
+            <td class="siv-r-causes-li"><span>3.</span> <span data-fieldname="datasource3">{{{helperDisplayIndicator "datasource3" "val"  0.datasource3}}}</span></td>
+          </tr>
+          <tr>
+            <td class="siv-r-causes-li"><span>2.</span> <span data-fieldname="datasource2">{{{helperDisplayIndicator "datasource2" "val"  0.datasource2}}}</span></td>
+            <td class="siv-r-causes-li"><span>4.</span> <span data-fieldname="datasource4">{{{helperDisplayIndicator "datasource4" "val"  0.datasource4}}}</span></td>
+          </tr>
+        </table>
+        <div class="clear"></div>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div class="siv-r-pdf-space"></div>
+    <div class=" siv-r-container siv-r-contact-ctn clear">
+      <div class="clear"></div>
+      <div class="siv-r-contact-header-ctn">
+        <h3 class="siv-r-contact-header">Contact Information</h3>
+      </div>
+      <div class="siv-r-contact-table-ctn">
+        <div class="siv-r-contact-table">
+          <table class="siv-r-table">
+            <tbody>
+              <tr>
+                <td class="siv-r-contact-camp" data-fieldname="contact1_locname">{{{helperDisplayIndicator "contact1_locname" "val"  0.contact1_locname}}}</td>
+                <td class="siv-r-contact-n">email: <span class="siv-r-contact-v" data-fieldname="contact1_email">{{{helperDisplayIndicator "contact1_email" "val"  0.contact1_email}}}</span></td>
+              </tr>
+              <tr>
+                <td rowspan="2" class="siv-r-contact-name" data-fieldname="contact1_name">{{{helperDisplayIndicator "contact1_name" "val"  0.contact1_name}}}</td>
+                <td class="siv-r-contact-n">telephone: <span class="siv-r-contact-v" data-fieldname="contact1_phone">{{{helperDisplayIndicator "contact1_phone" "val"  0.contact1_phone}}}</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="siv-r-contact-table" style="border:none;">
+          <table class="siv-r-table">
+            <tbody>
+              <tr>
+                <td class="siv-r-contact-camp" data-fieldname="contact2_locname">{{{helperDisplayIndicator "contact2_locname" "val"  0.contact2_locname}}}</td>
+                <td class="siv-r-contact-n">email: <span class="siv-r-contact-v" data-fieldname="contact2_email">{{{helperDisplayIndicator "contact2_email" "val"  0.contact2_email}}}</span></td>
+              </tr>
+              <tr>
+                <td rowspan="2"  class="siv-r-contact-name" data-fieldname="contact2_name">{{{helperDisplayIndicator "contact2_name" "val"  0.contact2_name}}}</td>
+                <td class="siv-r-contact-n">telephone: <span class="siv-r-contact-v" data-fieldname="contact2_phone">{{{helperDisplayIndicator "contact2_phone" "val"  0.contact2_phone}}}</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div class="siv-r-container siv-r-ptn-wrap clear">
+      <p class="siv-r-ptn-txt"> UNHCR gratefully acknowledges the support of the following partners:</p>
+      <div class="siv-r-ptn-ctn"> <img id="siv-r-partner_1" class="siv-r-ptn-logo" src="about:blank" /> <img id="siv-r-partner_2" class="siv-r-ptn-logo" src="about:blank" /> <img id="siv-r-partner_3" class="siv-r-ptn-logo" src="about:blank" /> <img id="siv-r-partner_4" class="siv-r-ptn-logo" src="about:blank" /> <img id="siv-r-partner_5" class="siv-r-ptn-logo" src="about:blank" /> <img id="siv-r-partner_6" class="siv-r-ptn-logo" src="about:blank" /> <img id="siv-r-partner_7" class="siv-r-ptn-logo" src="about:blank" /> <img id="siv-r-partner_8" class="siv-r-ptn-logo" src="about:blank" /> <img id="siv-r-partner_9" class="siv-r-ptn-logo" src="about:blank" /></div>
+    </div>
+    <div class="clear"></div>
+  </div>
+
+<!--end of page-->
+  <!-- <div class="siv-r-chart-wrap">
+    <div class="siv-r-container siv-r-chart-ctn">
+      <ul class="siv-r-source-list">
+        <li class="siv-r-causes-li siv-r-source-title">Reporting Period</li>
+        <li class="siv-r-causes-li"></li>
+        <li class="siv-r-causes-li"></li>
+        <li class="siv-r-causes-li"></li>
+      </ul>
+    </div>
+  </div>-->
+  <div class="clear">
+    <div class="siv-r-sect-head-ctn">
+      <h2 class="siv-r-table-txt">Public Health</h2>
+    </div>
+    <div class="siv-r-table-can"></div>
+    <div class="clear"></div>
+    <div class="siv-r-table-head">
+      <div class="siv-r-table-col-name-no">
+        <h3 class="siv-r-table-name-txt">Health Impact</h3>
+      </div>
+      <div class="siv-r-table-col-no">
+        <h4 class="siv-r-no-txt">No.</h4>
+        <div class="siv-r-no-can"></div>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-ind-txt">Indicator</h4>
+        <div class="siv-r-ind-can"></div>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-std-txt">Standard</h4>
+        <div class="siv-r-std-can"></div>
+      </div>
+    </div>
+    <div class="siv-r-table-head-space">&nbsp;</div>
+    <div class="siv-r-table-head">
+      <div class="siv-r-table-col-name">
+        <h3 class="siv-r-table-name-txt">Outbreak Alert and Response</h3>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-ind-txt">Indicator</h4>
+        <div class="siv-r-ind-can"></div>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-std-txt">Standard</h4>
+        <div class="siv-r-std-can"></div>
+      </div>
+    </div>
+    <table class="siv-r-table clear">
+      <tbody>
+        <tr>
+          <td class="siv-r-table-item-no siv-r-table-hl">Crude Mortality Rate <br />
+            (/1000/month)</td>
+          <td class="siv-r-no-val siv-r-table-hl"></td>
+          <td class="siv-r-ind-val siv-r-table-hl" data-fieldname="ph_mort_cmr">{{{helperDisplayIndicator "ph_mort_cmr" "val"  0.ph_mort_cmr}}}</td>
+          <td class="siv-r-std-val siv-r-table-hl" data-fieldname="ph_mort_cmr">{{{helperDisplayIndicator "ph_mort_cmr" "txt"  0.ph_mort_cmr}}}</td>
+          <td class="siv-r-table-score siv-r-table-hl" data-fieldname="ph_mort_cmr">{{{helperDisplayIndicator "ph_mort_cmr" "res"  0.ph_mort_cmr}}}</td>
+          <td class="siv-r-table-space">&nbsp;</td>
+          <td class="siv-r-table-item siv-r-table-hl">Number of outbreaks reported</td>
+          <td class="siv-r-ind-val siv-r-table-hl" data-fieldname="ph_outbrk_outbrk_reported">{{{helperDisplayIndicator "ph_outbrk_outbrk_reported" "val"  0.ph_outbrk_outbrk_reported}}}</td>
+          <td class="siv-r-std-val siv-r-table-hl" data-fieldname="ph_outbrk_outbrk_reported">{{{helperDisplayIndicator "ph_outbrk_outbrk_reported" "txt"  0.ph_outbrk_outbrk_reported}}}</td>
+          <td class="siv-r-table-score siv-r-table-hl" data-fieldname="ph_outbrk_outbrk_reported">{{{helperDisplayIndicator "ph_outbrk_outbrk_reported" "res"  0.ph_outbrk_outbrk_reported}}}</td>
+        </tr>
+        <tr>
+          <td class="siv-r-table-item-no">Under-five Mortality Rate<br />
+            (/10,000/month)</td>
+          <td class="siv-r-no-val"></td>
+          <td class="siv-r-ind-val" data-fieldname="ph_mort_u5mr">{{{helperDisplayIndicator "ph_mort_u5mr" "val"  0.ph_mort_u5mr}}}</td>
+          <td class="siv-r-std-val" data-fieldname="ph_mort_u5mr">{{{helperDisplayIndicator "ph_mort_u5mr" "txt"  0.ph_mort_u5mr}}}</td>
+          <td class="siv-r-table-score" data-fieldname="ph_mort_u5mr">{{{helperDisplayIndicator "ph_mort_u5mr" "res"  0.ph_mort_u5mr}}}</td>
+          <td class="siv-r-table-space">&nbsp;</td>
+          <td class="siv-r-table-item">% of outbreaks investigated &lt; 48 hours</td>
+          <td class="siv-r-ind-val" data-fieldname="ph_outbrk_outbrk_pctinvest">{{{helperDisplayIndicator "ph_outbrk_outbrk_pctinvest" "val"  0.ph_outbrk_outbrk_pctinvest}}}</td>
+          <td class="siv-r-std-val" data-fieldname="ph_outbrk_outbrk_pctinvest">{{{helperDisplayIndicator "ph_outbrk_outbrk_pctinvest" "txt"  0.ph_outbrk_outbrk_pctinvest}}}</td>
+          <td class="siv-r-table-score" data-fieldname="ph_outbrk_outbrk_pctinvest">{{{helperDisplayIndicator "ph_outbrk_outbrk_pctinvest" "res"  0.ph_outbrk_outbrk_pctinvest}}}</td>
+        </tr>
+        <tr>
+          <td class="siv-r-table-item-no siv-r-table-hl">Infant Mortality Rate (IMR)<br />
+            (/1000 livebirths)</td>
+          <td class="siv-r-no-val siv-r-table-hl"></td>
+          <td class="siv-r-ind-val siv-r-table-hl" data-fieldname="ph_mort_imr">{{{helperDisplayIndicator "ph_mort_imr" "val"  0.ph_mort_imr}}}</td>
+          <td class="siv-r-std-val siv-r-table-hl" data-fieldname="ph_mort_imr">{{{helperDisplayIndicator "ph_mort_imr" "txt"  0.ph_mort_imr}}}</td>
+          <td class="siv-r-table-score siv-r-table-hl" data-fieldname="ph_mort_imr">{{{helperDisplayIndicator "ph_mort_imr" "res"  0.ph_mort_imr}}}</td>
+          <td class="siv-r-table-space">&nbsp;</td>
+          <td class="siv-r-table-hl"></td>
+          <td class="siv-r-table-hl"></td>
+          <td class="siv-r-table-hl"></td>
+          <td class="siv-r-table-hl"></td>
+        </tr>
+        <tr>
+          <td class="siv-r-table-item-no">Neonatal Mortality Rate (NNMR)<br />
+            (/1000 livebirths)</td>
+          <td class="siv-r-no-val"></td>
+          <td class="siv-r-ind-val" data-fieldname="ph_mort_nnmr">{{{helperDisplayIndicator "ph_mort_nnmr" "val"  0.ph_mort_nnmr}}}</td>
+          <td class="siv-r-std-val" data-fieldname="ph_mort_nnmr">{{{helperDisplayIndicator "ph_mort_nnmr" "txt"  0.ph_mort_nnmr}}}</td>
+          <td class="siv-r-table-score" data-fieldname="ph_mort_nnmr">{{{helperDisplayIndicator "ph_mort_nnmr" "res"  0.ph_mort_nnmr}}}</td>
+          <td class="siv-r-table-space">&nbsp;</td>
+          <td><h3 class="siv-r-table-name-txt">EPI and Vitamin A</h3></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="siv-r-table-item-no siv-r-table-hl">Global Acute Malnutrition Rate (%)</td>
+          <td class="siv-r-no-val siv-r-table-hl"></td>
+          <td class="siv-r-ind-val siv-r-table-hl" data-fieldname="nut_surv_gam">{{{helperDisplayIndicator "nUT_SURV_GAM" "val"  0.nut_surv_gam}}}</td>
+          <td class="siv-r-std-val siv-r-table-hl" data-fieldname="nut_surv_gam">{{{helperDisplayIndicator "nut_surv_gam" "txt"  0.nut_surv_gam}}}</td>
+          <td class="siv-r-table-score siv-r-table-hl" data-fieldname="nut_surv_gam">{{{helperDisplayIndicator "nut_surv_gam" "res"  0.nut_surv_gam}}}</td>
+          <td class="siv-r-table-space">&nbsp;</td>
+          <td class="siv-r-table-item siv-r-table-hl">Measles vaccination coverage</td>
+          <td class="siv-r-ind-val siv-r-table-hl" data-fieldname="ph_vacc_meascov">{{{helperDisplayIndicator "ph_vacc_meascov" "val"  0.ph_vacc_meascov}}}</td>
+          <td class="siv-r-std-val siv-r-table-hl" data-fieldname="ph_vacc_meascov">{{{helperDisplayIndicator "ph_vacc_meascov" "txt"  0.ph_vacc_meascov}}}</td>
+          <td class="siv-r-table-score siv-r-table-hl" data-fieldname="ph_vacc_meascov">{{{helperDisplayIndicator "ph_vacc_meascov" "res"  0.ph_vacc_meascov}}}</td>
+        </tr>
+        <tr>
+          <td class="siv-r-table-item-no">Severe Acute Malnutrition Rate (%)</td>
+          <td class="siv-r-no-val"></td>
+          <td class="siv-r-ind-val" data-fieldname="nut_surv_sam">{{{helperDisplayIndicator "nut_surv_sam" "val"  0.nut_surv_sam}}}</td>
+          <td class="siv-r-std-val" data-fieldname="nut_surv_sam">{{{helperDisplayIndicator "nut_surv_sam" "txt"  0.nut_surv_sam}}}</td>
+          <td class="siv-r-table-score" data-fieldname="nut_surv_sam">{{{helperDisplayIndicator "nut_surv_sam" "res"  0.nut_surv_sam}}}</td>
+          <td class="siv-r-table-space">&nbsp;</td>
+          <td><h3 class="siv-r-table-name-txt">Supervision</h3></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="siv-r-table-hl"></td>
+          <td class="siv-r-table-hl"></td>
+          <td class="siv-r-table-hl"></td>
+          <td class="siv-r-table-hl"></td>
+          <td class="siv-r-table-hl"></td>
+          <td class="siv-r-table-space">&nbsp;</td>
+          <td class="siv-r-table-item siv-r-table-hl">Do regular camp coordination meetings take place?</td>
+          <td class="siv-r-ind-val siv-r-table-hl" data-fieldname="ph_coord_mtg">{{{helperDisplayIndicator "ph_coord_mtg" "val"  0.ph_coord_mtg}}}</td>
+          <td class="siv-r-std-val siv-r-table-hl" data-fieldname="ph_coord_mtg">{{{helperDisplayIndicator "ph_coord_mtg" "txt"  0.ph_coord_mtg}}}</td>
+          <td class="siv-r-table-score siv-r-table-hl" data-fieldname="ph_coord_mtg">{{{helperDisplayIndicator "ph_coord_mtg" "res"  0.ph_coord_mtg}}}</td>
+        </tr>
+        <tr>
+          <td><h3 class="siv-r-table-name-txt">Acces and Utilisation</h3></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td class="siv-r-table-space">&nbsp;</td>
+          <td class="siv-r-table-item">Were any drug shortages reported during the period?</td>
+          <td class="siv-r-ind-val" data-fieldname="ph_drug_stockout">{{{helperDisplayIndicator "ph_drug_stockout" "val"  0.ph_drug_stockout}}}</td>
+          <td class="siv-r-std-val" data-fieldname="ph_drug_stockout">{{{helperDisplayIndicator "ph_drug_stockout" "txt"  0.ph_drug_stockout}}}</td>
+          <td class="siv-r-table-score" data-fieldname="ph_drug_stockout">{{{helperDisplayIndicator "ph_drug_stockout" "res"  0.ph_drug_stockout}}}</td>
+        </tr>
+        <tr>
+          <td class="siv-r-table-item-no siv-r-table-hl">No. of health facilities</td>
+          <td class="siv-r-no-val siv-r-table-hl"></td>
+          <td class="siv-r-ind-val siv-r-table-hl" data-fieldname="gen_infr_gen_numhf">{{{helperDisplayIndicator "gen_infr_gen_numhf" "val"  0.gen_infr_gen_numhf}}}</td>
+          <td class="siv-r-std-val siv-r-table-hl" data-fieldname="gen_infr_gen_numhf">{{{helperDisplayIndicator "gen_infr_gen_numhf" "txt"  0.gen_infr_gen_numhf}}}</td>
+          <td class="siv-r-table-score siv-r-table-hl" data-fieldname="gen_infr_gen_numhf">{{{helperDisplayIndicator "gen_infr_gen_numhf" "res"  0.gen_infr_gen_numhf}}}</td>
+          <td class="siv-r-table-space">&nbsp;</td>
+          <td class="siv-r-empty-cell"></td>
+          <td class="siv-r-empty-cell"></td>
+          <td class="siv-r-empty-cell"></td>
+          <td class="siv-r-empty-cell"></td>
+        </tr>
+        <tr>
+          <td class="siv-r-table-item-no">No. of consultations per trained clinician per day</td>
+          <td class="siv-r-no-val"></td>
+          <td class="siv-r-ind-val" data-fieldname="ph_util_consclinday">{{{helperDisplayIndicator "ph_util_consclinday" "val"  0.ph_util_consclinday}}}</td>
+          <td class="siv-r-std-val" data-fieldname="ph_util_consclinday">{{{helperDisplayIndicator "ph_util_consclinday" "txt"  0.ph_util_consclinday}}}</td>
+          <td class="siv-r-table-score" data-fieldname="ph_util_consclinday">{{{helperDisplayIndicator "ph_util_consclinday" "res"  0.ph_util_consclinday}}}</td>
+          <td class="siv-r-table-space">&nbsp;</td>
+          <td class="siv-r-empty-cell"></td>
+          <td class="siv-r-empty-cell"></td>
+          <td class="siv-r-empty-cell"></td>
+          <td class="siv-r-empty-cell"></td>
+        </tr>
+        <tr>
+          <td class="siv-r-table-item-no siv-r-table-hl">Health Utilization Rate (new visits/person/year)</td>
+          <td class="siv-r-no-val siv-r-table-hl"></td>
+          <td class="siv-r-ind-val siv-r-table-hl" data-fieldname="ph_util_healthutil">{{{helperDisplayIndicator "ph_util_healthutil" "val"  0.ph_util_healthutil}}}</td>
+          <td class="siv-r-std-val siv-r-table-hl" data-fieldname="ph_util_healthutil">{{{helperDisplayIndicator "ph_util_healthutil" "txt"  0.ph_util_healthutil}}}</td>
+          <td class="siv-r-table-score siv-r-table-hl" data-fieldname="ph_util_healthutil">{{{helperDisplayIndicator "ph_util_healthutil" "res"  0.ph_util_healthutil}}}</td>
+          <td class="siv-r-table-space">&nbsp;</td>
+          <td class="siv-r-empty-cell"></td>
+          <td class="siv-r-empty-cell"></td>
+          <td class="siv-r-empty-cell"></td>
+          <td class="siv-r-empty-cell"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <!-- End of Public Health -->
+  <div class="clear"> </div>
+  <div>
+    <div class="siv-r-sect-head-ctn">
+      <h2 class="siv-r-table-txt">Reproductive Health and HIV</h2>
+    </div>
+    <div class="siv-r-table-can"></div>
+    <div class="clear"></div>
+    <div class="siv-r-table-head">
+      <div class="siv-r-table-col-name-no">
+        <h3 class="siv-r-table-name-txt">Maternal and Newborn Health</h3>
+      </div>
+      <div class="siv-r-table-col-no">
+        <h4 class="siv-r-no-txt">No.</h4>
+        <div class="siv-r-no-can"></div>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-ind-txt">Indicator</h4>
+        <div class="siv-r-ind-can"></div>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-std-txt">Standard</h4>
+        <div class="siv-r-std-can"></div>
+      </div>
+    </div>
+    <div class="siv-r-table-head-space">&nbsp;</div>
+    <div class="siv-r-table-head">
+      <div class="siv-r-table-col-name-no">
+        <h3 class="siv-r-table-name-txt">Sexual and Gender-Based Violence</h3>
+      </div>
+      <div class="siv-r-table-col-no">
+        <h4 class="siv-r-no-txt">No.</h4>
+        <div class="siv-r-no-can"></div>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-ind-txt">Indicator</h4>
+        <div class="siv-r-ind-can"></div>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-std-txt">Standard</h4>
+        <div class="siv-r-std-can"></div>
+      </div>
+    </div>
+    <table class="siv-r-table clear">
+      <tbody>
+        <tr>
+          <td class="siv-r-table-item-no siv-r-table-hl">No. of basic EmOC facilities</td>
+          <td class="siv-r-no-val siv-r-table-hl" data-fieldname="rh_del_bemoc">{{{helperDisplayIndicator "rh_del_bemoc" "val"  0.rh_del_bemoc}}}</td>
+          <td class="siv-r-ind-val siv-r-table-hl" data-fieldname="rh_del_bemoc">{{{helperDisplayIndicator "rh_del_bemoc" "frm"  0.rh_del_bemoc}}}</td>
+          <td class="siv-r-std-val siv-r-table-hl" data-fieldname="rh_del_bemoc">{{{helperDisplayIndicator "rh_del_bemoc" "txt"  0.rh_del_bemoc}}}</td>
+          <td class="siv-r-table-score siv-r-table-hl" data-fieldname="rh_del_bemoc">{{{helperDisplayIndicator "rh_del_bemoc" "res"  0.rh_del_bemoc}}}</td>
+          <td class="siv-r-table-space">&nbsp;</td>
+          <td class="siv-r-table-item-no siv-r-table-hl">Incidence of reported rape (/10,000/year)</td>
+          <td class="siv-r-no-val siv-r-table-hl" data-fieldname="rh_sgbv_rh_incidrape">{{{helperDisplayIndicator "rh_sgbv_rh_incidrape" "val"  0.rh_sgbv_rh_incidrape}}}</td>
+          <td class="siv-r-ind-val siv-r-table-hl" data-fieldname="rh_sgbv_rh_incidrape">{{{helperDisplayIndicator "rh_sgbv_rh_incidrape" "frm"  0.rh_sgbv_rh_incidrape}}}</td>
+          <td class="siv-r-std-val siv-r-table-hl" data-fieldname="rh_sgbv_rh_incidrape">{{{helperDisplayIndicator "rh_sgbv_rh_incidrape" "txt"  0.rh_sgbv_rh_incidrape}}}</td>
+          <td class="siv-r-table-score siv-r-table-hl" data-fieldname="rh_sgbv_rh_incidrape">{{{helperDisplayIndicator "rh_sgbv_rh_incidrape" "res"  0.rh_sgbv_rh_incidrape}}}</td>
+        </tr>
+        <tr>
+          <td class="siv-r-table-item-no">No. of comprehensive EmOC facilities</td>
+          <td class="siv-r-no-val" data-fieldname="rh_del_cemoc">{{{helperDisplayIndicator "rh_del_cemoc" "val"  0.rh_del_cemoc}}}</td>
+          <td class="siv-r-ind-val" data-fieldname="rh_del_cemoc">{{{helperDisplayIndicator "rh_del_cemoc" "frm"  0.rh_del_cemoc}}}</td>
+          <td class="siv-r-std-val" data-fieldname="rh_del_cemoc">{{{helperDisplayIndicator "rh_del_cemoc" "txt"  0.rh_del_cemoc}}}</td>
+          <td class="siv-r-table-score" data-fieldname="rh_del_cemoc">{{{helperDisplayIndicator "rh_del_cemoc" "res"  0.rh_del_cemoc}}}</td>
+          <td class="siv-r-table-space">&nbsp;</td>
+          <td class="siv-r-table-item-no">% rape survivors who received <br />
+            PEP* &lt; 72h</td>
+          <td class="siv-r-no-val" data-fieldname="rh_sgbv_pep">{{{helperDisplayIndicator "rh_sgbv_pep" "val"  0.rh_sgbv_pep}}}</td>
+          <td class="siv-r-ind-val" data-fieldname="rh_sgbv_pep">{{{helperDisplayIndicator "rh_sgbv_pep" "frm"  0.rh_sgbv_pep}}}</td>
+          <td class="siv-r-std-val" data-fieldname="rh_sgbv_pep">{{{helperDisplayIndicator "rh_sgbv_pep" "txt"  0.rh_sgbv_pep}}}</td>
+          <td class="siv-r-table-score" data-fieldname="rh_sgbv_pep">{{{helperDisplayIndicator "rh_sgbv_pep" "res"  0.rh_sgbv_pep}}}</td>
+        </tr>
+        <tr>
+          <td class="siv-r-table-item-no siv-r-table-hl">Number of maternal deaths</td>
+          <td class="siv-r-no-val siv-r-table-hl" data-fieldname="rh_mat_death">{{{helperDisplayIndicator "rh_mat_death" "val"  0.rh_mat_death}}}</td>
+          <td class="siv-r-ind-val siv-r-table-hl" data-fieldname="rh_mat_death">{{{helperDisplayIndicator "rh_mat_death" "frm"  0.rh_mat_death}}}</td>
+          <td class="siv-r-std-val siv-r-table-hl" data-fieldname="rh_mat_death">{{{helperDisplayIndicator "rh_mat_death" "txt"  0.rh_mat_death}}}</td>
+          <td class="siv-r-table-score siv-r-table-hl" data-fieldname="rh_mat_death">{{{helperDisplayIndicator "rh_mat_death" "res"  0.rh_mat_death}}}</td>
+          <td class="siv-r-table-space">&nbsp;</td>
+          <td class="siv-r-table-item-no siv-r-table-hl">% rape survivors who received <br />
+            ECP** &lt; 120h</td>
+          <td class="siv-r-no-val siv-r-table-hl" data-fieldname="rh_sgbv_ecp">{{{helperDisplayIndicator "rh_sgbv_ecp" "val"  0.rh_sgbv_ecp}}}</td>
+          <td class="siv-r-ind-val siv-r-table-hl" data-fieldname="rh_sgbv_ecp">{{{helperDisplayIndicator "rh_sgbv_ecp" "frm"  0.rh_sgbv_ecp}}}</td>
+          <td class="siv-r-std-val siv-r-table-hl" data-fieldname="rh_sgbv_ecp">{{{helperDisplayIndicator "rh_sgbv_ecp" "txt"  0.rh_sgbv_ecp}}}</td>
+          <td class="siv-r-table-score siv-r-table-hl" data-fieldname="rh_sgbv_ecp">{{{helperDisplayIndicator "rh_sgbv_ecp" "res"  0.rh_sgbv_ecp}}}</td>
+        </tr>
+        <tr>
+          <td class="siv-r-table-item-no">Number of maternal deaths investigated<br />
+            &lt; 48 hrs</td>
+          <td class="siv-r-no-val" data-fieldname="rh_mat_death_invest">{{{helperDisplayIndicator "rh_mat_death_invest" "val"  0.rh_mat_death_invest}}}</td>
+          <td class="siv-r-ind-val" data-fieldname="rh_mat_death_invest">{{{helperDisplayIndicator "rh_mat_death_invest" "frm"  0.rh_mat_death_invest}}}</td>
+          <td class="siv-r-std-val" data-fieldname="rh_mat_death_invest">{{{helperDisplayIndicator "rh_mat_death_invest" "txt"  0.rh_mat_death_invest}}}</td>
+          <td class="siv-r-table-score" data-fieldname="rh_mat_death_invest">{{{helperDisplayIndicator "rh_mat_death_invest" "res"  0.rh_mat_death_invest}}}</td>
+          <td class="siv-r-table-space">&nbsp;</td>
+          <td class="siv-r-table-item-no">% rape survivors who received <br />
+            STI*** &lt; 2 wks</td>
+          <td class="siv-r-no-val" data-fieldname="rh_sgbv_sti">{{{helperDisplayIndicator "rh_sgbv_sti" "val"  0.rh_sgbv_sti}}}</td>
+          <td class="siv-r-ind-val" data-fieldname="rh_sgbv_sti">{{{helperDisplayIndicator "rh_sgbv_sti" "frm"  0.rh_sgbv_sti}}}</td>
+          <td class="siv-r-std-val" data-fieldname="rh_sgbv_sti">{{{helperDisplayIndicator "rh_sgbv_sti" "txt"  0.rh_sgbv_sti}}}</td>
+          <td class="siv-r-table-score" data-fieldname="rh_sgbv_sti">{{{helperDisplayIndicator "rh_sgbv_sti" "res"  0.rh_sgbv_sti}}}</td>
+        </tr>
+        <tr>
+          <td class="siv-r-table-item-no siv-r-table-hl">Crude Birth Rate (CBR) (/1000/month)</td>
+          <td class="siv-r-no-val siv-r-table-hl" data-fieldname="rh_del_cbr">{{{helperDisplayIndicator "rh_del_cbr" "val"  0.rh_del_cbr}}}</td>
+          <td class="siv-r-ind-val siv-r-table-hl" data-fieldname="rh_del_cbr">{{{helperDisplayIndicator "rh_del_cbr" "frm"  0.rh_del_cbr}}}</td>
+          <td class="siv-r-std-val siv-r-table-hl" data-fieldname="rh_del_cbr">{{{helperDisplayIndicator "rh_del_cbr" "txt"  0.rh_del_cbr}}}</td>
+          <td class="siv-r-table-score siv-r-table-hl" data-fieldname="rh_del_cbr">{{{helperDisplayIndicator "rh_del_cbr" "res"  0.rh_del_cbr}}}</td>
+          <td class="siv-r-table-space">&nbsp;</td>
+          <td class="siv-r-table-hl"></td>
+          <td class="siv-r-table-hl"></td>
+          <td class="siv-r-table-hl"></td>
+          <td class="siv-r-table-hl"></td>
+          <td class="siv-r-table-hl"></td>
+        </tr>
+        <tr>
+          <td class="siv-r-table-item-no">Coverage complete antenatal care <br />
+            (&gt; 4 visits)</td>
+          <td class="siv-r-no-val" data-fieldname="rh_anc_anccov">{{{helperDisplayIndicator "rh_anc_anccov" "val"  0.rh_anc_anccov}}}</td>
+          <td class="siv-r-ind-val" data-fieldname="rh_anc_anccov">{{{helperDisplayIndicator "rh_anc_anccov" "frm"  0.rh_anc_anccov}}}</td>
+          <td class="siv-r-std-val" data-fieldname="rh_anc_anccov">{{{helperDisplayIndicator "rh_anc_anccov" "txt"  0.rh_anc_anccov}}}</td>
+          <td class="siv-r-table-score" data-fieldname="rh_anc_anccov">{{{helperDisplayIndicator "rh_anc_anccov" "res"  0.rh_anc_anccov}}}</td>
+          <td class="siv-r-table-space">&nbsp;</td>
+          <td><h3 class="siv-r-table-name-txt">HIV/AIDS</h3></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="siv-r-table-item-no siv-r-table-hl">% deliveries performed by caesarean section</td>
+          <td class="siv-r-no-val siv-r-table-hl" data-fieldname="rh_del_csection">{{{helperDisplayIndicator "rh_del_csection" "val"  0.rh_del_csection}}}</td>
+          <td class="siv-r-ind-val siv-r-table-hl" data-fieldname="rh_del_csection">{{{helperDisplayIndicator "rh_del_csection" "frm"  0.rh_del_csection}}}</td>
+          <td class="siv-r-std-val siv-r-table-hl" data-fieldname="rh_del_csection">{{{helperDisplayIndicator "rh_del_csection" "txt"  0.rh_del_csection}}}</td>
+          <td class="siv-r-table-score siv-r-table-hl" data-fieldname="rh_del_csection">{{{helperDisplayIndicator "rh_del_csection" "res"  0.rh_del_csection}}}</td>
+          <td class="siv-r-table-space">&nbsp;</td>
+          <td class="siv-r-table-item-no siv-r-table-hl">Condom distribution rate</td>
+          <td class="siv-r-no-val siv-r-table-hl" data-fieldname="hiv_condom_hiv_condom">{{{helperDisplayIndicator "hiv_condom_hiv_condom" "val"  0.hiv_condom_hiv_condom}}}</td>
+          <td class="siv-r-ind-val siv-r-table-hl" data-fieldname="hiv_condom_hiv_condom">{{{helperDisplayIndicator "hiv_condom_hiv_condom" "frm"  0.hiv_condom_hiv_condom}}}</td>
+          <td class="siv-r-std-val siv-r-table-hl" data-fieldname="hiv_condom_hiv_condom">{{{helperDisplayIndicator "hiv_condom_hiv_condom" "txt"  0.hiv_condom_hiv_condom}}}</td>
+          <td class="siv-r-table-score siv-r-table-hl" data-fieldname="hiv_condom_hiv_condom">{{{helperDisplayIndicator "hiv_condom_hiv_condom" "res"  0.hiv_condom_hiv_condom}}}</td>
+        </tr>
+        <tr>
+          <td class="siv-r-table-item-no">% deliveries attended by skilled personnel</td>
+          <td class="siv-r-no-val" data-fieldname="rh_anc_skillatt">{{{helperDisplayIndicator "rh_anc_skillatt" "val"  0.rh_anc_skillatt}}}</td>
+          <td class="siv-r-ind-val" data-fieldname="rh_anc_skillatt">{{{helperDisplayIndicator "rh_anc_skillatt" "frm"  0.rh_anc_skillatt}}}</td>
+          <td class="siv-r-std-val" data-fieldname="rh_anc_skillatt">{{{helperDisplayIndicator "rh_anc_skillatt" "txt"  0.rh_anc_skillatt}}}</td>
+          <td class="siv-r-table-score" data-fieldname="rh_anc_skillatt">{{{helperDisplayIndicator "rh_anc_skillatt" "res"  0.rh_anc_skillatt}}}</td>
+          <td class="siv-r-table-space">&nbsp;</td>
+          <td class="siv-r-table-item-no">% of blood units screened for HIV</td>
+          <td class="siv-r-no-val" data-fieldname="hiv_lab_hiv_bloodscreen">{{{helperDisplayIndicator "hiv_lab_hiv_bloodscreen" "val"  0.hiv_lab_hiv_bloodscreen}}}</td>
+          <td class="siv-r-ind-val" data-fieldname="hiv_lab_hiv_bloodscreen">{{{helperDisplayIndicator "hiv_lab_hiv_bloodscreen" "frm"  0.hiv_lab_hiv_bloodscreen}}}</td>
+          <td class="siv-r-std-val" data-fieldname="hiv_lab_hiv_bloodscreen">{{{helperDisplayIndicator "hiv_lab_hiv_bloodscreen" "txt"  0.hiv_lab_hiv_bloodscreen}}}</td>
+          <td class="siv-r-table-score" data-fieldname="hiv_lab_hiv_bloodscreen">{{{helperDisplayIndicator "hiv_lab_hiv_bloodscreen" "res"  0.hiv_lab_hiv_bloodscreen}}}</td>
+        </tr>
+        <tr>
+          <td class="siv-r-table-item-no siv-r-table-hl">% low birth weight deliveries</td>
+          <td class="siv-r-no-val siv-r-table-hl" data-fieldname="rh_del_lbwdel">{{{helperDisplayIndicator "rh_del_lbwdel" "val"  0.rh_del_lbwdel}}}</td>
+          <td class="siv-r-ind-val siv-r-table-hl" data-fieldname="rh_del_lbwdel">{{{helperDisplayIndicator "rh_del_lbwdel" "frm"  0.rh_del_lbwdel}}}</td>
+          <td class="siv-r-std-val siv-r-table-hl" data-fieldname="rh_del_lbwdel">{{{helperDisplayIndicator "rh_del_lbwdel" "txt"  0.rh_del_lbwdel}}}</td>
+          <td class=" siv-r-table-score siv-r-table-hl" data-fieldname="rh_del_lbwdel">{{{helperDisplayIndicator "rh_del_lbwdel" "res"  0.rh_del_lbwdel}}}</td>
+          <td class="siv-r-table-space">&nbsp;</td>
+          <td class="siv-r-empty-cell" colspan="5"><p class="clear siv-r-source-r">* Post-exposure prophylaxis ** Emergency contraceptive pill *** Sexually transmitted infection</p></td>
+ 
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <!-- End of Reporductive Health -->
+  <div class="clear">
+    <div class="siv-r-sect-head-ctn">
+      <h2 class="siv-r-table-txt">Nutrition</h2>
+    </div>
+    <div class="siv-r-table-can"></div>
+    <div class="clear"></div>
+    <div class="siv-r-table-phn-head">
+      <div class="siv-r-table-phn-name">
+        <h3 class="siv-r-table-phn-txt">&nbsp;</h3>
+      </div>
+      <div class="siv-r-table-phn-multihead">
+        <div class="siv-r-mam-ind">
+          <h4 class="siv-r-mam-txt">MAM</h4>
+          <div class="siv-r-mam-can"></div>
+        </div>
+        <div class="siv-r-table-ind">
+          <h4 class="siv-r-std-txt">Standard</h4>
+          <div class="siv-r-std-can"></div>
+        </div>
+      </div>
+    </div>
+    <div class="siv-r-table-head-space">&nbsp;</div>
+    <div class="siv-r-table-phn-multihead">
+      <div class="siv-r-mam-ind">
+        <h4 class="siv-r-mam-txt">OTP</h4>
+        <div class="siv-r-mam-can"></div>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-std-txt">Standard</h4>
+        <div class="siv-r-std-can"></div>
+      </div>
+    </div>
+    <div class="siv-r-table-head-space">&nbsp;</div>
+    <div class="siv-r-table-phn-multihead">
+      <div class="siv-r-mam-ind">
+        <h4 class="siv-r-mam-txt">SC</h4>
+        <div class="siv-r-mam-can"></div>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-std-txt">Standard</h4>
+        <div class="siv-r-std-can"></div>
+      </div>
+    </div>
+    <div class="siv-r-table-head-space">&nbsp;</div>
+    <div class="siv-r-table-phn-multihead">
+      <div class="siv-r-cmam-ind">
+        <h4 class="siv-r-mam-txt">CMAM</h4>
+        <div class="siv-r-mam-can"></div>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-std-txt">Standard</h4>
+        <div class="siv-r-std-can"></div>
+      </div>
+    </div>
+    <table class="siv-r-table siv-r-sam-table clear">
+      <tbody>
+        <tr class="siv-r-table-hl">
+          <td class="siv-r-table-phn-item">Number of new admissions</td>
+          <td class="siv-r-sam-v" data-fieldname="nut_sfp_numadm">{{{helperDisplayIndicator "nut_sfp_numadm" "val"  0.nut_sfp_numadm}}}</td>
+          <td class="siv-r-emel-v" data-fieldname="nut_sfp_numadm">{{{helperDisplayIndicator "nut_sfp_numadm" "txt"  0.nut_sfp_numadm}}}</td>
+          <td class="siv-r-table-score" data-fieldname="nut_sfp_numadm">{{{helperDisplayIndicator "nut_sfp_numadm" "res"  0.nut_sfp_numadm}}}</td>
+          <td class="siv-r-phn-table-space">&nbsp;</td>
+          <td class="siv-r-sam-v" data-fieldname="nut_otp_numadm">{{{helperDisplayIndicator "nut_otp_numadm" "val"  0.nut_otp_numadm}}}</td>
+          <td class="siv-r-emel-v" data-fieldname="nut_otp_numadm">{{{helperDisplayIndicator "nut_otp_numadm" "txt"  0.nut_otp_numadm}}}</td>
+          <td class="siv-r-table-score" data-fieldname="nut_otp_numadm">{{{helperDisplayIndicator "nut_otp_numadm" "res"  0.nut_otp_numadm}}}</td>
+          <td class="siv-r-phn-table-space">&nbsp;</td>
+          <td class="siv-r-sam-v" data-fieldname="nut_sc_numadm">{{{helperDisplayIndicator "nut_sc_numadm" "val"  0.nut_sc_numadm}}}</td>
+          <td class="siv-r-emel-v" data-fieldname="nut_sc_numadm">{{{helperDisplayIndicator "nut_sc_numadm" "txt"  0.nut_sc_numadm}}}</td>
+          <td class="siv-r-table-score" data-fieldname="nut_sc_numadm">{{{helperDisplayIndicator "nut_sc_numadm" "res"  0.nut_sc_numadm}}}</td>
+          <td class="siv-r-phn-table-space">&nbsp;</td>
+          <td class="siv-r-sam-v" data-fieldname="nut_ctc_numadm">{{{helperDisplayIndicator "nut_ctc_numadm" "val"  0.nut_ctc_numadm}}}</td>
+          <td class="siv-r-emel-v" data-fieldname="nut_ctc_numadm">{{{helperDisplayIndicator "nut_ctc_numadm" "txt"  0.nut_ctc_numadm}}}</td>
+          <td class="siv-r-table-score" data-fieldname="nut_ctc_numadm">{{{helperDisplayIndicator "nut_ctc_numadm" "res"  0.nut_ctc_numadm}}}</td>
+        </tr>
+        <tr>
+          <td class="siv-r-table-phn-item">Average length of stay</td>
+          <td class="siv-r-sam-v" data-fieldname="nut_sfp_avlenstay">{{{helperDisplayIndicator "nut_sfp_avlenstay" "val"  0.nut_sfp_avlenstay}}}</td>
+          <td class="siv-r-emel-v" data-fieldname="nut_sfp_avlenstay">{{{helperDisplayIndicator "nut_sfp_avlenstay" "txt"  0.nut_sfp_avlenstay}}}</td>
+          <td class="siv-r-table-score" data-fieldname="nut_sfp_avlenstay">{{{helperDisplayIndicator "nut_sfp_avlenstay" "res"  0.nut_sfp_avlenstay}}}</td>
+          <td class="siv-r-phn-table-space">&nbsp;</td>
+          <td class="siv-r-sam-v" data-fieldname="nut_otp_avelnstay">{{{helperDisplayIndicator "nut_otp_avelnstay" "val"  0.nut_otp_avelnstay}}}</td>
+          <td class="siv-r-emel-v" data-fieldname="nut_otp_avelnstay">{{{helperDisplayIndicator "nut_otp_avelnstay" "txt"  0.nut_otp_avelnstay}}}</td>
+          <td class="siv-r-table-score" data-fieldname="nut_otp_avelnstay">{{{helperDisplayIndicator "nut_otp_avelnstay" "res"  0.nut_otp_avelnstay}}}</td>
+          <td class="siv-r-phn-table-space">&nbsp;</td>
+          <td class="siv-r-sam-v" data-fieldname="nut_sc_avlenstay">{{{helperDisplayIndicator "nut_sc_avlenstay" "val"  0.nut_sc_avlenstay}}}</td>
+          <td class="siv-r-emel-v" data-fieldname="nut_sc_avlenstay">{{{helperDisplayIndicator "nut_sc_avlenstay" "txt"  0.nut_sc_avlenstay}}}</td>
+          <td class="siv-r-table-score" data-fieldname="nut_sc_avlenstay">{{{helperDisplayIndicator "nut_sc_avlenstay" "res"  0.nut_sc_avlenstay}}}</td>
+          <td class="siv-r-phn-table-space">&nbsp;</td>
+          <td class="siv-r-sam-v" data-fieldname="nut_ctc_avlenstay">{{{helperDisplayIndicator "nut_ctc_avlenstay" "val"  0.nut_ctc_avlenstay}}}</td>
+          <td class="siv-r-emel-v" data-fieldname="nut_ctc_avlenstay">{{{helperDisplayIndicator "nut_ctc_avlenstay" "txt"  0.nut_ctc_avlenstay}}}</td>
+          <td class="siv-r-table-score" data-fieldname="nut_ctc_avlenstay">{{{helperDisplayIndicator "nut_ctc_avlenstay" "res"  0.nut_ctc_avlenstay}}}</td>
+        </tr>
+        <tr class="siv-r-table-hl">
+          <td class="siv-r-table-phn-item">Average weight gain (g/kg/day)</td>
+          <td class="siv-r-sam-v" data-fieldname="nut_sfp_avwtgain">{{{helperDisplayIndicator "nut_sfp_avwtgain" "val"  0.nut_sfp_avwtgain}}}</td>
+          <td class="siv-r-emel-v" data-fieldname="nut_sfp_avwtgain">{{{helperDisplayIndicator "nut_sfp_avwtgain" "txt"  0.nut_sfp_avwtgain}}}</td>
+          <td class="siv-r-table-score" data-fieldname="nut_sfp_avwtgain">{{{helperDisplayIndicator "nut_sfp_avwtgain" "res"  0.nut_sfp_avwtgain}}}</td>
+          <td class="siv-r-phn-table-space">&nbsp;</td>
+          <td class="siv-r-sam-v" data-fieldname="nut_otp_avwtgain">{{{helperDisplayIndicator "nut_otp_avwtgain" "val"  0.nut_otp_avwtgain}}}</td>
+          <td class="siv-r-emel-v" data-fieldname="nut_otp_avwtgain">{{{helperDisplayIndicator "nut_otp_avwtgain" "txt"  0.nut_otp_avwtgain}}}</td>
+          <td class="siv-r-table-score" data-fieldname="nut_otp_avwtgain">{{{helperDisplayIndicator "nut_otp_avwtgain" "res"  0.nut_otp_avwtgain}}}</td>
+          <td class="siv-r-phn-table-space">&nbsp;</td>
+          <td class="siv-r-sam-v" data-fieldname="nut_sc_avwtgain">{{{helperDisplayIndicator "nut_sc_avwtgain" "val"  0.nut_sc_avwtgain}}}</td>
+          <td class="siv-r-emel-v" data-fieldname="nut_sc_avwtgain">{{{helperDisplayIndicator "nut_sc_avwtgain" "txt"  0.nut_sc_avwtgain}}}</td>
+          <td class="siv-r-table-score" data-fieldname="nut_sc_avwtgain">{{{helperDisplayIndicator "nut_sc_avwtgain" "res"  0.nut_sc_avwtgain}}}</td>
+          <td class="siv-r-phn-table-space">&nbsp;</td>
+          <td class="siv-r-sam-v" data-fieldname="nut_ctc_avwtgain">{{{helperDisplayIndicator "nut_ctc_avwtgain" "val"  0.nut_ctc_avwtgain}}}</td>
+          <td class="siv-r-emel-v" data-fieldname="nut_ctc_avwtgain">{{{helperDisplayIndicator "nut_ctc_avwtgain" "txt"  0.nut_ctc_avwtgain}}}</td>
+          <td class="siv-r-table-score" data-fieldname="nut_ctc_avwtgain">{{{helperDisplayIndicator "nut_ctc_avwtgain" "res"  0.nut_ctc_avwtgain}}}</td>
+        </tr>
+        <tr>
+          <td class="siv-r-table-phn-item">Discharge rate</td>
+          <td class="siv-r-sam-v" data-fieldname="nut_sfp_disch">{{{helperDisplayIndicator "nut_sfp_disch" "val"  0.nut_sfp_disch}}}</td>
+          <td class="siv-r-emel-v" data-fieldname="nut_sfp_disch">{{{helperDisplayIndicator "nut_sfp_disch" "txt"  0.nut_sfp_disch}}}</td>
+          <td class="siv-r-table-score" data-fieldname="nut_sfp_disch">{{{helperDisplayIndicator "nut_sfp_disch" "res"  0.nut_sfp_disch}}}</td>
+          <td class="siv-r-phn-table-space">&nbsp;</td>
+          <td class="siv-r-sam-v" data-fieldname="nut_otp_disch">{{{helperDisplayIndicator "nut_otp_disch" "val"  0.nut_otp_disch}}}</td>
+          <td class="siv-r-emel-v" data-fieldname="nut_otp_disch">{{{helperDisplayIndicator "nut_otp_disch" "txt"  0.nut_otp_disch}}}</td>
+          <td class="siv-r-table-score" data-fieldname="nut_otp_disch">{{{helperDisplayIndicator "nut_otp_disch" "res"  0.nut_otp_disch}}}</td>
+          <td class="siv-r-phn-table-space">&nbsp;</td>
+          <td class="siv-r-sam-v" data-fieldname="nut_tfp_disch">{{{helperDisplayIndicator "nut_tfp_disch" "val"  0.nut_tfp_disch}}}</td>
+          <td class="siv-r-emel-v" data-fieldname="nut_tfp_disch">{{{helperDisplayIndicator "nut_tfp_disch" "txt"  0.nut_tfp_disch}}}</td>
+          <td class="siv-r-table-score" data-fieldname="nut_tfp_disch">{{{helperDisplayIndicator "nut_tfp_disch" "res"  0.nut_tfp_disch}}}</td>
+          <td class="siv-r-phn-table-space">&nbsp;</td>
+          <td class="siv-r-sam-v"></td>
+          <td class="siv-r-emel-v"></td>
+          <td class="siv-r-table-score"></td>
+        </tr>
+        <tr class="siv-r-table-hl">
+          <td class="siv-r-table-phn-item">Death rate</td>
+          <td class="siv-r-sam-v" data-fieldname="nut_sfp_death">{{{helperDisplayIndicator "nut_sfp_death" "val"  0.nut_sfp_death}}}</td>
+          <td class="siv-r-emel-v" data-fieldname="nut_sfp_death">{{{helperDisplayIndicator "nut_sfp_death" "txt"  0.nut_sfp_death}}}</td>
+          <td class="siv-r-table-score" data-fieldname="nut_sfp_death">{{{helperDisplayIndicator "nut_sfp_death" "res"  0.nut_sfp_death}}}</td>
+          <td class="siv-r-phn-table-space">&nbsp;</td>
+          <td class="siv-r-sam-v" data-fieldname="nut_otp_death">{{{helperDisplayIndicator "nut_otp_death" "val"  0.nut_otp_death}}}</td>
+          <td class="siv-r-emel-v" data-fieldname="nut_otp_death">{{{helperDisplayIndicator "nut_otp_death" "txt"  0.nut_otp_death}}}</td>
+          <td class="siv-r-table-score" data-fieldname="nut_otp_death">{{{helperDisplayIndicator "nut_otp_death" "res"  0.nut_otp_death}}}</td>
+          <td class="siv-r-phn-table-space">&nbsp;</td>
+          <td class="siv-r-sam-v" data-fieldname="nut_tfp_death">{{{helperDisplayIndicator "nut_tfp_death" "val"  0.nut_tfp_death}}}</td>
+          <td class="siv-r-emel-v" data-fieldname="nut_tfp_death">{{{helperDisplayIndicator "nut_tfp_death" "txt"  0.nut_tfp_death}}}</td>
+          <td class="siv-r-table-score" data-fieldname="nut_tfp_death">{{{helperDisplayIndicator "nut_tfp_death" "res"  0.nut_tfp_death}}}</td>
+          <td class="siv-r-phn-table-space">&nbsp;</td>
+          <td class="siv-r-sam-v"></td>
+          <td class="siv-r-emel-v"></td>
+          <td class="siv-r-table-score"></td>
+        </tr>
+        <tr>
+          <td class="siv-r-table-phn-item">Default rate</td>
+          <td class="siv-r-sam-v" data-fieldname="nut_sfp_defaul">{{{helperDisplayIndicator "nut_sfp_defaul" "val"  0.nut_sfp_defaul}}}</td>
+          <td class="siv-r-emel-v" data-fieldname="nut_sfp_defaul">{{{helperDisplayIndicator "nut_sfp_defaul" "txt"  0.nut_sfp_defaul}}}</td>
+          <td class="siv-r-table-score" data-fieldname="nut_sfp_defaul">{{{helperDisplayIndicator "nut_sfp_defaul" "res"  0.nut_sfp_defaul}}}</td>
+          <td class="siv-r-phn-table-space">&nbsp;</td>
+          <td class="siv-r-sam-v" data-fieldname="nut_otp_defaul">{{{helperDisplayIndicator "nut_otp_defaul" "val"  0.nut_otp_defaul}}}</td>
+          <td class="siv-r-emel-v" data-fieldname="nut_otp_defaul">{{{helperDisplayIndicator "nut_otp_defaul" "txt"  0.nut_otp_defaul}}}</td>
+          <td class="siv-r-table-score" data-fieldname="nut_otp_defaul">{{{helperDisplayIndicator "nut_otp_defaul" "res"  0.nut_otp_defaul}}}</td>
+          <td class="siv-r-phn-table-space">&nbsp;</td>
+          <td class="siv-r-sam-v" data-fieldname="nut_tfp_defaul">{{{helperDisplayIndicator "nut_tfp_defaul" "val"  0.nut_tfp_defaul}}}</td>
+          <td class="siv-r-emel-v" data-fieldname="nut_tfp_defaul">{{{helperDisplayIndicator "nut_tfp_defaul" "txt"  0.nut_tfp_defaul}}}</td>
+          <td class="siv-r-table-score" data-fieldname="nut_tfp_defaul">{{{helperDisplayIndicator "nut_tfp_defaul" "res"  0.nut_tfp_defaul}}}</td>
+          <td class="siv-r-phn-table-space">&nbsp;</td>
+          <td class="siv-r-sam-v"></td>
+          <td class="siv-r-emel-v"></td>
+          <td class="siv-r-table-score"></td>
+        </tr>
+        <tr class="siv-r-table-hl">
+          <td class="siv-r-table-phn-item">Referral rate</td>
+          <td class="siv-r-sam-v" data-fieldname="nut_sfp_refer">{{{helperDisplayIndicator "nut_sfp_refer" "val"  0.nut_sfp_refer}}}</td>
+          <td class="siv-r-emel-v" data-fieldname="nut_sfp_refer">{{{helperDisplayIndicator "nut_sfp_refer" "txt"  0.nut_sfp_refer}}}</td>
+          <td class="siv-r-table-score" data-fieldname="nut_sfp_refer">{{{helperDisplayIndicator "nut_sfp_refer" "res"  0.nut_sfp_refer}}}</td>
+          <td class="siv-r-phn-table-space">&nbsp;</td>
+          <td class="siv-r-sam-v" data-fieldname="nut_otp_refer">{{{helperDisplayIndicator "nut_otp_refer" "val"  0.nut_otp_refer}}}</td>
+          <td class="siv-r-emel-v" data-fieldname="nut_otp_refer">{{{helperDisplayIndicator "nut_otp_refer" "txt"  0.nut_otp_refer}}}</td>
+          <td class="siv-r-table-score" data-fieldname="nut_otp_refer">{{{helperDisplayIndicator "nut_otp_refer" "res"  0.nut_otp_refer}}}</td>
+          <td class="siv-r-phn-table-space">&nbsp;</td>
+          <td class="siv-r-sam-v" data-fieldname="nut_tfp_refer">{{{helperDisplayIndicator "nut_tfp_refer" "val"  0.nut_tfp_refer}}}</td>
+          <td class="siv-r-emel-v" data-fieldname="nut_tfp_refer">{{{helperDisplayIndicator "nut_tfp_refer" "txt"  0.nut_tfp_refer}}}</td>
+          <td class="siv-r-table-score" data-fieldname="nut_tfp_refer">{{{helperDisplayIndicator "nut_tfp_refer" "res"  0.nut_tfp_refer}}}</td>
+          <td class="siv-r-phn-table-space">&nbsp;</td>
+          <td class="siv-r-sam-v"></td>
+          <td class="siv-r-emel-v"></td>
+          <td class="siv-r-table-score"></td>
+        </tr>
+        <tr>
+          <td class="siv-r-table-phn-item">Non-cured rate</td>
+          <td class="siv-r-sam-v" data-fieldname="nut_sfp_noncure">{{{helperDisplayIndicator "nut_sfp_noncure" "val"  0.nut_sfp_noncure}}}</td>
+          <td class="siv-r-emel-v" data-fieldname="nut_sfp_noncure">{{{helperDisplayIndicator "nut_sfp_noncure" "txt"  0.nut_sfp_noncure}}}</td>
+          <td class="siv-r-table-score" data-fieldname="nut_sfp_noncure">{{{helperDisplayIndicator "nut_sfp_noncure" "res"  0.nut_sfp_noncure}}}</td>
+          <td class="siv-r-phn-table-space">&nbsp;</td>
+          <td class="siv-r-sam-v" data-fieldname="nut_otp_noncure">{{{helperDisplayIndicator "nut_otp_noncure" "val"  0.nut_otp_noncure}}}</td>
+          <td class="siv-r-emel-v" data-fieldname="nut_otp_noncure">{{{helperDisplayIndicator "nut_otp_noncure" "txt"  0.nut_otp_noncure}}}</td>
+          <td class="siv-r-table-score" data-fieldname="nut_otp_noncure">{{{helperDisplayIndicator "nut_otp_noncure" "res"  0.nut_otp_noncure}}}</td>
+          <td class="siv-r-phn-table-space">&nbsp;</td>
+          <td class="siv-r-sam-v"></td>
+          <td class="siv-r-emel-v"></td>
+          <td class="siv-r-table-score"></td>
+          <td class="siv-r-phn-table-space">&nbsp;</td>
+          <td class="siv-r-sam-v" data-fieldname="nut_ctc_noncure">{{{helperDisplayIndicator "nut_ctc_noncure" "val"  0.nut_ctc_noncure}}}</td>
+          <td class="siv-r-emel-v" data-fieldname="nut_ctc_noncure">{{{helperDisplayIndicator "nut_ctc_noncure" "txt"  0.nut_ctc_noncure}}}</td>
+          <td class="siv-r-table-score" data-fieldname="nut_ctc_noncure">{{{helperDisplayIndicator "nut_ctc_noncure" "res"  0.nut_ctc_noncure}}}</td>
+        </tr>
+        <tr>
+          <td colspan="16" align="center" class="siv-r-empty-cell"><p class="siv-r-source">MAM: Moderate Acute Malnutrition,  OTP: Outpatient Therapuetic Program, SC: Stabilisation Centre, CMAM: SC and OTP combined</p></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <!-- end of Nurtition  -->
+  <div class="clear">
+    <div class="siv-r-container">
+      <div class="siv-r-single-head-ctn">
+        <h2 class="siv-r-table-txt">Community Health Activities</h2>
+      </div>
+      <div class="siv-r-single-table-can"></div>
+      <div class="siv-r-single-table-can-border"></div>
+      <div class="siv-r-sect-head-ctn-mod">
+        <h2 class="siv-r-table-txt-mod">Water, Sanitation and Hygiene</h2>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div class="siv-r-table-head">
+      <div class="siv-r-table-col-name">
+        <h3 class="siv-r-table-name-txt">&nbsp;</h3>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-ind-txt">Indicator</h4>
+        <div class="siv-r-ind-can"></div>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-std-txt">Standard</h4>
+        <div class="siv-r-std-can"></div>
+      </div>
+    </div>
+    <div class="siv-r-table-head-space">&nbsp;</div>
+    <div class="siv-r-table-head">
+      <div class="siv-r-table-col-name">
+        <h3 class="siv-r-table-name-txt">&nbsp;</h3>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-ind-txt">Indicator</h4>
+        <div class="siv-r-ind-can"></div>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-std-txt">Standard</h4>
+        <div class="siv-r-std-can"></div>
+      </div>
+    </div>
+    <table class="siv-r-table clear">
+      <tbody>
+        <tr>
+          <td class="siv-r-table-item siv-r-table-hl">No. of health education and hygiene sessions conducted</td>
+          <td class="siv-r-ind-val siv-r-table-hl" data-fieldname="cha_hyg_edu">{{{helperDisplayIndicator "cha_hyg_edu" "val"  0.cha_hyg_edu}}}</td>
+          <td class="siv-r-std-val siv-r-table-hl" data-fieldname="cha_hyg_edu">{{{helperDisplayIndicator "cha_hyg_edu" "txt"  0.cha_hyg_edu}}}</td>
+          <td class="siv-r-table-score siv-r-table-hl" data-fieldname="cha_hyg_edu">{{{helperDisplayIndicator "cha_hyg_edu" "res"  0.cha_hyg_edu}}}</td>
+          <td class="siv-r-table-space">&nbsp;</td>
+          <td class="siv-r-table-item siv-r-table-hl">Average quantity of potable water / person / day (litres)</td>
+          <td class="siv-r-ind-val siv-r-table-hl" data-fieldname="wash_waterpppd">{{{helperDisplayIndicator "wash_waterpppd" "val"  0.wash_waterpppd}}}</td>
+          <td class="siv-r-std-val siv-r-table-hl" data-fieldname="wash_waterpppd">{{{helperDisplayIndicator "wash_waterpppd" "txt"  0.wash_waterpppd}}}</td>
+          <td class="siv-r-table-score siv-r-table-hl" data-fieldname="wash_waterpppd">{{{helperDisplayIndicator "wash_waterpppd" "res"  0.wash_waterpppd}}}</td>
+        </tr>
+        <tr>
+          <td class="siv-r-table-item">No. of sanitation campaigns conducted</td>
+          <td class="siv-r-ind-val" data-fieldname="cha_san_camp">{{{helperDisplayIndicator "cha_san_camp" "val"  0.cha_san_camp}}}</td>
+          <td class="siv-r-std-val" data-fieldname="cha_san_camp">{{{helperDisplayIndicator "cha_san_camp" "txt"  0.cha_san_camp}}}</td>
+          <td class="siv-r-table-score" data-fieldname="cha_san_camp">{{{helperDisplayIndicator "cha_san_camp" "res"  0.cha_san_camp}}}</td>
+          <td class="siv-r-table-space">&nbsp;</td>
+          <td class="siv-r-table-item">Number of persons per usable water tap</td>
+          <td class="siv-r-ind-val" data-fieldname="wash_watertap">{{{helperDisplayIndicator "wash_watertap" "val"  0.wash_watertap}}}</td>
+          <td class="siv-r-std-val" data-fieldname="wash_watertap">{{{helperDisplayIndicator "wash_watertap" "txt"  0.wash_watertap}}}</td>
+          <td class="siv-r-table-score" data-fieldname="wash_watertap">{{{helperDisplayIndicator "wash_watertap" "res"  0.wash_watertap}}}</td>
+        </tr>
+        <tr>
+          <td class="siv-r-table-item siv-r-table-hl">No. pregnant women who received clean delivery kit</td>
+          <td class="siv-r-ind-val siv-r-table-hl" data-fieldname="cha_clean_del_kit">{{{helperDisplayIndicator "cha_clean_del_kit" "val"  0.cha_clean_del_kit}}}</td>
+          <td class="siv-r-std-val siv-r-table-hl" data-fieldname="cha_clean_del_kit">{{{helperDisplayIndicator "cha_clean_del_kit" "txt"  0.cha_clean_del_kit}}}</td>
+          <td class="siv-r-table-score siv-r-table-hl" data-fieldname="cha_clean_del_kit">{{{helperDisplayIndicator "cha_clean_del_kit" "res"  0.cha_clean_del_kit}}}</td>
+          <td class="siv-r-table-space">&nbsp;</td>
+          <td class="siv-r-table-item siv-r-table-hl">Number of persons per drop-hole in communal latrine</td>
+          <td class="siv-r-ind-val siv-r-table-hl" data-fieldname="wash_drophole">{{{helperDisplayIndicator "wash_drophole" "val"  0.wash_drophole}}}</td>
+          <td class="siv-r-std-val siv-r-table-hl" data-fieldname="wash_drophole">{{{helperDisplayIndicator "wash_drophole" "txt"  0.wash_drophole}}}</td>
+          <td class="siv-r-table-score siv-r-table-hl" data-fieldname="wash_drophole">{{{helperDisplayIndicator "wash_drophole" "res"  0.wash_drophole}}}</td>
+        </tr>
+        <tr>
+          <td class="siv-r-table-item ">No. of complicated medical cases identified</td>
+          <td class="siv-r-ind-val" data-fieldname="cha_compl_case_ident">{{{helperDisplayIndicator "cha_compl_case_ident" "val"  0.cha_compl_case_ident}}}</td>
+          <td class="siv-r-std-val" data-fieldname="cha_compl_case_ident">{{{helperDisplayIndicator "cha_compl_case_ident" "txt"  0.cha_compl_case_ident}}}</td>
+          <td class="siv-r-table-score" data-fieldname="cha_compl_case_ident">{{{helperDisplayIndicator "cha_compl_case_ident" "res"  0.cha_compl_case_ident}}}</td>
+          <td class="siv-r-table-space">&nbsp;</td>
+          <td class="siv-r-table-item">% of population living within 200m from water point</td>
+          <td class="siv-r-ind-val" data-fieldname="wash_200m">{{{helperDisplayIndicator "wash_200m" "val"  0.wash_200m}}}</td>
+          <td class="siv-r-std-val" data-fieldname="wash_200m">{{{helperDisplayIndicator "wash_200m" "txt"  0.wash_200m}}}</td>
+          <td class="siv-r-table-score" data-fieldname="wash_200m">{{{helperDisplayIndicator "wash_200m" "res"  0.wash_200m}}}</td>
+        </tr>
+        <tr>
+          <td class="siv-r-table-item  siv-r-table-hl">% of complicated medical cases referred</td>
+          <td class="siv-r-ind-val siv-r-table-hl" data-fieldname="cha_compl_case_ref">{{{helperDisplayIndicator "cha_compl_case_ref" "val"  0.cha_compl_case_ref}}}</td>
+          <td class="siv-r-std-val  siv-r-table-hl" data-fieldname="cha_compl_case_ref">{{{helperDisplayIndicator "cha_compl_case_ref" "txt"  0.cha_compl_case_ref}}}</td>
+            <td class="siv-r-table-score  siv-r-table-hl" data-fieldname="cha_compl_case_ref">{{{helperDisplayIndicator "cha_compl_case_ref" "res"  0.cha_compl_case_ref}}}</td>
+          <td class="siv-r-table-space">&nbsp;</td>
+          <td class="siv-r-table-item siv-r-table-hl">% of families with latrines</td>
+          <td class="siv-r-ind-val siv-r-table-hl" data-fieldname="wash_latrines">{{{helperDisplayIndicator "wash_latrines" "val"  0.wash_latrines}}}</td>
+          <td class="siv-r-std-val siv-r-table-hl" data-fieldname="wash_latrines">{{{helperDisplayIndicator "wash_latrines" "txt"  0.wash_latrines}}}</td>
+          <td class="siv-r-table-score siv-r-table-hl" data-fieldname="wash_latrines">{{{helperDisplayIndicator "wash_latrines" "res"  0.wash_latrines}}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="clear"> </div>
+  
+  <!-- end of Water, Sanitation and Hygiene -->
+  
+  <div class="siv-r-second-page-foot">
+    <div class="siv-r-legend-ctn">
+      <table class="siv-r-interactive-ctn">
+        <tbody>
+          <tr>
+            <td rowspan="2" class="siv-r-interactive-32"><img class="siv-r-interactive-32" src={{{local_asset "images/logos/siv-logo-black.png"}}}/></td>
+            <td class="siv-r-interactive-title siv-r-interactive-space">View interactive maps and statistics online</td>
+          </tr>
+          <tr>
+            <td class="siv-r-table-item siv-r-interactive-row"><a href="http://twine.unhcr.org" class="siv-r-interactive-link">http://twine.unhcr.org</a></td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="siv-r-legend">
+        <tbody>
+          <tr>
+            <td colspan="6"><h3 class="siv-r-legend-header">Legend</h3></td>
+          </tr>
+          <tr>
+            <td class="siv-r-score siv-r-score-green">2</td>
+            <td class="siv-r-table-indicator "><span>Standard met</span></td>
+            <td class="siv-r-score siv-r-score-yellow">!</td>
+            <td class="siv-r-table-indicator "><span>Standard borderline</span></td>
+            <td class="siv-r-score siv-r-score-red">D</td>
+            <td class="siv-r-table-indicator "><span>Standard not met</span></td>
+          </tr>
+          <tr>
+            <td class="siv-r-score siv-r-score-purple">^</td>
+            <td class="siv-r-table-indicator "><span>Interpret data with care</span></td>
+            <td class="siv-r-score siv-r-score-blue">?</td>
+            <td class="siv-r-table-indicator "><span>Data missing</span></td>
+            <td class="siv-r-score siv-r-score-black">-</td>
+            <td class="siv-r-table-indicator "><span>Not applicable</span></td>
+          </tr>
+        </tbody>
+      </table>
+      <img class="siv-r-contact-logo" src={{{local_asset "images/reports/phhiv/unhcr-logo.png"}}}/>
+      <div class="clear"> </div>
+    </div>
+    <div class="siv-r-qrcode" id="qrcode"> </div>
+    <div class="clear"> </div>
+  </div>
+</div>
+<!--end of page--> 
+</div>

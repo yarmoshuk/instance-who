@@ -1,0 +1,6 @@
+{
+	"css":"formattedreports.css",
+	"domid":"siv-r",
+	"outbreaks_chart":true,
+	"outbreaks_table":true
+}

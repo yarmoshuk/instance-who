@@ -1,0 +1,35 @@
+{
+
+"bsc_staff":{"domain_num":"1.1","domain":"Staffing","ind_num":"1.1.1","title":"Health Facility with all scheduled clinical staff present in surveyed health facility on the day of survey","method":"HFO"},
+"bsc_infra":{"domain_num":"1.2","domain":"Infrastructure","ind_num":"1.2.1","title":"Health facility with all essential infrastructure on day of the survey","method":"HFO"},
+"bsc_5esschild":{"domain_num":"1.3","domain":"Supplies Child","ind_num":"1.3.1","title":"Health Facility with all 5 essential supplies to support child health in Health Facility on day of the survey","method":"HFO"},
+"bsc_7essanc":{"domain_num":"1.4","domain":"Supplies ANC","ind_num":"1.4.1","title":"Health Facility with all 7 essential supplies to support antenatal care in Health Facility on day of the survey","method":"HFO"},
+"bsc_6esschild":{"domain_num":"1.5","domain":"Medicines Child","ind_num":"1.5.1","title":"Health Facility with all 6 first line medications for child health on day of the survey ","method":"HFO"},
+"bsc_3essanc":{"domain_num":"1.6","domain":"Medicines ANC","ind_num":"1.6.1","title":"Health Facility with all 3 essential ANC medications on day of survey ","method":"HFO"},
+"bsc_natmanvacc":{"domain_num":"1.7","domain":"Availability of Immunizations","ind_num":"1.7.1","title":"Health Facility with all nationally-mandated vaccines  in stock on day of survey","method":"HFO"},
+"bsc_funcccs":{"domain_num":"1.8","domain":"Quality of Cold Chain","ind_num":"1.8.1","title":"Health Facility with a functioning cold chain system ","method":"HFO"},
+"bsc_stdprot":{"domain_num":"1.9","domain":"Availability of Disease Management Protocols","ind_num":"1.9.1","title":"Health Facility with standard protocols for care of available and accessible on day of survey","method":"HFO"},
+"bsc_infecctrl":{"domain_num":"1.10","domain":"Infection Control","ind_num":"1.10.1","title":"Health Facility with all infection control supplies and equipment available on day of survey","method":"HFO"},
+
+"bsc_hivdrgsupp":{"domain_num":"1.11","domain":"Medicines/Supplies HIV","ind_num":"1.11.1","title":"Health Facility with all HIV related  drugs, and supplies available on day of survey","method":"HFO"},
+"bsc_reffeedpg":{"domain_num":"1.12","domain":"Supplementary Feeding Program","ind_num":"1.12.1","title":"Health Facility with guidelines for referral to feeding programs","method":"HFO"},
+"bsc_gdefeedpg":{"domain_num":"1.13","domain":"Therapeutic Feeding program","ind_num":"1.13.1","title":"Health Facility with guidelines for referral to feeding programs","method":"HFO"},
+"bsc_datacolrep":{"domain_num":"2.1","domain":"Data Collection and reporting","ind_num":"2.1.1","title":"Health Facility that maintain up to date data collection and reporting","method":"HFO"},
+"bsc_epipotsurv":{"domain_num":"2.2","domain":"Outbreak Alert and Response","ind_num":"2.2.1","title":"Health Facility where diseases with epidemic potential are under surveillance","method":"INTHW"},
+"bsc_datarecs":{"domain_num":"2.3","domain":"HIS management","ind_num":"2.3.1","title":"Health Facility that maintain up to date records ","method":"HFO"},
+"bsc_triage":{"domain_num":"2.4","domain":"Triage","ind_num":"2.4.1","title":"Health Facility with a functioning triage system","method":"HFO"},
+"bsc_trainch":{"domain_num":"2.5","domain":"Training in Child Health","ind_num":"2.5.1","title":"Health Facility in which interviewed Health Worker reported receiving in-service or pre-service training in child health (e.g. IMCI training) in last 12 months","method":"INTHW"},
+"bsc_trainmatneo":{"domain_num":"2.6","domain":"Training in Maternal Neonatal Care","ind_num":"2.6.1","title":"Health Facility in which interviewed Health Worker reported receiving in-service or pre-service training in maternal and neonatal health (e.g. EmONC training ) in last 12 months","method":"INTHW"},
+"bsc_labfacs":{"domain_num":"2.7","domain":"Laboratory Facilities","ind_num":"2.7.1","title":"Health Facility with adequate laboratory facilities on site or able to send out","method":"HFO"},
+"bsc_essmedmng":{"domain_num":"2.8","domain":"Essential Medicine management","ind_num":"2.8.1","title":"Health Facility with a clear and functioning system for essential medicine management","method":"HFO"},
+"bsc_funcref":{"domain_num":"2.9","domain":"Medical referrals","ind_num":"2.9.1","title":"Health Facility with a functioning referral system","method":"HFO"},
+"bsc_5assess":{"domain_num":"3.1","domain":"Health Worker Performance (Assessment)","ind_num":"3.1.1","title":"Health Facility in which all 5 key assessment tasks are made by Health Worker","method":"OCC"},
+"bsc_appdiag":{"domain_num":"3.2","domain":"Health Worker Performance (Treatment of Sick Children)","ind_num":"3.2.1","title":"Health Facility in which treatment is appropriate to diagnosis for child with malaria, pneumonia, or diarrhea (benchmark: 5 of the 6 clinical observations)","method":"OCC"},
+"bsc_trtappu5":{"domain_num":"","domain":"","ind_num":"3.2.2","title":"Prescription Analysis: Health Facility in which treatment is appropriate for children under five","method":"PA"},
+"bsc_corrdes":{"domain_num":"3.3","domain":"Health Worker Performance (Counseling for Sick Child)","ind_num":"3.3.1","title":"Health Facility in which the caretaker of child with fever, fast/difficult breathing, or diarrhea   can correctly describe how to administer all medications prescribed ","method":"INTP"},
+"bsc_patsat":{"domain_num":"4.1","domain":"Patient Satisfaction","ind_num":"4.1.1","title":"Health Facility with the patient satisfaction at or above the threshold. ","method":"INTP"},
+"bsc_patperc":{"domain_num":"4.2","domain":"Patient perception of quality","ind_num":"4.2.1","title":"Health Facility with the patient perception of quality at or above the threshold. ","method":"INTP"},
+"bsc_empsat":{"domain_num":"5.1","domain":"Employee satisfaction","ind_num":"5.5.1","title":"Health Facility with the employee satisfaction at or above the threshold. points on satisfaction scale)","method":"INTHW"}
+
+}
+

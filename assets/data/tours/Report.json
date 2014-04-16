@@ -1,0 +1,28 @@
+{
+	"title": "Report Editor Tour",
+	"id": "Work",
+	"items":
+	[
+		{
+			"title":"1. Welcome to the Report Editor",
+			"content":"<p>You can review and edit individual reports here.</p>",
+			"position": "center",
+			"target":"WorkMenu"
+		},{
+			"title": "2. Report actions",
+			"content": "<p>Use these buttons to submit, review and preview reports.",
+			"position": "bottom",
+			"target": "help-tag-actions"
+		},{
+			"title": "3. Table of contents",
+			"content": "<p>Easily navigate to different sections of the report from here.</p>",
+			"position": "right",
+			"target": "report-navigator"
+		},{
+			"title": "4. Report Viewer",
+			"content": "<p>View and edit the report in this panel.</p>",
+			"position": "center",
+			"target": "work-content"
+		}
+	]
+}

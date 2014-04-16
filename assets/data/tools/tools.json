@@ -1,0 +1,74 @@
+{
+
+    "success":true,
+    "listtype":"categories",
+    "list":[
+        {
+            "displayName":"Food Aid Report",
+            "name":"food",
+            "icon":"food-icon",
+            "toolsets":["E-I-H", "E-I-L", "E-L-C", "E-P-P", "M-M", "S-N", "S-FS", "T-E", "U-C"]
+        },
+        {
+            "displayName":"Health Information System",
+            "name":"his",
+            "icon":"his-icon",
+            "toolsets":["E-I-H", "E-I-L", "E-L-C", "E-P-E", "E-P-P", "M-M", "E-L-U", "S-N", "S-PH", "S-RH", "T-E", "U-I"]
+        },
+        {
+            "displayName":"Prospective Surveillance",
+            "name":"pro",
+            "icon":"pro-icon",
+            "toolsets":["E-I-H", "E-I-L", "E-L-U", "E-P-P", "M-M", "S-N", "T-M", "U-L"]
+        },
+        {
+            "displayName":"Remote SMS Monitoring",
+            "name":"sms",
+            "icon":"sms-icon",
+            "toolsets":["E-P-E", "E-P-P", "M-M", "S-L-U", "S-PH", "T-M", "U-I"]
+        },
+        {
+            "displayName":"WASH Report Card",
+            "name":"wash_rc",
+            "icon":"wash-icon",
+            "toolsets":["E-I-L", "E-L-C", "E-P-P", "M-M", "S-W", "T-E", "U-H", "U-C"]
+        },
+        {
+            "displayName":"Maternal Death Review",
+            "name":"matdeath",
+            "icon":"matdeath-icon",
+            "toolsets":["E-I-H", "E-I-L", "E-L-C", "E-L-U", "E-P-E", "E-P-P", "M-IN", "S-L-U", "S-RH", "T-B", "U-L"]
+        },
+        {
+            "displayName":"Disease Outbreak Report",
+            "name":"out",
+            "icon":"out-icon",
+            "toolsets":["E-I-H", "E-I-L", "E-L-C", "E-P-E", "E-P-P", "M-IN", "S-L-U", "S-PH", "T-B", "U-C"]
+        },
+        {
+            "displayName":"Balanced Scorecard",
+            "name":"bsc",
+            "icon":"bsc-icon",
+            "toolsets":["E-I-H", "E-I-L", "E-L-C", "E-L-U", "S-W", "E-P-P", "M-AS", "S-L-U", "S-PH", "T-M", "U-I"]
+        },
+        {
+            "displayName":"HIS Evaluation",
+            "name":"eval",
+            "icon":"eval-icon",
+            "toolsets":["E-I-H", "E-I-L", "E-L-C", "E-L-U", "E-P-P", "M-E", "S-L-U", "S-PH", "T-M", "U-I"]
+        },
+        {
+            "displayName":"Laboratory Evaluation",
+            "name":"lab",
+            "icon":"lab-icon",
+            "toolsets":["E-I-H", "E-I-L", "E-L-C", "E-L-U", "E-P-P", "M-E", "S-L-U", "S-PH", "T-M", "U-I"]
+        },
+        {
+            "displayName":"Nutrition Survey",
+            "name":"nut",
+            "icon":"nut-icon",
+            "toolsets":["E-I-H", "E-I-L", "E-L-C", "E-P-P", "M-AS", "S-FS", "S-PH","S-W", "S-N", "T-B", "U-C", "U-H"]
+        }
+    ]
+
+}

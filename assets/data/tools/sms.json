@@ -1,0 +1,10 @@
+{
+    "success":true,
+	"toc":[
+
+    {
+        "label":"Welcome",
+        "section":"sms-welcome",
+        "icon":"sms-welcome.png"
+    }]
+}

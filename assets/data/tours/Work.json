@@ -1,0 +1,33 @@
+{
+	"title": "Work Tour",
+	"id": "Work",
+	"items":
+	[
+		{
+			"title":"1. Welcome to the Work Tour",
+			"content":"<p>Start here to create, edit and collaborate on reports.</p>",
+			"position": "center",
+			"target":"WorkMenu"
+		},{
+			"title": "2. Notifications",
+			"content": "<p>Feed of messages to kepp you up-to-date with recent activity from other users.",
+			"position": "right",
+			"target": "siv-notifications-wrap"
+		},{
+			"title": "3. To Do List",
+			"content": "<p>List to remind you of key deadlines and other tasks at need to be completed.</p>",
+			"position": "left",
+			"target": "siv-todos-wrap"
+		},{
+			"title": "4. Reports Filter",
+			"content": "Click here to view the notifications and to do list for a specific report.",
+			"position": "right",
+			"target": "work-reports-filter-list"
+		},{
+			"title": "5. Create new report",
+			"content": "<p>You can start a new report at any time by clicking here.</p>",
+			"position": "right",
+			"target": "work-addBtn"
+		}
+	]
+}

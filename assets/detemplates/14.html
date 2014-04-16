@@ -1,0 +1,416 @@
+<div class="siv-r-bsi siv-r-wky-up">
+  <div class="siv-r-page-break">
+   <div class="siv-r-page-header">
+    <div class="siv-r-title-ctn"> <img class="siv-r-report-type" src={{{local_asset "icons/de_templates/round/14.svg"}}} />
+      <p class="siv-r-title-txt">Basic Indicator Report</p>
+      <p class="siv-r-year-txt"><span data-fieldname="{{id}}">{{{dateinfo "week"}}}</span><span data-fieldname="{{id}}">{{{dateinfo "month"}}}</span> <span data-fieldname="{{id}}">{{{dateinfo "year"}}}</span><span data-fieldname="{{id}}">{{{dateinfo "divider"}}}</span><span data-fieldname="{{id}}">{{{dateinfo "datespan"}}}</span></p>
+    </div>
+    <div class="siv-r-loc-can"></div>
+    <div class="siv-r-loc-ctn">
+      <div class="siv-r-flag-ctn">{{{helperFlagSVG "iso" "locationdetails" "icons/flags/round/flags-svg/" "siv-r-flag-img"}}}</div>
+      <p class="siv-r-loc-txt" data-fieldname="name">{{{embedded_value "locationdetails" "name"}}}</p>
+      <p class="siv-r-loc-cty" data-fieldname="countryname">{{{embedded_value "locationdetails" "countryname"}}}</p>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <div class="clear">
+    <div class="">
+      <div class="siv-r-single-head-ctn">
+        <h2 class="siv-r-table-txt">Basic Indicator Trends</h2>
+      </div>
+      <div class="siv-r-single-table-can"></div>
+      <div class="siv-r-single-table-can-border"></div>
+      <div class="siv-r-sect-head-ctn-mod">
+        <h2 class="siv-r-table-txt-mod">&nbsp;</h2>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div class="siv-r-table-head">
+      <div class="siv-r-table-col-name">
+        <h3 class="siv-r-table-name-txt">1. Population</h3>
+      </div>
+      <div class="siv-r-table-col-std">
+        <h4 class="siv-r-no-txt">No.</h4>
+        <div class="siv-r-no-can"></div>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-ind-txt">Indicator</h4>
+        <div class="siv-r-ind-can"></div>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-std-txt">Standard</h4>
+        <div class="siv-r-std-can"></div>
+      </div>
+      <div class="siv-r-line">
+        <div class="siv-r-table-col-std">
+          <h4 class="siv-r-eme-txt">{{{ind_linechart_date this.section1 "start"}}}</h4>
+          <div class="siv-r-std-can siv-r-eme-can"></div>
+        </div>
+        <div class="siv-r-table-ind siv-r-trend">
+          <h4 class="siv-r-emel-txt">Trend</h4>
+        </div>
+        <div class="siv-r-table-col-std siv-r-end-week">
+          <div class="siv-r-eme-can siv-r-week-can"></div>
+          <h4 class="siv-r-eme-txt">{{{ind_linechart_date this.section1 "end"}}}</h4>
+        </div>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-eme-txt">Notes</h4>
+        <div class="siv-r-std-can siv-r-eme-can"></div>
+      </div>
+    </div>
+    <table class="siv-r-table clear">
+      {{#section1}}
+      <tbody>
+      <tr>
+        <td class="siv-r-table-order">{{{item_number 1}}}</td>
+        <td colspan="3" class="siv-r-table-item" data-fieldname="{{id}}">{{lab}}</td>
+        <td class="siv-r-table-score" data-fieldname="{{id}}">{{{standard_result this}}}</td>
+        <td rowspan="2" class="siv-r-table-space" data-fieldname="{{id}}">&nbsp;</td>
+        <td rowspan="2" class="siv-r-chart-img" data-fieldname="{{id}}">{{{indicator_line_chart this}}}</td>
+        <td rowspan="2" class="siv-r-table-space">&nbsp;</td>
+        <td rowspan="2" class="siv-r-table-item-no" data-fieldname="{{id}}">{{{indicator_comment this}}}</td>
+        </tr>
+        <tr>
+        <td class="siv-r-table-order"></td>
+        <td class="siv-r-mam-v"></td>
+        <td class="siv-r-no-val"></td>
+        <td class="siv-r-ind-val" data-fieldname="{{id}}">{{{display_value this}}}{{{units this}}}</td>
+        <td class="siv-r-std-val" data-fieldname="{{id}}">{{txt}}</td>
+      </tr>
+      </tbody>
+      {{/section1}}
+    </table>
+  </div>
+  <!-- End of Population -->
+  <div class="clear">
+    <div class="siv-r-table-head">
+      <div class="siv-r-table-col-name">
+        <h3 class="siv-r-table-name-txt">2. Mortality</h3>
+      </div>
+      <div class="siv-r-table-col-std">
+        <h4 class="siv-r-no-txt">No.</h4>
+        <div class="siv-r-no-can"></div>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-ind-txt">Indicator</h4>
+        <div class="siv-r-ind-can"></div>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-std-txt">Standard</h4>
+        <div class="siv-r-std-can"></div>
+      </div>
+      <div class="siv-r-line">
+        <div class="siv-r-table-col-std">
+          <h4 class="siv-r-eme-txt">{{{ind_linechart_date this.section2 "start"}}}</h4>
+          <div class="siv-r-std-can siv-r-eme-can"></div>
+        </div>
+        <div class="siv-r-table-ind siv-r-trend">
+          <h4 class="siv-r-emel-txt">Trend</h4>
+        </div>
+        <div class="siv-r-table-col-std siv-r-end-week">
+          <div class="siv-r-eme-can siv-r-week-can"></div>
+          <h4 class="siv-r-eme-txt">{{{ind_linechart_date this.section2 "end"}}}</h4>
+        </div>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-eme-txt">Notes</h4>
+        <div class="siv-r-std-can siv-r-eme-can"></div>
+      </div>
+    </div>
+    <table class="siv-r-table clear">
+      {{#section2}}
+      <tbody>
+      <tr>
+        <td class="siv-r-table-order">{{{item_number 2}}}</td>
+        <td colspan="3" class="siv-r-table-item" data-fieldname="{{id}}">{{lab}}</td>
+        <td class="siv-r-table-score" data-fieldname="{{id}}">{{{standard_result this}}}</td>
+        <td rowspan="2" class="siv-r-table-space">&nbsp;</td>
+        <td rowspan="2" class="siv-r-chart-img" data-fieldname="{{id}}">{{{indicator_line_chart this}}}</td>
+        <td rowspan="2" class="siv-r-table-space">&nbsp;</td>
+        <td rowspan="2" class="siv-r-table-item-no" data-fieldname="{{id}}">{{{indicator_comment this}}}</td>
+        </tr>
+        <tr>
+        <td class="siv-r-table-order"></td>
+        <td class="siv-r-mam-v"></td>
+        <td class="siv-r-no-val" data-fieldname="{{id}}">{{{display_raw_value this}}}</td>
+        <td class="siv-r-ind-val" data-fieldname="{{id}}">{{{display_calc_value this}}}{{{units this}}}</td>
+        <td class="siv-r-std-val" data-fieldname="{{id}}">{{txt}}</td>
+      </tr>
+      </tbody>
+      {{/section2}}
+    </table>
+  </div>
+  <!-- end of Mortality -->
+  
+  <div class="clear">
+    <div class="siv-r-table-head">
+      <div class="siv-r-table-col-name">
+        <h3 class="siv-r-table-name-txt">3. Nutrition</h3>
+      </div>
+      <div class="siv-r-table-col-std">
+        <h4 class="siv-r-no-txt">No.</h4>
+        <div class="siv-r-no-can"></div>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-ind-txt">Indicator</h4>
+        <div class="siv-r-ind-can"></div>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-std-txt">Standard</h4>
+        <div class="siv-r-std-can"></div>
+      </div>
+      <div class="siv-r-line">
+        <div class="siv-r-table-col-std">
+          <h4 class="siv-r-eme-txt" data-fieldname="{{id}}">{{{ind_linechart_date this.section3 "start"}}}</h4>
+          <div class="siv-r-std-can siv-r-eme-can"></div>
+        </div>
+        <div class="siv-r-table-ind siv-r-trend">
+          <h4 class="siv-r-emel-txt">Trend</h4>
+        </div>
+        <div class="siv-r-table-col-std siv-r-end-week">
+          <div class="siv-r-eme-can siv-r-week-can"></div>
+          <h4 class="siv-r-eme-txt" data-fieldname="{{id}}">{{{ind_linechart_date this.section3 "end"}}}</h4>
+        </div>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-eme-txt">Notes</h4>
+        <div class="siv-r-std-can siv-r-eme-can"></div>
+      </div>
+    </div>
+    <table class="siv-r-table clear">
+      {{#section3}}
+      <tbody>
+      <tr>
+        <td class="siv-r-table-order">{{{item_number 3}}}</td>
+        <td colspan="3" class="siv-r-table-item" data-fieldname="{{id}}">{{lab}}</td>
+        <td class="siv-r-table-score" data-fieldname="{{id}}">{{{standard_result this}}}</td>
+        <td rowspan="2" class="siv-r-table-space">&nbsp;</td>
+        <td rowspan="2" class="siv-r-chart-img" data-fieldname="{{id}}">{{{indicator_line_chart this}}}</td>
+        <td rowspan="2" class="siv-r-table-space">&nbsp;</td>
+        <td rowspan="2" class="siv-r-table-item-no" data-fieldname="{{id}}">{{{indicator_comment this}}}</td>
+        </tr>
+        <tr>
+        <td class="siv-r-table-order"></td>
+        <td class="siv-r-mam-v"></td>
+        <td class="siv-r-no-val"></td>
+        <td class="siv-r-ind-val" data-fieldname="{{id}}">{{{display_value this}}}{{{units this}}}</td>
+        <td class="siv-r-std-val" data-fieldname="{{id}}">{{txt}}</td>
+      </tr>
+      </tbody>
+      {{/section3}}
+    </table>
+  </div>
+  <!-- end of Nutrition -->
+  
+  <div class="clear">
+    <div class="siv-r-table-head">
+      <div class="siv-r-table-col-name">
+        <h3 class="siv-r-table-name-txt">4. WASH</h3>
+      </div>
+      <div class="siv-r-table-col-std">
+        <h4 class="siv-r-no-txt">No.</h4>
+        <div class="siv-r-no-can"></div>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-ind-txt">Indicator</h4>
+        <div class="siv-r-ind-can"></div>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-std-txt">Standard</h4>
+        <div class="siv-r-std-can"></div>
+      </div>
+      <div class="siv-r-line">
+        <div class="siv-r-table-col-std">
+          <h4 class="siv-r-eme-txt" data-fieldname="{{id}}">{{{ind_linechart_date this.section4 "start"}}}</h4>
+          <div class="siv-r-std-can siv-r-eme-can"></div>
+        </div>
+        <div class="siv-r-table-ind siv-r-trend">
+          <h4 class="siv-r-emel-txt">Trend</h4>
+        </div>
+        <div class="siv-r-table-col-std siv-r-end-week">
+          <div class="siv-r-eme-can siv-r-week-can"></div>
+          <h4 class="siv-r-eme-txt" data-fieldname="{{id}}">{{{ind_linechart_date this.section4 "end"}}}</h4>
+        </div>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-eme-txt">Notes</h4>
+        <div class="siv-r-std-can siv-r-eme-can"></div>
+      </div>
+    </div>
+    <table class="siv-r-table clear">
+      {{#section4}}
+      <tbody>
+      <tr>
+        <td class="siv-r-table-order">{{{item_number 4}}}</td>
+        <td colspan="3" class="siv-r-table-item" data-fieldname="{{id}}">{{lab}}</td>
+        <td class="siv-r-table-score">{{{standard_result this}}}</td>
+        <td rowspan="2" class="siv-r-table-space" data-fieldname="{{id}}">&nbsp;</td>
+        <td rowspan="2" class="siv-r-chart-img" data-fieldname="{{id}}">{{{indicator_line_chart this}}}</td>
+        <td rowspan="2" class="siv-r-table-space">&nbsp;</td>
+        <td rowspan="2" class="siv-r-table-item-no" data-fieldname="{{id}}">{{{indicator_comment this}}}</td>
+        </tr>
+        <tr>
+        <td class="siv-r-table-order"></td>
+        <td class="siv-r-mam-v"></td>
+        <td class="siv-r-no-val" data-fieldname="{{id}}">{{{display_raw_value this}}}</td>
+        <td class="siv-r-ind-val" data-fieldname="{{id}}">{{{display_calc_value this}}}{{{units this}}}</td>
+        <td class="siv-r-std-val" data-fieldname="{{id}}">{{txt}}</td>
+      </tr>
+      </tbody>
+      {{/section4}}
+    </table>
+  </div>
+  <!-- end of WASH --> 
+  
+  <!-- data sources the easy way
+  <div class="clear">
+    <div class="siv-r-table-head">
+      <div class="siv-r-table-col-name">
+        <h3 class="siv-r-table-name-txt">5. Data Sources</h3>
+      </div>
+    </div>  
+  
+    <table class="siv-r-table clear">
+     {{#section5}}
+      <tr>
+        <td class="siv-r-std-val">{{{item_number 5}}}</td>
+        <td class="siv-r-table-item">{{lab}}</td>
+        <td class="siv-r-ind-val">{{{display_value this}}}</td>  
+      </tr>
+      {{/section5}}
+    </table>
+  </div>
+  
+  end of datasources --> 
+  
+  <!-- contacts the easy way
+  <div class="clear">
+    <div class="siv-r-table-head">
+      <div class="siv-r-table-col-name">
+        <h3 class="siv-r-table-name-txt">6. Contact Info</h3>
+      </div>
+    </div>  
+  
+    <table class="siv-r-table clear">
+     {{#section6}}
+      <tr>
+        <td class="siv-r-std-val">{{{item_number 6}}}</td>
+        <td class="siv-r-table-item">{{lab}}</td>
+        <td class="siv-r-ind-val">{{{display_value this}}}</td>  
+      </tr>
+      {{/section6}}
+    </table>
+  </div>
+ end of contact info -->
+  
+  <div class="siv-r-legend-wrap">
+    <div class=" siv-r-container siv-r-contact-ctn clear">
+      <div class="clear"></div>
+        <table class="siv-r-table">
+          <tr>
+        	<td rowspan="3"><h3 class="siv-r-contact-header siv-r-source-head"> Data Sources</h3></td>
+            <td class="siv-r-causes-li"><span>1.</span> <span data-fieldname="pop_source">{{{helperDisplayIndicator "pop_source" "lab" 0.pop_source}}}: {{{helperDisplayIndicator "pop_source" "val" 0.pop_source}}}</span></td>
+            <td class="siv-r-causes-li"><span>4.</span> <span data-fieldname="sam_source">{{{helperDisplayIndicator "sam_source" "lab" 0.sam_source}}}: {{{helperDisplayIndicator "sam_source" "val" 0.sam_source}}}</span></td>
+          </tr>
+          <tr>
+            <td class="siv-r-causes-li"><span>2.</span> <span data-fieldname="mort_source">{{{helperDisplayIndicator "mort_source" "lab" 0.mort_source}}}: {{{helperDisplayIndicator "mort_source" "val" 0.mort_source}}}</span></td>
+            <td class="siv-r-causes-li"><span>5.</span> <span data-fieldname="wash_source">{{{helperDisplayIndicator "wash_source" "lab" 0.wash_source}}}: {{{helperDisplayIndicator "wash_source" "val" 0.wash_source}}}</span></td>
+          </tr>
+          <tr>
+            <td class="siv-r-causes-li"><span>3.</span> <span data-fieldname="gam_source">{{{helperDisplayIndicator "gam_source" "lab" 0.gam_source}}}: {{{helperDisplayIndicator "gam_source" "val" 0.gam_source}}}</span></td>
+            <td></td>
+          </tr>
+        </table>
+      <div class="clear"></div>
+    </div>
+    <div class="siv-r-pdf-space"></div>
+    <div class=" siv-r-container siv-r-contact-ctn clear">
+      <div class="clear"></div>
+      <div class="siv-r-contact-header-ctn">
+        <h3 class="siv-r-contact-header">Contact Information</h3>
+      </div>
+      <div class="siv-r-contact-table-ctn">
+        <div class="siv-r-contact-table">
+          <table class="siv-r-table">
+            <tbody>
+              <tr>
+                <td class="siv-r-contact-camp" data-fieldname="contact1_name">{{{helperDisplayIndicator "contact1_name" "val" 0.contact1_name}}}</td>
+                <td class="siv-r-contact-n">email: <span class="siv-r-contact-v" data-fieldname="contact1_email">{{{helperDisplayIndicator "contact1_email" "val" 0.contact1_email}}}</span></td>
+              </tr>
+              <tr>
+                <td rowspan="2" class="siv-r-contact-name" data-fieldname="contact1_locname">{{{helperDisplayIndicator "contact1_locname" "val" 0.contact1_locname}}}</td>
+                <td class="siv-r-contact-n">telephone: <span class="siv-r-contact-v" data-fieldname="contact1_phone">{{{helperDisplayIndicator "contact1_phone" "val" 0.contact1_phone}}}</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="siv-r-contact-table" style="border:none;">
+          <table class="siv-r-table">
+            <tbody>
+              <tr>
+                <td class="siv-r-contact-camp" data-fieldname="contact2_name">{{{helperDisplayIndicator "contact2_name" "val" 0.contact2_name}}}</td>
+                <td class="siv-r-contact-n">email: <span class="siv-r-contact-v" data-fieldname="contact2_email">{{{helperDisplayIndicator "contact2_email" "val" 0.contact2_email}}}</span></td>
+              </tr>
+              <tr>
+                <td rowspan="2"  class="siv-r-contact-name" data-fieldname="contact2_locname">{{{helperDisplayIndicator "contact2_locname" "val" 0.contact2_locname}}}</td>
+                <td class="siv-r-contact-n">telephone: <span class="siv-r-contact-v" data-fieldname="contact2_phone">{{{helperDisplayIndicator "contact2_phone" "val" 0.contact2_phone}}}</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <!-- end contact info version 2 -->
+    
+    <div class="siv-r-container siv-r-ptn-wrap clear">
+      <p class="siv-r-ptn-txt"> UNHCR gratefully acknowledges the support of the following partners:</p>
+      <div class="siv-r-ptn-ctn"> <img id="siv-r-partner_1" class="siv-r-ptn-logo" src="about:blank" /> <img id="siv-r-partner_2" class="siv-r-ptn-logo" src="about:blank" /> <img id="siv-r-partner_3" class="siv-r-ptn-logo" src="about:blank" /> <img id="siv-r-partner_4" class="siv-r-ptn-logo" src="about:blank" /> <img id="siv-r-partner_5" class="siv-r-ptn-logo" src="about:blank" /> <img id="siv-r-partner_6" class="siv-r-ptn-logo" src="about:blank" /> <img id="siv-r-partner_7" class="siv-r-ptn-logo" src="about:blank" /> <img id="siv-r-partner_8" class="siv-r-ptn-logo" src="about:blank" /> <img id="siv-r-partner_9" class="siv-r-ptn-logo" src="about:blank" /></div>
+    </div>
+    <div class="clear"></div>
+   <div class="siv-r-legend-ctn">
+        <table class="siv-r-interactive-ctn">
+          <tbody>
+            <tr>
+              <td rowspan="2" class="siv-r-interactive-32"><img class="siv-r-interactive-32" src={{{local_asset "images/logos/siv-logo-black.png"}}}/></td>
+              <td class="siv-r-interactive-title siv-r-interactive-space">View interactive maps and statistics online</td>
+            </tr>
+            <tr>
+              <td class="siv-r-table-item siv-r-interactive-row"><a href="http://twine.unhcr.org" class="siv-r-interactive-link">http://twine.unhcr.org</a></td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="siv-r-legend">
+          <tbody>
+            <tr>
+              <td colspan="6"><h3 class="siv-r-legend-header">Legend</h3></td>
+            </tr>
+            <tr>
+              <td class="siv-r-score siv-r-score-green">2</td>
+              <td class="siv-r-table-indicator "><span>Standard met</span></td>
+              <td class="siv-r-score siv-r-score-yellow">!</td>
+              <td class="siv-r-table-indicator "><span>Standard borderline</span></td>
+              <td class="siv-r-score siv-r-score-red">D</td>
+              <td class="siv-r-table-indicator "><span>Standard not met</span></td>
+            </tr>
+            <tr>
+              <td class="siv-r-score siv-r-score-purple">^</td>
+              <td class="siv-r-table-indicator "><span>Interpret data with care</span></td>
+              <td class="siv-r-score siv-r-score-blue">?</td>
+              <td class="siv-r-table-indicator "><span>Data missing</span></td>
+              <td class="siv-r-score siv-r-score-black">-</td>
+              <td class="siv-r-table-indicator "><span>Not applicable</span></td>
+            </tr>
+          </tbody>
+        </table>
+        <img class="siv-r-contact-logo" src={{{local_asset "images/reports/phhiv/unhcr-logo.png"}}}/>
+        <div class="clear"> </div>
+      </div>
+      <div class="siv-r-qrcode" id="qrcode"> </div>
+      <div class="clear"> </div>
+    </div>
+  </div>
+  <!--end of page--> 
+</div>

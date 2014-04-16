@@ -1,0 +1,665 @@
+<div class="siv-r-urb">
+<div class="siv-r-page-break">
+  <div class="siv-r-page-header">
+    <div class="siv-r-loc-ctn">
+      <h1 class="siv-r-loc-txt">{{{embedded_value "locationdetails" "location_name"}}}</h1>
+      <p class="siv-r-loc-cty"><span>|</span> <span>{{{embedded_value "locationdetails" "LOC_COUNTRYNAME"}}}</span></p>
+    </div>
+    <div class="siv-r-loc-can"></div>
+    <div class="siv-r-title-can"></div>
+    <div class="siv-r-title-ctn">
+      <p class="siv-r-title-txt">PHHIV Urban Fact Sheet </p>
+      <div class="siv-r-year-ctn">
+        <p class="siv-r-year-txt">{{{dateinfo "year"}}}</p>
+      </div>
+    </div>
+  </div>
+  <div class="siv-r-flag-ctn clear">{{{helperFlagSVG "iso" "locationdetails" "icons/flags/round/flags-svg/" "siv-r-flag-img"}}}</div>
+  <div class="siv-r-container siv-r-gen clear">
+    <div class="siv-r-gen-head-ctn">
+      <h2 class="siv-r-gen-head-txt">General Information</h2>
+    </div>
+    <div class="siv-r-gen-graph-ctn">
+      <div class="siv-r-gen-graph-img">{{{poppie "popdata" "siv-r-gen-graph-img" }}}</div>
+    </div>
+    <div class="siv-r-gen-pop-ctn">
+      <p class="siv-r-gen-txt">Total population of concern:</p>
+      <p class="siv-r-gen-txt siv-r-gen-pop">{{{display_raw_value AR_GEN_POP_TOTAL}}}</p>
+    </div>
+  </div>
+  <div class="siv-r-gen-head-can"></div>
+  <div class="siv-r-country-map-ctn ">{{{image  "map" "locationdetails" "siv-r-country-map-img"}}}</div>
+  <div class="siv-r-container siv-r-org">
+    <div class="siv-r-ctn-head">
+      <h2 class="siv-r-ctn-head-txt">Origin of Refugees</h2>
+    </div>
+    <div class="siv-r-num-list">
+      <div class="siv-r-list">
+        <div class="siv-r-list-num">1</div>
+        <p class="siv-r-list-txt">{{{display_raw_value AR_GEN_ORIGIN}}}</p>
+      </div>
+      <div class="siv-r-list">
+        <div class="siv-r-list-num">2</div>
+        <p class="siv-r-list-txt">{{{display_raw_value AR_GEN_ORIGIN}}}</p>
+      </div>
+      <div class="siv-r-list">
+        <div class="siv-r-list-num">3</div>
+        <p class="siv-r-list-txt">{{{display_raw_value AR_GEN_ORIGIN}}}</p>
+      </div>
+    </div>
+  </div>
+  <div class="siv-r-container siv-r-ptn">
+    <div class="siv-r-ctn-head">
+      <h2 class="siv-r-ctn-head-txt">Implementing Partners</h2>
+    </div>
+    <div class="siv-r-num-list">
+      <div class="siv-r-list">
+        <div class="siv-r-list-num">1</div>
+        <p class="siv-r-list-txt">Health / HIV: <span id="siv-r-AR_GEN_PART_HEALTHHIV-v">{{{display_raw_value }}}</span></p>
+      </div>
+      <div class="siv-r-list">
+        <div class="siv-r-list-num">2</div>
+        <p class="siv-r-list-txt">Nutrition: <span id="siv-r-AR_GEN_PART_NUT-v">{{{display_raw_value }}}</span></p>
+      </div>
+      <div class="siv-r-list">
+        <div class="siv-r-list-num">3</div>
+        <p class="siv-r-list-txt">WASH: <span id="siv-r-AR_GEN_PART_WASH-v">{{{display_raw_value }}}</span></p>
+      </div>
+    </div>
+  </div>
+  <br />
+  <div class="clear"></div>
+  <div class="siv-r-glc-head-can"></div>
+  <div class="siv-r-glc">
+    <div class="siv-r-glc-head-ctn">
+      <h2 class="siv-r-glc-head-txt">Key Indicators at a Glance</h2>
+    </div>
+    <div class="siv-r-glc-ctn siv-r-container">
+      <div>
+        <div class="siv-r-list-num">1</div>
+        <p class="siv-r-glc-txt">Do urban refugees have access to National / Government primary health care facilites? <span class="siv-r-glc-ind">{{{display_raw_value AR_PH_ACCESS_PRIMARY}}}</span></p>
+      </div>
+      <h3 class="siv-r-glc-title">Access to primary health care: <span class="siv-r-score siv-r-glc-score">{{{standard_result AR_PH_ACCESS_PRIMARY}}}</span></h3>
+      
+    </div>
+    <div class="siv-r-glc-ctn siv-r-glc-margin siv-r-container">
+      <div>
+        <div class="siv-r-list-num">2</div>
+        <p class="siv-r-glc-txt">Do urban refugees have access to equal ART services as host nationals? <span class="siv-r-glc-ind">{{{display_raw_value AR_HIV_ACCESS_ARTEQFEES}}}</span></p>
+      </div>
+      <h3 class="siv-r-glc-title">Equal ART services: <span class="siv-r-score siv-r-glc-score">{{{standard_result AR_HIV_ACCESS_ARTEQFEES}}}</span></h3>
+      
+    </div>
+    <div class="siv-r-glc-ctn siv-r-container">
+      <div>
+        <div class="siv-r-list-num">3</div>
+        <p class="siv-r-glc-txt">Do urban refugees have access to equal ART fees as host nationals? <span class="siv-r-glc-ind">{{{display_raw_value AR_HIV_ACCESS_ARTEQACCESS}}}</span></p>
+      </div>
+      <h3 class="siv-r-glc-title">Equal ART fees: <span class="siv-r-score siv-r-glc-score">{{{standard_result AR_HIV_ACCESS_ARTEQACCESS}}}</span></h3>
+      
+    </div>
+    <div class="clear"></div>
+    <div class="siv-r-glc-Bctn siv-r-container">
+      <div>
+        <div class="siv-r-list-num">4</div>
+        <p class="siv-r-glc-txt">Do urban refugees have access to free routine vaccintions? <span class="siv-r-glc-ind">{{{display_raw_value AR_PH_ACCESS_VACCFEES}}}</span></p>
+      </div>
+      <h3 class="siv-r-glc-title">Free routine vaccinations: <span class="siv-r-score siv-r-glc-score">{{{standard_result AR_PH_ACCESS_VACCFEES}}}</span></h3>
+      
+    </div>
+    <div class="siv-r-glc-Bctn siv-r-glc-margin siv-r-container">
+      <div>
+        <div class="siv-r-list-num">5</div>
+        <p class="siv-r-glc-txt">Do urban refugees have access to free antenatal care? <span class="siv-r-glc-ind">{{{display_raw_value AR_RH_ACCESS_ANCFEES}}}</span></p>
+      </div>
+      <h3 class="siv-r-glc-title">Free antenatal care: <span class="siv-r-score siv-r-glc-score">{{{standard_result AR_RH_ACCESS_ANCFEES}}}</span></h3>
+      
+    </div>
+    <div class="siv-r-glc-Bctn siv-r-container">
+      <div>
+        <div class="siv-r-list-num">6</div>
+        <p class="siv-r-glc-txt">Do urban refugees have access to free PMTCT services? <span class="siv-r-glc-ind">{{{display_raw_value AR_HIV_ACCESS_PMTCTFEES}}}</span></p>
+      </div>
+      <h3 class="siv-r-glc-title">Free PMTCT services: <span class="siv-r-score siv-r-glc-score">{{{standard_result AR_HIV_ACCESS_PMTCTFEES}}}</span></h3>
+      
+    </div>
+    <div class="clear"></div>
+  </div>
+  <div class="siv-r-chart-wrap">
+    <div class="siv-r-container siv-r-chart-ctn">
+      <h2 class="siv-r-chart-title">Over 5 Morbidity (%)</h2>
+      <div id="siv-r-morb-o5-pie"  class="siv-r-chart-img">{{{morbpie "morbo5data" "siv-r-chart-img"}}}</div>
+    </div>
+    <div class="siv-r-container siv-r-chart-ctn">
+      <h2 class="siv-r-chart-title">Under 5 Morbidity (%)</h2>
+      <div id="siv-r-morb-u5-pie" class="siv-r-chart-img">{{{morbpie "morbu5data" "siv-r-chart-img"}}}</div>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <div class="clear">
+    <div class="siv-r-sect-head-ctn">
+      <h2 class="siv-r-table-txt">Public Health</h2>
+    </div>
+    <div class="siv-r-table-can"></div>
+    <div class="clear"> </div>
+    <div class="siv-r-table-head">
+      <div class="siv-r-table-col-name">
+        <h3 class="siv-r-table-name-txt">Access and Availability</h3>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-ind-txt">Indicator</h4>
+        <div class="siv-r-ind-can"></div>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-std-txt">Standard</h4>
+        <div class="siv-r-std-can"></div>
+      </div>
+    </div>
+    <div class="siv-r-table-head-space">&nbsp;</div>
+    <div class="siv-r-table-head">
+      <div class="siv-r-table-col-name">
+        <h3 class="siv-r-table-name-txt">Health Information</h3>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-ind-txt">Indicator</h4>
+        <div class="siv-r-ind-can"></div>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-std-txt">Standard</h4>
+        <div class="siv-r-std-can"></div>
+      </div>
+    </div>
+    <table class="siv-r-table clear">
+      <tr>
+        <td class="siv-r-table-item siv-r-table-hl">Do refugees have access to national/government primary health care facilities?</td>
+        <td class="siv-r-ind-val siv-r-table-hl">{{{display_raw_value AR_PH_ACCESS_PRIMARY}}}</td>
+        <td class="siv-r-std-val siv-r-table-hl">{{{standard AR_PH_ACCESS_PRIMARY}}}</td>
+        <td class="siv-r-table-score siv-r-table-hl">{{{standard_result AR_PH_ACCESS_PRIMARY}}}</td>
+        <td class="siv-r-table-space">&nbsp;</td>
+        <td class="siv-r-table-item siv-r-table-hl">Does UNHCR receive regular monthly reports from partners on the delivery of health services to urban refugees?</td>
+        <td class="siv-r-ind-val siv-r-table-hl">{{{display_raw_value AR_PH_HIS_REPORT}}}</td>
+        <td class="siv-r-std-val siv-r-table-hl">{{{standard AR_PH_HIS_REPORT}}}</td>
+        <td class="siv-r-table-score siv-r-table-hl">{{{standard_result AR_PH_HIS_REPORT}}}</td>
+      </tr>
+      <tr>
+        <td class="siv-r-table-item">Are routine vaccinations provided free of charge to refugee children &lt;5?</td>
+        <td class="siv-r-ind-val">{{{display_raw_value AR_PH_ACCESS_VACCFEES}}}</td>
+        <td class="siv-r-std-val">{{{standard AR_PH_ACCESS_VACCFEES}}}</td>
+        <td class="siv-r-table-score">{{{standard_result AR_PH_ACCESS_VACCFEES}}}</td>
+        <td class="siv-r-table-space">&nbsp;</td>
+        <td class="siv-r-table-item">Does your operation wish to receive more support to establish/strengthen the system for collecting public health data</td>
+        <td class="siv-r-ind-val">{{{display_raw_value AR_PH_HIS_SUPPORT}}}</td>
+        <td class="siv-r-std-val">{{{standard AR_PH_HIS_SUPPORT}}}</td>
+        <td class="siv-r-table-score">{{{standard_result AR_PH_HIS_SUPPORT}}}</td>
+      </tr>
+      <tr>
+        <td class="siv-r-table-item siv-r-table-hl">Are sufficient national/government primary health care facilities available and accessible to refugees given the size and distribution of the urban refugee population?</td>
+        <td class="siv-r-ind-val siv-r-table-hl">{{{display_raw_value AR_PH_ACCESS_AVAIL}}}</td>
+        <td class="siv-r-std-val siv-r-table-hl">{{{standard AR_PH_ACCESS_AVAIL}}}</td>
+        <td class="siv-r-table-score siv-r-table-hl">{{{standard_result AR_PH_ACCESS_AVAIL}}}</td>
+        <td class="siv-r-table-space">&nbsp;</td>
+        <td class=" siv-r-table-hl"></td>
+        <td class=" siv-r-table-hl"></td>
+        <td class=" siv-r-table-hl"></td>
+        <td class=" siv-r-table-hl"></td>
+      </tr>
+      <tr>
+        <td class="siv-r-table-item">Do refugees have access to national/government secondary and tertiary health care?</td>
+        <td class="siv-r-ind-val">{{{display_raw_value AR_PH_ACCESS_SECTERACCESS}}}</td>
+        <td class="siv-r-std-val">{{{standard AR_PH_ACCESS_SECTERACCESS}}}</td>
+        <td class="siv-r-table-score">{{{standard_result AR_PH_ACCESS_SECTERACCESS}}}</td>
+        <td class="siv-r-table-space">&nbsp;</td>
+        <td><h3 class="siv-r-table-name-txt">Patient Load</h3></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="siv-r-table-item siv-r-table-hl">Do refugees pay the same amount for national/government secondary and tertiary health care as host nationals?</td>
+        <td class="siv-r-ind-val siv-r-table-hl">{{{display_raw_value AR_PH_ACCESS_SECTEREQUAL}}}</td>
+        <td class="siv-r-std-val siv-r-table-hl">{{{standard AR_PH_ACCESS_SECTEREQUAL}}}</td>
+        <td class="siv-r-table-score siv-r-table-hl">{{{standard_result AR_PH_ACCESS_SECTEREQUAL}}}</td>
+        <td class="siv-r-table-space">&nbsp;</td>
+        <td class="siv-r-table-item siv-r-table-hl">Average number of new patients per month</td>
+        <td class="siv-r-ind-val siv-r-table-hl">{{{display_raw_value AR_PH_UTIL_NEW}}}</td>
+        <td class="siv-r-std-val siv-r-table-hl">{{{standard AR_PH_UTIL_NEW}}}</td>
+        <td class="siv-r-table-score siv-r-table-hl">{{{standard_result AR_PH_UTIL_NEW}}}</td>
+      </tr>
+      <tr>
+        <td class="siv-r-empty-cell"></td>
+        <td class="siv-r-empty-cell"></td>
+        <td class="siv-r-empty-cell"></td>
+        <td class="siv-r-empty-cell"></td>
+        <td class="siv-r-table-space">&nbsp;</td>
+        <td class="siv-r-table-item">Average number of repeat patients per month</td>
+        <td class="siv-r-ind-val">{{{display_raw_value AR_PH_UTIL_RPT}}}</td>
+        <td class="siv-r-std-val">{{{standard AR_PH_UTIL_RPT}}}</td>
+        <td class="siv-r-table-score">{{{standard_result AR_PH_UTIL_RPT}}}</td>
+      </tr>
+      <tr>
+        <td class="siv-r-empty-cell"></td>
+        <td class="siv-r-empty-cell"></td>
+        <td class="siv-r-empty-cell"></td>
+        <td class="siv-r-empty-cell"></td>
+        <td class="siv-r-table-space">&nbsp;</td>
+        <td class="siv-r-table-item siv-r-table-hl">Average number of referrals per month</td>
+        <td class="siv-r-ind-val siv-r-table-hl">{{{display_raw_value AR_PH_REFER_NUMB}}}</td>
+        <td class="siv-r-std-val siv-r-table-hl">{{{standard AR_PH_REFER_NUMB}}}</td>
+        <td class="siv-r-table-score siv-r-table-hl">{{{standard_result AR_PH_REFER_NUMB}}}</td>
+    </table>
+  </div>
+  <div class="clear"> </div>
+  <!-- end of Public Health -->
+</div>
+<div class="siv-r-page-break siv-r-foot-page">
+  <div class="siv-r-hide">
+    <div class="siv-r-sum-can"></div>
+    <div class="siv-r-container siv-r-summary-ctn">
+      <div class="siv-r-para-img-ctn"><img class="siv-r-ico-summary" src={{{local_asset "images/reports/phhiv/ico-report.png"}}} /></div>
+      <h2 class="siv-r-para-title">Public Health comments</h2>
+      <p id="siv-r-AR_TEXT_OBS_HEALTH-v" class="siv-r-obj-txt clear">-</p>
+    </div>
+  </div>
+
+  <div class="clear">
+    <div class="siv-r-sect-head-ctn">
+      <h2 class="siv-r-table-txt">Reproductive Health</h2>
+    </div>
+    <div class="siv-r-table-can"></div>
+    <div class="clear"></div>
+    <div class="siv-r-table-head">
+      <div class="siv-r-table-col-name-no">
+        <h3 class="siv-r-table-name-txt">Maternal and Newborn Health</h3>
+      </div>
+      <div class="siv-r-table-col-no">
+        <h4 class="siv-r-no-txt">No.</h4>
+        <div class="siv-r-no-can"></div>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-ind-txt">Indicator</h4>
+        <div class="siv-r-ind-can"></div>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-std-txt">Standard</h4>
+        <div class="siv-r-std-can"></div>
+      </div>
+    </div>
+    <div class="siv-r-table-head-space">&nbsp;</div>
+    <div class="siv-r-table-head">
+      <div class="siv-r-table-col-name">
+        <h3 class="siv-r-table-name-txt">Sexual and Gender based Violence</h3>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-ind-txt">Indicator</h4>
+        <div class="siv-r-ind-can"></div>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-std-txt">Standard</h4>
+        <div class="siv-r-std-can"></div>
+      </div>
+    </div>
+    <table class="siv-r-table clear">
+      <tr>
+        <td class="siv-r-table-item-no siv-r-table-hl">Is antenatal care provided free of charge to refugee women?</td>
+        <td class="siv-r-no-val siv-r-table-hl"></td>
+        <td class="siv-r-ind-val siv-r-table-hl">{{{display_raw_value AR_RH_ACCESS_ANCFEES}}}</td>
+        <td class="siv-r-std-val siv-r-table-hl">{{{standard AR_RH_ACCESS_ANCFEES}}}</td>
+        <td class="siv-r-table-score siv-r-table-hl">{{{standard_result AR_RH_ACCESS_ANCFEES}}}</td>
+        <td class="siv-r-table-space">&nbsp;</td>
+        <td class="siv-r-table-item siv-r-table-hl">Number of reported rape cases</td>
+        <td class="siv-r-ind-val siv-r-table-hl">{{{display_raw_value AR_RH_SGBV_NUMB}}}</td>
+        <td class="siv-r-std-val siv-r-table-hl">{{{standard AR_RH_SGBV_NUMB}}}</td>
+        <td class="siv-r-table-score siv-r-table-hl">{{{standard_result AR_RH_SGBV_NUMB}}}</td>
+      </tr>
+      <tr>
+        <td class="siv-r-table-item-no">Do refugees have to pay for emergency caesarean sections?</td>
+        <td class="siv-r-no-val"></td>
+        <td class="siv-r-ind-val">{{{display_raw_value AR_RH_ACCESS_DELACCESS}}}</span></td>
+        <td class="siv-r-std-val">{{{standard AR_RH_ACCESS_DELACCESS}}}</td>
+        <td class="siv-r-table-score">{{{standard_result AR_RH_ACCESS_DELACCESS}}}</td>
+        <td class="siv-r-table-space">&nbsp;</td>
+        <td class="siv-r-table-item">Proportion of rape survivors who received PEP* &lt;72 hours</td>
+        <td class="siv-r-ind-val">{{{display_raw_value AR_RH_SGBV_PEP}}}</td>
+        <td class="siv-r-std-val">{{{standard AR_RH_SGBV_PEP}}}</td>
+        <td class="siv-r-table-score">{{{standard_result AR_RH_SGBV_PEP}}}</td>
+      </tr>
+      <tr>
+        <td class="siv-r-table-item-no siv-r-table-hl">What is the % cost of a caesarean section in a government hospital compared to the average monthly income of a refugee family?</td>
+        <td  class="siv-r-no-val siv-r-table-hl">$<span>{{{display_raw_value AR_RH_ACCESS_CSCOST}}}</span></td>
+        <td  class="siv-r-ind-val siv-r-table-hl"><span>{{{display_calc_value AR_RH_ACCESS_CSCOST}}}</span>%</td>
+        <td class="siv-r-std-val siv-r-table-hl">{{{standard AR_RH_ACCESS_CSCOST}}}</td>
+        <td class="siv-r-table-score siv-r-table-hl">{{{standard_result AR_RH_ACCESS_CSCOST}}}</td>
+        <td class="siv-r-table-space">&nbsp;</td>
+        <td class="siv-r-table-item siv-r-table-hl">Proportion of rape survivors who received ECP** &lt; 120 hours</td>
+        <td class="siv-r-ind-val siv-r-table-hl">{{{display_raw_value AR_RH_SGBV_ECP}}}</td>
+        <td class="siv-r-std-val siv-r-table-hl">{{{standard AR_RH_SGBV_ECP}}}</td>
+        <td class="siv-r-table-score siv-r-table-hl">{{{standard_result AR_RH_SGBV_ECP}}}</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="siv-r-table-space">&nbsp;</td>
+        <td class="siv-r-table-item">Proportion of rape survivors who received STI*** prophylaxis &lt; 2 wks</td>
+        <td class="siv-r-ind-val">{{{display_raw_value AR_RH_SGBV_STI}}}</td>
+        <td class="siv-r-std-val">{{{standard AR_RH_SGBV_STI}}}</td>
+        <td class="siv-r-table-score">{{{standard_result AR_RH_SGBV_STI}}}</td>
+      </tr>
+    </table>
+    <p class="clear siv-r-source-r">* Post-exposure prophylaxis ** Emergency contraceptive pill *** Sexually transmitted infection</p>
+  </div>
+  <!-- End of Reporductive Health -->
+  <div class="clear"> </div>
+  <div class="siv-r-hide">
+    <div class="siv-r-sum-can"></div>
+    <div class="siv-r-container siv-r-summary-ctn">
+      <div class="siv-r-para-img-ctn"><img class="siv-r-ico-summary" src={{{local_asset "images/reports/phhiv/ico-report.png"}}} /></div>
+      <h2 class="siv-r-para-title">Reproductive Health comments</h2>
+      <p class="siv-r-obj-txt clear">{{{display_raw_value AR_TEXT_OBS_RH}}}</p>
+    </div>
+  </div>
+  <div>
+    <div class="siv-r-sect-head-ctn">
+      <h2 class="siv-r-table-txt">HIV/AIDS</h2>
+    </div>
+    <div class="siv-r-table-can"></div>
+    <div class="clear"></div>
+    <div class="siv-r-table-head">
+      <div class="siv-r-table-col-name">
+        <h3 class="siv-r-table-name-txt">Prevention</h3>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-ind-txt">Indicator</h4>
+        <div class="siv-r-ind-can"></div>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-std-txt">Standard</h4>
+        <div class="siv-r-std-can"></div>
+      </div>
+    </div>
+    <div class="siv-r-table-head-space">&nbsp;</div>
+    <div class="siv-r-table-head">
+      <div class="siv-r-table-col-name">
+        <h3 class="siv-r-table-name-txt">Care and Treatment</h3>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-ind-txt">Indicator</h4>
+        <div class="siv-r-ind-can"></div>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-std-txt">Standard</h4>
+        <div class="siv-r-std-can"></div>
+      </div>
+    </div>
+    <table class="siv-r-table clear">
+      <tr>
+        <td class="siv-r-table-item siv-r-table-hl">Does UNHCR advocate for and/or support HIV prevention among sex workers? </td>
+        <td class="siv-r-ind-val siv-r-table-hl">{{{display_raw_value AR_HIV_ACCESS_SEX}}}</td>
+        <td class="siv-r-std-val siv-r-table-hl">{{{standard AR_HIV_ACCESS_SEX}}}</td>
+        <td class="siv-r-table-score siv-r-table-hl">{{{standard_result AR_HIV_ACCESS_SEX}}}</td>
+        <td class="siv-r-table-space">&nbsp;</td>
+        <td class="siv-r-table-item siv-r-table-hl">Do PoCs have equal access to ART** as host nationals?</td>
+        <td class="siv-r-ind-val siv-r-table-hl">{{{display_raw_value AR_HIV_ACCESS_ARTEQACCESS}}}</td>
+        <td class="siv-r-std-val siv-r-table-hl">{{{standard AR_HIV_ACCESS_ARTEQACCESS}}}</td>
+        <td class="siv-r-table-score siv-r-table-hl">{{{standard_result AR_HIV_ACCESS_ARTEQACCESS}}}</td>
+      </tr>
+      <tr>
+        <td class="siv-r-table-item">Does UNHCR advocate for and/or support HIV prevention programmes for intravenous drug users?</td>
+        <td class="siv-r-ind-val">{{{display_raw_value AR_HIV_ACCESS_IVDU}}}</td>
+        <td class="siv-r-std-val">{{{standard AR_HIV_ACCESS_IVDU}}}</td>
+        <td class="siv-r-table-score">{{{standard_result AR_HIV_ACCESS_IVDU}}}</td>
+        <td class="siv-r-table-space">&nbsp;</td>
+        <td class="siv-r-table-item">Do urban refugees pay the same amount for ART as host nationals?</td>
+        <td class="siv-r-ind-val">{{{display_raw_value AR_HIV_ACCESS_ARTEQFEES}}}</td>
+        <td class="siv-r-std-val">{{{standard AR_HIV_ACCESS_ARTEQFEES}}}</td>
+        <td class="siv-r-table-score">{{{standard_result AR_HIV_ACCESS_ARTEQFEES}}}</td>
+      </tr>
+      <tr>
+        <td class="siv-r-table-item siv-r-table-hl">Is PMTCT* provided free of charge to refugee women?</td>
+        <td class="siv-r-ind-val siv-r-table-hl">{{{display_raw_value AR_HIV_ACCESS_PMTCTFEES}}}</td>
+        <td class="siv-r-std-val siv-r-table-hl">{{{standard AR_HIV_ACCESS_PMTCTFEES}}}</td>
+        <td class="siv-r-table-score siv-r-table-hl">{{{standard_result AR_HIV_ACCESS_PMTCTFEES}}}</td>
+        <td class="siv-r-table-space">&nbsp;</td>
+        <td class="siv-r-empty-cell"></td>
+        <td class="siv-r-empty-cell"></td>
+        <td class="siv-r-empty-cell"></td>
+        <td class="siv-r-empty-cell"></td>
+      </tr>
+    </table>
+    <p class="clear siv-r-source">* Prevention of mother-to-child transmission  ** Anti-retroviral therapy</p>
+  </div>
+  <div class="clear"> </div>
+  <!-- End of HIV/AIDS -->
+  <div class="siv-r-hide">
+    <div class="siv-r-sum-can"></div>
+    <div class="siv-r-container siv-r-summary-ctn">
+      <div class="siv-r-para-img-ctn"><img class="siv-r-ico-summary" src={{{local_asset "images/reports/phhiv/ico-report.png"}}} /></div>
+      <h2 class="siv-r-para-title">HIV/AIDS comments</h2>
+      <p class="siv-r-obj-txt clear">{{{display_raw_value AR_TEXT_OBS_HIV}}}</p>
+    </div>
+  </div>
+  
+  <div class="clear">
+    <div class="siv-r-sect-head-ctn">
+      <h2 class="siv-r-table-txt">Nutrition and Food Security</h2>
+    </div>
+    <div class="siv-r-table-can"></div>
+    <div class="clear"> </div>
+    <div class="siv-r-table-head">
+      <div class="siv-r-table-col-name">
+        <h3 class="siv-r-table-name-txt">Nutrition</h3>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-ind-txt">Indicator</h4>
+        <div class="siv-r-ind-can"></div>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-std-txt">Standard</h4>
+        <div class="siv-r-std-can"></div>
+      </div>
+    </div>
+    <div class="siv-r-table-head-space">&nbsp;</div>
+    <div class="siv-r-table-head">
+      <div class="siv-r-table-col-name">
+        <h3 class="siv-r-table-name-txt">Food Security</h3>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-ind-txt">Indicator</h4>
+        <div class="siv-r-ind-can"></div>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-std-txt">Standard</h4>
+        <div class="siv-r-std-can"></div>
+      </div>
+    </div>
+    <table class="siv-r-table clear">
+      <tr>
+        <td class="siv-r-table-item siv-r-table-hl">Has a nutrition survey ever been conducted among this urban refugee population? </td>
+        <td class="siv-r-ind-val siv-r-table-hl">{{{display_raw_value AR_NUT_GEN_NUTSURVHELD}}}</td>
+        <td class="siv-r-std-val siv-r-table-hl">{{{standard AR_NUT_GEN_NUTSURVHELD}}}</td>
+        <td class="siv-r-table-score siv-r-table-hl">{{{standard_result AR_NUT_GEN_NUTSURVHELD}}}</td>
+        <td class="siv-r-table-space">&nbsp;</td>
+        <td class="siv-r-table-item siv-r-table-hl">Do PoCs have access to cash for food programmes?</td>
+        <td class="siv-r-ind-val siv-r-table-hl">{{{display_raw_value AR_FS_CASH}}}</td>
+        <td class="siv-r-std-val siv-r-table-hl">{{{standard AR_FS_CASH}}}</td>
+        <td class="siv-r-table-score siv-r-table-hl">{{{standard_result AR_FS_CASH}}}</td>
+      </tr>
+      <tr>
+        <td class="siv-r-table-item">Date of last nutrition survey</td>
+        <td class="siv-r-ind-val">{{{display_raw_value AR_NUT_SURV_DATE_SURV}}}</td>
+        <td class="siv-r-std-val">{{{standard AR_NUT_SURV_DATE_SURV}}}</td>
+        <td class="siv-r-table-score">{{{standard_result AR_NUT_SURV_DATE_SURV}}}</td>
+        <td class="siv-r-table-space">&nbsp;</td>
+        <td class="siv-r-table-item">Do PoCs have access to food voucher programmes?</td>
+        <td class="siv-r-ind-val">{{{display_raw_value AR_FS_VOUCH}}}</td>
+        <td class="siv-r-std-val">{{{standard AR_FS_VOUCH}}}</td>
+        <td class="siv-r-table-score">{{{standard_result AR_FS_VOUCH}}}</td>
+      </tr>
+      <tr>
+        <td class="siv-r-table-item siv-r-table-hl">Global acute malnutrition rate (GAM) in children &lt;5</td>
+        <td class="siv-r-ind-val siv-r-table-hl">{{{display_raw_value AR_NUT_SURV_GAM}}}</td>
+        <td class="siv-r-std-val siv-r-table-hl">{{{standard AR_NUT_SURV_GAM}}}</td>
+        <td class="siv-r-table-score siv-r-table-hl">{{{standard_result AR_NUT_SURV_GAM}}}</td>
+        <td class="siv-r-table-space">&nbsp;</td>
+        <td class="siv-r-empty-cell"></td>
+        <td class="siv-r-empty-cell"></td>
+        <td class="siv-r-empty-cell"></td>
+        <td class="siv-r-empty-cell"></td>
+      </tr>
+      <tr>
+        <td class="siv-r-table-item">Global chronic malnutrition rate (Stunting) in children &lt;5</td>
+        <td class="siv-r-ind-val">{{{display_raw_value AR_NUT_SURV_STUNT}}}</td>
+        <td class="siv-r-std-val">{{{standard AR_NUT_SURV_STUNT}}}</td>
+        <td class="siv-r-table-score">{{{standard_result AR_NUT_SURV_STUNT}}}</td>
+        <td class="siv-r-table-space">&nbsp;</td>
+        <td class="siv-r-empty-cell"></td>
+        <td class="siv-r-empty-cell"></td>
+        <td class="siv-r-empty-cell"></td>
+        <td class="siv-r-empty-cell"></td>
+      </tr>
+      <tr>
+        <td class="siv-r-table-item siv-r-table-hl">Severe acute malnutrition rate (SAM) in children &lt;5</td>
+        <td class="siv-r-ind-val siv-r-table-hl">{{{display_raw_value AR_NUT_SURV_SAM}}}</td>
+        <td class="siv-r-std-val siv-r-table-hl">{{{standard AR_NUT_SURV_SAM}}}</td>
+        <td class="siv-r-table-score siv-r-table-hl">{{{standard_result AR_NUT_SURV_SAM}}}</td>
+        <td class="siv-r-table-space">&nbsp;</td>
+        <td class="siv-r-empty-cell"></td>
+        <td class="siv-r-empty-cell"></td>
+        <td class="siv-r-empty-cell"></td>
+        <td class="siv-r-empty-cell"></td>
+      </tr>
+      <tr>
+        <td class="siv-r-table-item">Prevalence of anaemia in children &lt;5</td>
+        <td class="siv-r-ind-val">{{{display_raw_value AR_NUT_SURV_ANAE_U5}}}</td>
+        <td class="siv-r-std-val">{{{standard AR_NUT_SURV_ANAE_U5}}}</td>
+        <td class="siv-r-table-score">{{{standard_result AR_NUT_SURV_ANAE_U5}}}</td>
+        <td class="siv-r-table-space">&nbsp;</td>
+        <td class="siv-r-empty-cell"></td>
+        <td class="siv-r-empty-cell"></td>
+        <td class="siv-r-empty-cell"></td>
+        <td class="siv-r-empty-cell"></td>
+      </tr>
+      <tr>
+        <td class="siv-r-table-item siv-r-table-hl">Prevalence of anaemia in women of reproductive age</td>
+        <td class="siv-r-ind-val siv-r-table-hl">{{{display_raw_value AR_NUT_SURV_ANAE_WRA}}}</td>
+        <td class="siv-r-std-val siv-r-table-hl">{{{standard AR_NUT_SURV_ANAE_WRA}}}</td>
+        <td class="siv-r-table-score siv-r-table-hl">{{{standard_result AR_NUT_SURV_ANAE_WRA}}}</td>
+        <td class="siv-r-table-space">&nbsp;</td>
+        <td class="siv-r-empty-cell"></td>
+        <td class="siv-r-empty-cell"></td>
+        <td class="siv-r-empty-cell"></td>
+        <td class="siv-r-empty-cell"></td>
+      </tr>
+    </table>
+  </div>
+  <div class="clear"> </div>
+  <!-- end of Nutrtion and Food Security -->
+  <div class="siv-r-hide">
+    <div class="siv-r-sum-can"></div>
+    <div class="siv-r-container siv-r-summary-ctn">
+      <div class="siv-r-para-img-ctn"><img class="siv-r-ico-summary" src={{{local_asset "images/reports/phhiv/ico-report.png"}}} /></div>
+      <h2 class="siv-r-para-title">Nutrition and Food Security comments</h2>
+      <p class="siv-r-obj-txt clear">{{{display_raw_value AR_TEXT_OBS_NUT}}}</p>
+    </div>
+  </div>
+  
+  <div class="clear">
+    <div class="siv-r-sect-head-ctn">
+      <h2 class="siv-r-table-txt">Household Income</h2>
+    </div>
+    <div class="siv-r-table-can"></div>
+    <div class="clear"> </div>
+    <div class="siv-r-table-head">
+      <div class="siv-r-table-col-name">
+        <h3 class="siv-r-table-name-txt"></h3>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-ind-txt">Indicator</h4>
+        <div class="siv-r-ind-can"></div>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4 class="siv-r-std-txt">Standard</h4>
+        <div class="siv-r-std-can"></div>
+      </div>
+    </div>
+    <div class="siv-r-table-head-space">&nbsp;</div>
+    <div class="siv-r-table-head">
+      <div class="siv-r-table-col-name">
+        <h3 class="siv-r-table-name-txt"></h3>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4></h4>
+      </div>
+      <div class="siv-r-table-ind">
+        <h4></h4>
+      </div>
+    </div>
+    <table class="siv-r-table clear">
+      <tr>
+        <td class="siv-r-table-item siv-r-table-hl">What is the estimated average monthly income (in USD$) of a refugee family?</td>
+        <td class="siv-r-ind-val siv-r-table-hl">{{{display_raw_value AR_GEN_ACCESS_INCOME}}}</td>
+        <td class="siv-r-std-val siv-r-table-hl">{{{standard AR_GEN_ACCESS_INCOME}}}</td>
+        <td class="siv-r-table-score siv-r-table-hl">{{{standard_result AR_GEN_ACCESS_INCOME}}}</td>
+        <td class="siv-r-table-space">&nbsp;</td>
+        <td class="siv-r-table-item siv-r-table-hl"></td>
+        <td class="siv-r-ind-val siv-r-table-hl"></td>
+        <td class="siv-r-std-val siv-r-table-hl"></td>
+        <td class="siv-r-table-score siv-r-table-hl"></td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="siv-r-legend-wrap">
+    <div class="siv-r-legend-ctn">
+      <table class="siv-r-interactive-ctn">
+        <tr>
+          <td rowspan="2" class="siv-r-interactive-32"><img class="siv-r-interactive-32" src={{{local_asset "images/reports/phhiv/ico-earth.png"}}} /></td>
+          <td class="siv-r-interactive-title">Read <span>{{{embedded_value "locationdetails" "location_name"}}}</span> Operations Profile:</td>
+        </tr>
+        <tr>
+          <td class="siv-r-table-item siv-r-interactive-row"><a id="siv-r-LOC_COUNTRY_PROFILE_URL" class="siv-r-interactive-link">http://wwww.unhcr.org</a></td>
+        </tr>
+        <tr>
+          <td rowspan="2" class="siv-r-interactive-32"><img class="siv-r-interactive-32" src={{{local_asset "images/reports/phhiv/ico-pie.png"}}}/></td>
+          <td class="siv-r-interactive-title siv-r-interactive-space">View interactive maps and statistics online</td>
+        </tr>
+        <tr>
+          <td class="siv-r-table-item siv-r-interactive-row"><a href="#" class="siv-r-interactive-link">http://his.unhcr.org/his</a></td>
+          <!-- add country name with <span id="siv-r-LOC_COUNTRYNAME_2"></span>  --> 
+        </tr>
+      </table>
+	  <table class="siv-r-legend">
+        <tbody>
+		<tr>
+          <td colspan="6"><h3 class="siv-r-legend-header">Legend</h3></td>
+        </tr>
+        <tr>
+          <td class="siv-r-score siv-r-score-green">2</td>
+          <td class="siv-r-table-indicator "><span>Standard met</span></td>
+          <td class="siv-r-score siv-r-score-yellow">!</td>
+          <td class="siv-r-table-indicator "><span>Standard borderline</span></td>
+          <td class="siv-r-score siv-r-score-red">D</td>
+          <td class="siv-r-table-indicator "><span>Standard not met</span></td>
+        </tr>
+        <tr>
+          <td class="siv-r-score siv-r-score-purple">^</td>
+          <td class="siv-r-table-indicator "><span>Interpret data with care</span></td>
+          <td class="siv-r-score siv-r-score-blue">?</td>
+          <td class="siv-r-table-indicator "><span>Data missing</span></td>
+		  <td></td>
+		  <td></td>
+        </tr>
+      </tbody>
+	  </table>
+      <img class="siv-r-contact-logo" src={{{local_asset "images/reports/phhiv/unhcr-logo.png"}}}/>
+      <div class="clear"> </div>
+    </div>
+    <img class="siv-r-qrcode" src="{{{qr_code}}}" />
+    <div class="clear"> </div>
+  </div>
+</div>
+</div>
+<!--end of page 2--> 
+</div>

@@ -1,0 +1,122 @@
+//
+// Variables
+// --------------------------------------------------
+
+
+// Theme colours
+// -------------------------
+// These colours can be changed and are only to be used inside of variables.less
+// Their descriptions are not set in stone
+@base:                   #008dc9;//Primary colour of the app
+@dark:                   #007fcc;//a darker version to go over top of the base
+@light:                  #67c674;//used to keep with the theme, but not draw the eye
+@accent:                 #d86422;//accentuates the primary colour
+@contrast1:              #ffcc66;//secondary colours(yellow)
+@contrast2:              #f29e84;//secondary colours(orange)
+
+// Grays
+// -------------------------
+@black:                 #000000;
+@gray:                  #666666;
+@grayLight:             #999999;
+@softGrey:              #f5f5f5;
+@white:                 #ffffff;
+
+
+// Functional values
+// --------------------------------------------------
+// Use these colours within the less files.
+@primary:               @base;//header blue
+@primaryDark:           @dark;//link blue
+@action:                @accent;//green
+@alert:                 #cf5050;//red
+@warning:               @base;//yellow
+@work:                  @accent;//orange
+
+
+// Scaffolding
+// -------------------------
+@bodyBackground:        @white;
+@panelHeader:           #b3b3b3;
+@tableColor:            #f4f4f4;
+
+
+// Backgrounds
+// -------------------------
+@header:                @white;
+@footer:                lighten(@headerBackground, 20%);
+@border:                @white;
+@table:                 #f4f4f4;
+@login:                 @primary;
+@headerBackground:      @primary;
+@tableHeadBackground:   lighten(@headerBackground, 20%);;
+@tableSectionHeader:    @primaryDark;
+@valueHeaderBackground: darken(@primaryDark, 15%);
+
+// Links
+// -------------------------
+@linkColor:             @accent;
+@linkColorHover:        darken(@accent,20%);
+
+
+// Typography
+// -------------------------
+@sansFontFamily:        Helvetica, Arial, sans-serif;
+
+@baseFontSize:          12px;
+@baseFontFamily:        @sansFontFamily;
+
+@headingsFontFamily:    inherit; // empty to use BS default, @baseFontFamily
+@headingsFontWeight:    bold;    // instead of browser default, bold
+@headingsColor:         inherit; // empty to use BS default, @textColor
+
+@textColor:             @gray;
+@headerColor:           @black;
+@textColorInverse:      @white;
+@alertText:             @alert;
+@textSuccess:           @action;
+
+// Buttons
+// -------------------------
+@btnBackground:                     @white;
+@btnBackgroundHighlight:            darken(@white, 10%);
+@btnBorder:                         #bbb;
+
+@btnPrimaryBackground:              @linkColor; //changed from #027CBF;
+@btnPrimaryBackgroundHighlight:     @linkColorHover;
+
+@btnInfoBackground:                 #5bc0de;
+@btnInfoBackgroundHighlight:        #2f96b4;
+
+@btnSuccessBackground:              #62c462;
+@btnSuccessBackgroundHighlight:     #51a351;
+
+@btnWarningBackground:              @work;
+@btnWarningBackgroundHighlight:     darken(@work, 15%);
+
+@btnDangerBackground:               #ee5f5b;
+@btnDangerBackgroundHighlight:      #bd362f;
+
+@btnInverseBackground:              #444;
+@btnInverseBackgroundHighlight:     @gray;
+
+// Colours collection
+// -------------------------
+@admin-border:@gray;//admin.less
+
+@well-background:#41bbcf;//base.less
+@linkColorAltHover:#c2eef5;//base.less
+@sidebarBackground:#f6f6f6;//base.less
+@footerColor:@white;//base.less
+
+@contrastBorder:@work;//buttons.less
+
+@altDark:#0082C9;//collection-browser.less
+
+@tableText:#6e6559;//siv.tables.less
+
+@tourHead:#005A9A;//tour.less
+@tourTitle:#676767;//tour.less
+
+@todoText:#9aa4a3;//work.less
+@todoBackground:#eff3f4;//work.less
