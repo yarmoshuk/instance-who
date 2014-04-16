@@ -1,463 +1,296 @@
 {
 
-    "success":true,
-    "displayName":"background",
-    "name":"selector",
-    "toolsets":[{
-            "displayName":"WASH Report Card",
-            "name":"E",
-            "background":    [{
-    "type": "path",
-    "fill": "#FFFFFF",
-    "stroke": "none",
-    "path": "M509.309,184.792h-0.045v-9.504v-0.705v-0.704c0-1.965-1.767-3.556-3.948-3.556h-17.79\r\n\t\t\tc-0.029-0.992-0.838-1.79-1.838-1.79h-0.375v-2.486h0.694c0.547,0,0.989-0.441,0.989-0.989v-1.709\r\n\t\t\tc0-0.546-0.442-0.989-0.989-0.989h-0.694v-6.951c1.529,1.325,4.662,2.247,6.199,2.247c2.081,0,3.769-1.688,3.769-3.769\r\n\t\t\ts-1.688-3.767-3.769-3.767c-1.548,0-4.715,0.937-6.23,2.272c-0.156-1.059-1.059-1.872-2.159-1.872\r\n\t\t\tc-1.114,0-2.025,0.837-2.164,1.915c-1.497-1.358-4.715-2.315-6.28-2.315c-2.08,0-3.769,1.687-3.769,3.767\r\n\t\t\tc0,2.082,1.688,3.769,3.769,3.769c1.557,0,4.744-0.945,6.252-2.29v6.994h-0.693c-0.547,0-0.989,0.441-0.989,0.989v1.709\r\n\t\t\tc0,0.545,0.442,0.989,0.989,0.989h0.693v2.486c-1,0-1.809,0.798-1.839,1.79h-5.8v-0.946c0-0.909-0.511-1.643-1.14-1.643h-1.972\r\n\t\t\tc-0.631,0-1.139,0.734-1.139,1.643v9.593c0,0.909,0.508,1.643,1.139,1.643h1.972c0.629,0,1.14-0.734,1.14-1.643v-0.129h26.533\r\n\t\t\tv5.951h0.038c-1.056,0-1.91,0.774-1.91,1.728c0,0.952,0.854,1.729,1.91,1.729h9.449c1.055,0,1.909-0.777,1.909-1.729\r\n\t\t\tC511.221,185.566,510.365,184.792,509.309,184.792z"
-}, {
-    "type": "path",
-    "fill": "#FFFFFF",
-    "stroke": "none",
-    "path": "M504.586,190.848c-1.188,0-6.634,10.872-6.634,14.608c0,3.739,3.029,6.769,6.769,6.769\r\n\t\t\tc3.737,0,6.765-3.029,6.765-6.769C511.485,201.72,505.775,190.848,504.586,190.848z M503.369,208.631l-2.987-3.107l0.854-0.822\r\n\t\t\tl2.135,2.218l4.408-4.242l0.855,0.89L503.369,208.631z"
-}, {
-    "type": "path",
-    "fill": "#24c3c9",
-    "stroke": "none",
-    "path": "M885.291,115.951 874.917,137.401 447.782,133.451 438.761,117.451z"
-}, {
-    "type": "path",
-    "fill": "#4fd1d6",
-    "stroke": "none",
-    "path": "M852.143,225.451 874.917,137.401 447.782,133.451 410.261,225.451z"
-}],
-		  "description":    [{
-    "type": "text",
-    "fill": "#FFFFFF",
-    "stroke": "none",
-    "x":497.917,
-	"y":153.667,
-    "font-family": "Helvetica, Arial",
-	"font-weight":"Bold",
-    "font-size": 14,
-    "text-anchor": "start",
-    "text": "WASH Report Card"
-},{
-    "type": "text",
-    "fill": "#FFFFFF",
-    "stroke": "none",
-    "x":497.917,
-	"y":177.188,
-    "font-family": "Helvetica, Arial",
-	"font-weight":"Bold",
-    "font-size": 12,
-    "text-anchor": "start",
-    "text": "A system for monitoring key water, sanitation and\nhygiene indicators at household and community level\nin refugee camps."
-}]
-		},{
-            "displayName":"Maternal Death Investigations",
-            "name":"E",
-            "background":    [{
-    "type": "path",
-    "fill": "#FFFFFF",
-    "stroke": "none",
-    "path": "M496.493,191.479c-0.37,0-0.694,0.195-0.878,0.486c-0.183-0.29-0.506-0.486-0.875-0.486\r\n\t\t\tc-0.572,0-1.037,0.466-1.037,1.036c0,1.174,1.921,2.523,1.953,2.523c0.035,0.003,1.874-1.349,1.874-2.523\r\n\t\t\tC497.528,191.945,497.063,191.479,496.493,191.479z"
-}, {
-    "type": "path",
-    "fill": "#FFFFFF",
-    "stroke": "none",
-    "path": "M491.822,176.758v-0.003v-5.458c0-2.58-2.092-4.671-4.67-4.671h-1.49c-2.577,0-4.668,2.09-4.668,4.671\r\n\t\t\tv0.166c-2.252,0.68-3.893,2.79-3.893,5.292v17.228c0,2.499,1.641,4.61,3.893,5.29v14.046c0,2.578,2.091,4.669,4.668,4.669h1.49\r\n\t\t\tc2.578,0,4.67-2.091,4.67-4.669v-11.496c5.421-1.591,9.381-6.597,9.381-12.532C501.203,183.357,497.244,178.352,491.822,176.758z\r\n\t\t\t M488.825,184.31c-0.043,0.026-3.351-0.12-4.243-1.516c-0.437-0.68-0.237-1.586,0.445-2.021c0.438-0.279,0.97-0.294,1.412-0.089\r\n\t\t\tc-0.003-0.485,0.232-0.96,0.675-1.244c0.68-0.436,1.587-0.235,2.021,0.445C490.029,181.28,488.869,184.288,488.825,184.31z\r\n\t\t\t M489.822,197.648l5.998-12.007c2.986,1.488,4.065,5.389,2.41,8.704C496.571,197.66,492.811,199.139,489.822,197.648z"
-}, {
-    "type": "circle",
-    "fill": "#FFFFFF",
-    "stroke": "none",
-    "cx": 486.538,
-    "cy": 157.936,
-    "r": 6.874
-}, {
-    "type": "path",
-    "fill": "#ffcc66",
-    "stroke": "none",
-    "path": "M885.291,115.951 874.917,137.401 447.782,133.451 438.761,117.451z"
-}, {
-    "type": "path",
-    "fill": "#4fd1d6",
-    "stroke": "none",
-    "path": "M852.143,225.451 874.917,137.401 447.782,133.451 410.261,225.451z"
-}, {
-    "type": "path",
-    "fill": "#cf5050",
-    "stroke": "none",
-    "path": "M885.291,115.951 874.917,137.401 447.782,133.451 438.761,117.451z"
-}, {
-    "type": "path",
-    "fill": "#4fd1d6",
-    "stroke": "none",
-    "path": "M852.143,225.451 874.917,137.401 447.782,133.451 410.261,225.451z"
-}],
-		  "description":    [{
-    "type": "text",
-    "fill": "#FFFFFF",
-    "stroke": "none",
-    "x":497.917,
-	"y":153.667,
-    "font-family": "Helvetica, Arial",
-	"font-weight":"Bold",
-    "font-size": 14,
-    "text-anchor": "start",
-    "text": "Maternal Death Investigations"
-},{
-    "type": "text",
-    "fill": "#FFFFFF",
-    "stroke": "none",
-    "x":497.917,
-	"y":177.188,
-    "font-family": "Helvetica, Arial",
-	"font-weight":"Bold",
-    "font-size": 12,
-    "text-anchor": "start",
-    "text": "A system for reporting the findings and recommendations\nof investigations into maternal deaths in refugee settings."
-}]
-		},{
-            "displayName":"Health Information System",
-            "name":"E",
-            "background":    [{
-    "type": "path",
-    "fill": "#FFFFFF",
-    "stroke": "none",
-    "path": "M512.031,174.359h-16.95v-16.946c0-1.404-1.136-2.542-2.539-2.542h-15.254\r\n\t\tc-1.406,0-2.542,1.138-2.542,2.542v16.946h-16.947c-1.401,0-2.541,1.138-2.541,2.542v15.252c0,1.406,1.14,2.544,2.541,2.544h16.947\r\n\t\tv16.944c0,1.405,1.141,2.545,2.542,2.545h15.254c1.403,0,2.539-1.14,2.539-2.545v-16.944h16.95c1.402,0,2.538-1.138,2.538-2.544\r\n\t\tv-15.252C514.574,175.497,513.434,174.359,512.031,174.359z M482.389,191.324l-6.637-6.896l1.896-1.824l4.74,4.924l9.793-9.419\r\n\t\tl1.899,1.968L482.389,191.324z"
-}, {
-    "type": "path",
-    "fill": "#24c3c9",
-    "stroke": "none",
-    "path": "M885.291,115.951 874.917,137.401 447.782,133.451 438.761,117.451z"
-}, {
-    "type": "path",
-    "fill": "#4fd1d6",
-    "stroke": "none",
-    "path": "M852.143,225.451 874.917,137.401 447.782,133.451 410.261,225.451z"
-}],
-		  "description":    [{
-    "type": "text",
-    "fill": "#FFFFFF",
-    "stroke": "none",
-    "x":497.917,
-	"y":153.667,
-    "font-family": "Helvetica, Arial",
-	"font-weight":"Bold",
-    "font-size": 14,
-    "text-anchor": "start",
-    "text": "Health Information System"
-},{
-    "type": "text",
-    "fill": "#FFFFFF",
-    "stroke": "none",
-    "x":497.917,
-	"y":177.188,
-    "font-family": "Helvetica, Arial",
-	"font-weight":"Bold",
-    "font-size": 12,
-    "text-anchor": "start",
-    "text": "A standardized system used to monitor public health\nand HIV programmes in refugee and displaced settings.\nIncludes an early warning system for the detection of\ndisease outbreaks."
-}]
-		},{
-            "displayName":"Nutrtiton Survey Database",
-            "name":"E",
-            "background":    [{
-    "type": "rect",
-    "fill": "#FFFFFF",
-    "stroke": "none",
-    "x": 453.901,
-    "y": 201.701,
-    "transform": "t949.4312,83.2106r142.2225,0,0",
-    "width": 13.156,
-    "height": 4.687
-}, {
-    "type": "path",
-    "fill": "#FFFFFF",
-    "stroke": "none",
-    "path": "M475.695,187.347c0,3.414-5.325,12.042-5.514,11.195c-0.186-0.848-5.543-7.781-5.543-11.195\r\n\t\t\tc0-3.412,5.012-11.047,5.529-11.032C470.688,176.331,475.695,183.935,475.695,187.347z"
-}, {
-    "type": "path",
-    "fill": "#FFFFFF",
-    "stroke": "none",
-    "path": "M483.253,205.993c-3.25,1.03-13.088-1.432-12.336-1.869c0.751-0.434,5.736-7.638,8.988-8.669\r\n\t\t\tc3.251-1.033,12.047,1.429,12.19,1.929C492.239,197.883,486.505,204.96,483.253,205.993z"
-}, {
-    "type": "path",
-    "fill": "#FFFFFF",
-    "stroke": "none",
-    "path": "M496.06,193.099c-3.252,1.032-13.091-1.431-12.337-1.867c0.752-0.436,5.737-7.64,8.989-8.671\r\n\t\t\tc3.252-1.033,12.046,1.432,12.188,1.931C505.043,184.989,499.312,192.065,496.06,193.099z"
-}, {
-    "type": "path",
-    "fill": "#FFFFFF",
-    "stroke": "none",
-    "path": "M504.515,179.225c-3.252,1.032-13.091-1.432-12.339-1.866c0.751-0.436,5.737-7.638,8.991-8.672\r\n\t\t\tc3.249-1.033,12.045,1.432,12.188,1.929C513.497,171.116,507.767,178.193,504.515,179.225z"
-}, {
-    "type": "path",
-    "fill": "#FFFFFF",
-    "stroke": "none",
-    "path": "M486.378,176.913c0,3.414-5.327,12.041-5.515,11.193c-0.187-0.847-5.544-7.779-5.544-11.193\r\n\t\t\tc0-3.412,5.01-11.048,5.53-11.033C481.368,165.896,486.378,173.5,486.378,176.913z"
-}, {
-    "type": "path",
-    "fill": "#FFFFFF",
-    "stroke": "none",
-    "path": "M495.521,161.958c0,3.413-5.327,12.042-5.515,11.194c-0.186-0.847-5.544-7.781-5.544-11.194\r\n\t\t\tc0-3.413,5.011-11.047,5.529-11.032C490.509,150.941,495.521,158.545,495.521,161.958z"
-}, {
-    "type": "path",
-    "fill": "#FFFFFF",
-    "stroke": "none",
-    "path": "M510.881,161.274c-2.384,2.438-12.229,4.878-11.771,4.142c0.459-0.737,1.481-9.44,3.87-11.876\r\n\t\t\tc2.388-2.438,11.309-4.389,11.668-4.017C515.009,149.898,513.27,158.836,510.881,161.274z"
-}],
-		  "description":    [{
-    "type": "text",
-    "fill": "#FFFFFF",
-    "stroke": "none",
-    "x":497.917,
-	"y":153.667,
-    "font-family": "Helvetica, Arial",
-	"font-weight":"Bold",
-    "font-size": 14,
-    "text-anchor": "start",
-    "text": "Nutrtiton Survey Database"
-},{
-    "type": "text",
-    "fill": "#FFFFFF",
-    "stroke": "none",
-    "x":497.917,
-	"y":177.188,
-    "font-family": "Helvetica, Arial",
-	"font-weight":"Bold",
-    "font-size": 12,
-    "text-anchor": "start",
-    "text": "A system for reporting the results of nutrition surveys\nconducted in refugee and displaced settings."
-}]
-		},{
-            "displayName":"Laboratory Evaluation Tool",
-            "name":"E",
-            "background":    [{
-    "type": "path",
-    "fill": "#FFFFFF",
-    "stroke": "none",
-    "path": "M496.361,173.228v-0.722c0-0.762-0.617-1.38-1.379-1.38h-16.097v-2.876h0.229\r\n\t\t\t\tc0.762,0,1.381-0.619,1.381-1.38v-0.461c0-0.762-0.619-1.38-1.381-1.38h-1.092v-14.354c0-0.455-0.464-0.824-1.038-0.824h-5.11\r\n\t\t\t\tc-0.572,0-1.037,0.369-1.037,0.824v14.354h-0.921c-0.761,0-1.379,0.618-1.379,1.38v0.461c0,0.761,0.618,1.38,1.379,1.38h0.117\r\n\t\t\t\tv9.43h-1.496c-0.763,0-1.38,0.619-1.38,1.381v0.805c0,0.762,0.619,1.38,1.38,1.38h3.934c-0.003,0.039-0.024,0.074-0.024,0.113\r\n\t\t\t\tv5.75c0,0.762,0.619,1.381,1.382,1.381h1.148c0.761,0,1.379-0.619,1.379-1.381v-4.254c0,0.761,0.619,1.38,1.381,1.38h1.38\r\n\t\t\t\tc0.762,0,1.381-0.619,1.381-1.38v-0.633h14.487c0.122,0,0.232-0.039,0.346-0.071v0.186c0,0.762,0.618,1.38,1.379,1.38h0.347\r\n\t\t\t\tc0.762,0,1.379-0.619,1.379-1.38v-1.974c2.521,1.618,4.197,4.438,4.197,7.657c0,4.525-3.299,8.263-7.622,8.977h-4.473\r\n\t\t\t\tc0.259-0.295,0.422-0.702,0.422-1.155v-2.289c0-0.893-0.619-1.617-1.379-1.617h-23.115c-0.763,0-1.381,0.725-1.381,1.617v2.289\r\n\t\t\t\tc0,0.893,0.618,1.615,1.381,1.615h17.967c-0.226,0.244-0.372,0.565-0.372,0.917v9.545c0,0.164,0.042,0.313,0.094,0.46h-3.291\r\n\t\t\t\tc0.053-0.147,0.094-0.295,0.094-0.46v-6.667c0-0.763-0.619-1.381-1.379-1.381h-10.466c-0.761,0-1.379,0.619-1.379,1.381v6.667\r\n\t\t\t\tc0,0.164,0.039,0.313,0.093,0.46h-3.773c-0.761,0-1.379,0.619-1.379,1.38v2.531c0,0.763,0.619,1.381,1.379,1.381h38.291\r\n\t\t\t\tc0.762,0,1.381-0.618,1.381-1.381v-2.531c0-0.761-0.619-1.38-1.381-1.38h-4.001c0.053-0.147,0.093-0.295,0.093-0.46v-6.138\r\n\t\t\t\tc5.992-1.862,10.349-7.435,10.349-14.041C508.783,180.397,503.396,174.334,496.361,173.228z M489.363,181.157\r\n\t\t\t\tc-2.479,0-4.487-2.007-4.487-4.485c0-2.478,2.009-4.485,4.487-4.485c2.477,0,4.484,2.007,4.484,4.485\r\n\t\t\t\tC493.848,179.149,491.84,181.157,489.363,181.157z"
-}, {
-    "type": "circle",
-    "fill": "#FFFFFF",
-    "stroke": "none",
-    "cx": 489.363,
-    "cy": 176.58,
-    "r": 1.92
-}],
-		  "description":    [{
-    "type": "text",
-    "fill": "#FFFFFF",
-    "stroke": "none",
-    "x":497.917,
-	"y":153.667,
-    "font-family": "Helvetica, Arial",
-	"font-weight":"Bold",
-    "font-size": 14,
-    "text-anchor": "start",
-    "text": "Laboratory Evaluation Tool"
-},{
-    "type": "text",
-    "fill": "#FFFFFF",
-    "stroke": "none",
-    "x":497.917,
-	"y":177.188,
-    "font-family": "Helvetica, Arial",
-	"font-weight":"Bold",
-    "font-size": 12,
-    "text-anchor": "start",
-    "text": "A structured questionnaire designed to evaluate the quality\nof laboratory services in primary health care facilities in\nrefugee settings."
-}, {
-    "type": "path",
-    "fill": "#ffcc66",
-    "stroke": "none",
-    "path": "M885.291,115.951 874.917,137.401 447.782,133.451 438.761,117.451z"
-}, {
-    "type": "path",
-    "fill": "#4fd1d6",
-    "stroke": "none",
-    "path": "M852.143,225.451 874.917,137.401 447.782,133.451 410.261,225.451z"
-}]
-		},{
-            "displayName":"Disease Outbreak Reports",
-            "name":"E",
-            "background":    [{
-    "type": "path",
-    "fill": "#FFFFFF",
-    "stroke": "none",
-    "path": "M514.853,198.725h-53.819c0.151-0.351,0.239-0.734,0.239-1.139c0-0.046-0.012-0.09-0.016-0.135\r\n\t\t\tl11.462-9.731l4.86,5.312l0.579-0.531l31.941-24.373l-2.225-2.911l-29.899,22.817l-2.46-2.687l0.043-0.036l-2.372-2.793\r\n\t\t\tl-0.147,0.126l-0.057-0.063l-1.683,1.538l-12.535,10.643c-0.117-0.013-0.232-0.035-0.354-0.035c-0.43,0-0.832,0.101-1.2,0.272\r\n\t\t\tv-31.323h-1.953v35.048l0,0v1.955l0,0l0,0h1.953l0,0h57.642V198.725L514.853,198.725z"
-}, {
-    "type": "path",
-    "fill": "#FFFFFF",
-    "stroke": "none",
-    "path": "M511.626,183.861l-1.875-3.25c0,0-1.712-2.966-1.876-3.25c-2.029-3.233-3.751,0-3.751,0l-1.878,3.25\r\n\t\t\tl-1.876,3.25c0,0-1.897,3.249,1.876,3.249c1.584,0,3.193,0,3.629,0c0.072,0,0.122,0,0.122,0c0.289,0,1.199,0,3.753,0\r\n\t\t\tC513.683,187.11,511.626,183.861,511.626,183.861z M506.805,186.238h-1.84v-1.76h1.84V186.238z M506.805,183.497h-1.84v-5.5h1.84\r\n\t\t\tV183.497z"
-}, {
-    "type": "path",
-    "fill": "#cf5050",
-    "stroke": "none",
-    "path": "M885.291,115.951 874.917,137.401 447.782,133.451 438.761,117.451z"
-}, {
-    "type": "path",
-    "fill": "#4fd1d6",
-    "stroke": "none",
-    "path": "M852.143,225.451 874.917,137.401 447.782,133.451 410.261,225.451z"
-}],
-		  "description":    [{
-    "type": "text",
-    "fill": "#FFFFFF",
-    "stroke": "none",
-    "x":497.917,
-	"y":153.667,
-    "font-family": "Helvetica, Arial",
-	"font-weight":"Bold",
-    "font-size": 14,
-    "text-anchor": "start",
-    "text": "Disease Outbreak Reports"
-},{
-    "type": "text",
-    "fill": "#FFFFFF",
-    "stroke": "none",
-    "x":497.917,
-	"y":177.188,
-    "font-family": "Helvetica, Arial",
-	"font-weight":"Bold",
-    "font-size": 12,
-    "text-anchor": "start",
-    "text": "A system for reporting active disease outbreaks in refugee\nand displaced settings."
-}]
-		},{
-            "displayName":"Balanced Scorecard",
-            "name":"E",
-            "background":    [{
-    "type": "path",
-    "fill": "none",
-    "stroke": "#FFFFFF",
-    "stroke-miterlimit": 10,
-    "path": "M476.604,182.976c0,0,1.1-0.882,2.57,0c1.471,0.888,2.873,0,2.873,0\r\n\t\t\ts1.189-0.92,2.679,0c1.49,0.927,2.146,0.272,2.5-0.006c0.354-0.275,1.969-0.738,2.801,0.039c0.834,0.783,1.791,0.299,2.305,0\r\n\t\t\tc0.515-0.296,1.596-0.356,2.073,0"
-}, {
-    "type": "path",
-    "fill": "none",
-    "stroke": "#FFFFFF",
-    "stroke-miterlimit": 10,
-    "path": "M476.837,186.489c0,0,1.101-0.885,2.571,0s2.873,0,2.873,0\r\n\t\t\ts1.187-0.924,2.678,0c1.489,0.924,2.146,0.272,2.499-0.009c0.354-0.278,1.971-0.738,2.802,0.042c0.834,0.78,1.79,0.296,2.305,0\r\n\t\t\tc0.514-0.302,1.596-0.355,2.074,0"
-}, {
-    "type": "path",
-    "fill": "none",
-    "stroke": "#FFFFFF",
-    "stroke-miterlimit": 10,
-    "path": "M476.964,190.199c0,0,1.099-0.888,2.573,0\r\n\t\t\tc1.471,0.882,2.869,0,2.869,0s1.188-0.927,2.679,0c1.488,0.917,2.146,0.266,2.499-0.012c0.355-0.275,1.97-0.741,2.804,0.042\r\n\t\t\tc0.831,0.78,1.791,0.296,2.305,0c0.515-0.299,1.594-0.356,2.073,0"
-}, {
-    "type": "path",
-    "fill": "none",
-    "stroke": "#FFFFFF",
-    "stroke-miterlimit": 10,
-    "path": "M477.124,193.765c0,0,1.101-0.888,2.572,0\r\n\t\t\tc1.471,0.882,2.873,0,2.873,0s1.188-0.927,2.677,0c1.489,0.92,2.146,0.266,2.499-0.015c0.356-0.275,1.969-0.735,2.803,0.045\r\n\t\t\tc0.833,0.78,1.791,0.296,2.305,0c0.515-0.302,1.595-0.359,2.073,0"
-}, {
-    "type": "rect",
-    "fill": "#FFFFFF",
-    "stroke": "none",
-    "x": 472.425,
-    "y": 182.196,
-    "width": 1.133,
-    "height": 1.136
-}, {
-    "type": "rect",
-    "fill": "#FFFFFF",
-    "stroke": "none",
-    "x": 472.425,
-    "y": 185.954,
-    "width": 1.133,
-    "height": 1.136
-}, {
-    "type": "rect",
-    "fill": "#FFFFFF",
-    "stroke": "none",
-    "x": 472.425,
-    "y": 189.661,
-    "width": 1.133,
-    "height": 1.133
-}, {
-    "type": "rect",
-    "fill": "#FFFFFF",
-    "stroke": "none",
-    "x": 472.425,
-    "y": 193.227,
-    "width": 1.133,
-    "height": 1.136
-}, {
-    "type": "path",
-    "fill": "#FFFFFF",
-    "stroke": "none",
-    "path": "M499.104,158.171h-9.2c0.359-0.191,0.616-0.555,0.616-0.991v-2.697c0-0.627-0.508-1.136-1.136-1.136\r\n\t\t\th-10.237c-0.626,0-1.135,0.508-1.135,1.136v2.697c0,0.436,0.254,0.799,0.614,0.991h-9.697c-1.852,0-3.353,1.524-3.353,3.406\r\n\t\t\tv40.569c0,1.885,1.501,3.408,3.353,3.408h30.176c1.853,0,3.354-1.523,3.354-3.408v-40.569\r\n\t\t\tC502.457,159.696,500.955,158.171,499.104,158.171z M479.713,155.667c0-0.628,0.508-1.136,1.135-1.136h6.832\r\n\t\t\tc0.626,0,1.135,0.508,1.135,1.136v0.332c0,0.628-0.509,1.136-1.135,1.136h-6.832c-0.627,0-1.135-0.508-1.135-1.136V155.667z\r\n\t\t\t M497.918,195.625c0,0.622-0.508,1.13-1.136,1.13h-26.195c-0.628,0-1.137-0.508-1.137-1.13v-27.617\r\n\t\t\tc0-0.626,0.509-1.134,1.137-1.134h26.195c0.628,0,1.136,0.508,1.136,1.134V195.625z"
-}, {
-    "type": "path",
-    "fill": "#ffcc66",
-    "stroke": "none",
-    "path": "M885.291,115.951 874.917,137.401 447.782,133.451 438.761,117.451z"
-}, {
-    "type": "path",
-    "fill": "#4fd1d6",
-    "stroke": "none",
-    "path": "M852.143,225.451 874.917,137.401 447.782,133.451 410.261,225.451z"
-}],
-		  "description":    [{
-    "type": "text",
-    "fill": "#FFFFFF",
-    "stroke": "none",
-    "x":497.917,
-	"y":153.667,
-    "font-family": "Helvetica, Arial",
-	"font-weight":"Bold",
-    "font-size": 14,
-    "text-anchor": "start",
-    "text": "Balanced Scorecard"
-},{
-    "type": "text",
-    "fill": "#FFFFFF",
-    "stroke": "none",
-    "x":497.917,
-	"y":177.188,
-    "font-family": "Helvetica, Arial",
-	"font-weight":"Bold",
-    "font-size": 12,
-    "text-anchor": "start",
-    "text": "A set of 5 instruments designed to assess the quality of\ncare in primary health care facilities in refugee settings."
-}]
-		},{
-            "displayName":"twine",
-            "name":"E",
-            "background":    [],
-			"description":    [{
-    "type": "text",
-    "fill": "#FFFFFF",
-    "stroke": "none",
-    "x":497.917,
-	"y":153.667,
-    "font-family": "Helvetica, Arial",
-	"font-weight":"Bold",
-    "font-size": 14,
-    "text-anchor": "start",
-    "text": "twine /twīn/"
-},{
-    "type": "text",
-    "fill": "#FFFFFF",
-    "stroke": "none",
-    "x":497.917,
-	"y":177.188,
-    "font-family": "Helvetica, Arial",
-	"font-weight":"Bold",
-    "font-size": 12,
-    "text-anchor": "start",
-    "text": "a type of strong string made by twisting several pieces of\nstring together"
-},{
-    "type": "text",
-    "fill": "#FFFFFF",
-    "stroke": "none",
-    "x":497.917,
-	"y":210.188,
-    "font-family": "Helvetica, Arial",
-	"font-weight":"Bold",
-    "font-size": 12,
-    "text-anchor": "start",
-    "text": "a web application that combines streams of information\nto inform decision-making in the humanitarian sector"
-}
-]
+	"success": true,
+	"displayName": "background",
+	"name": "selector",
+	"toolsets": [{
+			"displayName": "WASH Report Card",
+			"name": "WASH",
+			"background": [{
+				"type": "image",
+				"x": 57,
+				"y": 182,
+				"width": 60,
+				"height": 60,
+				"src": "assets/public/img/WASH.png",
+				"href":"app.php#app=Tools&wid=wash_rc"
+			}],
+			"description": [{
+				"type": "text",
+				"fill": "#FFFFFF",
+				"stroke": "none",
+				"x": 497.917,
+				"y": 153.667,
+				"fontfamily": "Helvetica, Arial",
+				"fontweight": "Bold",
+				"fontsize": 14,
+				"textanchor": "start",
+				"text": "WASH Report Card"
+			}, {
+				"type": "text",
+				"fill": "#FFFFFF",
+				"stroke": "none",
+				"x": 497.917,
+				"y": 190.188,
+				"fontfamily": "Helvetica, Arial",
+				"fontweight": "Bold",
+				"fontsize": 12,
+				"textanchor": "start",
+				"text": "A system for monitoring key water, sanitation and\nhygiene indicators at household and community level\nin refugee camps."
+			}]
+		}, {
+			"displayName": "Maternal Death Investigations",
+			"name": "maternal",
+			"background": [{
+				"type": "image",
+				"x": 105,
+				"y": 130,
+				"width": 60,
+				"height": 60,
+				"src": "assets/public/img/maternal-death.png",
+				"href":"app.php#app=Tools&wid=matdeath"
+			}],
+			"description": [{
+				"type": "text",
+				"fill": "#FFFFFF",
+				"stroke": "none",
+				"x": 497.917,
+				"y": 153.667,
+				"fontfamily": "Helvetica, Arial",
+				"fontweight": "Bold",
+				"fontsize": 14,
+				"textanchor": "start",
+				"textanchor": "start",
+				"text": "Maternal Death Investigations"
+			}, {
+				"type": "text",
+				"fill": "#FFFFFF",
+				"stroke": "none",
+				"x": 497.917,
+				"y": 190.188,
+				"fontfamily": "Helvetica, Arial",
+				"fontweight": "Bold",
+				"fontsize": 12,
+				"textanchor": "start",
+				"text": "A system for reporting the findings and recommendations\nof investigations into maternal deaths in refugee settings."
+			}]
+		}, {
+			"displayName": "Health Information System",
+			"name": "HIS",
+			"background": [{
+				"type": "image",
+				"x": 105,
+				"y": 43,
+				"width": 60,
+				"height": 60,
+				"src": "assets/public/img/HIS.png",
+				"href":"app.php#app=Tools&wid=his"
+			}],
+			"description": [{
+				"type": "text",
+				"fill": "#FFFFFF",
+				"stroke": "none",
+				"x": 497.917,
+				"y": 153.667,
+				"fontfamily": "Helvetica, Arial",
+				"fontweight": "Bold",
+				"fontsize": 14,
+				"textanchor": "start",
+				"text": "Health Information System"
+			}, {
+				"type": "text",
+				"fill": "#FFFFFF",
+				"stroke": "none",
+				"x": 497.917,
+				"y": 190.188,
+				"fontfamily": "Helvetica, Arial",
+				"fontweight": "Bold",
+				"fontsize": 12,
+				"textanchor": "start",
+				"text": "A standardized system used to monitor public health\nand HIV programmes in refugee and displaced settings.\nIncludes an early warning system for the detection of\ndisease outbreaks."
+			}]
+		}, {
+			"displayName": "Nutrtiton Survey Database",
+			"name": "nutritional",
+			"background": [{
+				"type": "image",
+				"x": 185,
+				"y": 88,
+				"width": 60,
+				"height": 60,
+				"src": "assets/public/img/nutritional.png",
+				"href":"app.php#app=Tools&wid=nut"
+			}],
+			"description": [{
+				"type": "text",
+				"fill": "#FFFFFF",
+				"stroke": "none",
+				"x": 497.917,
+				"y": 153.667,
+				"fontfamily": "Helvetica, Arial",
+				"fontweight": "Bold",
+				"fontsize": 14,
+				"textanchor": "start",
+				"text": "Nutrtiton Survey Database"
+			}, {
+				"type": "text",
+				"fill": "#FFFFFF",
+				"stroke": "none",
+				"x": 497.917,
+				"y": 190.188,
+				"fontfamily": "Helvetica, Arial",
+				"fontweight": "Bold",
+				"fontsize": 12,
+				"textanchor": "start",
+				"text": "A system for reporting the results of nutrition surveys\nconducted in refugee and displaced settings."
+			}]
+		}, {
+			"displayName": "Laboratory Evaluation Tool",
+			"name": "lab",
+			"background": [{
+				"type": "image",
+				"x": 10,
+				"y": 100,
+				"width": 60,
+				"height": 60,
+				"src": "assets/public/img/lab.png",
+				"href":"app.php#app=Tools&wid=lab"
+			}],
+			"description": [{
+				"type": "text",
+				"fill": "#FFFFFF",
+				"stroke": "none",
+				"x": 497.917,
+				"y": 153.667,
+				"fontfamily": "Helvetica, Arial",
+				"fontweight": "Bold",
+				"fontsize": 14,
+				"textanchor": "start",
+				"text": "Laboratory Evaluation Tool"
+			}, {
+				"type": "text",
+				"fill": "#FFFFFF",
+				"stroke": "none",
+				"x": 497.917,
+				"y": 190.188,
+				"fontfamily": "Helvetica, Arial",
+				"fontweight": "Bold",
+				"fontsize": 12,
+				"textanchor": "start",
+				"text": "A structured questionnaire designed to evaluate the quality\nof laboratory services in primary health care facilities in\nrefugee settings."
+			}]
+		}, {
+			"displayName": "Disease Outbreak Reports",
+			"name": "disease",
+			"background": [{
+				"type": "image",
+				"x": 41,
+				"y": 12,
+				"width": 60,
+				"height": 60,
+				"src": "assets/public/img/disease-outbreak.png",
+				"href":"app.php#app=Tools&wid=out"
+			}],
+			"description": [{
+				"type": "text",
+				"fill": "#FFFFFF",
+				"stroke": "none",
+				"x": 497.917,
+				"y": 153.667,
+				"fontfamily": "Helvetica, Arial",
+				"fontweight": "Bold",
+				"fontsize": 14,
+				"textanchor": "start",
+				"text": "Disease Outbreak Reports"
+			}, {
+				"type": "text",
+				"fill": "#FFFFFF",
+				"stroke": "none",
+				"x": 497.917,
+				"y": 190.188,
+				"fontfamily": "Helvetica, Arial",
+				"fontweight": "Bold",
+				"fontsize": 12,
+				"textanchor": "start",
+				"text": "A system for reporting active disease outbreaks in refugee\nand displaced settings."
+			}]
+		}, {
+			"displayName": "Balanced Scorecard",
+			"name": "balance",
+			"background": [{
+				"type": "image",
+				"x": 185,
+				"y": 174,
+				"width": 60,
+				"height": 60,
+				"src": "assets/public/img/balance-score-card.png",
+				"href":"app.php#app=Tools&wid=bsc"
+			}],
+			"description": [{
+				"type": "text",
+				"fill": "#FFFFFF",
+				"stroke": "none",
+				"x": 497.917,
+				"y": 153.667,
+				"fontfamily": "Helvetica, Arial",
+				"fontweight": "Bold",
+				"fontsize": 14,
+				"textanchor": "start",
+				"text": "Balanced Scorecard"
+			}, {
+				"type": "text",
+				"fill": "#FFFFFF",
+				"stroke": "none",
+				"x": 497.917,
+				"y": 190.188,
+				"fontfamily": "Helvetica, Arial",
+				"fontweight": "Bold",
+				"fontsize": 12,
+				"textanchor": "start",
+				"text": "A set of 5 instruments designed to assess the quality of\ncare in primary health care facilities in refugee settings."
+			}]
+		}, {
+			"displayName": "twine",
+			"name": "logo",
+			"background": [{
+				"type": "image",
+				"x": 534.917,
+				"y": 30.542,
+				"width": 166,
+				"height": 75,
+				"src": "assets/public/img/twine-prod.png",
+				"href":""
+			}],
+			"description": [{
+				"type": "text",
+				"fill": "#FFFFFF",
+				"stroke": "none",
+				"x": 497.917,
+				"y": 153.667,
+				"fontfamily": "Helvetica, Arial",
+				"fontweight": "Bold",
+				"fontsize": 14,
+				"textanchor": "start",
+				"text": "twine /twin/"
+			}, {
+				"type": "text",
+				"fill": "#FFFFFF",
+				"stroke": "none",
+				"x": 497.917,
+				"y": 198.188,
+				"fontfamily": "Helvetica, Arial",
+				"fontweight": "Bold",
+				"fontsize": 12,
+				"textanchor": "start",
+				"text": "a type of strong string made by twisting several pieces of\nstring together\n \na web application that combines streams of information\nto inform decision-making in the humanitarian sector"
+			}]
+		}
+	],
+	"toolicon":[{
+		"x":420.917,
+		"y": 145.188,
+		"width":76,
+		"height":72,
+		"src":"assets/public/img/logo-large.png"
+		}]
 }
