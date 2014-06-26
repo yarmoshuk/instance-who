@@ -1,0 +1,43 @@
+<h5 class="popover-title explorePopUp-location"><%= attributes.name %></h5>
+<% if (typeof(value) != "undefined") { %><p class="explorePopUp-indicator muted"> <%= indicator_ref.name %></p><% }
+%>
+
+<% if (typeof(value) != "undefined") { %>
+<table class="explorePopUp-table">
+    <tr>
+        <td class="explorePopUp-score" style="background-color: <%= colour %>;">
+            <p class="text-center explorePopUp-val">
+                <strong>
+                    <% if(indicator_ref.fieldunits == "%"){ %>
+                    <% if(value !== undefined){ %>
+                    <%= numeral(value*100).format('0.00') %>
+                    <% } %>
+                    <% } else { %>
+                    <% if(value !== undefined){ %>
+                    <%= numeral(value).format('0,0.00') %> <%= indicator_ref.formulaunits %>
+                    <% } else { %>
+                    <%= '-' %>
+                    <% } %>
+                    <% } %>
+                </strong>
+            </p>
+
+            <p class="explorePopUp-details"><span class="text-left">Source: </span><span class="text-right"><%= indicator_ref.tableindex %></span>
+            </p>
+
+            <p class="explorePopUp-details"><span class="text-left">Date: </span><span class="text-right"><% if(value_ref.reportdate){ %> <%= moment(value_ref.reportdate).format('DD MMM YYYY') %> <% } %></span>
+            </p>
+        </td>
+        <td class="explorePopUp-standard">
+            <% if(indicator_ref.stdtext){ %>
+            <p class="explorePopUp-stdtext text-center"><strong><%= indicator_ref.stdtext %></strong></p>
+
+            <p class="explorePopUp-details text-center"><strong>Standard</strong></p>
+            <% } else { %>
+            <p class="explorePopUp-stdtext text-center"><strong>-</strong></p>
+            <% } %>
+        </td>
+    </tr>
+</table>
+<% } %>
+

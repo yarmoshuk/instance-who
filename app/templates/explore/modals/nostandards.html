@@ -1,0 +1,26 @@
+<h5 class="explorePopUp-location"><%= attributes.name %></h5>
+<% if (typeof(value) != "undefined") { %><p class="explorePopUp-indicator muted"> <%= indicator_ref.name %></p><% }
+%>
+
+<% if (typeof(value) != "undefined") { %>
+<table class="explorePopUp-table">
+    <tr>
+        <td class="explorePopUp-score" style="background-color: <%= colour %>;">
+            <p class="text-center explorePopUp-val"><strong><% if(indicator_ref.fieldunits == "%"){ %>
+                <%= numeral(value*100).format('0.00') %>%
+                <% } else { %>
+                <%= value %> <%= indicator_ref.formulaunits %>
+                <% } %>
+            </strong></p>
+
+            <p class="explorePopUp-details"><span class="text-left">Source: </span><span class="text-right"><%= indicator_ref.tableindex %></span>
+            </p>
+
+            <p class="explorePopUp-details"><span class="text-left">Date: </span><span class="text-right"><% if(value_ref.reportdate){ %> <%= moment(value_ref.reportdate).format('DD MMM YYYY') %> <% } %></span>
+            </p>
+        </td>
+    </tr>
+</table>
+
+<% } %>
+
